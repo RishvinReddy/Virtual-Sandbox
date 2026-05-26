@@ -136,3 +136,18 @@ h1, h2, h3, h4, h5, h6 {
         line-height: 1.5;
     }
 }
+
+/* Logo Image Sizing constraints */
+.logo-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%; /* Make it round since it's a portrait */
+    vertical-align: middle;
+    margin-right: var(--space-2);
+}
+
+.footer-brand .logo-img {
+    width: 40px;
+    height: 40px;
+}
