@@ -3,76 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labs | R&D | Rishvin Labs</title>
-    
+    <title>Rishvin Labs R&D | Hardware Prototypes & Sandbox Experiments</title>
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore experimental ideas, R&D, and engineering concepts from Rishvin Labs.">
+    <meta name="title" content="Rishvin Labs R&D | Hardware Prototypes & Sandbox Experiments">
+    <meta name="description" content="Step into our research sandbox. View active experiments, IoT hardware boards, custom firmware codes, and next-generation IoT prototypes by Rishvin Labs.">
+    <meta name="keywords" content="experimental development, ESP-NOW mesh networking, AI banking integrations, hardware prototyping, research and development, ESP32 sandbox">
+    <meta name="author" content="Rishvin Labs">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/labs.html">
-    
-    <!-- Open Graph / Social -->
+
+    <!-- Open Graph / Social SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/labs.html">
-    <meta property="og:title" content="Labs | R&D | Rishvin Labs">
-    <meta property="og:description" content="Explore experimental ideas, R&D, and engineering concepts from Rishvin Labs.">
-    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
-    
-    <!-- Twitter -->
+    <meta property="og:title" content="Rishvin Labs R&D | Hardware Prototypes & Sandbox Experiments">
+    <meta property="og:description" content="Step into our research sandbox. View active experiments, IoT hardware boards, and next-generation IoT prototypes.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    <meta property="og:site_name" content="Rishvin Labs">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Labs | R&D | Rishvin Labs">
-    <meta name="twitter:description" content="Explore experimental ideas, R&D, and engineering concepts from Rishvin Labs.">
-    
-    <!-- Fonts -->
+    <meta name="twitter:title" content="Rishvin Labs R&D | Hardware Prototypes & Sandbox Experiments">
+    <meta name="twitter:description" content="Step into our research sandbox. View active experiments, IoT hardware boards, and next-generation IoT prototypes.">
+    <meta name="twitter:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+
+    <!-- Fonts preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon & Branding -->
+    <link rel="icon" type="image/png" href="favicon/favicon.png" sizes="any">
+    <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <meta name="theme-color" content="#0a0b0f">
+
+    <!-- JSON-LD Structured Data (Labs/R&D context) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Rishvin Labs Research & Development Sandbox",
+      "description": "Public documentation of engineering research protocols, mesh networks, zero-trust cryptographic vaults, and AI-powered financial forecasts.",
+      "url": "https://rishvinreddy.github.io/rishvin-labs/labs.html"
+    }
+    </script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- CSS -->
+    <!-- CSS Architecture -->
     <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="manifest" href="manifest.json">
 </head>
-<body class="page-loaded">
-    
+<body>
+
+    <div id="loader">
+      <div class="loader-content">
+        <h2>Rishvin Labs</h2>
+        <p style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 8px;">Engineering Intelligent Systems</p>
+      </div>
+    </div>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
     <!-- Navbar -->
-    <header class="navbar" id="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img">
-                Rishvin <span>Labs</span>
-            </a>
-            
-            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
-                <i data-lucide="menu"></i>
-            </button>
-            
-            <nav class="nav-links" id="nav-links">
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="manifesto.html">Manifesto</a>
-                <a href="founder.html">Founder</a>
-                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;" id="contact-nav-btn">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <nav class="navbar" id="main-navbar"></nav>
 
     <main>
-        <!-- 1. Hero -->
-        <section class="section" style="padding-top: var(--space-32); border-bottom: 1px solid var(--border); background-color: var(--surface); background-image: radial-gradient(var(--border) 1px, transparent 1px); background-size: 24px 24px;">
+        <!-- Hero -->
+        <section class="section hero-section" style=" border-bottom: 1px solid var(--border); background-color: var(--surface); background-image: radial-gradient(var(--border) 1px, transparent 1px); background-size: 24px 24px;">
+    <!-- Premium Ambient Glow -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
             <div class="container text-center">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ EXPERIMENTAL DIVISION ]</div>
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">EXPERIMENTAL DIVISION</div>
                 <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
-                    Rishvin Labs / Labs.
+                    Rishvin Labs / <span class="gradient-text">Labs.</span>
                 </h1>
                 <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto; font-size: 1.125rem; font-family: var(--font-mono);">
-                    > INITIATING R&D PROTOCOLS
+                    &gt; INITIATING R&amp;D PROTOCOLS
                 </p>
                 <p class="animate-slide-up delay-300" style="max-width: 650px; margin: var(--space-4) auto 0; font-size: 1.125rem;">
                     Unfiltered access to our ongoing research, technical concepts, and architectural experiments.
@@ -80,11 +97,11 @@
             </div>
         </section>
 
-        <!-- 3. Labs Grid -->
+        <!-- Labs Grid -->
         <section class="section reveal" style="padding-top: var(--space-24); padding-bottom: var(--space-32);">
             <div class="container container-medium">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-12);">
-                    
+
                     <!-- Lab Experiment 1 -->
                     <div style="border: 1px solid var(--border); background: var(--surface);">
                         <div style="padding: var(--space-6); border-bottom: 1px solid var(--border); background: var(--bg-secondary); display: flex; justify-content: space-between; align-items: center;">
@@ -94,12 +111,12 @@
                         <div style="padding: var(--space-8);">
                             <h3 style="font-size: 1.5rem; margin-bottom: var(--space-4);">AI Financial Analysis Engine</h3>
                             <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Testing the integration of LLMs with real-time Plaid banking data to dynamically generate cash flow predictions and localized fiscal insights without manual modeling.</p>
-                            
+
                             <div style="margin-bottom: var(--space-6);">
                                 <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-2);">CORE STACK</div>
                                 <div style="font-family: var(--font-mono); font-size: 0.85rem;">Python, LangChain, Plaid API, PostgreSQL</div>
                             </div>
-                            
+
                             <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center; pointer-events: none; opacity: 0.5;">
                                 DATA GATHERING...
                             </a>
@@ -115,12 +132,12 @@
                         <div style="padding: var(--space-8);">
                             <h3 style="font-size: 1.5rem; margin-bottom: var(--space-4);">Mesh-Networked IoT Nodes</h3>
                             <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Replacing single-point-of-failure MQTT brokers with decentralized ESP-NOW mesh networking for agricultural telemetry across massive acreage.</p>
-                            
+
                             <div style="margin-bottom: var(--space-6);">
                                 <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-2);">CORE STACK</div>
                                 <div style="font-family: var(--font-mono); font-size: 0.85rem;">C++, ESP-NOW, FreeRTOS, Solar Topologies</div>
                             </div>
-                            
+
                             <a href="#" class="btn btn-secondary" style="width: 100%; text-align: center; pointer-events: none; opacity: 0.5;">
                                 PROTOCOL TESTING...
                             </a>
@@ -136,12 +153,12 @@
                         <div style="padding: var(--space-8);">
                             <h3 style="font-size: 1.5rem; margin-bottom: var(--space-4);">Zero-Trust Vault Prototype</h3>
                             <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Initial architecture proving the feasibility of lateral-movement protection in password managers via strict token scopes. (Graduated to Production).</p>
-                            
+
                             <div style="margin-bottom: var(--space-6);">
                                 <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-2);">CORE STACK</div>
                                 <div style="font-family: var(--font-mono); font-size: 0.85rem;">Python, Docker, Cryptography</div>
                             </div>
-                            
+
                             <a href="project-vault.html" class="btn btn-primary" style="width: 100%; text-align: center;">
                                 VIEW DEPLOYED SYSTEM
                             </a>
@@ -158,7 +175,7 @@
                 <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Want to integrate these concepts?</h2>
                 <p style="max-width: 500px; margin: 0 auto var(--space-8);">Our experimental systems often evolve into client solutions.</p>
                 <div style="display: flex; gap: var(--space-4); justify-content: center;">
-                    <a href="contact.html" class="btn btn-primary">
+                    <a href="services.html#contact" class="btn btn-primary">
                         Initialize Consultation
                     </a>
                 </div>
@@ -171,7 +188,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="navbar-logo">
+                    <a href="index.html" class="navbar-logo" style="display: inline-flex; align-items: center; gap: 10px; margin-bottom: var(--space-4);">
                         <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async"> Rishvin <span>Labs</span>
                     </a>
                     <p>A high-end engineering studio building intelligent digital systems.</p>
@@ -182,7 +199,7 @@
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
                         <a href="projects.html">Projects</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="services.html#contact">Contact</a>
                     </div>
                 </div>
                 <div>
@@ -221,10 +238,18 @@
     </footer>
 
     <!-- Scripts -->
+    <script>lucide.createIcons();</script>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav-inject.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
     <script src="assets/js/command-palette.js" defer></script>
     <script src="assets/js/page-transitions.js" defer></script>
+    <script>
+    const nav = document.getElementById('main-navbar');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+    </script>
 </body>
 </html>

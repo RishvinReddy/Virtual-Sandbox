@@ -3,48 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rishvin Labs | Engineering Intelligent Digital Systems</title>
-    
+    <title>Rishvin Labs | AI-Powered Software, Web, IoT & Cybersecurity Solutions</title>
+
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Rishvin Labs builds scalable software systems, IoT solutions, automation workflows, and cybersecurity-focused digital products.">
+    <meta name="title" content="Rishvin Labs | AI-Powered Software, Web, IoT & Cybersecurity Solutions">
+    <meta name="description" content="Rishvin Labs builds premium software, websites, IoT systems, cybersecurity solutions, automation tools, and scalable digital products for startups, businesses, and individuals.">
+    <meta name="keywords" content="software development, web development, IoT solutions, cybersecurity services, automation systems, business websites, startup MVP development, portfolio websites, full stack development, Rishvin Labs">
+    <meta name="author" content="Rishvin Labs">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/">
-    
-    <!-- Open Graph / Social -->
+
+    <!-- Open Graph / Social SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/">
-    <meta property="og:title" content="Rishvin Labs | Engineering Intelligent Digital Systems">
-    <meta property="og:description" content="Rishvin Labs builds scalable software systems, IoT solutions, automation workflows, and cybersecurity-focused digital products.">
-    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
-    
-    <!-- Twitter -->
+    <meta property="og:title" content="Rishvin Labs | Premium Software & Tech Solutions">
+    <meta property="og:description" content="Building websites, software, IoT systems, cybersecurity solutions, and scalable digital products.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    <meta property="og:site_name" content="Rishvin Labs">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Rishvin Labs | Engineering Intelligent Digital Systems">
-    <meta name="twitter:description" content="Rishvin Labs builds scalable software systems, IoT solutions, automation workflows, and cybersecurity-focused digital products.">
-    
-    <!-- JSON-LD Structured Data -->
+    <meta name="twitter:title" content="Rishvin Labs | Premium Tech Solutions">
+    <meta name="twitter:description" content="Software, Web Development, IoT, Cybersecurity & Automation Solutions">
+    <meta name="twitter:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+
+    <!-- Fonts preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon & Branding -->
+    <link rel="icon" type="image/png" href="favicon/favicon.png" sizes="any">
+    <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <meta name="theme-color" content="#0a0b0f">
+
+    <!-- JSON-LD Structured Data (Organization & ProfessionalService) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Rishvin Labs",
+      "url": "https://rishvinreddy.github.io/rishvin-labs/",
+      "logo": "https://rishvinreddy.github.io/rishvin-labs/icon.png",
+      "description": "Premium software development, web development, IoT systems, cybersecurity, automation and digital solutions.",
+      "founder": {
+        "@type": "Person",
+        "name": "Rishvin Reddy"
+      },
+      "sameAs": [
+        "https://github.com/RishvinReddy",
+        "https://rishvinreddy.github.io/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "rishvinreddy@gmail.com"
+      }
+    }
+    </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Rishvin Labs",
+      "image": "https://rishvinreddy.github.io/rishvin-labs/icon.png",
       "url": "https://rishvinreddy.github.io/rishvin-labs/",
-      "logo": "https://rishvinreddy.github.io/rishvin-labs/assets/images/logo/logo.png",
-      "description": "Engineering Intelligent Digital Systems. We build scalable software architectures, IoT infrastructure, and cybersecurity networks.",
-      "founder": {
-        "@type": "Person",
-        "name": "Rishvin"
-      }
+      "description": "Software, IoT, cybersecurity, automation and website development services.",
+      "areaServed": "Worldwide",
+      "priceRange": "$$"
     }
     </script>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/png" href="favicon/favicon.png">
-    <link rel="apple-touch-icon" href="favicon/favicon.png">
-    <!-- Icons (Lucide) -->
+
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- CSS Architecture -->
@@ -55,119 +88,139 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
     <!-- Premium Loading Screen -->
     <div id="loader">
-        <div class="loader-content" style="text-align: center;">
-            <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
-            <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; font-family: var(--font-mono); font-size: var(--text-small);">Engineering Intelligent Systems</p>
+        <div class="loader-content">
+            <h2>Rishvin Labs</h2>
+            <p style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 8px;">Engineering Intelligent Systems</p>
         </div>
     </div>
 
     <!-- Custom Cursor -->
-    <div id="custom-cursor"></div>
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" decoding="async">
-                Rishvin Labs
-            </a>
-            
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <i data-lucide="menu"></i>
-            </button>
+    <!-- ─── Navbar ─────────────────────────────── -->
+    <nav class="navbar" id="main-navbar"></nav>
 
-            <div class="navbar-links">
-                <a href="index.html" class="active hover-underline">Home</a>
-                <a href="about.html" class="hover-underline">About</a>
-                <a href="services.html" class="hover-underline">Services</a>
-                <a href="projects.html" class="hover-underline">Projects</a>
-                <a href="labs.html" class="hover-underline">Labs</a>
-                <a href="manifesto.html" class="hover-underline">Manifesto</a>
-                <a href="contact.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.875rem;">Start A Project &rarr;</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content Area -->
+    <!-- ─── Main ──────────────────────────────── -->
     <main>
+
         <!-- 1. Hero -->
-        <section class="hero">
+        <section class="hero hero-section">
+    <!-- Premium Ambient Glow -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
             <div class="container hero-grid">
-                
+
                 <!-- LEFT -->
                 <div class="hero-left">
-                    <span class="tech-label animate-fade-in">[ ENGINEERING DIGITAL SYSTEMS ]</span>
-                    <h1 class="hero-title animate-slide-up delay-100">
-                        Building intelligent systems with engineering precision.
-                    </h1>
-                    <p class="hero-description animate-slide-up delay-200">
-                        We are an elite engineering studio designing scalable software, advanced cybersecurity systems, resilient IoT infrastructure, automation pipelines, and intelligent digital products.
-                    </p>
-                    <div class="hero-links animate-slide-up delay-300">
-                        <a href="manifesto.html" class="hover-underline">Manifesto</a>
-                        <a href="founder.html" class="hover-underline">Founder &rarr;</a>
+                    <div class="tech-label animate-fade-in">
+                        Premium Tech Studio &mdash; Est. 2024
                     </div>
-                    <div class="hero-actions animate-slide-up delay-400">
-                        <a href="contact.html" class="btn btn-primary">Start A Project</a>
-                        <a href="projects.html" class="btn btn-secondary">View Systems</a>
+
+                    <h1 class="hero-title animate-slide-up delay-100">
+                        Engineering<br>
+                        <span class="gradient-text">Scalable Digital</span><br>
+                        Solutions.
+                    </h1>
+
+                    <p class="hero-description animate-slide-up delay-200">
+                        Web development, software systems, IoT, cybersecurity, and automation solutions — built for performance, security, and long-term growth.
+                    </p>
+
+                    <div class="hero-actions animate-slide-up delay-300" style="display: flex; gap: var(--space-4); margin-bottom: var(--space-8);">
+                        <a href="services.html#contact" class="btn btn-primary" style="box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);">
+                            Start a Project <span class="btn-arrow">&rarr;</span>
+                        </a>
+                        <a href="projects.html" class="btn btn-outline" style="background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(10px); border-color: rgba(10, 14, 40, 0.1);">
+                            View Work
+                        </a>
+                    </div>
+
+                    <!-- Premium Glass Stats -->
+                    <div class="hero-stats animate-slide-up delay-400" style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+                        <div style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.8); padding: var(--space-3) var(--space-5); border-radius: var(--radius-sm); box-shadow: 0 4px 15px rgba(0,0,0,0.02); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.1rem; font-weight: 800; color: var(--accent-blue);">10+</span>
+                            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase;">Projects</span>
+                        </div>
+                        <div style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.8); padding: var(--space-3) var(--space-5); border-radius: var(--radius-sm); box-shadow: 0 4px 15px rgba(0,0,0,0.02); display: flex; align-items: center; gap: 8px;">
+                            <span style="font-size: 1.1rem; font-weight: 800; color: var(--accent-violet);">15+</span>
+                            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase;">Technologies</span>
+                        </div>
+                        <div style="background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.8); padding: var(--space-3) var(--space-5); border-radius: var(--radius-sm); box-shadow: 0 4px 15px rgba(0,0,0,0.02); display: flex; align-items: center; gap: 8px;">
+                            <span style="display: block; width: 6px; height: 6px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 10px #22c55e;"></span>
+                            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); text-transform: uppercase;">Secure Systems</span>
+                        </div>
                     </div>
                 </div>
 
                 <!-- CENTER VISUAL -->
-                <div class="hero-visual animate-fade-in delay-300">
-                    <div class="blueprint-grid">
-                        <div class="blueprint-circle"></div>
-                        <svg class="grid-lines" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <!-- horizontal lines -->
-                            <line x1="0" y1="75" x2="300" y2="75" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
-                            <line x1="0" y1="150" x2="300" y2="150" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
-                            <line x1="0" y1="225" x2="300" y2="225" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
-                            <!-- vertical lines -->
-                            <line x1="75" y1="0" x2="75" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
-                            <line x1="150" y1="0" x2="150" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
-                            <line x1="225" y1="0" x2="225" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
-                            <!-- crosshairs center -->
-                            <line x1="130" y1="150" x2="170" y2="150" stroke="currentColor" stroke-width="1" opacity="0.6"/>
-                            <line x1="150" y1="130" x2="150" y2="170" stroke="currentColor" stroke-width="1" opacity="0.6"/>
-                            <!-- outer circle -->
-                            <circle cx="150" cy="150" r="80" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.25"/>
-                            <!-- inner circle -->
-                            <circle cx="150" cy="150" r="40" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.35"/>
-                            <!-- dot center -->
-                            <circle cx="150" cy="150" r="3" fill="currentColor" opacity="0.5"/>
+                <div class="hero-visual animate-fade-in delay-200" style="display: flex; justify-content: center; align-items: center; position: relative;">
+                    <!-- Floating Blueprint with Glass Base -->
+                    <div class="blueprint-grid float-anim" style="filter: drop-shadow(0 20px 40px rgba(37, 99, 235, 0.15)); background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(5px); border-radius: 50%; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.4);">
+                        <div class="blueprint-circle" style="border-color: rgba(37, 99, 235, 0.4);"></div>
+                        <div class="ring-outer" style="border-color: rgba(124, 58, 237, 0.3);"></div>
+                        <div class="ring-mid" style="border-color: rgba(37, 99, 235, 0.2);"></div>
+                        <div class="ring-inner" style="border-color: rgba(37, 99, 235, 0.5);"></div>
+                        <svg class="grid-lines" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="animation: pulse 4s infinite alternate;">
+                            <!-- grid -->
+                            <line x1="0" y1="75"  x2="300" y2="75"  stroke="var(--accent-blue)" stroke-width="0.6" opacity="0.25"/>
+                            <line x1="0" y1="150" x2="300" y2="150" stroke="var(--accent-blue)" stroke-width="0.6" opacity="0.25"/>
+                            <line x1="0" y1="225" x2="300" y2="225" stroke="var(--accent-blue)" stroke-width="0.6" opacity="0.25"/>
+                            <line x1="75"  y1="0" x2="75"  y2="300" stroke="var(--accent-blue)" stroke-width="0.6" opacity="0.25"/>
+                            <line x1="150" y1="0" x2="150" y2="300" stroke="var(--accent-blue)" stroke-width="0.6" opacity="0.25"/>
+                            <line x1="225" y1="0" x2="225" y2="300" stroke="var(--accent-blue)" stroke-width="0.6" opacity="0.25"/>
+                            <!-- crosshair -->
+                            <line x1="128" y1="150" x2="172" y2="150" stroke="var(--accent-violet)" stroke-width="1.5" opacity="0.8"/>
+                            <line x1="150" y1="128" x2="150" y2="172" stroke="var(--accent-violet)" stroke-width="1.5" opacity="0.8"/>
+                            <!-- dot -->
+                            <circle cx="150" cy="150" r="4" fill="var(--accent-blue)" opacity="1" filter="drop-shadow(0 0 5px var(--accent-blue))"/>
                         </svg>
                     </div>
                 </div>
 
-                <!-- RIGHT -->
+                <!-- RIGHT — Domain Cards -->
                 <div class="hero-right animate-fade-in delay-300">
-                    <span class="tech-label" style="margin-bottom: var(--space-6); display: block;">[ CORE ENGINEERING DOMAINS ]</span>
+                    <div class="tech-label" style="margin-bottom: var(--space-5); align-self: flex-end;">Core Engineering Domains</div>
                     <div class="domain-cards-grid">
+                        <!-- Card 1 -->
                         <div class="domain-card">
-                            <i data-lucide="cpu" style="width: 20px; height: 20px; margin-bottom: var(--space-3);"></i>
-                            <h3>IoT Systems</h3>
-                            <p>Real-world connected solutions with sensors, automation and intelligent monitoring.</p>
+                            <div class="card-icon">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <h3>Fast, Modern Websites</h3>
+                            <p>High-conversion web applications tailored for your business.</p>
+                            <a href="services.html#software" class="domain-link">Explore &rarr;</a>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="domain-card">
+                            <div class="card-icon" style="background: rgba(124,58,237,0.08); color: var(--accent-violet);">
+                                <i data-lucide="workflow"></i>
+                            </div>
+                            <h3>Automate Operations</h3>
+                            <p>Intelligent workflows to save time and reduce errors.</p>
                             <a href="services.html" class="domain-link">Explore &rarr;</a>
                         </div>
+                        <!-- Card 3 -->
                         <div class="domain-card">
-                            <i data-lucide="shield-check" style="width: 20px; height: 20px; margin-bottom: var(--space-3);"></i>
-                            <h3>Cybersecurity</h3>
-                            <p>Secure systems by design. From threat modeling to penetration testing.</p>
-                            <a href="services.html" class="domain-link">Explore &rarr;</a>
+                            <div class="card-icon" style="background: rgba(8,145,178,0.08); color: var(--accent-teal);">
+                                <i data-lucide="shield-check"></i>
+                            </div>
+                            <h3>Secure Digital Assets</h3>
+                            <p>Enterprise-grade security for your infrastructure.</p>
+                            <a href="services.html#cyber" class="domain-link">Explore &rarr;</a>
                         </div>
+                        <!-- Card 4 -->
                         <div class="domain-card">
-                            <i data-lucide="code-2" style="width: 20px; height: 20px; margin-bottom: var(--space-3);"></i>
-                            <h3>Software Engineering</h3>
-                            <p>Scalable, reliable, and maintainable software built with modern architectures.</p>
-                            <a href="services.html" class="domain-link">Explore &rarr;</a>
-                        </div>
-                        <div class="domain-card">
-                            <i data-lucide="network" style="width: 20px; height: 20px; margin-bottom: var(--space-3);"></i>
-                            <h3>Automation</h3>
-                            <p>Intelligent workflows, process automation, and productivity systems that scale.</p>
-                            <a href="services.html" class="domain-link">Explore &rarr;</a>
+                            <div class="card-icon" style="background: rgba(5,150,105,0.08); color: var(--accent-green);">
+                                <i data-lucide="cpu"></i>
+                            </div>
+                            <h3>Connect the Physical World</h3>
+                            <p>Smart IoT for real-time monitoring and control.</p>
+                            <a href="services.html#iot" class="domain-link">Explore &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -175,183 +228,469 @@
             </div>
         </section>
 
-        <!-- 2. Metrics Bar -->
-        <section class="metrics">
-            <div class="container metrics-grid">
-                <div class="metric">
-                    <h2>5+</h2>
-                    <p>Systems Built</p>
+        <!-- Quick Access Panel -->
+        <section class="quick-access-section animate-slide-up delay-400">
+            <div class="container container-medium">
+                <div class="quick-access-grid">
+                    <!-- Row 1: Primary Actions -->
+                    <a href="contact.html" class="qa-card primary">
+                        <div class="qa-icon"><i data-lucide="rocket"></i></div>
+                        <div class="qa-content">
+                            <h4>Start Project</h4>
+                            <p>Begin your idea</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="qa-arrow"></i>
+                    </a>
+                    <a href="services.html" class="qa-card primary">
+                        <div class="qa-icon"><i data-lucide="layers"></i></div>
+                        <div class="qa-content">
+                            <h4>Explore Services</h4>
+                            <p>What we build</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="qa-arrow"></i>
+                    </a>
+                    <a href="projects.html" class="qa-card primary">
+                        <div class="qa-icon"><i data-lucide="folder"></i></div>
+                        <div class="qa-content">
+                            <h4>View Projects</h4>
+                            <p>See our work</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="qa-arrow"></i>
+                    </a>
+                    <a href="contact.html" class="qa-card primary">
+                        <div class="qa-icon"><i data-lucide="message-square"></i></div>
+                        <div class="qa-content">
+                            <h4>Get Quote</h4>
+                            <p>Free consultation</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="qa-arrow"></i>
+                    </a>
+                    
+                    <!-- Row 2: Secondary Links -->
+                    <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer" class="qa-card secondary">
+                        <div class="qa-icon"><i data-lucide="briefcase"></i></div>
+                        <div class="qa-content">
+                            <h4>Portfolio</h4>
+                            <p>View portfolio</p>
+                        </div>
+                        <i data-lucide="external-link" class="qa-arrow"></i>
+                    </a>
+                    <a href="https://github.com/rishvinreddy" target="_blank" rel="noopener noreferrer" class="qa-card secondary">
+                        <div class="qa-icon"><i data-lucide="github"></i></div>
+                        <div class="qa-content">
+                            <h4>GitHub</h4>
+                            <p>Source code</p>
+                        </div>
+                        <i data-lucide="external-link" class="qa-arrow"></i>
+                    </a>
+                    <a href="mailto:rishvinreddy@gmail.com" class="qa-card secondary">
+                        <div class="qa-icon"><i data-lucide="mail"></i></div>
+                        <div class="qa-content">
+                            <h4>Email</h4>
+                            <p>Direct mail</p>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="qa-arrow"></i>
+                    </a>
+                    <a href="contact.html" class="qa-card secondary">
+                        <div class="qa-icon"><i data-lucide="phone"></i></div>
+                        <div class="qa-content">
+                            <h4>Contact</h4>
+                            <p>Let's talk</p>
+                        </div>
+                        <i data-lucide="arrow-right" class="qa-arrow"></i>
+                    </a>
                 </div>
-                <div class="metric">
-                    <h2>3+</h2>
-                    <p>Years Experience</p>
-                </div>
-                <div class="metric">
-                    <h2>100%</h2>
-                    <p>Client Satisfaction</p>
-                </div>
-                <div class="metric">
-                    <h2>24/7</h2>
-                    <p>Support &amp; Maintenance</p>
-                </div>
-                <div class="metric">
-                    <h2>India &bull; Global</h2>
-                    <p>Serving Worldwide</p>
+            </div>
+        </section>
+        <!-- 2. Tech Stack Marquee -->
+        <section class="marquee-section">
+            <div class="marquee-container">
+                <div class="marquee-content" aria-hidden="true">
+                    <span class="marquee-item">
+                        <span class="tech-label">Stack</span>
+                        <span class="marquee-dot"></span>
+                        HTML <span class="marquee-dot"></span>
+                        CSS <span class="marquee-dot"></span>
+                        JavaScript <span class="marquee-dot"></span>
+                        Python <span class="marquee-dot"></span>
+                        React <span class="marquee-dot"></span>
+                        Node.js <span class="marquee-dot"></span>
+                        Flask <span class="marquee-dot"></span>
+                        SQL <span class="marquee-dot"></span>
+                        Firebase <span class="marquee-dot"></span>
+                        GitHub <span class="marquee-dot"></span>
+                        Arduino <span class="marquee-dot"></span>
+                        ESP32 <span class="marquee-dot"></span>
+                        Docker <span class="marquee-dot"></span>
+                        Tailwind
+                    </span>
+                    <!-- Duplicate for infinite effect -->
+                    <span class="marquee-item" aria-hidden="true">
+                        <span class="tech-label">Stack</span>
+                        <span class="marquee-dot"></span>
+                        HTML <span class="marquee-dot"></span>
+                        CSS <span class="marquee-dot"></span>
+                        JavaScript <span class="marquee-dot"></span>
+                        Python <span class="marquee-dot"></span>
+                        React <span class="marquee-dot"></span>
+                        Node.js <span class="marquee-dot"></span>
+                        Flask <span class="marquee-dot"></span>
+                        SQL <span class="marquee-dot"></span>
+                        Firebase <span class="marquee-dot"></span>
+                        GitHub <span class="marquee-dot"></span>
+                        Arduino <span class="marquee-dot"></span>
+                        ESP32 <span class="marquee-dot"></span>
+                        Docker <span class="marquee-dot"></span>
+                        Tailwind
+                    </span>
                 </div>
             </div>
         </section>
 
-        <!-- 3. Services Preview -->
-        <section class="services-preview reveal">
-            <div class="container">
-                <div class="services-header">
+        <!-- 3. Why Choose Us -->
+        <section class="section reveal">
+            <div class="container container-medium">
+                <div class="section-header centered">
+                    <span class="tech-label">[ Why Rishvin Labs ]</span>
+                    <h2>The Engineering Advantage</h2>
+                    <p>Built from first principles — not templates. Every system is engineered for performance, security, and scale.</p>
+                </div>
+                <div class="why-grid">
+                    <div class="why-card reveal" style="transition-delay: 0ms;">
+                        <div class="why-icon"><i data-lucide="cpu"></i></div>
+                        <h4>Engineering-Driven</h4>
+                        <p>Built with technical precision and scalable architectures, not generic templates.</p>
+                    </div>
+                    <div class="why-card reveal" style="transition-delay: 80ms;">
+                        <div class="why-icon" style="background: rgba(124,58,237,0.08); color: var(--accent-violet);">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h4>Secure by Design</h4>
+                        <p>Cybersecurity-first mindset embedded in every layer of the stack.</p>
+                    </div>
+                    <div class="why-card reveal" style="transition-delay: 160ms;">
+                        <div class="why-icon" style="background: rgba(8,145,178,0.08); color: var(--accent-teal);">
+                            <i data-lucide="bar-chart-2"></i>
+                        </div>
+                        <h4>Scalable Systems</h4>
+                        <p>Growth-ready architecture designed to handle future loads effortlessly.</p>
+                    </div>
+                    <div class="why-card reveal" style="transition-delay: 240ms;">
+                        <div class="why-icon" style="background: rgba(5,150,105,0.08); color: var(--accent-green);">
+                            <i data-lucide="layout"></i>
+                        </div>
+                        <h4>Modern UI/UX</h4>
+                        <p>Premium, interactive experiences that convert visitors into clients.</p>
+                    </div>
+                    <div class="why-card reveal" style="transition-delay: 320ms;">
+                        <div class="why-icon" style="background: rgba(217,119,6,0.08); color: var(--accent-gold);">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h4>Fast Delivery</h4>
+                        <p>Lean workflows and agile methodologies for rapid, reliable deployments.</p>
+                    </div>
+                    <div class="why-card reveal" style="transition-delay: 400ms;">
+                        <div class="why-icon" style="background: rgba(124,58,237,0.08); color: var(--accent-violet);">
+                            <i data-lucide="headphones"></i>
+                        </div>
+                        <h4>Ongoing Support</h4>
+                        <p>Dedicated maintenance and updates so your system never falls behind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Project Showcase Slider -->
+        <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); overflow: hidden;">
+            <div class="container container-wide">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--space-10);">
                     <div>
-                        <div class="tech-label" style="margin-bottom: var(--space-4);">[ WHAT WE DO ]</div>
-                        <h2>Engineering solutions<br>that power your vision.</h2>
-                        <p>From concept to production, we deliver systems that are secure, scalable, and built for the real world.</p>
-                        <a href="services.html" class="view-all-link">View All Services &rarr;</a>
+                        <div class="section-header">
+                            <span class="tech-label">[ Showcase ]</span>
+                            <h2 style="margin-bottom: 0;">Featured Systems</h2>
+                        </div>
                     </div>
+                    <a href="projects.html" class="hover-underline" style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-secondary); flex-shrink: 0;">
+                        View All &rarr;
+                    </a>
                 </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>IoT Systems</h3>
-                        <ul>
-                            <li>Device Firmware</li>
-                            <li>Sensor Integration</li>
-                            <li>Real-time Monitoring</li>
-                            <li>Data Analytics</li>
-                            <li>Edge Computing</li>
-                        </ul>
-                        <a href="services.html" class="service-details-link">Details &rarr;</a>
+
+                <div class="project-slider">
+                    <!-- Smart Irrigation -->
+                    <div class="project-card">
+                        <div class="tech-label">IoT &bull; Hardware</div>
+                        <h3>Smart Irrigation System</h3>
+                        <p>Automated precision farming with real-time moisture sensors and cloud dashboard for optimal water usage.</p>
+                        <a href="project-iot-soil.html" class="btn btn-secondary" style="align-self: flex-start; padding: 9px 18px; font-size: 0.72rem;">
+                            View Case Study &rarr;
+                        </a>
                     </div>
-                    <div class="service-card">
-                        <h3>Cybersecurity</h3>
-                        <ul>
-                            <li>Security Audits</li>
-                            <li>Penetration Testing</li>
-                            <li>Vulnerability Assessment</li>
-                            <li>Threat Modeling</li>
-                            <li>Secure Architecture</li>
-                        </ul>
-                        <a href="services.html" class="service-details-link">Details &rarr;</a>
+
+                    <!-- Finance Software -->
+                    <div class="project-card">
+                        <div class="tech-label">Software &bull; Finance</div>
+                        <h3>Finance Management</h3>
+                        <p>Secure, role-based architecture for managing internal financial workflows, reporting, and audits.</p>
+                        <a href="project-finance.html" class="btn btn-secondary" style="align-self: flex-start; padding: 9px 18px; font-size: 0.72rem;">
+                            View Case Study &rarr;
+                        </a>
                     </div>
-                    <div class="service-card">
-                        <h3>Software Engineering</h3>
-                        <ul>
-                            <li>Web Applications</li>
-                            <li>API Development</li>
-                            <li>System Architecture</li>
-                            <li>Performance Optimization</li>
-                            <li>Code Quality</li>
-                        </ul>
-                        <a href="services.html" class="service-details-link">Details &rarr;</a>
+
+                    <!-- Smart Dustbin -->
+                    <div class="project-card">
+                        <div class="tech-label">IoT &bull; Smart City</div>
+                        <h3>Smart Waste Monitor</h3>
+                        <p>Ultrasonic level detection with automated alert routing for efficient municipal waste management.</p>
+                        <a href="project-iot-waste.html" class="btn btn-secondary" style="align-self: flex-start; padding: 9px 18px; font-size: 0.72rem;">
+                            View Case Study &rarr;
+                        </a>
                     </div>
-                    <div class="service-card">
-                        <h3>Automation</h3>
-                        <ul>
-                            <li>Workflow Automation</li>
-                            <li>Process Optimization</li>
-                            <li>RPA Solutions</li>
-                            <li>Custom Integrations</li>
-                            <li>Monitoring Systems</li>
-                        </ul>
-                        <a href="services.html" class="service-details-link">Details &rarr;</a>
-                    </div>
-                    <div class="service-card">
-                        <h3>Cloud &amp; DevOps</h3>
-                        <ul>
-                            <li>Cloud Architecture</li>
-                            <li>CI/CD Pipelines</li>
-                            <li>Infrastructure as Code</li>
-                            <li>Monitoring &amp; Logging</li>
-                            <li>Deployment Automation</li>
-                        </ul>
-                        <a href="services.html" class="service-details-link">Details &rarr;</a>
-                    </div>
-                    <div class="service-card">
-                        <h3>Data &amp; AI</h3>
-                        <ul>
-                            <li>Data Engineering</li>
-                            <li>Machine Learning</li>
-                            <li>Predictive Analytics</li>
-                            <li>Data Visualization</li>
-                            <li>AI Integrations</li>
-                        </ul>
-                        <a href="services.html" class="service-details-link">Details &rarr;</a>
+
+                    <!-- Recruitment Portal -->
+                    <div class="project-card">
+                        <div class="tech-label">Web &bull; Recruitment</div>
+                        <h3>Recruitment Portal</h3>
+                        <p>High-conversion landing page and backend tracking for an international hiring firm's global operations.</p>
+                        <a href="project-recruitment.html" class="btn btn-secondary" style="align-self: flex-start; padding: 9px 18px; font-size: 0.72rem;">
+                            View Case Study &rarr;
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Final CTA -->
-        <section class="section reveal" style="border-bottom: 1px solid var(--border);">
+        <!-- 5. Workflow Timeline -->
+        <section class="section reveal">
+            <div class="container container-medium">
+                <div class="section-header centered">
+                    <span class="tech-label">[ Process ]</span>
+                    <h2>How We Work</h2>
+                    <p>A proven 6-step engineering process that turns ideas into production-ready systems.</p>
+                </div>
+
+                <div class="workflow-timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-step reveal" style="transition-delay: 0ms;">
+                        <div class="timeline-num">01</div>
+                        <div>
+                            <h4>Discover</h4>
+                            <p>Deep dive into your requirements, business goals, and technical constraints.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step reveal" style="transition-delay: 80ms;">
+                        <div class="timeline-num">02</div>
+                        <div>
+                            <h4>Plan</h4>
+                            <p>System architecture mapping, technology selection, and milestone scheduling.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step reveal" style="transition-delay: 160ms;">
+                        <div class="timeline-num">03</div>
+                        <div>
+                            <h4>Build</h4>
+                            <p>Agile development sprints with regular check-ins and staging deployments.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step reveal" style="transition-delay: 240ms;">
+                        <div class="timeline-num">04</div>
+                        <div>
+                            <h4>Test</h4>
+                            <p>Rigorous QA, security auditing, and performance optimization.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step reveal" style="transition-delay: 320ms;">
+                        <div class="timeline-num">05</div>
+                        <div>
+                            <h4>Deploy</h4>
+                            <p>Smooth launch to production with zero-downtime deployment strategies.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-step reveal" style="transition-delay: 400ms;">
+                        <div class="timeline-num">06</div>
+                        <div>
+                            <h4>Support</h4>
+                            <p>Ongoing maintenance, scaling adjustments, and continuous improvements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Behind the Code (Upgraded Founder Panel) -->
+        <section class="section reveal" style="border-top: 1px solid var(--border); padding-top: var(--space-20); padding-bottom: var(--space-20);">
+            <div class="container container-wide">
+                <div class="section-header centered" style="margin-bottom: var(--space-12);">
+                    <span class="tech-label">[ The Architect Behind the Code ]</span>
+                    <h2>Studio Engineering Leadership</h2>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: var(--space-12); align-items: start;">
+                    <!-- Founder Left Profile Glass Panel -->
+                    <div style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.06); padding: var(--space-10) var(--space-8); border-radius: var(--radius-lg); position: relative; overflow: hidden; box-shadow: var(--shadow-card);">
+                        <!-- macOS window style dots -->
+                        <div style="position: absolute; top: 14px; left: 14px; display: flex; gap: 6px;">
+                            <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #ff5f56; opacity: 0.85;"></span>
+                            <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e; opacity: 0.85;"></span>
+                            <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #27c93f; opacity: 0.85;"></span>
+                        </div>
+                        <div style="text-align: center; margin-top: var(--space-4);">
+                            <div style="width: 110px; height: 110px; border-radius: 50%; margin: 0 auto var(--space-6); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid rgba(37, 99, 235, 0.3); box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25); background: var(--surface);">
+                                <img src="icon.png" alt="Rishvin Reddy" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <h3 style="font-size: 1.65rem; font-weight: 700; margin-bottom: var(--space-1); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Reddy</h3>
+                            <p style="font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; color: var(--accent-blue); letter-spacing: 0.06em; margin-bottom: var(--space-6);">Founder & Lead Systems Architect</p>
+                            
+                            <!-- Real-time availability indicator -->
+                            <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.2); padding: 4px 12px; border-radius: 100px; margin-bottom: var(--space-8);">
+                                <div style="width: 6px; height: 6px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e; animation: pulse 2s infinite;"></div>
+                                <span style="font-family: var(--font-mono); font-size: 0.65rem; color: #22c55e; text-transform: uppercase; letter-spacing: 0.04em;">Accepting Projects (2 slots open)</span>
+                            </div>
+                            
+                            <!-- Real-Time Metrics -->
+                            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; margin-top: var(--space-4);">
+                                <div style="background: var(--surface); padding: var(--space-3) var(--space-2);">
+                                    <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-blue); font-family: var(--font-heading);">5+</div>
+                                    <div style="font-size: 0.6rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase;">Systems</div>
+                                </div>
+                                <div style="background: var(--surface); padding: var(--space-3) var(--space-2);">
+                                    <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-violet); font-family: var(--font-heading);">3</div>
+                                    <div style="font-size: 0.6rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase;">Domains</div>
+                                </div>
+                                <div style="background: var(--surface); padding: var(--space-3) var(--space-2);">
+                                    <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-teal); font-family: var(--font-heading);">2+ Yrs</div>
+                                    <div style="font-size: 0.6rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase;">Shipping</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Upgraded Interactive Technical Matrix Right Panel -->
+                    <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+                        <p style="font-size: 1.15rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-2);">
+                            At Rishvin Labs, every project is personally architected and engineered from first principles under Rishvin's direct supervision. No bloated templates, no outsourced workflows — just production-grade software and custom IoT systems built to scale.
+                        </p>
+                        
+                        <!-- Core Domains Breakdown Grid -->
+                        <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+                            <!-- Domain 1 -->
+                            <div style="background: rgba(255, 255, 255, 0.015); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-5) var(--space-6); display: flex; gap: var(--space-5); align-items: start;">
+                                <div style="width: 36px; height: 36px; border-radius: var(--radius-sm); background: rgba(37, 99, 235, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-blue); flex-shrink: 0; border: 1px solid rgba(37, 99, 235, 0.15);">
+                                    <i data-lucide="cpu" style="width: 18px; height: 18px;"></i>
+                                </div>
+                                <div style="flex-grow: 1;">
+                                    <h4 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 2px;">Software Systems & Platform Engineering</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: var(--space-2);">Advanced web architectures, low-latency APIs, time-series metrics ingestion, and heavy database scaling constraints.</p>
+                                    <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-blue);">STACK: Node.js, TypeScript, FastAPI, PostgreSQL, LangChain, WebSockets</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Domain 2 -->
+                            <div style="background: rgba(255, 255, 255, 0.015); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-5) var(--space-6); display: flex; gap: var(--space-5); align-items: start;">
+                                <div style="width: 36px; height: 36px; border-radius: var(--radius-sm); background: rgba(124, 58, 237, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-violet); flex-shrink: 0; border: 1px solid rgba(124, 58, 237, 0.15);">
+                                    <i data-lucide="rss" style="width: 18px; height: 18px;"></i>
+                                </div>
+                                <div style="flex-grow: 1;">
+                                    <h4 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 2px;">IoT Telemetry & Embedded Architecture</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: var(--space-2);">Decentralized ESP-NOW mesh networking, solar charging power management, deep sleep configurations, and robust field arrays.</p>
+                                    <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-violet);">STACK: C++, ESP32, Arduino, MQTT, FreeRTOS, ESP-NOW, Solar Topologies</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Domain 3 -->
+                            <div style="background: rgba(255, 255, 255, 0.015); border: 1px solid var(--border); border-radius: var(--radius-md); padding: var(--space-5) var(--space-6); display: flex; gap: var(--space-5); align-items: start;">
+                                <div style="width: 36px; height: 36px; border-radius: var(--radius-sm); background: rgba(8, 145, 178, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-teal); flex-shrink: 0; border: 1px solid rgba(8, 145, 178, 0.15);">
+                                    <i data-lucide="shield-check" style="width: 18px; height: 18px;"></i>
+                                </div>
+                                <div style="flex-grow: 1;">
+                                    <h4 style="font-size: 1.05rem; font-weight: 600; margin-bottom: 2px;">Cybersecurity & Cryptographic Vaults</h4>
+                                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: var(--space-2);">Zero-knowledge authorization flows, immutable logs, zero-trust backend isolation, and cryptographic auditing standards.</p>
+                                    <span style="font-family: var(--font-mono); font-size: 0.68rem; color: var(--accent-teal);">STACK: AES-256, JWT / OAuth, Zero-Trust Encryption Protocols, Threat Modeling</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: var(--space-4); margin-top: var(--space-2); flex-wrap: wrap;">
+                            <a href="founder.html" class="btn btn-primary" style="font-size: 0.8rem; padding: 12px 24px;">View Technical Profile &rarr;</a>
+                            <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 0.8rem; padding: 12px 24px; display: inline-flex; align-items: center; gap: 8px;">
+                                <i data-lucide="globe" style="width: 14px; height: 14px;"></i>
+                                Personal Portfolio
+                            </a>
+                            <a href="manifesto.html" class="btn btn-outline" style="font-size: 0.8rem; padding: 12px 24px;">Read Our Manifesto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CTA -->
+        <section class="cta-section reveal">
             <div class="container text-center">
-                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-8);">Let's engineer something meaningful.</h2>
-                <a href="contact.html" class="btn btn-primary">
-                    Request a Consultation
-                </a>
+                <div class="tech-label" style="margin-bottom: var(--space-5); display: block;">[ Ready to Build? ]</div>
+                <h2 style="font-size: var(--text-h1); max-width: 700px; margin: 0 auto var(--space-8); letter-spacing: -0.03em;">
+                    Let's engineer something <span class="gradient-text">meaningful.</span>
+                </h2>
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                    <a href="services.html#contact" class="btn btn-primary">
+                        Request a Consultation <span class="btn-arrow">&rarr;</span>
+                    </a>
+                    <a href="about.html" class="btn btn-outline">Learn About Us</a>
+                </div>
             </div>
         </section>
 
-        <!-- Live Activity Section -->
+        <!-- 7. Live Activity Section -->
         <section style="padding: var(--space-8) 0; border-bottom: 1px solid var(--border);">
             <div class="container text-center" id="github-activity-container">
                 <!-- Injected via JS -->
             </div>
         </section>
-        <!-- 7. Live Engineering Activity -->
+
+        <!-- 8. Live Engineering Activity -->
         <section class="section" style="padding-top: var(--space-12); padding-bottom: var(--space-24);">
             <div class="container container-medium">
-                <div style="border: 1px solid var(--border); background-color: var(--surface); padding: var(--space-8);">
-                    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: var(--space-4); margin-bottom: var(--space-4);">
-                        <div class="tech-label">[ LIVE ENGINEERING ]</div>
-                        <div style="display: flex; align-items: center; gap: var(--space-2);">
-                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #2ea043; box-shadow: 0 0 8px #2ea043; animation: pulse 2s infinite;"></div>
-                            <span class="text-small" style="font-family: var(--font-mono); color: var(--text-secondary);">GITHUB API: SYNCED</span>
+                <div class="github-panel reveal">
+                    <div class="github-panel-header">
+                        <div class="tech-label">[ Live Engineering ]</div>
+                        <div style="display: flex; align-items: center; gap: var(--space-3);">
+                            <div class="pulsing-dot"></div>
+                            <span class="tech-label" style="color: var(--success);">GitHub API: Synced</span>
                         </div>
                     </div>
-                    
-                    <div id="github-activity-feed" style="display: flex; flex-direction: column;">
-                        <!-- Content injected via JS -->
-                        <p class="text-small" style="color: var(--text-secondary);">Fetching latest activity...</p>
+                    <div id="github-activity-feed" style="padding: var(--space-6) var(--space-8);">
+                        <p class="tech-label" style="color: var(--text-muted); padding: var(--space-4) 0;">Fetching latest activity...</p>
                     </div>
-                    
-                    <div style="margin-top: var(--space-6); text-align: right;">
-                        <a href="https://github.com/RishvinReddy" target="_blank" class="tech-label" style="text-decoration: underline; color: var(--text-primary);">[ VIEW ALL ON GITHUB &rarr; ]</a>
+                    <div style="padding: var(--space-5) var(--space-8); border-top: 1px solid var(--border); text-align: right;">
+                        <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer"
+                           class="tech-label hover-underline" style="color: var(--accent-blue);">
+                            View All on GitHub &rarr;
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <style>
-            @keyframes pulse {
-                0% { opacity: 1; }
-                50% { opacity: 0.4; }
-                100% { opacity: 1; }
-            }
-        </style>
 
     </main>
 
-    <!-- Footer -->
+    <!-- ─── Footer ──────────────────────────────── -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="navbar-logo">
+                    <a href="index.html" class="navbar-logo" style="margin-bottom: var(--space-4); display: inline-flex;">
                         <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async">
                         Rishvin <span>Labs</span>
                     </a>
-                    <p>A high-end engineering studio building intelligent digital systems.</p>
+                    <p>A high-end engineering studio building intelligent digital systems for modern businesses.</p>
                 </div>
-                
+
                 <div>
                     <h4 class="footer-title">Company</h4>
                     <div class="footer-links">
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
                         <a href="projects.html">Projects</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="services.html#contact">Contact</a>
                     </div>
                 </div>
 
@@ -369,53 +708,55 @@
                     <h4 class="footer-title">Connect</h4>
                     <div class="footer-links">
                         <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer">
-                            <i data-lucide="github" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            GitHub
+                            <i data-lucide="github" style="width:14px;height:14px;"></i> GitHub
                         </a>
                         <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer">
-                            <i data-lucide="globe" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            Portfolio
+                            <i data-lucide="globe" style="width:14px;height:14px;"></i> Portfolio
                         </a>
                         <a href="mailto:rishvinreddy@gmail.com">
-                            <i data-lucide="mail" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            rishvinreddy@gmail.com
+                            <i data-lucide="mail" style="width:14px;height:14px;"></i> rishvinreddy@gmail.com
                         </a>
                         <a href="tel:+919848723235">
-                            <i data-lucide="phone" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            +91 9848723235
+                            <i data-lucide="phone" style="width:14px;height:14px;"></i> +91 9848723235
                         </a>
                     </div>
                 </div>
             </div>
 
-                        <div class="footer-bottom">
+            <div class="footer-bottom">
                 <div>
-                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
-                    <p class="text-small" style="color: var(--text-secondary);">Last Updated &mdash; May 2026</p>
+                    <p style="margin-bottom: 2px;">&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                    <p style="color: var(--text-muted); font-size: 0.62rem;">Last Updated &mdash; May 2026</p>
                 </div>
-                <div style="display: flex; gap: var(--space-4); align-items: center;">
-                    <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
-                    <span id="availability-badge" style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 0.7rem; border: 1px solid var(--border); padding: 4px 10px; color: var(--text-secondary);">
-                        <span style="width: 7px; height: 7px; border-radius: 50%; background: #22c55e; display: inline-block; animation: avail-pulse 2.2s ease-in-out infinite;"></span>
-                        ACCEPTING 2 PROJECTS
+                <div style="display: flex; gap: var(--space-4); align-items: center; flex-wrap: wrap; justify-content: center;">
+                    <span>Designed &amp; Engineered by Rishvin Labs</span>
+                    <span id="availability-badge">
+                        <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--success); display: inline-block; animation: avail-pulse 2.2s ease-in-out infinite;"></span>
+                        Accepting 2 Projects
                     </span>
                 </div>
             </div>
         </div>
-        </div>
     </footer>
 
     <!-- Scripts -->
-    <!-- Initialize Lucide Icons -->
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav-inject.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
     <script src="assets/js/counters.js" defer></script>
     <script src="assets/js/github-activity.js" defer></script>
     <script src="assets/js/command-palette.js" defer></script>
     <script src="assets/js/page-transitions.js" defer></script>
+
+    <!-- Navbar scrolled class -->
+    <script>
+        const nav = document.getElementById('main-navbar');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        }, { passive: true });
+    </script>
+
 </body>
 </html>

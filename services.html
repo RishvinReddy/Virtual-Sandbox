@@ -3,36 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Software, IoT & Automation Solutions | Rishvin Labs</title>
+    <title>Engineering Services | Custom Software, IoT & Cybersecurity | Rishvin Labs</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Explore software engineering, IoT systems, automation workflows, and cybersecurity-focused digital services by Rishvin Labs.">
+    <meta name="title" content="Engineering Services | Custom Software, IoT & Cybersecurity | Rishvin Labs">
+    <meta name="description" content="Explore our premium suite of engineering services, from enterprise software systems and responsive websites to secure IoT frameworks and threat audits by Rishvin Labs.">
+    <meta name="keywords" content="software engineering, web development services, IoT platforms, cybersecurity consulting, custom workflow automation, Rishvin Labs services">
+    <meta name="author" content="Rishvin Labs">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/services.html">
     
-    <!-- Open Graph / Social -->
+    <!-- Open Graph / Social SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/services.html">
-    <meta property="og:title" content="Services | Software, IoT & Automation Solutions | Rishvin Labs">
-    <meta property="og:description" content="Explore software engineering, IoT systems, automation workflows, and cybersecurity-focused digital services by Rishvin Labs.">
-    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
+    <meta property="og:title" content="Engineering Services | Software, IoT & Cybersecurity | Rishvin Labs">
+    <meta property="og:description" content="Explore our premium suite of engineering services, from enterprise software systems to secure IoT frameworks by Rishvin Labs.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    <meta property="og:site_name" content="Rishvin Labs">
+    <meta property="og:locale" content="en_US">
     
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Services | Software, IoT & Automation Solutions | Rishvin Labs">
-    <meta name="twitter:description" content="Explore software engineering, IoT systems, automation workflows, and cybersecurity-focused digital services by Rishvin Labs.">
+    <meta name="twitter:title" content="Engineering Services | Software, IoT & Cybersecurity | Rishvin Labs">
+    <meta name="twitter:description" content="Explore our premium suite of engineering services, from enterprise software systems to secure IoT frameworks by Rishvin Labs.">
+    <meta name="twitter:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
     
-    <!-- Fonts -->
+    <!-- Fonts preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <!-- Favicon & Branding -->
+    <link rel="icon" type="image/png" href="favicon/favicon.png" sizes="any">
     <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <meta name="theme-color" content="#0a0b0f">
+
+    <!-- JSON-LD Structured Data (Services context) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "provider": {
+        "@type": "Organization",
+        "name": "Rishvin Labs",
+        "url": "https://rishvinreddy.github.io/rishvin-labs/"
+      },
+      "name": "Custom Software, Web, IoT & Cybersecurity Engineering Services",
+      "description": "High-performance software systems, intelligent workflow automation, hardware/IoT device engineering, and end-to-end cybersecurity threat audits.",
+      "areaServed": "Worldwide"
+    }
+    </script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- CSS -->
+    <!-- CSS Architecture -->
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
@@ -52,25 +79,7 @@
     <div id="custom-cursor"></div>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" decoding="async">
-                Rishvin <span>Labs</span>
-            </a>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <i data-lucide="menu"></i>
-            </button>
-            <div class="navbar-links">
-                <a href="index.html" class="hover-underline">Home</a>
-                <a href="about.html" class="hover-underline">About</a>
-                <a href="services.html" class="active hover-underline">Services</a>
-                <a href="projects.html" class="hover-underline">Projects</a>
-                    <a href="labs.html" class="hover-underline">Labs</a>
-                <a href="contact.html" class="hover-underline">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar" id="main-navbar"></nav>
 
     <!-- Main Content Area -->
     <main>
@@ -78,9 +87,13 @@
         <!-- ==============================
              1. HERO
         ============================== -->
-        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
+        <section class="section hero-section" style=" ">
+    <!-- Premium Ambient Glow -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
             <div class="container">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ WHAT WE BUILD ]</div>
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">WHAT WE BUILD</div>
                 <h1 class="animate-slide-up delay-100" style="max-width: 820px; font-size: var(--text-hero); margin-bottom: var(--space-6);">
                     Premium Tech Studio.<br>Digital Product Lab.
                 </h1>
@@ -89,7 +102,7 @@
                 </p>
                 <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;" class="animate-slide-up delay-300">
                     <a href="#packages" class="btn btn-primary">View Packages &rarr;</a>
-                    <a href="contact.html" class="btn btn-secondary">Start a Project</a>
+                    <a href="#contact" class="btn btn-secondary">Start a Project</a>
                 </div>
                 <!-- Revenue model strip -->
                 <div style="margin-top: var(--space-16); display: flex; gap: 0; border: 1px solid var(--border); overflow: hidden;">
@@ -134,65 +147,65 @@
                     </div>
                     <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 220px;">Our expertise, not a list of random services</p>
                 </div>
-                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4);">
                     <!-- Pillar 1 -->
-                    <div class="pillar-cell reveal delay-100" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
-                        <i data-lucide="code-2" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
-                        <div>
+                    <div class="card reveal delay-100" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6); min-height: 300px;">
+                        <i data-lucide="code-2" style="width: 28px; height: 28px; color: var(--accent-blue); display: block; margin-top: var(--space-4);"></i>
+                        <div style="flex-grow: 1;">
                             <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 01 ]</div>
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">Full-Stack Development</h3>
-                            <p class="text-small" style="color: var(--text-secondary);">Web platforms, SaaS, dashboards, APIs, and mobile-ready applications.</p>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3); font-family: var(--font-heading); font-weight: 700;">Full-Stack Development</h3>
+                            <p class="text-small" style="color: var(--text-secondary); line-height: 1.5;">Web platforms, SaaS, dashboards, APIs, and mobile-ready applications.</p>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary);">React &bull; Node.js &bull; Python &bull; Firebase</span>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto;">
+                            <span style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--accent-blue);">React &bull; Node.js &bull; Python &bull; Firebase</span>
                         </div>
                     </div>
                     <!-- Pillar 2 -->
-                    <div class="pillar-cell reveal delay-200" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
-                        <i data-lucide="cpu" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
-                        <div>
+                    <div class="card reveal delay-200" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6); min-height: 300px;">
+                        <i data-lucide="cpu" style="width: 28px; height: 28px; color: var(--accent-violet); display: block; margin-top: var(--space-4);"></i>
+                        <div style="flex-grow: 1;">
                             <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 02 ]</div>
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">IoT &amp; Smart Systems</h3>
-                            <p class="text-small" style="color: var(--text-secondary);">Hardware-to-cloud pipelines, smart agriculture, home automation, industrial monitoring.</p>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3); font-family: var(--font-heading); font-weight: 700;">IoT &amp; Smart Systems</h3>
+                            <p class="text-small" style="color: var(--text-secondary); line-height: 1.5;">Hardware-to-cloud pipelines, smart agriculture, home automation, industrial monitoring.</p>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Arduino &bull; ESP32 &bull; MQTT &bull; Grafana</span>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto;">
+                            <span style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--accent-violet);">Arduino &bull; ESP32 &bull; MQTT &bull; Grafana</span>
                         </div>
                     </div>
                     <!-- Pillar 3 -->
-                    <div class="pillar-cell reveal delay-300" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
-                        <i data-lucide="shield-check" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
-                        <div>
+                    <div class="card reveal delay-300" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6); min-height: 300px;">
+                        <i data-lucide="shield-check" style="width: 28px; height: 28px; color: var(--accent-teal); display: block; margin-top: var(--space-4);"></i>
+                        <div style="flex-grow: 1;">
                             <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 03 ]</div>
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">Cybersecurity Engineering</h3>
-                            <p class="text-small" style="color: var(--text-secondary);">Security audits, zero-trust architecture, vulnerability assessment, secure coding.</p>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3); font-family: var(--font-heading); font-weight: 700;">Cybersecurity Engineering</h3>
+                            <p class="text-small" style="color: var(--text-secondary); line-height: 1.5;">Security audits, zero-trust architecture, vulnerability assessment, secure coding.</p>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary);">OWASP &bull; NIST &bull; Burp Suite &bull; TLS 1.3</span>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto;">
+                            <span style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--accent-teal);">OWASP &bull; NIST &bull; Burp Suite &bull; TLS 1.3</span>
                         </div>
                     </div>
                     <!-- Pillar 4 -->
-                    <div class="pillar-cell reveal delay-400" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
-                        <i data-lucide="workflow" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
-                        <div>
+                    <div class="card reveal delay-400" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6); min-height: 300px;">
+                        <i data-lucide="workflow" style="width: 28px; height: 28px; color: var(--accent-blue); display: block; margin-top: var(--space-4);"></i>
+                        <div style="flex-grow: 1;">
                             <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 04 ]</div>
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">Automation Systems</h3>
-                            <p class="text-small" style="color: var(--text-secondary);">Business workflow automation, CRM pipelines, API integrations, AI-assisted tooling.</p>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3); font-family: var(--font-heading); font-weight: 700;">Automation Systems</h3>
+                            <p class="text-small" style="color: var(--text-secondary); line-height: 1.5;">Business workflow automation, CRM pipelines, API integrations, AI-assisted tooling.</p>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Python &bull; Webhooks &bull; Zapier-style &bull; AI APIs</span>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto;">
+                            <span style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--accent-blue);">Python &bull; Webhooks &bull; AI APIs &bull; Zapier</span>
                         </div>
                     </div>
                     <!-- Pillar 5 -->
-                    <div class="pillar-cell reveal delay-500" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
-                        <i data-lucide="package" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
-                        <div>
+                    <div class="card reveal delay-500" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6); min-height: 300px;">
+                        <i data-lucide="package" style="width: 28px; height: 28px; color: var(--accent-violet); display: block; margin-top: var(--space-4);"></i>
+                        <div style="flex-grow: 1;">
                             <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 05 ]</div>
-                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">Digital Products &amp; SaaS</h3>
-                            <p class="text-small" style="color: var(--text-secondary);">Templates, developer kits, productivity systems, and micro-SaaS tools built to scale.</p>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3); font-family: var(--font-heading); font-weight: 700;">Digital Products &amp; SaaS</h3>
+                            <p class="text-small" style="color: var(--text-secondary); line-height: 1.5;">Templates, developer kits, productivity systems, and micro-SaaS tools built to scale.</p>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
-                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Gumroad &bull; Stripe &bull; Notion &bull; React SaaS</span>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto;">
+                            <span style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--accent-violet);">Gumroad &bull; Stripe &bull; Notion &bull; SaaS Kits</span>
                         </div>
                     </div>
                 </div>
@@ -212,158 +225,183 @@
                     <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 260px;">7 service categories. B2B + B2C ready.</p>
                 </div>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: var(--space-6);">
 
                     <!-- A: Web Development -->
-                    <div id="software" style="background: var(--surface); padding: var(--space-10);" class="reveal delay-100">
-                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
-                            <i data-lucide="globe" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                    <div id="software" class="card reveal delay-100" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-4); margin-bottom: var(--space-2);">
+                            <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: rgba(37, 99, 235, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-blue); flex-shrink: 0; border: 1px solid rgba(37, 99, 235, 0.15);">
+                                <i data-lucide="globe" style="width: 22px; height: 22px;"></i>
+                            </div>
                             <div>
                                 <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ A ]</div>
-                                <h3 style="font-size: 1.2rem;">Web Development</h3>
+                                <h3 style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 700;">Web Development</h3>
                             </div>
                         </div>
-                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">For startups, creators, local businesses, and companies.</p>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Portfolio Websites</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Business Websites</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Startup Landing Pages</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">SaaS Landing Pages</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Custom Web Applications</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Admin Dashboards</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">E-commerce Websites</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">AI-powered Integrations</span>
+                        <p class="text-small" style="color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-4);">High-conversion websites, dashboards, and digital experiences optimized for performance and aesthetics.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-4); flex-grow: 1;">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Portfolio Websites</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Business Websites</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Startup Landing Pages</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; SaaS Landing Pages</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Custom Web Apps</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Admin Dashboards</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; E-commerce Sites</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; AI Integrations</span>
                         </div>
-                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">HTML &bull; CSS &bull; React &bull; Firebase &bull; APIs</div>
+                        <div class="tech-label" style="border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto; font-size: 0.68rem; font-family: var(--font-mono); color: var(--accent-blue);">
+                            HTML &bull; CSS &bull; React &bull; Firebase &bull; APIs
+                        </div>
                     </div>
 
                     <!-- B: Software Development -->
-                    <div style="background: var(--surface); padding: var(--space-10);" class="reveal delay-200">
-                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
-                            <i data-lucide="terminal" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                    <div class="card reveal delay-200" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-4); margin-bottom: var(--space-2);">
+                            <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: rgba(124, 58, 237, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-violet); flex-shrink: 0; border: 1px solid rgba(124, 58, 237, 0.15);">
+                                <i data-lucide="terminal" style="width: 22px; height: 22px;"></i>
+                            </div>
                             <div>
                                 <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ B ]</div>
-                                <h3 style="font-size: 1.2rem;">Software Development</h3>
+                                <h3 style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 700;">Software Development</h3>
                             </div>
                         </div>
-                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">Custom internal software for businesses and organizations.</p>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Finance Management Systems</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Invoice & GST Tools</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">ERP-like Dashboards</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Inventory Systems</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">CRM Systems</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Internal Business Tools</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Automation Software</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Productivity Software</span>
+                        <p class="text-small" style="color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-4);">Custom internal business software, dashboards, and scalable database engines built to solve problems.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-4); flex-grow: 1;">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Finance Portals</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Invoice &amp; GST Tools</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; ERP Dashboards</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Inventory Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; CRM Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Internal Tools</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Custom Databases</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Productivity Apps</span>
                         </div>
-                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">Python &bull; Node.js &bull; PostgreSQL &bull; Docker</div>
+                        <div class="tech-label" style="border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto; font-size: 0.68rem; font-family: var(--font-mono); color: var(--accent-violet);">
+                            Python &bull; Node.js &bull; PostgreSQL &bull; Docker
+                        </div>
                     </div>
 
                     <!-- C: UI/UX Design -->
-                    <div style="background: var(--surface); padding: var(--space-10);" class="reveal delay-100">
-                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
-                            <i data-lucide="pen-tool" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                    <div class="card reveal delay-100" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-4); margin-bottom: var(--space-2);">
+                            <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: rgba(8, 145, 178, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-teal); flex-shrink: 0; border: 1px solid rgba(8, 145, 178, 0.15);">
+                                <i data-lucide="pen-tool" style="width: 22px; height: 22px;"></i>
+                            </div>
                             <div>
                                 <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ C ]</div>
-                                <h3 style="font-size: 1.2rem;">UI/UX Design</h3>
+                                <h3 style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 700;">UI/UX Design</h3>
                             </div>
                         </div>
-                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">Premium modern interfaces that convert and impress.</p>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Website UI Design</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Dashboard Design</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">SaaS UI Design</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Mobile App UI</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">High-Fidelity Mockups</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Design Systems</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Wireframes</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Brand Visual Interfaces</span>
+                        <p class="text-small" style="color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-4);">High-end user interfaces, aesthetic product prototypes, and atomic design systems for modern startups.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-4); flex-grow: 1;">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Website UI Design</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Dashboard Design</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; SaaS UI Design</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Mobile App UI</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Hi-Fi Mockups</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Design Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Wireframing</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Digital Branding</span>
                         </div>
-                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">Figma &bull; Vanilla CSS &bull; Tailwind &bull; Animations</div>
+                        <div class="tech-label" style="border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto; font-size: 0.68rem; font-family: var(--font-mono); color: var(--accent-teal);">
+                            Figma &bull; Vanilla CSS &bull; Tailwind &bull; Motion
+                        </div>
                     </div>
 
-                    <!-- D: IoT -->
-                    <div id="iot" style="background: var(--surface); padding: var(--space-10);" class="reveal delay-200">
-                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
-                            <i data-lucide="cpu" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                    <!-- D: IoT & Smart Systems -->
+                    <div id="iot" class="card reveal delay-200" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-4); margin-bottom: var(--space-2);">
+                            <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: rgba(124, 58, 237, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-violet); flex-shrink: 0; border: 1px solid rgba(124, 58, 237, 0.15);">
+                                <i data-lucide="cpu" style="width: 22px; height: 22px;"></i>
+                            </div>
                             <div>
                                 <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ D ]</div>
-                                <h3 style="font-size: 1.2rem;">IoT &amp; Smart Systems</h3>
+                                <h3 style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 700;">IoT &amp; Smart Systems</h3>
                             </div>
                         </div>
-                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">Your unique differentiator — hardware meets software.</p>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Smart Agriculture</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Smart Irrigation</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Home Automation</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Sensor Monitoring</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Arduino Prototypes</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">IoT Dashboards</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Industrial Monitoring</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Smart Safety Systems</span>
+                        <p class="text-small" style="color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-4);">Production hardware prototyping, embedded micro-logic, wireless grids, and cloud data visualizations.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-4); flex-grow: 1;">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Smart Agriculture</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Smart Irrigation</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Home Automation</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Sensor Networks</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; ESP32 Prototypes</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; IoT Dashboards</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Industrial Ingestion</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Mesh Topologies</span>
                         </div>
-                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">ESP32 &bull; MQTT &bull; Grafana &bull; InfluxDB</div>
+                        <div class="tech-label" style="border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto; font-size: 0.68rem; font-family: var(--font-mono); color: var(--accent-violet);">
+                            ESP32 &bull; MQTT &bull; Grafana &bull; InfluxDB &bull; C++
+                        </div>
                     </div>
 
-                    <!-- E: Cybersecurity -->
-                    <div id="cyber" style="background: var(--surface); padding: var(--space-10);" class="reveal delay-100">
-                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
-                            <i data-lucide="shield-check" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                    <!-- E: Cybersecurity Services -->
+                    <div id="cyber" class="card reveal delay-100" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-top: var(--space-4); margin-bottom: var(--space-2);">
+                            <div style="width: 44px; height: 44px; border-radius: var(--radius-sm); background: rgba(8, 145, 178, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-teal); flex-shrink: 0; border: 1px solid rgba(8, 145, 178, 0.15);">
+                                <i data-lucide="shield-check" style="width: 22px; height: 22px;"></i>
+                            </div>
                             <div>
                                 <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ E ]</div>
-                                <h3 style="font-size: 1.2rem;">Cybersecurity Services</h3>
+                                <h3 style="font-size: 1.25rem; font-family: var(--font-heading); font-weight: 700;">Cybersecurity</h3>
                             </div>
                         </div>
-                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">Very high-value niche — growing demand in India.</p>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Website Security Audit</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Vulnerability Assessment</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Security Hardening</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Secure Web Dev</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Authentication Systems</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Privacy Protection</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Cyber Awareness Consult</span>
-                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Best Practices Setup</span>
+                        <p class="text-small" style="color: var(--text-secondary); line-height: 1.5; margin-bottom: var(--space-4);">Complete vulnerability assessments, secure authorization modeling, and zero-trust engineering setups.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-4); flex-grow: 1;">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Security Audits</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Vulnerability Checks</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Platform Hardening</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Cryptographic Vaults</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Auth Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Threat Modeling</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Zero-Trust Setup</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Immutable Logging</span>
                         </div>
-                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">OWASP &bull; NIST &bull; Burp Suite &bull; Zero-Trust</div>
+                        <div class="tech-label" style="border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto; font-size: 0.68rem; font-family: var(--font-mono); color: var(--accent-teal);">
+                            OWASP &bull; NIST &bull; Burp Suite &bull; Cryptography
+                        </div>
                     </div>
 
-                    <!-- F: Automation + G: Branding -->
-                    <div style="background: var(--surface); padding: var(--space-10); display: grid; grid-template-rows: auto auto; gap: var(--space-8);" class="reveal delay-200">
+                    <!-- F: Automation & G: Branding -->
+                    <div class="card reveal delay-200" style="padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4);">
                         <!-- F: Automation -->
-                        <div>
-                            <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
-                                <i data-lucide="workflow" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                        <div style="flex-grow: 1; display: flex; flex-direction: column; gap: var(--space-3); margin-top: var(--space-4);">
+                            <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-2);">
+                                <div style="width: 36px; height: 36px; border-radius: var(--radius-sm); background: rgba(37, 99, 235, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-blue); flex-shrink: 0; border: 1px solid rgba(37, 99, 235, 0.15);">
+                                    <i data-lucide="workflow" style="width: 18px; height: 18px;"></i>
+                                </div>
                                 <div>
                                     <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ F ]</div>
-                                    <h3 style="font-size: 1.2rem;">Automation Services</h3>
+                                    <h3 style="font-size: 1.15rem; font-family: var(--font-heading); font-weight: 700;">Automation &amp; API Integrations</h3>
                                 </div>
                             </div>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Workflow Automation</span>
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Business Automation</span>
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Email Automation</span>
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">API Integrations</span>
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">CRM Automation</span>
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">AI-assisted Automation</span>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-2);">
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; API Connections</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Email Automations</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; CRM Integrations</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; AI Workflows</span>
                             </div>
                         </div>
                         <!-- G: Branding -->
-                        <div style="border-top: 1px solid var(--border); padding-top: var(--space-6);">
-                            <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
-                                <i data-lucide="sparkles" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                        <div style="border-top: 1px solid var(--border); padding-top: var(--space-4); display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1;">
+                            <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-2);">
+                                <div style="width: 36px; height: 36px; border-radius: var(--radius-sm); background: rgba(8, 145, 178, 0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-teal); flex-shrink: 0; border: 1px solid rgba(8, 145, 178, 0.15);">
+                                    <i data-lucide="sparkles" style="width: 18px; height: 18px;"></i>
+                                </div>
                                 <div>
                                     <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ G ]</div>
-                                    <h3 style="font-size: 1.2rem;">Branding &amp; Digital Presence</h3>
+                                    <h3 style="font-size: 1.15rem; font-family: var(--font-heading); font-weight: 700;">Branding &amp; Digital Presence</h3>
                                 </div>
                             </div>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Portfolio Setup</span>
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Business Brand Site</span>
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Online Presence Setup</span>
-                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Professional Email</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Portfolio Design</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Business Domain</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Online Launch</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">&mdash; Google Profile</span>
                             </div>
+                        </div>
+                        <div class="tech-label" style="border-top: 1px solid var(--border); padding-top: var(--space-4); margin-top: auto; font-size: 0.68rem; font-family: var(--font-mono); color: var(--accent-blue);">
+                            Python &bull; Zapier &bull; Webhooks &bull; Branding
                         </div>
                     </div>
 
@@ -391,14 +429,14 @@
                         <div class="card reveal delay-100" style="padding: var(--space-8); display: flex; flex-direction: column;">
                             <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">STARTER</div>
                             <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹4,999</div>
-                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">– ₹9,999 &nbsp;&bull;&nbsp; Students, Freelancers, Startups</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">– ₹9,999 &nbsp;&bull;&nbsp; Freelancers, Startups, Landing Pages</div>
                             <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1; margin-bottom: var(--space-8);">
                                 <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> 1&ndash;5 Pages, Responsive Design</li>
                                 <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Basic SEO &amp; Contact Form</li>
                                 <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Fast Loading, Hosting Setup</li>
                                 <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Mobile Friendly</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
+                            <a href="#contact" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
                         </div>
                         <div class="card reveal delay-200" style="padding: var(--space-8); display: flex; flex-direction: column; border-color: var(--text-primary);">
                             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
@@ -414,7 +452,7 @@
                                 <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Performance Optimization</li>
                                 <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> API Integration</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-primary" style="text-align: center;">Get Started &rarr;</a>
+                            <a href="services.html#contact" class="btn btn-primary" style="text-align: center;">Get Started &rarr;</a>
                         </div>
                         <div class="card reveal delay-300" style="padding: var(--space-8); display: flex; flex-direction: column;">
                             <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">PREMIUM CUSTOM</div>
@@ -427,36 +465,28 @@
                                 <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Security Optimization</li>
                                 <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Full Integrations</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
+                            <a href="#contact" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Portfolio Packages -->
+                <!-- Student Services CTA Banner -->
                 <div style="margin-bottom: var(--space-16);">
-                    <div class="tech-label" style="margin-bottom: var(--space-6);">[ PORTFOLIO PACKAGES ]</div>
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4);">
-                        <div class="card reveal delay-100" style="padding: var(--space-8); display: flex; flex-direction: column;">
-                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">STUDENT PORTFOLIO</div>
-                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹2,999</div>
-                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">– ₹5,999 &nbsp;&bull;&nbsp; Students, Freshers</div>
-                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1; margin-bottom: var(--space-8);">
-                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Resume Website</li>
-                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Skills, Projects &amp; Contact</li>
-                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Mobile Optimized</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
+                    <div class="card reveal" style="padding: var(--space-10) var(--space-8); background: linear-gradient(135deg, rgba(124,58,237,0.03) 0%, rgba(37,99,235,0.03) 100%); border: 1px solid rgba(124,58,237,0.15); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-8);">
+                        <div style="max-width: 660px;">
+                            <div style="display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px; background: rgba(124,58,237,0.08); border-radius: 100px; margin-bottom: var(--space-4);">
+                                <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent-violet);"></span>
+                                <span style="font-size: 0.68rem; font-family: var(--font-mono); color: var(--accent-violet); font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;">FOR COLLEGE STUDENTS &amp; ACADEMICS</span>
+                            </div>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; margin-bottom: var(--space-3);">Need Help With Projects, Coding, or Portfolio?</h3>
+                            <p class="text-small" style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0;">
+                                Get expert, affordable, first-principles guidance for engineering major/mini projects, customized IoT/Arduino coding, lab assignments, and resume/portfolio websites designed to secure placement offers.
+                            </p>
                         </div>
-                        <div class="card reveal delay-200" style="padding: var(--space-8); display: flex; flex-direction: column;">
-                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">PREMIUM PERSONAL BRAND</div>
-                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹9,999</div>
-                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">+ onwards &nbsp;&bull;&nbsp; Creators, Entrepreneurs</div>
-                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1; margin-bottom: var(--space-8);">
-                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Premium Design &amp; Animations</li>
-                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Blog &amp; Case Studies</li>
-                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Full SEO Optimization</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
+                        <div>
+                            <a href="students.html" class="btn btn-primary" style="background: var(--accent-violet); border-color: var(--accent-violet); white-space: nowrap; padding: 14px 28px; box-shadow: 0 6px 20px rgba(124,58,237,0.2);">
+                                Explore Student Services &rarr;
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -478,7 +508,7 @@
                                 <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Forms</span>
                                 <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Basic Automation</span>
                             </div>
-                            <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
+                            <a href="#contact" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
                         </div>
                         <!-- Startup Tech -->
                         <div class="card reveal delay-200" style="padding: var(--space-8);">
@@ -493,7 +523,7 @@
                                 <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Deployment</span>
                                 <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Documentation</span>
                             </div>
-                            <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
+                            <a href="#contact" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
                         </div>
                         <!-- IoT -->
                         <div class="card reveal delay-100" style="padding: var(--space-8);">
@@ -506,7 +536,7 @@
                                 <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Monitoring</span>
                                 <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Prototype</span>
                             </div>
-                            <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
+                            <a href="#contact" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
                         </div>
                         <!-- Security -->
                         <div class="card reveal delay-200" style="padding: var(--space-8);">
@@ -519,7 +549,7 @@
                                 <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Security Report</span>
                                 <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Auth Hardening</span>
                             </div>
-                            <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
+                            <a href="#contact" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -549,7 +579,7 @@
                             <li style="font-size: 0.85rem;">&mdash; Minor Updates</li>
                             <li style="font-size: 0.85rem;">&mdash; Uptime Monitoring</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Subscribe &rarr;</a>
+                        <a href="#contact" class="btn btn-secondary" style="display: inline-block;">Subscribe &rarr;</a>
                     </div>
                     <!-- Growth -->
                     <div class="card reveal delay-200" style="padding: var(--space-8); border-color: var(--text-primary);">
@@ -565,7 +595,7 @@
                             <li style="font-size: 0.85rem;">&mdash; Performance Tuning</li>
                             <li style="font-size: 0.85rem;">&mdash; Priority Support</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-primary" style="display: inline-block;">Subscribe &rarr;</a>
+                        <a href="services.html#contact" class="btn btn-primary" style="display: inline-block;">Subscribe &rarr;</a>
                     </div>
                     <!-- Premium -->
                     <div class="card reveal delay-300" style="padding: var(--space-8);">
@@ -579,7 +609,7 @@
                             <li style="font-size: 0.85rem;">&mdash; Continuous Improvements</li>
                             <li style="font-size: 0.85rem;">&mdash; Dedicated Engineer</li>
                         </ul>
-                        <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Subscribe &rarr;</a>
+                        <a href="#contact" class="btn btn-secondary" style="display: inline-block;">Subscribe &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -682,381 +712,844 @@
         </section>
 
         <!-- ==============================
-             8. CTA
+             9. PREMIUM CONTACT SECTION
         ============================== -->
-        <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-            <div class="container text-center">
-                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Ready to start?</h2>
-                <p style="max-width: 500px; margin: 0 auto var(--space-8);">Pick a package above or use our Consultation Wizard to get a custom architecture estimate in under 2 minutes.</p>
-                <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; justify-content: center;">
-                    <a href="#packages" class="btn btn-secondary">View Packages</a>
-                    <a href="contact.html" class="btn btn-primary">Start a Project &rarr;</a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
-            <div class="container text-center">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ WHAT WE DO ]</div>
-                <h1 class="animate-slide-up delay-100" style="max-width: 700px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
-                    Engineering solutions that power your vision.
-                </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 600px; margin: 0 auto; font-size: 1.15rem;">
-                    From concept to production, we deliver systems that are secure, scalable, and built for the real world.
-                </p>
-            </div>
-        </section>
-
-        <!-- 2. Blueprint 4-Column Grid -->
-        <section class="section reveal" style="padding-top: 0; padding-bottom: var(--space-24);">
+        <section class="section reveal" id="contact" style="border-top: 1px solid var(--border); padding-top: var(--space-24); padding-bottom: var(--space-24);">
             <div class="container container-wide">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);">
-                    
-                    <!-- Card 1: IoT -->
-                    <div class="card reveal delay-100" style="display: flex; flex-direction: column; padding: var(--space-8);">
-                        <i data-lucide="cpu" style="width: 32px; height: 32px; margin-bottom: var(--space-6); color: var(--text-primary);"></i>
-                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">IoT Systems</h3>
-                        <p class="text-small" style="margin-bottom: var(--space-8); min-height: 48px;">End-to-end IoT solutions from device to cloud.</p>
-                        
-                        <ul style="list-style: none; margin-bottom: var(--space-8); padding: 0; display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.9rem; flex-grow: 1;">
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Device Firmware</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Edge Computing</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Cloud Integration</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Real-time Analytics</li>
-                        </ul>
-                        
-                        <div class="tech-label" style="font-size: 0.85rem; margin-top: auto;">[ EXPLORE &rarr; ]</div>
-                    </div>
-
-                    <!-- Card 2: Cybersecurity -->
-                    <div class="card reveal delay-200" style="display: flex; flex-direction: column; padding: var(--space-8);">
-                        <i data-lucide="shield-check" style="width: 32px; height: 32px; margin-bottom: var(--space-6); color: var(--text-primary);"></i>
-                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Cybersecurity</h3>
-                        <p class="text-small" style="margin-bottom: var(--space-8); min-height: 48px;">Protecting systems, data, and users.</p>
-                        
-                        <ul style="list-style: none; margin-bottom: var(--space-8); padding: 0; display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.9rem; flex-grow: 1;">
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Security Audits</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Penetration Testing</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Secure Architecture</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Threat Modeling</li>
-                        </ul>
-                        
-                        <div class="tech-label" style="font-size: 0.85rem; margin-top: auto;">[ EXPLORE &rarr; ]</div>
-                    </div>
-
-                    <!-- Card 3: Software Engineering -->
-                    <div class="card reveal delay-300" style="display: flex; flex-direction: column; padding: var(--space-8);">
-                        <i data-lucide="code-2" style="width: 32px; height: 32px; margin-bottom: var(--space-6); color: var(--text-primary);"></i>
-                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Software Engineering</h3>
-                        <p class="text-small" style="margin-bottom: var(--space-8); min-height: 48px;">Scalable software built with engineering excellence.</p>
-                        
-                        <ul style="list-style: none; margin-bottom: var(--space-8); padding: 0; display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.9rem; flex-grow: 1;">
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Web Applications</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> API Development</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> System Architecture</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Performance Optimization</li>
-                        </ul>
-                        
-                        <div class="tech-label" style="font-size: 0.85rem; margin-top: auto;">[ EXPLORE &rarr; ]</div>
-                    </div>
-
-                    <!-- Card 4: Automation -->
-                    <div class="card reveal delay-400" style="display: flex; flex-direction: column; padding: var(--space-8);">
-                        <i data-lucide="network" style="width: 32px; height: 32px; margin-bottom: var(--space-6); color: var(--text-primary);"></i>
-                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Automation</h3>
-                        <p class="text-small" style="margin-bottom: var(--space-8); min-height: 48px;">Intelligent automation that saves time and scales.</p>
-                        
-                        <ul style="list-style: none; margin-bottom: var(--space-8); padding: 0; display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.9rem; flex-grow: 1;">
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Workflow Automation</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Process Optimization</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> RPA Solutions</li>
-                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Custom Integrations</li>
-                        </ul>
-                        
-                        <div class="tech-label" style="font-size: 0.85rem; margin-top: auto;">[ EXPLORE &rarr; ]</div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. Capability / Tech Stack -->
-        <section class="section reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-            <div class="container text-center">
-                <div class="tech-label" style="margin-bottom: var(--space-8);">[ Technologies ]</div>
-                <h2 style="margin-bottom: var(--space-12);">The Capabilities</h2>
-                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-4); max-width: 800px; margin: 0 auto;">
-                    <div class="badge">Cloud Architecture (AWS)</div>
-                    <div class="badge">Relational Databases (PostgreSQL)</div>
-                    <div class="badge">Python Backend Systems</div>
-                    <div class="badge">Modern Frontend (React / Next.js)</div>
-                    <div class="badge">Network Security</div>
-                    <div class="badge">Embedded C / Firmware</div>
-                    <div class="badge">CI/CD Pipelines</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Process Timeline -->
-        <section class="section section-light reveal">
-            <div class="container">
-                <div class="text-center" style="margin-bottom: var(--space-16);">
-                    <div class="tech-label" style="margin-bottom: var(--space-8);">[ Process ]</div>
-                    <h2>The Engagement Process</h2>
-                    <p style="max-width: 600px; margin: 0 auto;">How we partner with you to deliver results.</p>
-                </div>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-12);">
-                    <div class="reveal delay-100" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
-                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-4); text-transform: uppercase;">1. Technical Audit</h4>
-                        <p class="text-small">We review your current systems, constraints, and business goals to determine feasibility.</p>
-                    </div>
-                    <div class="reveal delay-200" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
-                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-4); text-transform: uppercase;">2. Architecture Proposal</h4>
-                        <p class="text-small">You receive a detailed technical blueprint, tech stack recommendation, and timeline.</p>
-                    </div>
-                    <div class="reveal delay-300" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
-                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-4); text-transform: uppercase;">3. Execution Sprints</h4>
-                        <p class="text-small">Transparent, iterative development cycles with regular staging deployments for review.</p>
-                    </div>
-                    <div class="reveal delay-400" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
-                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-4); text-transform: uppercase;">4. Handover & Scaling</h4>
-                        <p class="text-small">Final security audits, deployment, comprehensive documentation, and ongoing support.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. FAQ -->
-        <section class="section reveal" style="border-top: 1px solid var(--border);">
-            <div class="container">
-                <div class="text-center" style="margin-bottom: var(--space-12);">
-                    <div class="tech-label" style="margin-bottom: var(--space-8);">[ FAQ ]</div>
-                    <h2>Common Questions</h2>
-                </div>
-                <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4);">
-                    <div class="card" style="padding: var(--space-8);">
-                        <h4 style="margin-bottom: var(--space-4);">Do you take over existing codebases?</h4>
-                        <p class="text-small" style="margin-bottom: 0;">Yes. However, we always start with a comprehensive code and security audit before committing to new feature development to ensure the foundation is stable.</p>
-                    </div>
-                    <div class="card" style="padding: var(--space-8);">
-                        <h4 style="margin-bottom: var(--space-4);">What size companies do you work with?</h4>
-                        <p class="text-small" style="margin-bottom: 0;">We partner with ambitious startups needing scalable MVPs, as well as established enterprises requiring custom internal tools or security hardening.</p>
-                    </div>
-                    <div class="card" style="padding: var(--space-8);">
-                        <h4 style="margin-bottom: var(--space-4);">How do you handle security?</h4>
-                        <p class="text-small" style="margin-bottom: 0;">Security is embedded from Day 1. We use secure coding practices, environment variable encryption, regular dependency audits, and proactive threat modeling.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 6. Conversion CTA -->
-        <!-- Interactive Tech Stack Map -->
-        <section class="section reveal" id="tech-stack-section" style="border-top: 1px solid var(--border);">
-            <div class="container container-medium">
-                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-10); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--space-16); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
                     <div>
-                        <div class="tech-label" style="margin-bottom: var(--space-3);">[ INTERACTIVE ]</div>
-                        <h2 style="font-size: var(--text-h2);">Technology Ecosystem</h2>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">[ INITIALIZE CONTACT ]</div>
+                        <h2 style="font-size: clamp(2.5rem, 5vw, 4rem); line-height: 1.1; margin: 0;">Let's build <br><span class="gradient-text">something great.</span></h2>
                     </div>
-                    <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 220px;">Select a domain to explore the connected stack</p>
+                    <div style="text-align: right;">
+                        <div style="display: inline-flex; align-items: center; gap: var(--space-3); padding: 8px 16px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); border-radius: 100px; margin-bottom: var(--space-3);">
+                            <span style="width: 8px; height: 8px; border-radius: 50%; background: #50fa7b; display: inline-block; box-shadow: 0 0 10px #50fa7b;"></span>
+                            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: #22c55e; letter-spacing: 0.05em;">AVAILABLE FOR NEW PROJECTS</span>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; margin: 0;">Typical response time &lt; 24h</p>
+                    </div>
                 </div>
 
-                <!-- Domain Selectors -->
-                <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-10);" id="stack-domain-tabs">
-                    <button class="stack-tab active" data-domain="software" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--text-primary); background: var(--text-primary); color: var(--surface); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Software</button>
-                    <button class="stack-tab" data-domain="iot" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">IoT</button>
-                    <button class="stack-tab" data-domain="security" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Cybersecurity</button>
-                    <button class="stack-tab" data-domain="automation" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Automation</button>
-                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1.8fr; gap: var(--space-16); align-items: start;">
 
-                <!-- Stack Panel -->
-                <div id="stack-panel" style="opacity: 1; transition: opacity 0.25s ease;">
-                    <!-- Software (default) -->
-                    <div class="stack-domain" id="stack-software">
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">LANGUAGES</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">Python</span>
-                                    <span style="font-size: 1rem;">TypeScript</span>
-                                    <span style="font-size: 1rem;">JavaScript</span>
-                                    <span style="font-size: 1rem;">SQL</span>
-                                </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">BACKEND</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">FastAPI</span>
-                                    <span style="font-size: 1rem;">Node.js / Express</span>
-                                    <span style="font-size: 1rem;">REST / WebSockets</span>
-                                    <span style="font-size: 1rem;">GraphQL</span>
-                                </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DATA</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">PostgreSQL</span>
-                                    <span style="font-size: 1rem;">MongoDB</span>
-                                    <span style="font-size: 1rem;">Firebase / Firestore</span>
-                                    <span style="font-size: 1rem;">Redis</span>
-                                </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DEPLOYMENT</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">Docker</span>
-                                    <span style="font-size: 1rem;">GitHub Actions</span>
-                                    <span style="font-size: 1rem;">Nginx</span>
-                                    <span style="font-size: 1rem;">Linux Servers</span>
+                    <!-- LEFT: Quick Access Panel -->
+                    <div style="display: flex; flex-direction: column; gap: var(--space-8); position: sticky; top: 120px;">
+                        <div>
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-6);">[ DIRECT COMM CHANNELS ]</div>
+                            <div style="display: flex; flex-direction: column; gap: var(--space-3);">
+                                <a href="mailto:rishvinreddy@gmail.com" class="card" style="display: flex; align-items: center; gap: var(--space-5); padding: var(--space-6); text-decoration: none; color: var(--text-primary); transition: all 0.3s ease;">
+                                    <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(37,99,235,0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-blue);">
+                                        <i data-lucide="mail" style="width: 20px; height: 20px;"></i>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 4px; letter-spacing: 0.1em;">EMAIL</div>
+                                        <div style="font-size: 1.05rem; font-weight: 500;">rishvinreddy@gmail.com</div>
+                                    </div>
+                                </a>
+                                <a href="tel:+919848723235" class="card" style="display: flex; align-items: center; gap: var(--space-5); padding: var(--space-6); text-decoration: none; color: var(--text-primary); transition: all 0.3s ease;">
+                                    <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(124,58,237,0.08); display: flex; align-items: center; justify-content: center; color: var(--accent-violet);">
+                                        <i data-lucide="phone" style="width: 20px; height: 20px;"></i>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-secondary); margin-bottom: 4px; letter-spacing: 0.1em;">PHONE / WHATSAPP</div>
+                                        <div style="font-size: 1.05rem; font-weight: 500;">+91 9848 723 235</div>
+                                    </div>
+                                </a>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3);">
+                                    <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer" class="card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3); padding: var(--space-6); text-decoration: none; color: var(--text-primary); text-align: center; transition: all 0.3s ease;">
+                                        <i data-lucide="github" style="width: 24px; height: 24px; color: var(--text-secondary);"></i>
+                                        <span style="font-size: 0.75rem; font-family: var(--font-mono); letter-spacing: 0.05em;">GitHub</span>
+                                    </a>
+                                    <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer" class="card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-3); padding: var(--space-6); text-decoration: none; color: var(--text-primary); text-align: center; transition: all 0.3s ease;">
+                                        <i data-lucide="globe" style="width: 24px; height: 24px; color: var(--text-secondary);"></i>
+                                        <span style="font-size: 0.75rem; font-family: var(--font-mono); letter-spacing: 0.05em;">Portfolio</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- IoT -->
-                    <div class="stack-domain" id="stack-iot" style="display: none;">
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">HARDWARE</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">Arduino Uno / Mega</span>
-                                    <span style="font-size: 1rem;">ESP32 / ESP8266</span>
-                                    <span style="font-size: 1rem;">Raspberry Pi</span>
-                                    <span style="font-size: 1rem;">STM32</span>
-                                </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">FIRMWARE</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">C / C++</span>
-                                    <span style="font-size: 1rem;">FreeRTOS</span>
-                                    <span style="font-size: 1rem;">ESP-IDF</span>
-                                    <span style="font-size: 1rem;">MicroPython</span>
-                                </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">PROTOCOLS</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">MQTT</span>
-                                    <span style="font-size: 1rem;">ESP-NOW</span>
-                                    <span style="font-size: 1rem;">I2C / SPI / UART</span>
-                                    <span style="font-size: 1rem;">LoRa / WiFi</span>
-                                </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DASHBOARDS</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">Grafana</span>
-                                    <span style="font-size: 1rem;">InfluxDB</span>
-                                    <span style="font-size: 1rem;">Node-RED</span>
-                                    <span style="font-size: 1rem;">Custom Portals</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- RIGHT: Inquiry Form -->
+                    <div class="card" style="padding: var(--space-10); border-top: 2px solid var(--accent-blue); position: relative; overflow: visible;">
+                        <style>
+                            .wizard-step {
+                                display: none;
+                                flex-direction: column;
+                                gap: var(--space-6);
+                                animation: wizardFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                            }
+                            .wizard-step.active {
+                                display: flex;
+                            }
+                            .step-node.completed .node-circle {
+                                background: var(--success) !important;
+                                border-color: var(--success) !important;
+                                color: white !important;
+                            }
+                            .step-node.active .node-circle {
+                                background: var(--accent-blue) !important;
+                                border-color: var(--accent-blue) !important;
+                                color: white !important;
+                                box-shadow: 0 0 12px rgba(37,99,235,0.4);
+                            }
+                            .step-node.completed span {
+                                color: var(--success) !important;
+                            }
+                            .step-node.active span {
+                                color: var(--accent-blue) !important;
+                                font-weight: 600;
+                            }
+                            .wizard-checkbox-grid {
+                                display: grid;
+                                grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+                                gap: var(--space-3);
+                            }
+                            .wizard-checkbox-label {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                background: var(--bg-secondary);
+                                border: 1px solid var(--border);
+                                border-radius: var(--radius-sm);
+                                padding: 12px 14px;
+                                font-size: 0.82rem;
+                                cursor: pointer;
+                                transition: all 0.2s ease;
+                                box-sizing: border-box;
+                                user-select: none;
+                            }
+                            .wizard-checkbox-label:hover {
+                                border-color: var(--accent-blue);
+                                background: rgba(37,99,235,0.03);
+                            }
+                            .wizard-checkbox-label input[type="checkbox"] {
+                                accent-color: var(--accent-blue);
+                                width: 15px;
+                                height: 15px;
+                                cursor: pointer;
+                                margin: 0;
+                            }
+                            .wizard-checkbox-label.checked {
+                                border-color: var(--accent-blue);
+                                background: rgba(37,99,235,0.06);
+                            }
+                            @keyframes wizardFadeIn {
+                                from { opacity: 0; transform: translateY(8px); }
+                                to { opacity: 1; transform: translateY(0); }
+                            }
+                            .conditional-section {
+                                display: none;
+                                animation: wizardFadeIn 0.3s ease forwards;
+                                padding: var(--space-5);
+                                background: rgba(37,99,235,0.02);
+                                border: 1px dashed rgba(37,99,235,0.2);
+                                border-radius: var(--radius-sm);
+                                margin-top: var(--space-2);
+                            }
+                        </style>
 
-                    <!-- Security -->
-                    <div class="stack-domain" id="stack-security" style="display: none;">
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">ARCHITECTURE</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">Zero-Trust Design</span>
-                                    <span style="font-size: 1rem;">Defense in Depth</span>
-                                    <span style="font-size: 1rem;">Least Privilege</span>
-                                    <span style="font-size: 1rem;">Threat Modeling</span>
+                        <!-- Progress Indicator -->
+                        <div class="wizard-progress-container" style="margin-bottom: var(--space-10); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                            <div class="wizard-steps-header" style="display: flex; justify-content: space-between; position: relative;">
+                                <div class="wizard-progress-bar" style="position: absolute; top: 16px; left: 0; width: 100%; height: 2px; background: var(--border); z-index: 1;">
+                                    <div id="wizard-progress-line" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--accent-blue), var(--accent-violet)); transition: width 0.3s ease;"></div>
                                 </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">CRYPTOGRAPHY</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">AES-256</span>
-                                    <span style="font-size: 1rem;">RSA / ECC</span>
-                                    <span style="font-size: 1rem;">JWT / OAuth 2.0</span>
-                                    <span style="font-size: 1rem;">TLS 1.3</span>
+                                <div class="step-node active" data-step="1" style="z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                                    <div class="node-circle" style="width: 32px; height: 32px; border-radius: 50%; background: var(--surface); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--text-muted); transition: all 0.3s ease;">1</div>
+                                    <span style="font-size: 0.62rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">ABOUT YOU</span>
                                 </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">STANDARDS</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">OWASP Top 10</span>
-                                    <span style="font-size: 1rem;">NIST Framework</span>
-                                    <span style="font-size: 1rem;">Secure SDLC</span>
-                                    <span style="font-size: 1rem;">Penetration Testing</span>
+                                <div class="step-node" data-step="2" style="z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                                    <div class="node-circle" style="width: 32px; height: 32px; border-radius: 50%; background: var(--surface); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--text-muted); transition: all 0.3s ease;">2</div>
+                                    <span style="font-size: 0.62rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">PROJECT DETAILS</span>
                                 </div>
-                            </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">TOOLING</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">Burp Suite</span>
-                                    <span style="font-size: 1rem;">Wireshark</span>
-                                    <span style="font-size: 1rem;">Hashcat</span>
-                                    <span style="font-size: 1rem;">Metasploit</span>
+                                <div class="step-node" data-step="3" style="z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                                    <div class="node-circle" style="width: 32px; height: 32px; border-radius: 50%; background: var(--surface); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--text-muted); transition: all 0.3s ease;">3</div>
+                                    <span style="font-size: 0.62rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">SCOPE</span>
+                                </div>
+                                <div class="step-node" data-step="4" style="z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+                                    <div class="node-circle" style="width: 32px; height: 32px; border-radius: 50%; background: var(--surface); border: 2px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--text-muted); transition: all 0.3s ease;">4</div>
+                                    <span style="font-size: 0.62rem; font-family: var(--font-mono); color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.05em;">SUBMIT</span>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Automation -->
-                    <div class="stack-domain" id="stack-automation" style="display: none;">
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">SCRIPTING</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">Python</span>
-                                    <span style="font-size: 1rem;">Bash / Shell</span>
-                                    <span style="font-size: 1rem;">PowerShell</span>
-                                    <span style="font-size: 1rem;">Selenium</span>
+                        <form id="contact-form" style="display: flex; flex-direction: column;" onsubmit="submitContactForm(event)">
+                            
+                            <!-- STEP 1: About You -->
+                            <div class="wizard-step active" data-step="1">
+                                <div class="tech-label" style="font-size: 0.65rem; color: var(--accent-blue); margin-bottom: var(--space-4);">[ STEP 1 OF 4 &mdash; CLIENT GENERAL PARAMETERS ]</div>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-4);">
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">FULL NAME *</label>
+                                        <input id="cf-name" type="text" required placeholder="John Doe" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: all 0.25s ease; box-sizing: border-box;" onfocus="this.style.borderColor='var(--accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)';" onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none';">
+                                    </div>
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">EMAIL ADDRESS *</label>
+                                        <input id="cf-email" type="email" required placeholder="john@example.com" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: all 0.25s ease; box-sizing: border-box;" onfocus="this.style.borderColor='var(--accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)';" onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none';">
+                                    </div>
+                                </div>
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">PHONE / WHATSAPP NUMBER *</label>
+                                        <input id="cf-phone" type="tel" required placeholder="+91 98765 43210" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: all 0.25s ease; box-sizing: border-box;" onfocus="this.style.borderColor='var(--accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)';" onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none';">
+                                    </div>
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">COMPANY / BRAND NAME</label>
+                                        <input id="cf-company" type="text" placeholder="e.g. Acme Corp (Optional)" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: all 0.25s ease; box-sizing: border-box;" onfocus="this.style.borderColor='var(--accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)';" onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none';">
+                                    </div>
                                 </div>
                             </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">PIPELINES</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">GitHub Actions</span>
-                                    <span style="font-size: 1rem;">Cron Jobs</span>
-                                    <span style="font-size: 1rem;">Task Queues</span>
-                                    <span style="font-size: 1rem;">Webhooks</span>
+
+                            <!-- STEP 2: Project Details -->
+                            <div class="wizard-step" data-step="2">
+                                <div class="tech-label" style="font-size: 0.65rem; color: var(--accent-blue); margin-bottom: var(--space-4);">[ STEP 2 OF 4 &mdash; INQUIRY PARAMETERS ]</div>
+                                
+                                <div style="margin-bottom: var(--space-2);">
+                                    <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">WHAT SERVICE(S) DO YOU REQUIRE? *</label>
+                                    <div class="wizard-checkbox-grid">
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="Website Development" onchange="toggleCheckboxActive(this); checkConditionalSections();">
+                                            <span>Website Development</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="Portfolio Website" onchange="toggleCheckboxActive(this); checkConditionalSections();">
+                                            <span>Portfolio Website</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="Business Website" onchange="toggleCheckboxActive(this);">
+                                            <span>Business Website</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="E-Commerce Website" onchange="toggleCheckboxActive(this);">
+                                            <span>E-Commerce Website</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="Custom Software" onchange="toggleCheckboxActive(this);">
+                                            <span>Custom Software</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="IoT Solutions" onchange="toggleCheckboxActive(this); checkConditionalSections();">
+                                            <span>IoT Solutions</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="Automation System" onchange="toggleCheckboxActive(this);">
+                                            <span>Automation System</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="Cybersecurity Consultation" onchange="toggleCheckboxActive(this);">
+                                            <span>Cybersecurity Consult</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="UI/UX Design" onchange="toggleCheckboxActive(this);">
+                                            <span>UI/UX Design</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="Maintenance & Support" onchange="toggleCheckboxActive(this);">
+                                            <span>Maintenance Support</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="services" value="Other" onchange="toggleCheckboxActive(this);">
+                                            <span>Other Scope</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Dynamic Website Section -->
+                                <div id="conditional-website" class="conditional-section" style="margin-bottom: var(--space-2);">
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-4);">
+                                        <div>
+                                            <label style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-2);">PAGES NEEDED</label>
+                                            <input id="cf-web-pages" type="number" min="1" placeholder="e.g. 5" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-primary); font-size: 0.9rem; outline: none; box-sizing: border-box;">
+                                        </div>
+                                        <div>
+                                            <label style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-2);">CMS PREFERENCE</label>
+                                            <select id="cf-web-cms" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-primary); font-size: 0.9rem; outline: none; box-sizing: border-box; cursor: pointer;">
+                                                <option>Pure Static HTML/CSS (Fastest)</option>
+                                                <option>WordPress</option>
+                                                <option>Notion Integration</option>
+                                                <option>React / Next.js Custom Backend</option>
+                                                <option>No CMS / Developer Managed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+                                        <div>
+                                            <label style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-2);">DO YOU NEED A BLOG?</label>
+                                            <select id="cf-web-blog" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-primary); font-size: 0.9rem; outline: none; box-sizing: border-box; cursor: pointer;">
+                                                <option>No Blog Needed</option>
+                                                <option>Yes, Standard Blog Section</option>
+                                                <option>Yes, Headless / Dynamic CMS Blog</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-2);">E-COMMERCE CAPABILITIES?</label>
+                                            <select id="cf-web-ecommerce" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-primary); font-size: 0.9rem; outline: none; box-sizing: border-box; cursor: pointer;">
+                                                <option>No E-Commerce Needed</option>
+                                                <option>Yes, Stripe Payment Links / Simple Checkout</option>
+                                                <option>Yes, Full E-Commerce Shop &amp; Cart System</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dynamic IoT Section -->
+                                <div id="conditional-iot" class="conditional-section" style="margin-bottom: var(--space-2);">
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-4);">
+                                        <div>
+                                            <label style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-2);">HARDWARE / MICROCONTROLLER</label>
+                                            <select id="cf-iot-hardware-platform" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-primary); font-size: 0.9rem; outline: none; box-sizing: border-box; cursor: pointer;">
+                                                <option>ESP32 / ESP8266 (WiFi &amp; BLE enabled)</option>
+                                                <option>Arduino Uno / Mega / Nano</option>
+                                                <option>Raspberry Pi (SBC)</option>
+                                                <option>STM32 / ARM Cortex-M</option>
+                                                <option>Custom PCB Design &amp; Assembly</option>
+                                                <option>Undecided / First Principles Consultation</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-2);">SENSORS / ACTUATORS NEEDED</label>
+                                            <input id="cf-iot-sensors" type="text" placeholder="e.g. DHT22 Temp, Soil moisture, Ultrasonic" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-primary); font-size: 0.9rem; outline: none; box-sizing: border-box;">
+                                        </div>
+                                    </div>
+                                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+                                        <div>
+                                            <label style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-2);">CLOUD DASHBOARD PREFERENCE</label>
+                                            <select id="cf-iot-dashboard" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-primary); font-size: 0.9rem; outline: none; box-sizing: border-box; cursor: pointer;">
+                                                <option>Custom Web Dashboard (Tailored)</option>
+                                                <option>Grafana &amp; InfluxDB</option>
+                                                <option>Blynk Platform</option>
+                                                <option>AWS IoT Core</option>
+                                                <option>Offline Local Mesh Only</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <label style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-2);">CONNECTED PROTOCOL / CLOUD INTEGRATION</label>
+                                            <select id="cf-iot-protocol" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 10px 14px; color: var(--text-primary); font-size: 0.9rem; outline: none; box-sizing: border-box; cursor: pointer;">
+                                                <option>MQTT (Standard lightweight messaging)</option>
+                                                <option>WebSockets (Real-time duplex sync)</option>
+                                                <option>HTTP REST API</option>
+                                                <option>ESP-NOW (Ultra-fast local peer-to-peer)</option>
+                                                <option>LoRa / LoRaWAN (Long range telemetry)</option>
+                                                <option>Bluetooth BLE / Bluetooth mesh</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="margin-bottom: var(--space-2);">
+                                    <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">PROJECT TITLE / NAME *</label>
+                                    <input id="cf-title" type="text" required placeholder="e.g. Restaurant Website, Smart Irrigation Dashboard" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: all 0.25s ease; box-sizing: border-box;" onfocus="this.style.borderColor='var(--accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)';" onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none';">
+                                </div>
+
+                                <div>
+                                    <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">DESCRIBE YOUR PROJECT REQUIREMENTS *</label>
+                                    <textarea id="cf-message" required rows="5" placeholder="Tell us about your requirements, features, goals, or core business challenges you want to solve..." style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; line-height: 1.6; outline: none; transition: all 0.25s ease; box-sizing: border-box; resize: vertical;" onfocus="this.style.borderColor='var(--accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)';" onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none';"></textarea>
                                 </div>
                             </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">AI / ML</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">LangChain</span>
-                                    <span style="font-size: 1rem;">OpenAI API</span>
-                                    <span style="font-size: 1rem;">Hugging Face</span>
-                                    <span style="font-size: 1rem;">scikit-learn</span>
+
+                            <!-- STEP 3: Scope & Budget -->
+                            <div class="wizard-step" data-step="3">
+                                <div class="tech-label" style="font-size: 0.65rem; color: var(--accent-blue); margin-bottom: var(--space-4);">[ STEP 3 OF 4 &mdash; ALLOCATION &amp; LAUNCH TIMELINE ]</div>
+                                
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-4);">
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">ESTIMATED BUDGET ALLOCATION *</label>
+                                        <div style="position: relative;">
+                                            <select id="cf-budget" required style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; box-sizing: border-box; appearance: none; cursor: pointer;">
+                                                <option value="" disabled selected>Select allocation...</option>
+                                                <option>₹5,000 &mdash; ₹10,000</option>
+                                                <option>₹10,000 &mdash; ₹25,000</option>
+                                                <option>₹25,000 &mdash; ₹50,000</option>
+                                                <option>₹50,000+</option>
+                                                <option>Let's Discuss Details</option>
+                                            </select>
+                                            <i data-lucide="chevron-down" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--text-secondary); pointer-events: none;"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">EXPECTED TIMELINE *</label>
+                                        <div style="position: relative;">
+                                            <select id="cf-timeline" required style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; box-sizing: border-box; appearance: none; cursor: pointer;">
+                                                <option value="" disabled selected>Select speed...</option>
+                                                <option>Immediate / ASAP</option>
+                                                <option>1 &mdash; 2 Weeks</option>
+                                                <option>1 Month</option>
+                                                <option>2 &mdash; 3 Months</option>
+                                                <option>Flexible / Not Urgent</option>
+                                            </select>
+                                            <i data-lucide="chevron-down" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--text-secondary); pointer-events: none;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-4);">
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">DESIGN VISUAL STYLE</label>
+                                        <div style="position: relative;">
+                                            <select id="cf-style-pref" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; box-sizing: border-box; appearance: none; cursor: pointer;">
+                                                <option>Minimal / Clean (Recommended)</option>
+                                                <option>Ultra Modern &amp; Dynamic</option>
+                                                <option>Premium Glassmorphism</option>
+                                                <option>Corporate &amp; Formal</option>
+                                                <option>Creative &amp; Bold</option>
+                                                <option>Aesthetic Dark Mode</option>
+                                                <option>Not Sure / Decide Later</option>
+                                            </select>
+                                            <i data-lucide="chevron-down" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--text-secondary); pointer-events: none;"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">REFERENCE WEBSITES</label>
+                                        <input id="cf-references" type="text" placeholder="e.g. apple.com, stripe.com" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: all 0.25s ease; box-sizing: border-box;" onfocus="this.style.borderColor='var(--accent-blue)'; this.style.boxShadow='0 0 0 3px rgba(37,99,235,0.1)';" onblur="this.style.borderColor='var(--border)'; this.style.boxShadow='none';">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-4);">DO YOU ALREADY ACQUIRE?</label>
+                                    <div class="wizard-checkbox-grid">
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="assets" value="Domain Name" onchange="toggleCheckboxActive(this);">
+                                            <span>Domain Name</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="assets" value="Hosting" onchange="toggleCheckboxActive(this);">
+                                            <span>Hosting Servers</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="assets" value="Logo/Branding" onchange="toggleCheckboxActive(this);">
+                                            <span>Logo / Branding</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="assets" value="Existing Website" onchange="toggleCheckboxActive(this);">
+                                            <span>Existing Website</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="assets" value="Design Reference" onchange="toggleCheckboxActive(this);">
+                                            <span>Design References</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="assets" value="Requirements Document" onchange="toggleCheckboxActive(this);">
+                                            <span>Requirement PDF</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="assets" value="Nothing Yet" onchange="toggleCheckboxActive(this);">
+                                            <span>Nothing Yet</span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div style="background: var(--surface); padding: var(--space-8);">
-                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">INTEGRATION</div>
-                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <span style="font-size: 1rem;">REST APIs</span>
-                                    <span style="font-size: 1rem;">Plaid / Stripe</span>
-                                    <span style="font-size: 1rem;">Google Workspace</span>
-                                    <span style="font-size: 1rem;">Slack / Notion</span>
+
+                            <!-- STEP 4: Features & Submit -->
+                            <div class="wizard-step" data-step="4">
+                                <div class="tech-label" style="font-size: 0.65rem; color: var(--accent-blue); margin-bottom: var(--space-4);">[ STEP 4 OF 4 &mdash; SCOPING SPECIFICATIONS ]</div>
+                                
+                                <div style="margin-bottom: var(--space-2);">
+                                    <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">FEATURES REQUIRED</label>
+                                    <div class="wizard-checkbox-grid">
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Login System" onchange="toggleCheckboxActive(this);">
+                                            <span>Login System</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Payment Gateway" onchange="toggleCheckboxActive(this);">
+                                            <span>Payment Gateway</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Admin Dashboard" onchange="toggleCheckboxActive(this);">
+                                            <span>Admin Dashboard</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Database" onchange="toggleCheckboxActive(this);">
+                                            <span>Scalable Database</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Contact Form" onchange="toggleCheckboxActive(this);">
+                                            <span>Contact Forms</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Analytics" onchange="toggleCheckboxActive(this);">
+                                            <span>Live Analytics</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="API Integration" onchange="toggleCheckboxActive(this);">
+                                            <span>API Connections</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Mobile Responsive" onchange="toggleCheckboxActive(this);">
+                                            <span>Mobile Responsive</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="SEO Optimization" onchange="toggleCheckboxActive(this);">
+                                            <span>SEO Architecture</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="AI Features" onchange="toggleCheckboxActive(this);">
+                                            <span>AI / LLM Logic</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Security Features" onchange="toggleCheckboxActive(this);">
+                                            <span>Advanced Security</span>
+                                        </label>
+                                        <label class="wizard-checkbox-label">
+                                            <input type="checkbox" name="features" value="Custom Integrations" onchange="toggleCheckboxActive(this);">
+                                            <span>Custom API Sync</span>
+                                        </label>
+                                    </div>
                                 </div>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-4);">
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">TARGET AUDIENCE</label>
+                                        <div style="position: relative;">
+                                            <select id="cf-audience" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; box-sizing: border-box; appearance: none; cursor: pointer;">
+                                                <option>General Public / Customers</option>
+                                                <option>Startups &amp; Founders</option>
+                                                <option>Businesses &amp; B2B Clients</option>
+                                                <option>Enterprise Corporations</option>
+                                                <option>Students &amp; Academics</option>
+                                                <option>Niche Community / Other</option>
+                                            </select>
+                                            <i data-lucide="chevron-down" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--text-secondary); pointer-events: none;"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">PROJECT PRIORITIZATION</label>
+                                        <div style="position: relative;">
+                                            <select id="cf-priority" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; box-sizing: border-box; appearance: none; cursor: pointer;">
+                                                <option>Medium Priority</option>
+                                                <option>Low Priority</option>
+                                                <option>High Priority (Shipping Soon)</option>
+                                                <option>Urgent / Critical Launch</option>
+                                            </select>
+                                            <i data-lucide="chevron-down" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--text-secondary); pointer-events: none;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); margin-bottom: var(--space-4);">
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">PREFERRED CHANNELS</label>
+                                        <div style="position: relative;">
+                                            <select id="cf-comm" style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; box-sizing: border-box; appearance: none; cursor: pointer;">
+                                                <option>WhatsApp Message</option>
+                                                <option>Direct Email Link</option>
+                                                <option>Direct Phone Call</option>
+                                                <option>Google Meet Consultation</option>
+                                                <option>Telegram</option>
+                                            </select>
+                                            <i data-lucide="chevron-down" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--text-secondary); pointer-events: none;"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">LEAD SCORING &mdash; SERIOUSNESS LEVEL *</label>
+                                        <div style="position: relative;">
+                                            <select id="cf-serious" required style="width: 100%; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; color: var(--text-primary); font-family: var(--font-body); font-size: 0.95rem; outline: none; box-sizing: border-box; appearance: none; cursor: pointer;">
+                                                <option value="" disabled selected>How serious are you? *</option>
+                                                <option>Ready to Start Immediately</option>
+                                                <option>Ready to Start Soon (1-2 weeks)</option>
+                                                <option>Researching Options / Just Browsing</option>
+                                                <option>Curious / Just Exploring Ideas</option>
+                                            </select>
+                                            <i data-lucide="chevron-down" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; color: var(--text-secondary); pointer-events: none;"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-primary); font-weight: 600; display: block; margin-bottom: var(--space-3);">ADDITIONAL REFERENCES (PDF / WIREFRAMES / MOCKUPS)</label>
+                                    <div style="border: 2px dashed var(--border); border-radius: var(--radius-sm); padding: var(--space-6); text-align: center; background: var(--bg-secondary); cursor: pointer; transition: all 0.25s ease;" onmouseover="this.style.borderColor='var(--accent-blue)'; this.style.background='rgba(37,99,235,0.02)';" onmouseout="this.style.borderColor='var(--border)'; this.style.background='var(--bg-secondary)';" onclick="document.getElementById('cf-files').click();">
+                                        <i data-lucide="upload-cloud" style="width: 32px; height: 32px; color: var(--text-secondary); margin: 0 auto 8px; display: block;"></i>
+                                        <span style="font-size: 0.85rem; font-weight: 500; display: block; margin-bottom: 4px;">Select Technical References</span>
+                                        <span style="font-size: 0.72rem; color: var(--text-muted); display: block;">Attach PDF brief, logo files, wireframes, or reference designs (Max 10MB)</span>
+                                        <input id="cf-files" type="file" multiple style="display: none;" onchange="handleFileSelect(event)">
+                                        <div id="file-list" style="margin-top: var(--space-3); font-size: 0.75rem; color: var(--accent-blue); font-family: var(--font-mono); font-weight: 600;"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer Row Navigation -->
+                            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); margin-top: var(--space-10); border-top: 1px solid var(--border); padding-top: var(--space-6);">
+                                <div style="font-size: 0.75rem; color: var(--text-secondary); font-family: var(--font-mono);">
+                                    <i data-lucide="lock" style="width: 12px; height: 12px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i> Secure Transmission
+                                </div>
+                                <div style="display: flex; gap: var(--space-3);">
+                                    <button type="button" id="wizard-back-btn" class="btn btn-outline" style="padding: 12px 24px; font-size: 0.85rem; display: none;" onclick="navigateWizard(-1)">
+                                        &larr; Back
+                                    </button>
+                                    <button type="button" id="wizard-next-btn" class="btn btn-primary" style="padding: 12px 28px; font-size: 0.85rem;" onclick="navigateWizard(1)">
+                                        Next Step &rarr;
+                                    </button>
+                                    <button type="submit" id="cf-submit" class="btn btn-primary" style="padding: 12px 28px; font-size: 0.85rem; display: none;">
+                                        Get My Project Proposal &rarr;
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Custom Fullscreen Glass Success Modal Overlay -->
+                        <div id="success-overlay" style="display: none; position: fixed; inset: 0; background: rgba(10, 14, 40, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); z-index: 10000; align-items: center; justify-content: center; animation: wizardFadeIn 0.3s ease;">
+                            <div class="card reveal" style="padding: var(--space-12) var(--space-10); max-width: 480px; width: 90%; text-align: center; border-top: 3px solid var(--success); position: relative; overflow: visible; background: var(--surface);">
+                                <!-- macOS dots -->
+                                <div style="position: absolute; top: 14px; left: 14px; display: flex; gap: 6px;">
+                                    <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #ff5f56;"></span>
+                                    <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e;"></span>
+                                    <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #27c93f;"></span>
+                                </div>
+                                <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(34, 197, 94, 0.08); border: 2px solid rgba(34, 197, 94, 0.2); display: flex; align-items: center; justify-content: center; color: var(--success); margin: 0 auto var(--space-6);">
+                                    <i data-lucide="check-circle-2" style="width: 32px; height: 32px;"></i>
+                                </div>
+                                <h3 style="font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; margin-bottom: var(--space-3); color: var(--text-primary);">Transmission Initiated</h3>
+                                <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: var(--space-8);">
+                                    Thank you for reaching out to Rishvin Labs. We’ve pre-filled your secure project initialization email parameters. Please send the pre-filled email in your client. We will contact you within 24&ndash;48 hours to discuss details.
+                                </p>
+                                <button type="button" class="btn btn-secondary" style="width: 100%;" onclick="closeSuccessOverlay()">
+                                    Acknowledge &amp; Return Home
+                                </button>
                             </div>
                         </div>
+
+                        <script>
+                        let activeStep = 1;
+                        const totalStepsCount = 4;
+                        let attachedFileNames = [];
+
+                        function updateWizardProgress() {
+                            // Update Step Nodes Styling
+                            document.querySelectorAll('.step-node').forEach(node => {
+                                const stepNum = parseInt(node.getAttribute('data-step'));
+                                node.classList.remove('active', 'completed');
+                                if (stepNum === activeStep) {
+                                    node.classList.add('active');
+                                } else if (stepNum < activeStep) {
+                                    node.classList.add('completed');
+                                }
+                            });
+
+                            // Progress line width
+                            const progressPercentage = ((activeStep - 1) / (totalStepsCount - 1)) * 100;
+                            document.getElementById('wizard-progress-line').style.width = `${progressPercentage}%`;
+
+                            // Next/Prev Buttons Visibility
+                            const backBtn = document.getElementById('wizard-back-btn');
+                            const nextBtn = document.getElementById('wizard-next-btn');
+                            const submitBtn = document.getElementById('cf-submit');
+
+                            if (activeStep === 1) {
+                                backBtn.style.display = 'none';
+                            } else {
+                                backBtn.style.display = 'inline-block';
+                            }
+
+                            if (activeStep === totalStepsCount) {
+                                nextBtn.style.display = 'none';
+                                submitBtn.style.display = 'inline-block';
+                            } else {
+                                nextBtn.style.display = 'inline-block';
+                                submitBtn.style.display = 'none';
+                            }
+                        }
+
+                        function validateCurrentStep() {
+                            const activeStepEl = document.querySelector(`.wizard-step[data-step="${activeStep}"]`);
+                            const requiredFields = activeStepEl.querySelectorAll('[required]');
+                            let isValid = true;
+
+                            requiredFields.forEach(field => {
+                                field.style.borderColor = 'var(--border)';
+                                if (!field.value.trim()) {
+                                    field.style.borderColor = '#ff5f56';
+                                    isValid = false;
+                                }
+                            });
+
+                            if (!isValid) {
+                                // Trigger vibration or focus first invalid
+                                const firstInvalid = activeStepEl.querySelector('[required]:placeholder-shown');
+                                if (firstInvalid) firstInvalid.focus();
+                            }
+
+                            return isValid;
+                        }
+
+                        function navigateWizard(direction) {
+                            if (direction === 1 && !validateCurrentStep()) {
+                                return; // Block step progression if invalid
+                            }
+
+                            const steps = document.querySelectorAll('.wizard-step');
+                            steps[activeStep - 1].classList.remove('active');
+
+                            activeStep += direction;
+                            if (activeStep < 1) activeStep = 1;
+                            if (activeStep > totalStepsCount) activeStep = totalStepsCount;
+
+                            steps[activeStep - 1].classList.add('active');
+                            updateWizardProgress();
+
+                            // Scroll form header into view smoothly
+                            const contactSection = document.getElementById('contact');
+                            if (contactSection) {
+                                contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            }
+                        }
+
+                        function toggleCheckboxActive(checkbox) {
+                            const parentLabel = checkbox.closest('.wizard-checkbox-label');
+                            if (checkbox.checked) {
+                                parentLabel.classList.add('checked');
+                            } else {
+                                parentLabel.classList.remove('checked');
+                            }
+                        }
+
+                        function checkConditionalSections() {
+                            const checkedServices = Array.from(document.querySelectorAll('input[name="services"]:checked')).map(cb => cb.value);
+                            
+                            const webSection = document.getElementById('conditional-website');
+                            const iotSection = document.getElementById('conditional-iot');
+
+                            if (checkedServices.includes('Website Development') || checkedServices.includes('Portfolio Website')) {
+                                webSection.style.display = 'block';
+                            } else {
+                                webSection.style.display = 'none';
+                            }
+
+                            if (checkedServices.includes('IoT Solutions')) {
+                                iotSection.style.display = 'block';
+                            } else {
+                                iotSection.style.display = 'none';
+                            }
+                        }
+
+                        function handleFileSelect(e) {
+                            const files = e.target.files;
+                            attachedFileNames = [];
+                            const fileListDiv = document.getElementById('file-list');
+                            fileListDiv.innerHTML = '';
+                            
+                            if (files.length > 0) {
+                                Array.from(files).forEach(file => {
+                                    attachedFileNames.push(file.name);
+                                    const fileItem = document.createElement('div');
+                                    fileItem.style.display = 'flex';
+                                    fileItem.style.alignItems = 'center';
+                                    fileItem.style.gap = '6px';
+                                    fileItem.style.marginTop = '4px';
+                                    fileItem.innerHTML = `<i data-lucide="file-text" style="width: 14px; height: 14px;"></i> ${file.name} (${(file.size / 1024 / 1024).toFixed(2)} MB)`;
+                                    fileListDiv.appendChild(fileItem);
+                                });
+                                if (window.lucide) lucide.createIcons({nodes: [fileListDiv]});
+                            }
+                        }
+
+                        function submitContactForm(e) {
+                            e.preventDefault();
+                            if (!validateCurrentStep()) return;
+
+                            // Collect data fields
+                            const name = document.getElementById('cf-name').value;
+                            const email = document.getElementById('cf-email').value;
+                            const phone = document.getElementById('cf-phone').value;
+                            const company = document.getElementById('cf-company').value || 'Not Specified';
+                            
+                            const servicesSelected = Array.from(document.querySelectorAll('input[name="services"]:checked')).map(cb => cb.value).join(', ') || 'General Inquiry';
+                            const title = document.getElementById('cf-title').value;
+                            const message = document.getElementById('cf-message').value;
+
+                            // Conditional Data
+                            const pagesNeeded = document.getElementById('cf-web-pages').value || 'Not Specified';
+                            const cmsPreference = document.getElementById('cf-web-cms').value || 'Not Specified';
+                            const blogPreference = document.getElementById('cf-web-blog').value || 'Not Specified';
+                            const ecommercePreference = document.getElementById('cf-web-ecommerce').value || 'Not Specified';
+
+                            const iotHardwarePlatform = document.getElementById('cf-iot-hardware-platform').value || 'Not Specified';
+                            const iotSensors = document.getElementById('cf-iot-sensors').value || 'Not Specified';
+                            const iotDashboard = document.getElementById('cf-iot-dashboard').value || 'Not Specified';
+                            const iotProtocol = document.getElementById('cf-iot-protocol').value || 'Not Specified';
+
+                            // Budget & Timeline
+                            const budget = document.getElementById('cf-budget').value;
+                            const timeline = document.getElementById('cf-timeline').value;
+                            const designStyle = document.getElementById('cf-style-pref').value;
+                            const references = document.getElementById('cf-references').value || 'None Shared';
+                            const assetsOwned = Array.from(document.querySelectorAll('input[name="assets"]:checked')).map(cb => cb.value).join(', ') || 'Nothing Yet';
+
+                            // Requirements & Priorities
+                            const features = Array.from(document.querySelectorAll('input[name="features"]:checked')).map(cb => cb.value).join(', ') || 'Basic Package';
+                            const audience = document.getElementById('cf-audience').value;
+                            const priority = document.getElementById('cf-priority').value;
+                            const commMethod = document.getElementById('cf-comm').value;
+                            const seriousness = document.getElementById('cf-serious').value;
+                            const filesList = attachedFileNames.join(', ') || 'No Files Attached';
+
+                            // Construct detailed technical reports
+                            let specSheets = ``;
+                            if (servicesSelected.includes('Website') || servicesSelected.includes('Portfolio')) {
+                                specSheets += `\n--- WEBSITE DESIGN SPECS ---\n` +
+                                    `Pages Needed: ${pagesNeeded}\n` +
+                                    `CMS Choice: ${cmsPreference}\n` +
+                                    `Blog Required: ${blogPreference}\n` +
+                                    `E-Commerce Capabilities: ${ecommercePreference}\n`;
+                            }
+                            if (servicesSelected.includes('IoT')) {
+                                specSheets += `\n--- HARDWARE & EMBEDDED SPECS ---\n` +
+                                    `Hardware Platform: ${iotHardwarePlatform}\n` +
+                                    `Sensors/Actuators: ${iotSensors}\n` +
+                                    `Dashboard Choice: ${iotDashboard}\n` +
+                                    `Connected Protocol: ${iotProtocol}\n`;
+                            }
+
+                            const emailBody = `RISHVIN LABS - SECURE CLIENT INITIATION FUNNEL\n` +
+                                `==========================================\n\n` +
+                                `--- CLIENT PROFILE ---\n` +
+                                `Client Name: ${name}\n` +
+                                `Email Address: ${email}\n` +
+                                `Phone/WhatsApp: ${phone}\n` +
+                                `Company Name: ${company}\n\n` +
+                                `--- PROJECT INITIALIZATION ---\n` +
+                                `Project Name: ${title}\n` +
+                                `Selected Service(s): ${servicesSelected}\n` +
+                                `Project Details:\n${message}\n` +
+                                `${specSheets}\n` +
+                                `--- ALLOCATION & TIMELINE ---\n` +
+                                `Budget Range: ${budget}\n` +
+                                `Expected Timeline: ${timeline}\n` +
+                                `Design Aesthetics: ${designStyle}\n` +
+                                `Assets Acquired: ${assetsOwned}\n` +
+                                `Reference Sites: ${references}\n\n` +
+                                `--- FEATURES & PRIORITIZATION ---\n` +
+                                `Scoping Specs: ${features}\n` +
+                                `Target Audience: ${audience}\n` +
+                                `Project Priority: ${priority}\n` +
+                                `Communication Channel: ${commMethod}\n` +
+                                `Client Seriousness Level: ${seriousness}\n` +
+                                `Mock Attached Files: ${filesList}\n\n` +
+                                `[Funnel Data Transmitted Securely via Client email Interface]`;
+
+                            const subject = `[Rishvin Labs Funnel] Project Inquiry — ${title}`;
+                            const mailtoLink = `mailto:rishvinreddy@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+                            // Open mail client and show success overlays
+                            window.location.href = mailtoLink;
+                            
+                            const successOverlay = document.getElementById('success-overlay');
+                            successOverlay.style.display = 'flex';
+                            if (window.lucide) lucide.createIcons({nodes: [successOverlay]});
+                        }
+
+                        function closeSuccessOverlay() {
+                            document.getElementById('success-overlay').style.display = 'none';
+                            window.location.href = 'index.html';
+                        }
+
+                        // Initialize progress
+                        updateWizardProgress();
+                        </script>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-            <div class="container text-center">
-                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Ready to scale your systems?</h2>
-                <p style="max-width: 500px; margin: 0 auto var(--space-8);">Stop wrestling with technical debt. Let's engineer a solution that drives your business forward.</p>
-                <a href="manifesto.html" class="hover-underline">Manifesto</a>
-                    <a href="founder.html" class="hover-underline">Founder</a>
-                    <a href="contact.html" class="btn btn-primary">
-                    Start a Project
-                </a>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -1075,7 +1568,7 @@
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
                         <a href="projects.html">Projects</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
                 <div>
@@ -1125,6 +1618,7 @@
     <!-- Scripts -->
     <script>lucide.createIcons();</script>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav-inject.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
     <script src="assets/js/command-palette.js" defer></script>

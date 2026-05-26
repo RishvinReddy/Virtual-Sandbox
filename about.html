@@ -3,34 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Rishvin Labs | Engineering Precision & Innovation</title>
+    <title>Our DNA & Philosophy | About Rishvin Labs</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Learn about Rishvin Labs, our engineering philosophy, mission, and commitment to building secure, scalable digital systems.">
+    <meta name="title" content="Our DNA & Philosophy | About Rishvin Labs">
+    <meta name="description" content="Learn about Rishvin Labs' engineering philosophy: building robust systems from first principles, combining high performance with bulletproof security.">
+    <meta name="keywords" content="engineering philosophy, first principles engineering, custom software systems, about Rishvin Labs, tech solutions studio">
+    <meta name="author" content="Rishvin Labs">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/about.html">
     
-    <!-- Open Graph / Social -->
+    <!-- Open Graph / Social SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/about.html">
-    <meta property="og:title" content="About Rishvin Labs | Engineering Precision & Innovation">
-    <meta property="og:description" content="Learn about Rishvin Labs, our engineering philosophy, mission, and commitment to building secure, scalable digital systems.">
-    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
+    <meta property="og:title" content="Our DNA & Philosophy | About Rishvin Labs">
+    <meta property="og:description" content="Learn about Rishvin Labs' engineering philosophy: building robust systems from first principles.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    <meta property="og:site_name" content="Rishvin Labs">
+    <meta property="og:locale" content="en_US">
     
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="About Rishvin Labs | Engineering Precision & Innovation">
-    <meta name="twitter:description" content="Learn about Rishvin Labs, our engineering philosophy, mission, and commitment to building secure, scalable digital systems.">
-    
-    <!-- Fonts -->
+    <meta name="twitter:title" content="Our DNA & Philosophy | About Rishvin Labs">
+    <meta name="twitter:description" content="Learn about Rishvin Labs' engineering philosophy: building robust systems from first principles.">
+    <meta name="twitter:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+
+    <!-- Fonts preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon & Branding -->
+    <link rel="icon" type="image/png" href="favicon/favicon.png" sizes="any">
     <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <meta name="theme-color" content="#0a0b0f">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Rishvin Labs",
+        "url": "https://rishvinreddy.github.io/rishvin-labs/",
+        "description": "Premium software development, web development, IoT systems, cybersecurity, automation and digital solutions."
+      }
+    }
+    </script>
+
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- CSS -->
+    <!-- CSS Architecture -->
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
@@ -38,123 +65,123 @@
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <!-- Premium Loading Screen -->
+
+    <!-- Loader -->
     <div id="loader">
         <div class="loader-content">
-            <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
-            <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: var(--text-caption);">Engineering Intelligent Systems</p>
+            <h2>Rishvin Labs</h2>
+            <p style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 8px;">Engineering Intelligent Systems</p>
         </div>
     </div>
 
-    <!-- Custom Cursor -->
-    <div id="custom-cursor"></div>
+    <!-- Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
 
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" decoding="async">
-                Rishvin <span>Labs</span>
-            </a>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <i data-lucide="menu"></i>
-            </button>
-            <div class="navbar-links">
-                <a href="index.html" class="hover-underline">Home</a>
-                <a href="about.html" class="active hover-underline">About</a>
-                <a href="services.html" class="hover-underline">Services</a>
-                <a href="projects.html" class="hover-underline">Projects</a>
-                    <a href="labs.html" class="hover-underline">Labs</a>
-                <a href="contact.html" class="hover-underline">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar" id="main-navbar"></nav>
 
-    <!-- Main Content Area -->
     <main>
-        <!-- 1. Blueprint About Section -->
-        <section class="section">
+
+        <!-- 1. Hero -->
+        <section class="section hero-section" style=" border-bottom: 1px solid var(--border);">
+    <!-- Premium Ambient Glow -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
             <div class="container container-wide">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start; padding-top: var(--space-12);">
-                    
-                    <!-- Left: Explanation -->
-                    <div style="padding-right: var(--space-8);">
-                        <div class="tech-label" style="margin-bottom: var(--space-8);">[ ABOUT THE STUDIO ]</div>
-                        <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6); max-width: 600px;">
-                            Engineering with purpose.<br>Building for impact.
-                        </h2>
-                        <p style="margin-bottom: var(--space-6); font-size: 1.15rem; max-width: 500px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start;">
+
+                    <!-- Left -->
+                    <div>
+                        <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-6);">
+                                                        About the Studio
+                        </div>
+                        <h1 class="animate-slide-up delay-100" style="font-size: var(--text-h1); margin-bottom: var(--space-6);">
+                            Engineering with purpose.<br>
+                            <span class="gradient-text">Building for impact.</span>
+                        </h1>
+                        <p class="animate-slide-up delay-200" style="font-size: 1.1rem; max-width: 500px; margin-bottom: var(--space-6);">
                             Rishvin Labs is a focused engineering studio dedicated to solving complex problems through thoughtful architecture, clean code, and secure systems.
                         </p>
-                        <p style="margin-bottom: var(--space-12); font-size: 1.15rem; max-width: 500px;">
+                        <p class="animate-slide-up delay-300" style="font-size: 1.1rem; max-width: 500px; margin-bottom: var(--space-10);">
                             We partner with startups, enterprises, and innovators to build digital systems that are reliable, scalable, and future-ready.
                         </p>
-                        <div class="tech-label" style="font-size: 0.85rem;">[ OUR PRINCIPLES &rarr; ]</div>
+                        <div class="animate-slide-up delay-400" style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                            <a href="founder.html" class="btn btn-primary">Meet the Founder <span class="btn-arrow">&rarr;</span></a>
+                            <a href="manifesto.html" class="btn btn-outline">Read Our Manifesto</a>
+                        </div>
                     </div>
-                    
-                    <!-- Right: Principles List -->
-                    <div style="display: flex; flex-direction: column; gap: var(--space-12); border-left: 1px solid var(--border); padding-left: var(--space-12);">
-                        
-                        <!-- Point 1 -->
-                        <div class="reveal delay-100" style="display: flex; gap: var(--space-6); align-items: flex-start;">
-                            <i data-lucide="crosshair" style="width: 28px; height: 28px; flex-shrink: 0; color: var(--text-primary); margin-top: 4px;"></i>
-                            <div>
-                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Precision Engineering</h3>
-                                <p class="text-small" style="margin-bottom: 0;">We sweat the details so our systems don't.</p>
+
+                    <!-- Right: Principles -->
+                    <div style="display: flex; flex-direction: column; gap: var(--space-8); border-left: 2px solid var(--border); padding-left: var(--space-12);">
+                        <div class="tech-label" style="margin-bottom: var(--space-2);">Our Principles</div>
+
+                        <div class="reveal delay-100" style="display: flex; gap: var(--space-5); align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: var(--radius-md); background: rgba(37,99,235,0.08); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent-blue);">
+                                <i data-lucide="crosshair" style="width: 20px; height: 20px;"></i>
                             </div>
-                        </div>
-                        
-                        <!-- Point 2 -->
-                        <div class="reveal delay-200" style="display: flex; gap: var(--space-6); align-items: flex-start;">
-                            <i data-lucide="lock" style="width: 28px; height: 28px; flex-shrink: 0; color: var(--text-primary); margin-top: 4px;"></i>
                             <div>
-                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Security by Design</h3>
-                                <p class="text-small" style="margin-bottom: 0;">Security is not a feature. It's a foundation.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Point 3 -->
-                        <div class="reveal delay-300" style="display: flex; gap: var(--space-6); align-items: flex-start;">
-                            <i data-lucide="arrow-up-right" style="width: 28px; height: 28px; flex-shrink: 0; color: var(--text-primary); margin-top: 4px;"></i>
-                            <div>
-                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Scalable Thinking</h3>
-                                <p class="text-small" style="margin-bottom: 0;">We build systems that grow with you.</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Point 4 -->
-                        <div class="reveal delay-400" style="display: flex; gap: var(--space-6); align-items: flex-start;">
-                            <i data-lucide="users" style="width: 28px; height: 28px; flex-shrink: 0; color: var(--text-primary); margin-top: 4px;"></i>
-                            <div>
-                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Long-term Partnership</h3>
-                                <p class="text-small" style="margin-bottom: 0;">We build relationships, not just products.</p>
+                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-1);">Precision Engineering</h3>
+                                <p style="font-size: var(--text-small); margin-bottom: 0; max-width: none;">We sweat the details so our systems don't.</p>
                             </div>
                         </div>
 
+                        <div class="reveal delay-200" style="display: flex; gap: var(--space-5); align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: var(--radius-md); background: rgba(124,58,237,0.08); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent-violet);">
+                                <i data-lucide="lock" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-1);">Security by Design</h3>
+                                <p style="font-size: var(--text-small); margin-bottom: 0; max-width: none;">Security is not a feature. It's a foundation.</p>
+                            </div>
+                        </div>
+
+                        <div class="reveal delay-300" style="display: flex; gap: var(--space-5); align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: var(--radius-md); background: rgba(8,145,178,0.08); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent-teal);">
+                                <i data-lucide="arrow-up-right" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-1);">Scalable Thinking</h3>
+                                <p style="font-size: var(--text-small); margin-bottom: 0; max-width: none;">We build systems that grow with you.</p>
+                            </div>
+                        </div>
+
+                        <div class="reveal delay-400" style="display: flex; gap: var(--space-5); align-items: flex-start;">
+                            <div style="width: 40px; height: 40px; border-radius: var(--radius-md); background: rgba(5,150,105,0.08); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--accent-green);">
+                                <i data-lucide="users" style="width: 20px; height: 20px;"></i>
+                            </div>
+                            <div>
+                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-1);">Long-term Partnership</h3>
+                                <p style="font-size: var(--text-small); margin-bottom: 0; max-width: none;">We build relationships, not just products.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. Meta Strip (Blueprint Layout) -->
-        <section class="reveal section-light" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: var(--space-12) 0;">
+        <!-- 2. Meta Strip -->
+        <section class="reveal" style="background: var(--bg-secondary); border-bottom: 1px solid var(--border); padding: var(--space-10) 0;">
             <div class="container container-wide">
                 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-8);">
                     <div>
-                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">FOUNDER</div>
-                        <div style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary);">Rishvin Reddy</div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">Founder</div>
+                        <div style="font-size: 1.1rem; color: var(--text-primary);">
+                            <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener" class="hover-underline" style="color: var(--accent-blue);">Rishvin Reddy &nearr;</a>
+                        </div>
                     </div>
                     <div>
-                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">FOCUS AREAS</div>
-                        <div style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary);">IoT, Cybersecurity, Software<br>Automation</div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">Focus Areas</div>
+                        <div style="font-size: 1.1rem; color: var(--text-primary);">IoT, Cybersecurity,<br>Software &amp; Automation</div>
                     </div>
                     <div>
-                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">APPROACH</div>
-                        <div style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary);">Research. Architect. Build.<br>Validate. Scale.</div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">Approach</div>
+                        <div style="font-size: 1.1rem; color: var(--text-primary);">Research. Architect.<br>Build. Validate. Scale.</div>
                     </div>
                     <div>
-                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">LOCATION</div>
-                        <div style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary);">India &middot; Global</div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">Location</div>
+                        <div style="font-size: 1.1rem; color: var(--text-primary);">India &middot; Global</div>
                     </div>
                 </div>
             </div>
@@ -163,50 +190,104 @@
         <!-- 3. Engineering Timeline -->
         <section class="section reveal">
             <div class="container container-medium">
-                <div class="tech-label" style="text-align: center; margin-bottom: var(--space-12);">[ ENGINEERING TIMELINE ]</div>
-                
-                <div style="position: relative; padding-left: var(--space-8); border-left: 1px solid var(--border); margin: 0 auto; max-width: 600px;">
-                    
-                    <!-- Timeline Item 1 -->
-                    <div style="position: relative; margin-bottom: var(--space-12);">
-                        <div style="position: absolute; left: calc(var(--space-8) * -1 - 6px); top: 6px; width: 11px; height: 11px; background: var(--surface); border: 2px solid var(--text-primary); border-radius: 50%;"></div>
-                        <div class="tech-label" style="font-size: 0.85rem; margin-bottom: var(--space-2);">2024</div>
-                        <h4 style="font-size: 1.25rem; margin-bottom: var(--space-2);">Smart Dustbin & IoT Prototyping</h4>
-                        <p class="text-small" style="color: var(--text-secondary);">Early development of embedded systems and hardware-software integration for automated waste management.</p>
+                <div class="section-header centered">
+                    <span class="tech-label">[ Engineering Timeline ]</span>
+                    <h2>Our Journey</h2>
+                </div>
+
+                <div class="workflow-timeline" style="max-width: 680px;">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-step reveal delay-100">
+                        <div class="timeline-num">2024</div>
+                        <div>
+                            <h4>Smart Dustbin &amp; IoT Prototyping</h4>
+                            <p>Early development of embedded systems and hardware-software integration for automated waste management.</p>
+                        </div>
                     </div>
 
-                    <!-- Timeline Item 2 -->
-                    <div style="position: relative; margin-bottom: var(--space-12);">
-                        <div style="position: absolute; left: calc(var(--space-8) * -1 - 6px); top: 6px; width: 11px; height: 11px; background: var(--surface); border: 2px solid var(--text-primary); border-radius: 50%;"></div>
-                        <div class="tech-label" style="font-size: 0.85rem; margin-bottom: var(--space-2);">2025</div>
-                        <h4 style="font-size: 1.25rem; margin-bottom: var(--space-2);">IoT Agriculture & Production Scaling</h4>
-                        <p class="text-small" style="color: var(--text-secondary);">Architected and deployed environmental monitoring systems with real-time telemetry and cloud data pipelines.</p>
+                    <div class="timeline-step reveal delay-200">
+                        <div class="timeline-num">2025</div>
+                        <div>
+                            <h4>IoT Agriculture &amp; Production Scaling</h4>
+                            <p>Architected and deployed environmental monitoring systems with real-time telemetry and cloud data pipelines.</p>
+                        </div>
                     </div>
 
-                    <!-- Timeline Item 3 -->
-                    <div style="position: relative;">
-                        <div style="position: absolute; left: calc(var(--space-8) * -1 - 6px); top: 6px; width: 11px; height: 11px; background: var(--text-primary); border: 2px solid var(--text-primary); border-radius: 50%; box-shadow: 0 0 8px rgba(17,17,17,0.3);"></div>
-                        <div class="tech-label" style="font-size: 0.85rem; margin-bottom: var(--space-2);">2026</div>
-                        <h4 style="font-size: 1.25rem; margin-bottom: var(--space-2);">Rishvin Labs Establishment</h4>
-                        <p class="text-small" style="color: var(--text-secondary);">Formalized the engineering studio to deliver full-cycle software, cybersecurity, and IoT infrastructure.</p>
+                    <div class="timeline-step reveal delay-300">
+                        <div class="timeline-num" style="background: var(--gradient-primary); color: #fff; border-color: transparent; box-shadow: var(--glow-btn);">2026</div>
+                        <div>
+                            <h4>Rishvin Labs Establishment <span class="gradient-text">— Now</span></h4>
+                            <p>Formalized the engineering studio to deliver full-cycle software, cybersecurity, and IoT infrastructure to global clients.</p>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- 4. CTA -->
-        <section class="section reveal" style="border-bottom: 1px solid var(--border);">
-            <div class="container text-center">
-                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Ready to build?</h2>
-                <p style="max-width: 500px; margin: 0 auto var(--space-8);">Let's collaborate to engineer a high-performance system for your business.</p>
-                <a href="manifesto.html" class="hover-underline">Manifesto</a>
-                    <a href="founder.html" class="hover-underline">Founder</a>
-                    <a href="contact.html" class="btn btn-primary">
-                    Start a Project
-                </a>
+        <!-- 4. Founder & Systems Architect -->
+        <section class="section reveal" style="border-top: 1px solid var(--border); padding-top: var(--space-20); padding-bottom: var(--space-20);">
+            <div class="container container-medium">
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-12); align-items: center;">
+                    <!-- Founder Left Profile Glass Box -->
+                    <div style="background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.06); padding: var(--space-10) var(--space-8); border-radius: var(--radius-lg); position: relative; overflow: hidden; box-shadow: var(--shadow-card);">
+                        <!-- macOS window style dots inside profile box -->
+                        <div style="position: absolute; top: 14px; left: 14px; display: flex; gap: 6px;">
+                            <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #ff5f56; opacity: 0.85;"></span>
+                            <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #ffbd2e; opacity: 0.85;"></span>
+                            <span style="display: block; width: 8px; height: 8px; border-radius: 50%; background: #27c93f; opacity: 0.85;"></span>
+                        </div>
+                        <div style="margin-top: var(--space-4); text-align: center;">
+                            <div style="width: 90px; height: 90px; border-radius: 50%; margin: 0 auto var(--space-6); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid rgba(37, 99, 235, 0.25); box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25); background: var(--surface);">
+                                <img src="icon.png" alt="Rishvin Reddy" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: var(--space-1); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Reddy</h3>
+                            <p style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; color: var(--accent-blue); letter-spacing: 0.06em; margin-bottom: var(--space-6);">Founder & Lead Systems Architect</p>
+                            
+                            <div style="display: flex; justify-content: center; gap: 6px; flex-wrap: wrap;">
+                                <span class="tech-label" style="font-size: 0.62rem; padding: 4px 10px; border-radius: 100px; background: rgba(37, 99, 235, 0.08); color: var(--accent-blue); border: 1px solid rgba(37, 99, 235, 0.15); margin-bottom: 0 !important; width: auto !important;">Software</span>
+                                <span class="tech-label" style="font-size: 0.62rem; padding: 4px 10px; border-radius: 100px; background: rgba(124, 58, 237, 0.08); color: var(--accent-violet); border: 1px solid rgba(124, 58, 237, 0.15); margin-bottom: 0 !important; width: auto !important;">IoT</span>
+                                <span class="tech-label" style="font-size: 0.62rem; padding: 4px 10px; border-radius: 100px; background: rgba(8, 145, 178, 0.08); color: var(--accent-teal); border: 1px solid rgba(8, 145, 178, 0.15); margin-bottom: 0 !important; width: auto !important;">Cybersecurity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Founder Right details -->
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">[ Leadership & Engineering ]</div>
+                        <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-5); letter-spacing: -0.02em;">Behind the Code</h2>
+                        <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-5);">
+                            Rishvin Reddy is the systems architect and engineer driving the technical execution at Rishvin Labs. With expertise spanning scalable backends, microservices, secure embedded IoT grids, and zero-trust cryptography networks, he designs systems engineered for precision.
+                        </p>
+                        <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: var(--space-8);">
+                            Prioritizing atomic transaction logic, decentralized mesh protocols, and high-observability standards, he builds production-ready systems tailored to survive demanding loads and maximize operational efficiency.
+                        </p>
+                        <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                            <a href="founder.html" class="btn btn-primary" style="font-size: 0.8rem; padding: 12px 24px;">View Technical Profile <span class="btn-arrow">&rarr;</span></a>
+                            <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="font-size: 0.8rem; padding: 12px 24px; display: inline-flex; align-items: center; gap: 8px;">
+                                <i data-lucide="globe" style="width: 14px; height: 14px;"></i>
+                                Personal Portfolio
+                            </a>
+                            <a href="mailto:rishvinreddy@gmail.com" class="btn btn-outline" style="font-size: 0.8rem; padding: 12px 24px;">Contact Direct</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- 5. CTA -->
+        <section class="cta-section reveal">
+            <div class="container text-center">
+                <div class="tech-label" style="margin-bottom: var(--space-5); display: block;">[ Ready to Build? ]</div>
+                <h2 style="font-size: var(--text-h1); max-width: 700px; margin: 0 auto var(--space-8); letter-spacing: -0.03em;">
+                    Let's build something <span class="gradient-text">extraordinary.</span>
+                </h2>
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                    <a href="services.html#contact" class="btn btn-primary">Start a Project <span class="btn-arrow">&rarr;</span></a>
+                    <a href="founder.html" class="btn btn-outline">Meet the Founder</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -214,10 +295,11 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="navbar-logo">
-                        <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async"> Rishvin <span>Labs</span>
+                    <a href="index.html" class="navbar-logo" style="margin-bottom: var(--space-4); display: inline-flex;">
+                        <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async">
+                        Rishvin <span>Labs</span>
                     </a>
-                    <p>A high-end engineering studio building intelligent digital systems.</p>
+                    <p>A high-end engineering studio building intelligent digital systems for modern businesses.</p>
                 </div>
                 <div>
                     <h4 class="footer-title">Company</h4>
@@ -225,7 +307,7 @@
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
                         <a href="projects.html">Projects</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="services.html#contact">Contact</a>
                     </div>
                 </div>
                 <div>
@@ -241,43 +323,43 @@
                     <h4 class="footer-title">Connect</h4>
                     <div class="footer-links">
                         <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer">
-                            <i data-lucide="github" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            GitHub
+                            <i data-lucide="github" style="width:14px;height:14px;"></i> GitHub
                         </a>
                         <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer">
-                            <i data-lucide="globe" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            Portfolio
+                            <i data-lucide="globe" style="width:14px;height:14px;"></i> Portfolio
                         </a>
                         <a href="mailto:rishvinreddy@gmail.com">
-                            <i data-lucide="mail" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            rishvinreddy@gmail.com
+                            <i data-lucide="mail" style="width:14px;height:14px;"></i> rishvinreddy@gmail.com
                         </a>
                         <a href="tel:+919848723235">
-                            <i data-lucide="phone" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            +91 9848723235
+                            <i data-lucide="phone" style="width:14px;height:14px;"></i> +91 9848723235
                         </a>
                     </div>
                 </div>
             </div>
-                        <div class="footer-bottom">
+            <div class="footer-bottom">
                 <div>
-                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
-                    <p class="text-small" style="color: var(--text-secondary);">Last Updated &mdash; May 2026</p>
+                    <p>&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                    <p style="color: var(--text-muted); font-size: 0.62rem; margin-top: 2px;">Last Updated &mdash; May 2026</p>
                 </div>
-                <div style="display: flex; gap: var(--space-4); align-items: center;">
-                    <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
-                </div>
+                <span>Designed &amp; Engineered by Rishvin Labs</span>
             </div>
-        </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script>lucide.createIcons();</script>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav-inject.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
     <script src="assets/js/command-palette.js" defer></script>
     <script src="assets/js/page-transitions.js" defer></script>
+    <script>
+        const nav = document.getElementById('main-navbar');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        }, { passive: true });
+    </script>
+
 </body>
 </html>

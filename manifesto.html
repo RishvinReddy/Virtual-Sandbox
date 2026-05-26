@@ -3,35 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Manifesto | Rishvin Labs</title>
-    
-    <meta name="description" content="We don't build software. We engineer systems. The engineering philosophy and principles behind Rishvin Labs.">
+    <title>The Rishvin Labs Manifesto | First Principles Engineering</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="The Rishvin Labs Manifesto | First Principles Engineering">
+    <meta name="description" content="Our core principles and dedication to writing robust, highly performant, secure code. We believe in crafting systems that stand the test of time.">
+    <meta name="keywords" content="engineering manifesto, software development principles, first principles coding, system scale constraints, secure development framework, Rishvin Labs principles">
+    <meta name="author" content="Rishvin Labs">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/manifesto.html">
-    
+
+    <!-- Open Graph / Social SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/manifesto.html">
-    <meta property="og:title" content="Engineering Manifesto | Rishvin Labs">
-    <meta property="og:description" content="We don't build software. We engineer systems.">
-    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
-    
+    <meta property="og:title" content="The Rishvin Labs Manifesto | First Principles Engineering">
+    <meta property="og:description" content="Our core principles and dedication to writing robust, highly performant, secure code.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    <meta property="og:site_name" content="Rishvin Labs">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Engineering Manifesto | Rishvin Labs">
-    <meta name="twitter:description" content="We don't build software. We engineer systems.">
-    
+    <meta name="twitter:title" content="The Rishvin Labs Manifesto | First Principles Engineering">
+    <meta name="twitter:description" content="Our core principles and dedication to writing robust, highly performant, secure code.">
+    <meta name="twitter:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+
+    <!-- Fonts preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon & Branding -->
+    <link rel="icon" type="image/png" href="favicon/favicon.png" sizes="any">
     <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <meta name="theme-color" content="#0a0b0f">
+
+    <!-- JSON-LD Structured Data (Manifesto page context) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "The Rishvin Labs Systems Engineering Manifesto",
+      "description": "Technical philosophy detailing our strict architectural standards, fault tolerance limits, secure cryptography scopes, observability thresholds, and data persistence models.",
+      "url": "https://rishvinreddy.github.io/rishvin-labs/manifesto.html"
+    }
+    </script>
+
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- CSS Architecture -->
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="manifest" href="manifest.json">
-    
+
     <style>
         .manifesto-statement {
             font-size: clamp(2.5rem, 6vw, 5rem);
@@ -90,10 +119,10 @@
 </head>
 <body>
     <div id="loader">
-        <div class="loader-content">
-            <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
-            <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: var(--text-caption);">Engineering Intelligent Systems</p>
-        </div>
+      <div class="loader-content">
+        <h2>Rishvin Labs</h2>
+        <p style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 8px;">Engineering Intelligent Systems</p>
+      </div>
     </div>
 
     <!-- Custom Cursor -->
@@ -101,35 +130,20 @@
     <div id="cursor-ring"></div>
 
     <!-- Navbar -->
-    <header class="navbar" id="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="navbar-brand" aria-label="Rishvin Labs Home">
-                <span>Rishvin Labs</span>
-                <span class="brand-dot">.</span>
-            </a>
-            
-            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
-                <i data-lucide="menu"></i>
-            </button>
-            
-            <nav class="nav-links" id="nav-links">
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="labs.html">Labs</a>
-                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <nav class="navbar" id="main-navbar"></nav>
 
     <main>
         <!-- Hero Statement -->
-        <section style="padding-top: 140px; padding-bottom: var(--space-24); border-bottom: 1px solid var(--border);">
+        <section style="  border-bottom: 1px solid var(--border);" class="hero-section">
+    <!-- Premium Ambient Glow -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
             <div class="container container-medium">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ ENGINEERING MANIFESTO ]</div>
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">ENGINEERING MANIFESTO</div>
                 <h1 class="manifesto-statement animate-slide-up delay-100">
                     We don't build<br>software.<br>
-                    <span class="dim">We engineer systems.</span>
+                    <span class="gradient-text">We engineer systems.</span>
                 </h1>
                 <p class="animate-slide-up delay-200" style="font-size: 1.25rem; max-width: 640px; color: var(--text-secondary); line-height: 1.7;">
                     These are the principles that govern every architectural decision, every line of production code, and every system we deploy under the Rishvin Labs name.
@@ -233,27 +247,68 @@
     </main>
 
     <!-- Footer -->
-    <footer style="padding: var(--space-12) 0; border-top: 1px solid var(--border);">
+    <footer class="footer">
         <div class="container">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
-                <span style="font-family: var(--font-heading); font-weight: 700;">Rishvin Labs<span style="color: var(--primary);">.</span></span>
-                <div style="display: flex; gap: var(--space-6);">
-                    <a href="projects.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Projects</a>
-                    <a href="manifesto.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Manifesto</a>
-                    <a href="founder.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Founder</a>
-                    <a href="labs.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Labs</a>
-                    <a href="contact.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Contact</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="display: inline-flex; align-items: center; gap: 10px; margin-bottom: var(--space-4);">
+                        <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async"> Rishvin <span>Labs</span>
+                    </a>
+                    <p>A high-end engineering studio building intelligent digital systems.</p>
                 </div>
-                <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="services.html#contact">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html#software">Web Development</a>
+                        <a href="services.html#software">SaaS Development</a>
+                        <a href="services.html#iot">IoT Solutions</a>
+                        <a href="services.html#cyber">Cybersecurity</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="footer-links">
+                        <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>GitHub
+                        </a>
+                        <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="globe" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>Portfolio
+                        </a>
+                        <a href="mailto:rishvinreddy@gmail.com">
+                            <i data-lucide="mail" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>rishvinreddy@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>lucide.createIcons();</script>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav-inject.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
     <script src="assets/js/command-palette.js" defer></script>
     <script src="assets/js/page-transitions.js" defer></script>
+    <script>
+    const nav = document.getElementById('main-navbar');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+    </script>
 </body>
 </html>

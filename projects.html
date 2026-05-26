@@ -3,187 +3,367 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Case Studies | Projects | Rishvin Labs</title>
+    <title>Projects Portfolio | Re-engineered Case Studies | Rishvin Labs</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Discover engineering case studies from Rishvin Labs, including software systems, IoT platforms, automation, and intelligent solutions.">
+    <meta name="title" content="Projects Portfolio | Re-engineered Case Studies | Rishvin Labs">
+    <meta name="description" content="Explore the portfolio of Rishvin Labs. Case studies in clean energy tracking, IoT smart waste grids, financial portfolios, and enterprise recruitment portals.">
+    <meta name="keywords" content="software engineering case studies, hardware projects portfolio, ESP32 smart waste grid, wealth management portal architecture, soil moisture sensor grid, Rishvin Labs projects">
+    <meta name="author" content="Rishvin Labs">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/projects.html">
     
-    <!-- Open Graph / Social -->
+    <!-- Open Graph / Social SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/projects.html">
-    <meta property="og:title" content="Engineering Case Studies | Projects | Rishvin Labs">
-    <meta property="og:description" content="Discover engineering case studies from Rishvin Labs, including software systems, IoT platforms, automation, and intelligent solutions.">
-    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
+    <meta property="og:title" content="Projects Portfolio | Re-engineered Case Studies | Rishvin Labs">
+    <meta property="og:description" content="Explore the portfolio of Rishvin Labs. Case studies in clean energy tracking, IoT smart waste grids, financial portfolios, and enterprise portals.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    <meta property="og:site_name" content="Rishvin Labs">
+    <meta property="og:locale" content="en_US">
     
-    <!-- Fonts -->
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects Portfolio | Re-engineered Case Studies | Rishvin Labs">
+    <meta name="twitter:description" content="Explore the portfolio of Rishvin Labs. Case studies in clean energy tracking, IoT smart waste grids, financial portfolios, and enterprise portals.">
+    <meta name="twitter:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    
+    <!-- Fonts preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <!-- Favicon & Branding -->
+    <link rel="icon" type="image/png" href="favicon/favicon.png" sizes="any">
+    <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <meta name="theme-color" content="#0a0b0f">
+
+    <!-- JSON-LD Structured Data (Portfolio Context) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "author": {
+        "@type": "Organization",
+        "name": "Rishvin Labs",
+        "url": "https://rishvinreddy.github.io/rishvin-labs/"
+      },
+      "name": "Rishvin Labs Systems Engineering Portfolio",
+      "description": "A collection of production-grade case studies detailing clean fintech architectures, IoT sensor grids, smart municipal route monitors, zero-trust cloud vaults, and enterprise SaaS systems.",
+      "url": "https://rishvinreddy.github.io/rishvin-labs/projects.html"
+    }
+    </script>
 
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- CSS -->
+    <!-- CSS Architecture -->
     <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        /* Project card grid override */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: var(--space-8);
+        }
+
+        .proj-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-card);
+            position: relative;
+        }
+        .proj-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+        .proj-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-card-hover);
+            border-color: var(--border-accent);
+            opacity: 1;
+        }
+        .proj-card:hover::before { opacity: 1; }
+
+        .proj-thumb {
+            height: 180px;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-end;
+            padding: var(--space-6);
+            position: relative;
+            overflow: hidden;
+        }
+        .proj-thumb::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: var(--gradient-glow);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+        .proj-card:hover .proj-thumb::before { opacity: 1; }
+
+        .proj-num {
+            font-family: var(--font-mono);
+            font-size: 5rem;
+            font-weight: var(--weight-black);
+            color: var(--border);
+            line-height: 1;
+            transition: color var(--transition-base);
+            position: relative;
+            z-index: 1;
+        }
+        .proj-card:hover .proj-num {
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .proj-body { padding: var(--space-8); flex: 1; display: flex; flex-direction: column; }
+
+        .proj-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-4);
+        }
+
+        .proj-status {
+            font-family: var(--font-mono);
+            font-size: 0.60rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            padding: 3px 8px;
+            border-radius: var(--radius-full);
+            border: 1px solid;
+        }
+        .proj-status.live {
+            color: var(--success);
+            border-color: rgba(5,150,105,0.3);
+            background: rgba(5,150,105,0.06);
+        }
+        .proj-status.concept {
+            color: var(--text-muted);
+            border-color: var(--border);
+            background: var(--bg-secondary);
+        }
+
+        .proj-body h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--space-2);
+        }
+
+        .proj-body p {
+            font-size: var(--text-small);
+            color: var(--text-secondary);
+            margin-bottom: var(--space-6);
+            flex: 1;
+            max-width: none;
+        }
+
+        .proj-link {
+            font-family: var(--font-mono);
+            font-size: 0.70rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent-blue);
+            border-top: 1px solid var(--border);
+            padding-top: var(--space-4);
+            font-weight: var(--weight-bold);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap var(--transition-fast);
+        }
+        .proj-card:hover .proj-link { gap: 10px; }
+
+        /* Search bar */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 10px 16px;
+        }
+        .search-bar input {
+            background: transparent;
+            border: none;
+            outline: none;
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            color: var(--text-primary);
+            width: 200px;
+        }
+        .search-bar input::placeholder { color: var(--text-muted); }
+
+        @media (max-width: 480px) {
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
-<body class="page-loaded">
-    
-    <!-- Navbar -->
-    <header class="navbar" id="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img">
-                Rishvin <span>Labs</span>
-            </a>
-            
-            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
-                <i data-lucide="menu"></i>
-            </button>
-            
-            <nav class="nav-links" id="nav-links">
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="labs.html">Labs</a>
-                <a href="manifesto.html">Manifesto</a>
-                <a href="founder.html">Founder</a>
-                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;" id="contact-nav-btn">Contact</a>
-            </nav>
+<body>
+
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-content">
+            <h2>Rishvin Labs</h2>
+            <p style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 8px;">Engineering Intelligent Systems</p>
         </div>
-    </header>
+    </div>
+
+    <!-- Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="main-navbar"></nav>
 
     <main>
+
         <!-- 1. Hero -->
-        <section class="section" style="padding-top: var(--space-32); border-bottom: 1px solid var(--border);">
+        <section class="section hero-section" style=" border-bottom: 1px solid var(--border);">
+    <!-- Premium Ambient Glow -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
             <div class="container text-center">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ PORTFOLIO OF SYSTEMS ]</div>
-                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
-                    Engineering Case Studies.
+                <div class="tech-label animate-fade-in" style="margin: 0 auto var(--space-6);">
+                                        Portfolio of Systems
+                </div>
+                <h1 class="animate-slide-up delay-100" style="font-size: var(--text-hero); max-width: 800px; margin: 0 auto var(--space-6);">
+                    Engineering <span class="gradient-text">Case Studies.</span>
                 </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto; font-size: 1.125rem;">
-                    A selection of high-performance systems architected for scale, security, and precision.
+                <p class="animate-slide-up delay-200" style="max-width: 580px; margin: 0 auto; font-size: 1.1rem;">
+                    High-performance systems architected for scale, security, and precision — from concept to production.
                 </p>
             </div>
         </section>
 
-        <!-- 2. Filtering / Command Bar -->
-        <section class="section section-light" style="padding: var(--space-8) 0; border-bottom: 1px solid var(--border);">
+        <!-- 2. Filter Bar -->
+        <section style="background: var(--surface); border-bottom: 1px solid var(--border); padding: var(--space-6) 0; position: sticky; top: 72px; z-index: 50;">
             <div class="container container-medium">
                 <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
-                    <div style="display: flex; gap: var(--space-4); overflow-x: auto; padding-bottom: 4px;" id="project-filters">
-                        <button class="tech-label filter-btn active" data-filter="all" style="background: var(--text-primary); color: var(--surface); border: none; padding: 4px 12px; cursor: pointer;">[ ALL ]</button>
-                        <button class="tech-label filter-btn" data-filter="iot" style="background: transparent; color: var(--text-secondary); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; transition: all 0.2s;">[ IOT ]</button>
-                        <button class="tech-label filter-btn" data-filter="cybersecurity" style="background: transparent; color: var(--text-secondary); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; transition: all 0.2s;">[ CYBERSECURITY ]</button>
-                        <button class="tech-label filter-btn" data-filter="software" style="background: transparent; color: var(--text-secondary); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; transition: all 0.2s;">[ SOFTWARE ]</button>
-                        <button class="tech-label filter-btn" data-filter="automation" style="background: transparent; color: var(--text-secondary); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; transition: all 0.2s;">[ AUTOMATION ]</button>
+                    <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;" id="project-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="iot">IoT</button>
+                        <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+                        <button class="filter-btn" data-filter="software">Software</button>
+                        <button class="filter-btn" data-filter="automation">Automation</button>
                     </div>
-                    <div style="display: flex; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 4px;">
-                        <i data-lucide="search" style="width: 16px; height: 16px; color: var(--text-secondary); margin-right: 8px;"></i>
-                        <input type="text" id="project-search" placeholder="Search systems..." style="background: transparent; border: none; outline: none; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-primary); width: 200px;">
+                    <div class="search-bar">
+                        <i data-lucide="search" style="width: 15px; height: 15px; color: var(--text-muted);"></i>
+                        <input type="text" id="project-search" placeholder="Search projects...">
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 3. Projects Grid -->
-        <section class="section reveal" style="padding-top: var(--space-16); padding-bottom: var(--space-32);">
+        <section class="section" style="padding-top: var(--space-12); padding-bottom: var(--space-32);">
             <div class="container container-medium">
-                <div id="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-12);">
-                    
+                <div class="projects-grid" id="projects-grid">
+
                     <!-- Card 1 -->
-                    <a href="project-iot-soil.html" class="project-card" data-category="iot" data-title="Automated Soil Monitoring Network" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
-                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">01</span>
+                    <a href="project-iot-soil.html" class="proj-card reveal" data-category="iot" data-title="Automated Soil Monitoring Network">
+                        <div class="proj-thumb">
+                            <span class="proj-num">01</span>
                         </div>
-                        <div style="padding: var(--space-8);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
-                                <div class="tech-label">[ IOT ]</div>
-                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">PRODUCTION</div>
+                        <div class="proj-body">
+                            <div class="proj-meta">
+                                <div class="tech-label">IoT</div>
+                                <span class="proj-status live">Live</span>
                             </div>
-                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">Automated Soil Monitoring Network</h3>
-                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Scalable telemetry system capturing real-time environmental data.</p>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
-                                VIEW ARCHITECTURE &rarr;
-                            </div>
+                            <h3>Automated Soil Monitoring Network</h3>
+                            <p>Scalable telemetry system capturing real-time environmental data for precision agriculture.</p>
+                            <div class="proj-link">View Architecture <i data-lucide="arrow-right" style="width: 13px; height: 13px;"></i></div>
                         </div>
                     </a>
 
                     <!-- Card 2 -->
-                    <a href="project-iot-waste.html" class="project-card" data-category="iot" data-title="Smart Dustbin & Automation" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
-                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">02</span>
+                    <a href="project-iot-waste.html" class="proj-card reveal" style="transition-delay: 80ms;" data-category="iot" data-title="Smart Dustbin &amp; Automation">
+                        <div class="proj-thumb">
+                            <span class="proj-num">02</span>
                         </div>
-                        <div style="padding: var(--space-8);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
-                                <div class="tech-label">[ IOT ]</div>
-                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">PRODUCTION</div>
+                        <div class="proj-body">
+                            <div class="proj-meta">
+                                <div class="tech-label">[ IoT ]</div>
+                                <span class="proj-status live">Live</span>
                             </div>
-                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">Smart Dustbin & Automation</h3>
-                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Embedded microcontroller logic for automated waste management capacity.</p>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
-                                VIEW ARCHITECTURE &rarr;
-                            </div>
+                            <h3>Smart Dustbin &amp; Automation</h3>
+                            <p>Embedded microcontroller logic for automated waste management capacity detection.</p>
+                            <div class="proj-link">View Architecture <i data-lucide="arrow-right" style="width: 13px; height: 13px;"></i></div>
                         </div>
                     </a>
 
                     <!-- Card 3 -->
-                    <a href="project-finance.html" class="project-card" data-category="software" data-title="Global Finance Hub Portal" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
-                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">03</span>
+                    <a href="project-finance.html" class="proj-card reveal" style="transition-delay: 160ms;" data-category="software" data-title="Global Finance Hub Portal">
+                        <div class="proj-thumb">
+                            <span class="proj-num">03</span>
                         </div>
-                        <div style="padding: var(--space-8);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
-                                <div class="tech-label">[ SOFTWARE ]</div>
-                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">PRODUCTION</div>
+                        <div class="proj-body">
+                            <div class="proj-meta">
+                                <div class="tech-label">[ Software ]</div>
+                                <span class="proj-status live">Live</span>
                             </div>
-                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">Global Finance Hub Portal</h3>
-                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">High-performance portal for real-time market data visualization.</p>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
-                                VIEW ARCHITECTURE &rarr;
-                            </div>
+                            <h3>Global Finance Hub Portal</h3>
+                            <p>High-performance portal for real-time market data visualization and financial workflows.</p>
+                            <div class="proj-link">View Architecture <i data-lucide="arrow-right" style="width: 13px; height: 13px;"></i></div>
                         </div>
                     </a>
 
                     <!-- Card 4 -->
-                    <a href="project-vault.html" class="project-card" data-category="cybersecurity" data-title="CyberVault Access Manager" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
-                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">04</span>
+                    <a href="project-vault.html" class="proj-card reveal" style="transition-delay: 240ms;" data-category="cybersecurity" data-title="CyberVault Access Manager">
+                        <div class="proj-thumb">
+                            <span class="proj-num">04</span>
                         </div>
-                        <div style="padding: var(--space-8);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
-                                <div class="tech-label">[ CYBERSECURITY ]</div>
-                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">MVP</div>
+                        <div class="proj-body">
+                            <div class="proj-meta">
+                                <div class="tech-label">[ Cybersecurity ]</div>
+                                <span class="proj-status concept">Concept</span>
                             </div>
-                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">CyberVault Access Manager</h3>
-                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Zero-knowledge enterprise password manager built with AES-256 encryption.</p>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
-                                VIEW ARCHITECTURE &rarr;
-                            </div>
+                            <h3>CyberVault Access Manager</h3>
+                            <p>Zero-knowledge enterprise password manager built with AES-256 encryption and role-based access.</p>
+                            <div class="proj-link">View Architecture <i data-lucide="arrow-right" style="width: 13px; height: 13px;"></i></div>
                         </div>
                     </a>
 
                     <!-- Card 5 -->
-                    <a href="project-recruitment.html" class="project-card" data-category="automation" data-title="NextGen Recruitment Engine" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
-                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">05</span>
+                    <a href="project-recruitment.html" class="proj-card reveal" style="transition-delay: 320ms;" data-category="automation" data-title="NextGen Recruitment Engine">
+                        <div class="proj-thumb">
+                            <span class="proj-num">05</span>
                         </div>
-                        <div style="padding: var(--space-8);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
-                                <div class="tech-label">[ AUTOMATION ]</div>
-                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">PRODUCTION</div>
+                        <div class="proj-body">
+                            <div class="proj-meta">
+                                <div class="tech-label">[ Automation ]</div>
+                                <span class="proj-status live">Live</span>
                             </div>
-                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">NextGen Recruitment Engine</h3>
-                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">A scalable HR automation tool matching talent with opportunities instantly.</p>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
-                                VIEW ARCHITECTURE &rarr;
-                            </div>
+                            <h3>NextGen Recruitment Engine</h3>
+                            <p>A scalable HR automation tool matching talent with opportunities efficiently for global firms.</p>
+                            <div class="proj-link">View Architecture <i data-lucide="arrow-right" style="width: 13px; height: 13px;"></i></div>
                         </div>
                     </a>
 
@@ -192,17 +372,19 @@
         </section>
 
         <!-- CTA -->
-        <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+        <section class="cta-section reveal" style="border-top: 1px solid var(--border);">
             <div class="container text-center">
-                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Let's Build Something Intelligent.</h2>
-                <p style="max-width: 500px; margin: 0 auto var(--space-8);">Ready to discuss the architecture for your next project?</p>
-                <div style="display: flex; gap: var(--space-4); justify-content: center;">
-                    <a href="contact.html" class="btn btn-primary">
-                        Start a Project
-                    </a>
+                <div class="tech-label" style="margin-bottom: var(--space-5); display: block;">[ Next Project ]</div>
+                <h2 style="font-size: var(--text-h1); max-width: 700px; margin: 0 auto var(--space-8); letter-spacing: -0.03em;">
+                    Let's build something <span class="gradient-text">intelligent.</span>
+                </h2>
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
+                    <a href="services.html#contact" class="btn btn-primary">Start a Project <span class="btn-arrow">&rarr;</span></a>
+                    <a href="services.html" class="btn btn-outline">View Services</a>
                 </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -210,10 +392,11 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="navbar-logo">
-                        <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async"> Rishvin <span>Labs</span>
+                    <a href="index.html" class="navbar-logo" style="margin-bottom: var(--space-4); display: inline-flex;">
+                        <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async">
+                        Rishvin <span>Labs</span>
                     </a>
-                    <p>A high-end engineering studio building intelligent digital systems.</p>
+                    <p>A high-end engineering studio building intelligent digital systems for modern businesses.</p>
                 </div>
                 <div>
                     <h4 class="footer-title">Company</h4>
@@ -221,14 +404,14 @@
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
                         <a href="projects.html">Projects</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="services.html#contact">Contact</a>
                     </div>
                 </div>
                 <div>
                     <h4 class="footer-title">Services</h4>
                     <div class="footer-links">
-                        <a href="services.html#software">Web Development</a>
-                        <a href="services.html#software">SaaS Development</a>
+                        <a href="services.html#web">Web Development</a>
+                        <a href="services.html#saas">SaaS Development</a>
                         <a href="services.html#iot">IoT Solutions</a>
                         <a href="services.html#cyber">Cybersecurity</a>
                     </div>
@@ -237,68 +420,66 @@
                     <h4 class="footer-title">Connect</h4>
                     <div class="footer-links">
                         <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer">
-                            <i data-lucide="github" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            GitHub
+                            <i data-lucide="github" style="width:14px;height:14px;"></i> GitHub
                         </a>
                         <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer">
-                            <i data-lucide="globe" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            Portfolio
+                            <i data-lucide="globe" style="width:14px;height:14px;"></i> Portfolio
                         </a>
                         <a href="mailto:rishvinreddy@gmail.com">
-                            <i data-lucide="mail" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            rishvinreddy@gmail.com
+                            <i data-lucide="mail" style="width:14px;height:14px;"></i> rishvinreddy@gmail.com
+                        </a>
+                        <a href="tel:+919848723235">
+                            <i data-lucide="phone" style="width:14px;height:14px;"></i> +91 9848723235
                         </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div>
-                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                    <p>&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                    <p style="color: var(--text-muted); font-size: 0.62rem; margin-top: 2px;">Last Updated &mdash; May 2026</p>
                 </div>
+                <span>Designed &amp; Engineered by Rishvin Labs</span>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
+    <script>lucide.createIcons();</script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav-inject.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/scroll-effects.js" defer></script>
+    <script src="assets/js/command-palette.js" defer></script>
+    <script src="assets/js/page-transitions.js" defer></script>
+
     <script>
-        lucide.createIcons();
-        
-        // Custom Project Filtering Logic
+        const nav = document.getElementById('main-navbar');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 20);
+        }, { passive: true });
+
+        // Filtering
         document.addEventListener('DOMContentLoaded', () => {
             const filterBtns = document.querySelectorAll('.filter-btn');
             const searchInput = document.getElementById('project-search');
-            const projects = document.querySelectorAll('.project-card');
+            const projects = document.querySelectorAll('.proj-card');
 
             function filterProjects() {
                 const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
                 const searchQuery = searchInput.value.toLowerCase();
-
                 projects.forEach(project => {
                     const category = project.getAttribute('data-category');
                     const title = project.getAttribute('data-title').toLowerCase();
-                    
                     const matchesFilter = activeFilter === 'all' || category === activeFilter;
                     const matchesSearch = title.includes(searchQuery);
-
-                    if (matchesFilter && matchesSearch) {
-                        project.style.display = 'block';
-                    } else {
-                        project.style.display = 'none';
-                    }
+                    project.style.display = (matchesFilter && matchesSearch) ? 'flex' : 'none';
                 });
             }
 
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', (e) => {
-                    filterBtns.forEach(b => {
-                        b.classList.remove('active');
-                        b.style.background = 'transparent';
-                        b.style.color = 'var(--text-secondary)';
-                    });
-                    const target = e.currentTarget;
-                    target.classList.add('active');
-                    target.style.background = 'var(--text-primary)';
-                    target.style.color = 'var(--surface)';
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    e.currentTarget.classList.add('active');
                     filterProjects();
                 });
             });
@@ -306,10 +487,6 @@
             searchInput.addEventListener('input', filterProjects);
         });
     </script>
-    <script src="assets/js/main.js" defer></script>
-    <script src="assets/js/navbar.js" defer></script>
-    <script src="assets/js/scroll-effects.js" defer></script>
-    <script src="assets/js/command-palette.js" defer></script>
-    <script src="assets/js/page-transitions.js" defer></script>
+
 </body>
 </html>

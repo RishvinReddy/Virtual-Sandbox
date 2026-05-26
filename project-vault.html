@@ -3,43 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CyberVault | Rishvin Labs</title>
+    <title>Case Study: Fort Knox Digital Vault | Rishvin Labs</title>
     
-    <meta name="description" content="Case study: Enterprise Password Manager engineered by Rishvin Labs for maximum security.">
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Case Study: Fort Knox Digital Vault | Rishvin Labs">
+    <meta name="description" content="Inside the engineering of a highly secure client vault using double-encryption, zero-trust authorization, and immutable logs developed by Rishvin Labs.">
+    <meta name="keywords" content="zero trust password manager, zero knowledge password database, AES-256 local encryption, secure digital vault, cryptographic audits, Rishvin Labs case study">
+    <meta name="author" content="Rishvin Labs">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/project-vault.html">
+
+    <!-- Open Graph / Social SEO -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/project-vault.html">
+    <meta property="og:title" content="Case Study: Fort Knox Digital Vault | Rishvin Labs">
+    <meta property="og:description" content="Inside the engineering of a highly secure client vault using double-encryption, zero-trust authorization, and immutable audits.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    <meta property="og:site_name" content="Rishvin Labs">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Case Study: Fort Knox Digital Vault | Rishvin Labs">
+    <meta name="twitter:description" content="Inside the engineering of a highly secure client vault using double-encryption, zero-trust authorization, and immutable audits.">
+    <meta name="twitter:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+
+    <!-- Fonts preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     
+    <!-- Favicon & Branding -->
+    <link rel="icon" type="image/png" href="favicon/favicon.png" sizes="any">
+    <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <meta name="theme-color" content="#0a0b0f">
+
+    <!-- JSON-LD Structured Data (Tech Case Study Context) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Case Study: Fort Knox Digital Vault",
+      "description": "The technical architecture of a secure password and asset manager deploying local AES-256 operations and zero-knowledge servers.",
+      "image": "https://rishvinreddy.github.io/rishvin-labs/icon.png",
+      "author": {
+        "@type": "Organization",
+        "name": "Rishvin Labs"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Rishvin Labs",
+        "logo": "https://rishvinreddy.github.io/rishvin-labs/icon.png"
+      }
+    }
+    </script>
+
+    <!-- CSS Architecture -->
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="manifest" href="manifest.json">
     
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="page-loaded">
     
     <!-- Navbar -->
-    <header class="navbar" id="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img">
-                Rishvin <span>Labs</span>
-            </a>
-            
-            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
-                <i data-lucide="menu"></i>
-            </button>
-            
-            <nav class="nav-links" id="nav-links">
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html" class="active">Projects</a>
-                <a href="labs.html">Labs</a>
-                <a href="manifesto.html">Manifesto</a>
-                <a href="founder.html">Founder</a>
-                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;" id="contact-nav-btn">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <nav class="navbar" id="main-navbar"></nav>
 
     <!-- Main Content -->
     <main>
@@ -49,7 +83,11 @@
         </div>
 
         <!-- 1. Case Study Header -->
-        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
+        <section class="section hero-section" style=" ">
+    <!-- Premium Ambient Glow -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
             <div class="container container-medium">
                 <div style="display: flex; gap: var(--space-4); align-items: center; margin-bottom: var(--space-8);">
                     <a href="projects.html" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-mono); font-size: 0.875rem; display: inline-flex; align-items: center; gap: 4px;">
@@ -57,7 +95,7 @@
                     </a>
                 </div>
                 
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ CASE STUDY 04 / CYBERSECURITY ]</div>
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">CASE STUDY 04 / CYBERSECURITY</div>
                 <h1 class="animate-slide-up delay-100" style="font-size: var(--text-hero); max-width: 900px; margin-bottom: var(--space-6);">
                     CyberVault Access Manager
                 </h1>
@@ -163,7 +201,7 @@
         <section class="section section-light" style="text-align: center; border-top: 1px solid var(--border);">
             <div class="container">
                 <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">Need a similar system?</h2>
-                <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+                <a href="services.html#contact" class="btn btn-primary">Start a Conversation</a>
             </div>
         </section>
     </main>
@@ -184,7 +222,7 @@
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
                         <a href="projects.html">Projects</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="services.html#contact">Contact</a>
                     </div>
                 </div>
                 <div>
@@ -227,6 +265,7 @@
         });
     </script>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav-inject.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
     <script src="assets/js/command-palette.js" defer></script>

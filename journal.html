@@ -3,29 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Journal | Rishvin Labs</title>
-    
-    <meta name="description" content="Engineering insights on cybersecurity, IoT systems, software architecture, and lessons from building real-world technical systems.">
+    <title>Engineering Journal | Tech Insights & Logbooks | Rishvin Labs</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Engineering Journal | Tech Insights & Logbooks | Rishvin Labs">
+    <meta name="description" content="Read technical post-mortems, system logbooks, deep-dives into modern web architectures, and the latest hardware research from Rishvin Labs.">
+    <meta name="keywords" content="software engineering blog, hardware logs, systems architecture insights, ESP-NOW post-mortem, zero-knowledge security, API versioning strategy, Rishvin Labs journal">
+    <meta name="author" content="Rishvin Labs">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
     <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/journal.html">
-    
+
+    <!-- Open Graph / Social SEO -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/journal.html">
-    <meta property="og:title" content="Engineering Journal | Rishvin Labs">
-    <meta property="og:description" content="Engineering insights on cybersecurity, IoT systems, software architecture, and lessons from building real systems.">
-    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
-    
+    <meta property="og:title" content="Engineering Journal | Tech Insights & Logbooks | Rishvin Labs">
+    <meta property="og:description" content="Read technical post-mortems, system logbooks, deep-dives into modern web architectures, and the latest hardware research from Rishvin Labs.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+    <meta property="og:site_name" content="Rishvin Labs">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Engineering Journal | Rishvin Labs">
-    <meta name="twitter:description" content="Engineering insights on cybersecurity, IoT systems, and software architecture.">
-    
+    <meta name="twitter:title" content="Engineering Journal | Tech Insights & Logbooks | Rishvin Labs">
+    <meta name="twitter:description" content="Read technical post-mortems, system logbooks, deep-dives into modern web architectures, and the latest hardware research from Rishvin Labs.">
+    <meta name="twitter:image" content="https://rishvinreddy.github.io/rishvin-labs/icon.png">
+
+    <!-- Fonts preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon & Branding -->
+    <link rel="icon" type="image/png" href="favicon/favicon.png" sizes="any">
     <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <meta name="theme-color" content="#0a0b0f">
+
+    <!-- JSON-LD Structured Data (Blog/Journal Context) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Rishvin Labs Systems Engineering Journal",
+      "description": "Technical field reports, systems design tutorials, and cryptographic analyses of production platforms.",
+      "url": "https://rishvinreddy.github.io/rishvin-labs/journal.html"
+    }
+    </script>
+
+    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- CSS Architecture -->
     <link rel="stylesheet" href="assets/css/variables.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
@@ -116,45 +145,30 @@
 </head>
 <body>
     <div id="loader">
-        <div class="loader-content">
-            <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
-            <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: var(--text-caption);">Engineering Intelligent Systems</p>
-        </div>
+      <div class="loader-content">
+        <h2>Rishvin Labs</h2>
+        <p style="font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; margin-top: 8px;">Engineering Intelligent Systems</p>
+      </div>
     </div>
 
     <div id="cursor-dot"></div>
     <div id="cursor-ring"></div>
 
-    <header class="navbar" id="navbar">
-        <div class="navbar-inner">
-            <a href="index.html" class="navbar-brand" aria-label="Rishvin Labs Home">
-                <span>Rishvin Labs</span>
-                <span class="brand-dot">.</span>
-            </a>
-            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
-                <i data-lucide="menu"></i>
-            </button>
-            <nav class="nav-links" id="nav-links">
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="labs.html">Labs</a>
-                <a href="journal.html" class="active">Journal</a>
-                <a href="manifesto.html">Manifesto</a>
-                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <nav class="navbar" id="main-navbar"></nav>
 
     <main>
         <!-- Header -->
-        <section style="padding-top: 140px; padding-bottom: var(--space-16); border-bottom: 1px solid var(--border);">
+        <section style="  border-bottom: 1px solid var(--border);" class="hero-section">
+    <!-- Premium Ambient Glow -->
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+
             <div class="container container-medium">
                 <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--space-8); align-items: end;">
                     <div>
-                        <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-6);">[ ENGINEERING JOURNAL ]</div>
+                        <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-6);">ENGINEERING JOURNAL</div>
                         <h1 class="animate-slide-up delay-100" style="font-size: clamp(2.5rem, 6vw, 4.5rem); line-height: 1; letter-spacing: -0.02em; margin-bottom: var(--space-6);">
-                            Systems.<br>Insights.<br>Lessons.
+                            Systems.<br><span class="gradient-text">Insights.</span><br>Lessons.
                         </h1>
                         <p class="animate-slide-up delay-200" style="font-size: 1.05rem; color: var(--text-secondary); max-width: 480px; line-height: 1.7; margin-bottom: 0;">
                             Unfiltered technical writing on building real-world systems — the architecture decisions, the failures, and the lessons extracted from production.
@@ -211,15 +225,15 @@
         <section class="section">
             <div class="container container-medium">
                 <div style="display: grid; grid-template-columns: 280px 1fr; gap: var(--space-16);">
-                    
+
                     <!-- Sidebar filters -->
                     <div>
                         <div class="tech-label" style="margin-bottom: var(--space-6);">[ FILTER BY TOPIC ]</div>
                         <div style="display: flex; flex-direction: column; gap: 2px;" id="journal-filters">
                             <button class="journal-filter-btn active" data-filter="all" style="text-align: left; padding: var(--space-3) var(--space-4); font-family: var(--font-mono); font-size: 0.8rem; background: var(--text-primary); color: var(--surface); border: none; cursor: pointer; transition: all 0.2s; text-transform: uppercase;">ALL TOPICS</button>
-                            <button class="journal-filter-btn" data-filter="iot" style="text-align: left; padding: var(--space-3) var(--space-4); font-family: var(--font-mono); font-size: 0.8rem; background: transparent; color: var(--text-secondary); border: none; cursor: pointer; transition: all 0.2s; text-transform: uppercase;">IoT & Hardware</button>
+                            <button class="journal-filter-btn" data-filter="iot" style="text-align: left; padding: var(--space-3) var(--space-4); font-family: var(--font-mono); font-size: 0.8rem; background: transparent; color: var(--text-secondary); border: none; cursor: pointer; transition: all 0.2s; text-transform: uppercase;">IoT &amp; Hardware</button>
                             <button class="journal-filter-btn" data-filter="security" style="text-align: left; padding: var(--space-3) var(--space-4); font-family: var(--font-mono); font-size: 0.8rem; background: transparent; color: var(--text-secondary); border: none; cursor: pointer; transition: all 0.2s; text-transform: uppercase;">Cybersecurity</button>
-                            <button class="journal-filter-btn" data-filter="software" style="text-align: left; padding: var(--font-mono); font-size: 0.8rem; background: transparent; color: var(--text-secondary); border: none; cursor: pointer; transition: all 0.2s; text-transform: uppercase; padding: var(--space-3) var(--space-4);">Software Systems</button>
+                            <button class="journal-filter-btn" data-filter="software" style="text-align: left; padding: var(--space-3) var(--space-4); font-family: var(--font-mono); font-size: 0.8rem; background: transparent; color: var(--text-secondary); border: none; cursor: pointer; transition: all 0.2s; text-transform: uppercase;">Software Systems</button>
                         </div>
 
                         <div style="margin-top: var(--space-12); padding-top: var(--space-8); border-top: 1px solid var(--border);">
@@ -292,32 +306,75 @@
             <div class="container text-center">
                 <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Have a technical challenge?</h2>
                 <p style="max-width: 500px; margin: 0 auto var(--space-8); color: var(--text-secondary);">If these articles resonate, we should work together.</p>
-                <a href="contact.html" class="btn btn-primary" style="padding: 18px 40px;">Initialize Consultation &rarr;</a>
+                <a href="services.html#contact" class="btn btn-primary" style="padding: 18px 40px;">Initialize Consultation &rarr;</a>
             </div>
         </section>
     </main>
 
-    <footer style="padding: var(--space-12) 0; border-top: 1px solid var(--border);">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
-                <span style="font-family: var(--font-heading); font-weight: 700;">Rishvin Labs<span style="color: var(--primary);">.</span></span>
-                <div style="display: flex; gap: var(--space-6);">
-                    <a href="projects.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Projects</a>
-                    <a href="journal.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Journal</a>
-                    <a href="manifesto.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Manifesto</a>
-                    <a href="contact.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Contact</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo" style="display: inline-flex; align-items: center; gap: 10px; margin-bottom: var(--space-4);">
+                        <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async"> Rishvin <span>Labs</span>
+                    </a>
+                    <p>A high-end engineering studio building intelligent digital systems.</p>
                 </div>
-                <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="services.html#contact">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html#software">Web Development</a>
+                        <a href="services.html#software">SaaS Development</a>
+                        <a href="services.html#iot">IoT Solutions</a>
+                        <a href="services.html#cyber">Cybersecurity</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="footer-links">
+                        <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>GitHub
+                        </a>
+                        <a href="https://rishvinreddy.github.io" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="globe" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>Portfolio
+                        </a>
+                        <a href="mailto:rishvinreddy@gmail.com">
+                            <i data-lucide="mail" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>rishvinreddy@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                </div>
             </div>
         </div>
     </footer>
 
     <script>lucide.createIcons();</script>
     <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/nav-inject.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
     <script src="assets/js/command-palette.js" defer></script>
     <script src="assets/js/page-transitions.js" defer></script>
+    <script>
+    const nav = document.getElementById('main-navbar');
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const filterBtns = document.querySelectorAll('.journal-filter-btn');
