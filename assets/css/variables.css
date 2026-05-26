@@ -30,12 +30,12 @@
   --font-mono: "Courier New", Courier, monospace;
 
   /* Typographic Scale */
-  --text-hero: 4.5rem;
-  --text-h1: 3.5rem;
-  --text-h2: 2.5rem;
+  --text-hero: clamp(5rem, 8vw, 8.5rem);
+  --text-h1: clamp(4rem, 6vw, 6rem);
+  --text-h2: clamp(3rem, 5vw, 5rem);
   --text-h3: 1.75rem;
   --text-h4: 1.25rem;
-  --text-body: 1.125rem;
+  --text-body: 1.2rem;
   --text-small: 0.85rem;
   
   --weight-regular: 400;
@@ -43,7 +43,7 @@
 
   /* Line Heights */
   --line-height-tight: 0.95;
-  --line-height-base: 1.4;
+  --line-height-base: 1.8;
   --line-height-relaxed: 1.6;
 
   /* Spacing Scale (Extreme Whitespace) */

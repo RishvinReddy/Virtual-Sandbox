@@ -86,138 +86,108 @@
             </div>
         </section>
 
-        <!-- 2. Contact Grid -->
+        <!-- 2. Contact Dense Layout -->
         <section class="section section-light">
-            <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-bottom: var(--space-16);">
-                    <div class="card reveal delay-100" style="text-align: center; padding: var(--space-8); border-top: 2px solid var(--text-primary);">
-                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Start a Project</h3>
-                        <p class="text-small" style="margin-bottom: 0;">Best for clients needing full-cycle engineering and scalable solutions.</p>
-                    </div>
-                    <div class="card reveal delay-200" style="text-align: center; padding: var(--space-8); border-top: 2px solid var(--text-primary);">
-                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Partnerships</h3>
-                        <p class="text-small" style="margin-bottom: 0;">For agencies or startups looking for an ongoing technical partnership.</p>
-                    </div>
-                    <div class="card reveal delay-300" style="text-align: center; padding: var(--space-8); border-top: 2px solid var(--text-primary);">
-                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Technical Consultation</h3>
-                        <p class="text-small" style="margin-bottom: 0;">Deep-dive engineering discussions, architecture reviews, and audits.</p>
-                    </div>
-                </div>
+            <div class="container container-medium">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start;">
+                    
+                    <!-- Left Side: Information & FAQ -->
+                    <div style="display: flex; flex-direction: column; gap: var(--space-12);">
+                        
+                        <!-- Consultation Text -->
+                        <div>
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">[ Project Inquiry ]</div>
+                            <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-4);">Start a Conversation</h2>
+                            <p style="font-size: 1.125rem;">Whether you need full-cycle engineering, a technical partnership, or a comprehensive architecture audit, we are ready to build.</p>
+                        </div>
 
-                <!-- 3. Editorial Contact Form -->
-                <div class="reveal" style="max-width: 800px; margin: 0 auto; border: 1px solid var(--border); padding: var(--space-12); background: var(--surface);">
-                    <h2 style="margin-bottom: var(--space-8); font-size: var(--text-h2); border-bottom: 1px solid var(--border); padding-bottom: var(--space-4);">Project Inquiry</h2>
-                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: var(--space-8);">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                        <!-- Onboarding Process -->
+                        <div>
+                            <h3 style="font-family: var(--font-mono); font-size: 1rem; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: var(--space-2); margin-bottom: var(--space-6);">[ Onboarding Process ]</h3>
+                            <div style="display: flex; flex-direction: column; gap: var(--space-4);">
+                                <div style="display: flex; gap: var(--space-4); align-items: start;">
+                                    <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-secondary);">01</div>
+                                    <div>
+                                        <h4 style="margin-bottom: 4px;">Discovery Call</h4>
+                                        <p class="text-small" style="margin-bottom: 0;">A technical discussion to understand business objectives and system constraints.</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: var(--space-4); align-items: start;">
+                                    <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-secondary);">02</div>
+                                    <div>
+                                        <h4 style="margin-bottom: 4px;">Architecture & Proposal</h4>
+                                        <p class="text-small" style="margin-bottom: 0;">You receive a comprehensive technical blueprint and timeline.</p>
+                                    </div>
+                                </div>
+                                <div style="display: flex; gap: var(--space-4); align-items: start;">
+                                    <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-secondary);">03</div>
+                                    <div>
+                                        <h4 style="margin-bottom: 4px;">Execution</h4>
+                                        <p class="text-small" style="margin-bottom: 0;">Iterative, transparent engineering sprints with regular staging reviews.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ -->
+                        <div>
+                            <h3 style="font-family: var(--font-mono); font-size: 1rem; text-transform: uppercase; border-bottom: 1px solid var(--border); padding-bottom: var(--space-2); margin-bottom: var(--space-6);">[ Common Questions ]</h3>
+                            <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+                                <div>
+                                    <h4 style="margin-bottom: var(--space-2);">Do you build MVPs for startups?</h4>
+                                    <p class="text-small" style="margin-bottom: 0;">Yes. We engineer high-quality MVPs that reach the market quickly without accumulating technical debt.</p>
+                                </div>
+                                <div>
+                                    <h4 style="margin-bottom: var(--space-2);">Can you integrate with existing hardware?</h4>
+                                    <p class="text-small" style="margin-bottom: 0;">Absolutely. We write firmware and build cloud middleware for telemetry data ingestion from existing IoT deployments.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Right Side: The Form -->
+                    <div style="background: var(--surface); border: 1px solid var(--border); padding: var(--space-12); position: sticky; top: 120px;">
+                        <form action="#" method="POST" style="display: flex; flex-direction: column; gap: var(--space-8);">
                             <div>
                                 <label for="name" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Full Name ]</label>
                                 <input type="text" id="name" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; transition: border-color var(--transition-fast);">
                             </div>
+                            
                             <div>
                                 <label for="email" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Work Email ]</label>
                                 <input type="email" id="email" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; transition: border-color var(--transition-fast);">
                             </div>
-                        </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
-                            <div>
-                                <label for="project-type" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Project Type ]</label>
-                                <select id="project-type" style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; appearance: none; cursor: pointer;">
-                                    <option value="software">Software System / SaaS</option>
-                                    <option value="iot">IoT & Hardware Integration</option>
-                                    <option value="cyber">Cybersecurity Audit</option>
-                                    <option value="automation">Business Automation</option>
-                                    <option value="consultation">Consultation</option>
-                                </select>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                                <div>
+                                    <label for="project-type" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Project Type ]</label>
+                                    <select id="project-type" style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; appearance: none; cursor: pointer;">
+                                        <option value="software">Software System / SaaS</option>
+                                        <option value="iot">IoT & Hardware</option>
+                                        <option value="cyber">Cybersecurity Audit</option>
+                                        <option value="consultation">Consultation</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="budget" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Estimated Budget ]</label>
+                                    <select id="budget" style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; appearance: none; cursor: pointer;">
+                                        <option value="startup">To be discussed</option>
+                                        <option value="medium">MVP Development</option>
+                                        <option value="enterprise">Production Scaling</option>
+                                    </select>
+                                </div>
                             </div>
+                            
                             <div>
-                                <label for="budget" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Estimated Budget ]</label>
-                                <select id="budget" style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; appearance: none; cursor: pointer;">
-                                    <option value="startup">To be discussed</option>
-                                    <option value="small">Research & Prototyping Phase</option>
-                                    <option value="medium">MVP Development</option>
-                                    <option value="enterprise">Full Scale Production</option>
-                                </select>
+                                <label for="description" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Project Overview ]</label>
+                                <textarea id="description" rows="4" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; resize: vertical;"></textarea>
                             </div>
-                        </div>
-                        <div>
-                            <label for="description" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Project Overview ]</label>
-                            <textarea id="description" rows="3" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; resize: vertical;"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Inquiry</button>
-                    </form>
-                </div>
-            </div>
-        </section>
+                            
+                            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Submit Inquiry</button>
+                        </form>
+                    </div>
 
-        <!-- 4. Process Expectations -->
-        <section class="section reveal" style="border-top: 1px solid var(--border);">
-            <div class="container">
-                <div class="text-center" style="margin-bottom: var(--space-12);">
-                    <div class="tech-label" style="margin-bottom: var(--space-8);">[ Onboarding ]</div>
-                    <h2>What Happens Next?</h2>
-                    <p style="max-width: 600px; margin: 0 auto;">We respect your time. Here is our structured onboarding process.</p>
-                </div>
-                
-                <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4);">
-                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
-                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">01</div>
-                        <div>
-                            <h4 style="margin-bottom: 4px;">Discovery Call</h4>
-                            <p class="text-small" style="margin-bottom: 0;">A 30-minute technical discussion to understand your business objectives and system constraints.</p>
-                        </div>
-                    </div>
-                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
-                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">02</div>
-                        <div>
-                            <h4 style="margin-bottom: 4px;">System Planning</h4>
-                            <p class="text-small" style="margin-bottom: 0;">We analyze the requirements and draft a preliminary architecture proposal.</p>
-                        </div>
-                    </div>
-                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
-                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">03</div>
-                        <div>
-                            <h4 style="margin-bottom: 4px;">Architecture & Proposal</h4>
-                            <p class="text-small" style="margin-bottom: 0;">You receive a comprehensive technical blueprint, technology stack recommendation, and timeline.</p>
-                        </div>
-                    </div>
-                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
-                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">04</div>
-                        <div>
-                            <h4 style="margin-bottom: 4px;">Development Execution</h4>
-                            <p class="text-small" style="margin-bottom: 0;">Iterative, transparent engineering sprints with regular staging reviews.</p>
-                        </div>
-                    </div>
-                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
-                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">05</div>
-                        <div>
-                            <h4 style="margin-bottom: 4px;">Delivery & Scaling</h4>
-                            <p class="text-small" style="margin-bottom: 0;">Final security audits, seamless deployment, and handover documentation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. FAQ -->
-        <section class="section section-light reveal" style="border-top: 1px solid var(--border);">
-            <div class="container">
-                <div class="text-center" style="margin-bottom: var(--space-12);">
-                    <div class="tech-label" style="margin-bottom: var(--space-8);">[ Clarifications ]</div>
-                    <h2>Common Questions</h2>
-                </div>
-                <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4);">
-                    <div class="card" style="padding: var(--space-6) var(--space-8);">
-                        <h4 style="margin-bottom: var(--space-2);">Do you build MVPs for startups?</h4>
-                        <p class="text-small" style="margin-bottom: 0;">Yes. We specialize in engineering high-quality MVPs that allow founders to reach the market quickly without accumulating technical debt that hinders future scaling.</p>
-                    </div>
-                    <div class="card" style="padding: var(--space-6) var(--space-8);">
-                        <h4 style="margin-bottom: var(--space-2);">Can you integrate with our existing IoT hardware?</h4>
-                        <p class="text-small" style="margin-bottom: 0;">Absolutely. We have extensive experience writing firmware and building the cloud middleware required to ingest, process, and secure telemetry data from existing hardware deployments.</p>
-                    </div>
-                    <div class="card" style="padding: var(--space-6) var(--space-8);">
-                        <h4 style="margin-bottom: var(--space-2);">Do you offer standalone cybersecurity audits?</h4>
-                        <p class="text-small" style="margin-bottom: 0;">Yes. If you have an existing system, we can perform comprehensive penetration testing and architecture reviews to harden your infrastructure against modern threats.</p>
-                    </div>
                 </div>
             </div>
         </section>

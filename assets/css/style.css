@@ -71,14 +71,22 @@ a:hover {
 
 /* Layout Utilities */
 .container {
-  width: 100%;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 var(--space-6);
+  width: min(1600px, 92%);
+  margin-inline: auto;
+}
+
+.container-wide {
+  width: min(1700px, 94%);
+  margin-inline: auto;
+}
+
+.container-medium {
+  width: min(1400px, 90%);
+  margin-inline: auto;
 }
 
 .section {
-  padding: 100px 0;
+  padding: 90px 0;
 }
 
 .section-light {
@@ -88,7 +96,7 @@ a:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section {
-    padding: 80px 0;
+    padding: 70px 0;
   }
   :root {
     --text-hero: 3rem;
@@ -107,7 +115,7 @@ a:hover {
 /* Hide custom cursor on mobile devices */
 @media (max-width: 768px) {
   .section {
-    padding: 80px 0;
+    padding: 70px 0;
   }
     #custom-cursor {
         display: none !important;
@@ -125,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Typography Scaling */
 @media (max-width: 768px) {
   .section {
-    padding: 80px 0;
+    padding: 70px 0;
   }
     :root {
         --text-hero: 3rem;
@@ -148,8 +156,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Logo Image Sizing constraints */
 .logo-img {
-    width: 32px;
-    height: 32px;
+    width: 44px;
+    height: 44px;
     object-fit: cover;
     border-radius: 50%; /* Make it round since it's a portrait */
     vertical-align: middle;
@@ -157,8 +165,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-brand .logo-img {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
 }
 
 /* Hero Dense Layout */
@@ -179,5 +187,16 @@ h1, h2, h3, h4, h5, h6 {
     .hero-dense {
         padding-top: 160px; /* account for navbar */
         min-height: auto;
+    }
+}
+/* Responsive adjustments for the new dense 2-column grids */
+@media (max-width: 992px) {
+    .container-medium > div[style*="grid-template-columns: 1fr 2fr"],
+    .container-medium > div[style*="grid-template-columns: 1.5fr 1fr"],
+    .container-medium > div[style*="grid-template-columns: 1fr 1fr"],
+    .card > div[style*="grid-template-columns: 1fr 1fr"],
+    .section > .container > div > div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: var(--space-8) !important;
     }
 }
