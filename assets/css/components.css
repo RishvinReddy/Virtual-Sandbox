@@ -10,9 +10,9 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--space-3) var(--space-6);
+  padding: 20px 40px;
   font-family: var(--font-mono);
-  font-size: var(--text-small);
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: var(--weight-bold);
@@ -145,7 +145,7 @@
 
 .navbar-links {
   display: flex;
-  gap: var(--space-8);
+  gap: var(--space-12);
   align-items: center;
 }
 

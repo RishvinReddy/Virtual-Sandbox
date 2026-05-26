@@ -72,13 +72,13 @@ a:hover {
 /* Layout Utilities */
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 var(--space-6);
 }
 
 .section {
-  padding: var(--space-section) 0;
+  padding: 100px 0;
 }
 
 .section-light {
@@ -87,6 +87,9 @@ a:hover {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
   :root {
     --text-hero: 3rem;
     --text-h1: 2.5rem;
@@ -103,6 +106,9 @@ a:hover {
 
 /* Hide custom cursor on mobile devices */
 @media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
     #custom-cursor {
         display: none !important;
     }
@@ -118,6 +124,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mobile Typography Scaling */
 @media (max-width: 768px) {
+  .section {
+    padding: 80px 0;
+  }
     :root {
         --text-hero: 3rem;
         --text-h1: 2.5rem;
@@ -150,4 +159,25 @@ h1, h2, h3, h4, h5, h6 {
 .footer-brand .logo-img {
     width: 40px;
     height: 40px;
+}
+
+/* Hero Dense Layout */
+.hero-dense {
+    min-height: 72vh;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .hero-container {
+        grid-template-columns: 1fr !important;
+        text-align: left;
+    }
+    
+    .hero-dense {
+        padding-top: 160px; /* account for navbar */
+        min-height: auto;
+    }
 }

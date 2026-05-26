@@ -91,32 +91,60 @@
     <!-- Main Content Area -->
     <main>
         <!-- 1. Editorial Hero Section -->
-        <section class="section" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding-top: var(--space-32);">
-            <div class="container text-center">
-                <!-- Engineering Label -->
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">
-                    [ Engineering Digital Systems ]
+        <section class="hero-dense">
+            <div class="container hero-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center;">
+                
+                <!-- Left Side: Text -->
+                <div class="hero-content">
+                    <!-- Engineering Label -->
+                    <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-6);">
+                        [ Engineering Digital Systems ]
+                    </div>
+
+                    <!-- Massive Editorial Headline -->
+                    <h1 class="animate-slide-up delay-100" style="font-size: clamp(4.5rem, 8vw, 8rem); line-height: 0.92; max-width: 900px; margin-bottom: var(--space-6); letter-spacing: -0.04em;">
+                        Building intelligent systems with engineering precision.
+                    </h1>
+
+                    <!-- Elegant Supporting Text -->
+                    <p class="animate-slide-up delay-200" style="max-width: 700px; font-size: 1.3rem; line-height: 1.8; margin-bottom: var(--space-8);">
+                        We are an elite engineering studio designing scalable software, advanced cybersecurity systems, and resilient IoT infrastructure.
+                    </p>
+
+                    <!-- Outlined Luxury Buttons -->
+                    <div class="animate-slide-up delay-300" style="display: flex; gap: var(--space-4);">
+                        <a href="contact.html" class="btn btn-primary" style="padding: 20px 40px; font-size: 0.95rem;">
+                            Start a Project
+                        </a>
+                        <a href="projects.html" class="btn btn-outline" style="padding: 20px 40px; font-size: 0.95rem;">
+                            View Systems
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Visual System -->
+                <div class="hero-visual animate-fade-in delay-400" style="border: 1px solid var(--border); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4); background-color: var(--surface);">
+                    <div style="font-family: var(--font-mono); font-size: var(--text-small); border-bottom: 1px solid var(--border); padding-bottom: var(--space-2); margin-bottom: var(--space-4); color: var(--text-secondary);">
+                        [ SYSTEM ARCHITECTURE ]
+                    </div>
+                    
+                    <!-- Grid of technologies -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+                        <div style="border: 1px solid var(--border); padding: var(--space-6); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                            <span style="font-family: var(--font-heading); font-size: var(--text-h4); letter-spacing: -0.02em;">IoT</span>
+                        </div>
+                        <div style="border: 1px solid var(--border); padding: var(--space-6); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                            <span style="font-family: var(--font-heading); font-size: var(--text-h4); letter-spacing: -0.02em;">Cybersecurity</span>
+                        </div>
+                        <div style="border: 1px solid var(--border); padding: var(--space-6); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                            <span style="font-family: var(--font-heading); font-size: var(--text-h4); letter-spacing: -0.02em;">Software</span>
+                        </div>
+                        <div style="border: 1px solid var(--border); padding: var(--space-6); display: flex; align-items: center; justify-content: center; min-height: 120px;">
+                            <span style="font-family: var(--font-heading); font-size: var(--text-h4); letter-spacing: -0.02em;">Automation</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Massive Editorial Headline -->
-                <h1 class="animate-slide-up delay-100" style="max-width: 1000px; margin: 0 auto var(--space-8); font-size: var(--text-hero);">
-                    Building intelligent systems<br>with engineering precision.
-                </h1>
-
-                <!-- Elegant Supporting Text -->
-                <p class="animate-slide-up delay-200" style="max-width: 800px; margin: 0 auto var(--space-12);">
-                    We are an elite engineering studio designing scalable software, advanced cybersecurity systems, and resilient IoT infrastructure.
-                </p>
-
-                <!-- Outlined Luxury Buttons -->
-                <div class="animate-slide-up delay-300" style="display: flex; justify-content: center; gap: var(--space-4);">
-                    <a href="contact.html" class="btn btn-primary">
-                        Start a Project
-                    </a>
-                    <a href="projects.html" class="btn btn-outline">
-                        View Systems
-                    </a>
-                </div>
             </div>
         </section>
 
