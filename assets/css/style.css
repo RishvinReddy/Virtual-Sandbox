@@ -46,7 +46,7 @@ h4 { font-size: var(--text-h4); }
 p {
   color: var(--text-secondary);
   font-size: var(--text-body);
-  max-width: 65ch;
+  max-width: 85ch;
 }
 
 /* Links */
@@ -72,7 +72,7 @@ a:hover {
 /* Layout Utilities */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 var(--space-6);
 }

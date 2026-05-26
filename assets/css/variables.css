@@ -54,11 +54,11 @@
   --space-6: 1.5rem;
   --space-8: 2rem;
   --space-12: 3rem;
-  --space-16: 4rem;
-  --space-24: 6rem;
-  --space-32: 8rem;
-  --space-40: 10rem;
-  --space-section: 180px;
+  --space-16: 3rem;
+  --space-24: 4rem;
+  --space-32: 5rem;
+  --space-40: 6rem;
+  --space-section: 100px;
 
   /* Minimalist Radius & Borders */
   --radius-sm: 0px;
