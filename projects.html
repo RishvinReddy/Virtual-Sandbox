@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Case Studies | Rishvin Labs</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore our engineering case studies. We architect scalable software systems, intelligent IoT infrastructure, and hardened cybersecurity networks.">
+    <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/projects.html">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/projects.html">
+    <meta property="og:title" content="Engineering Case Studies | Rishvin Labs">
+    <meta property="og:description" content="Explore our engineering case studies. We architect scalable software systems, intelligent IoT infrastructure, and hardened cybersecurity networks.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/logo/logo.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Engineering Case Studies | Rishvin Labs">
+    <meta name="twitter:description" content="Explore our engineering case studies. We architect scalable software systems, intelligent IoT infrastructure, and hardened cybersecurity networks.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+    <!-- Premium Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
+            <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: var(--text-caption);">Engineering Intelligent Systems</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img">
+                Rishvin <span>Labs</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- 1. Hero -->
+        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
+            <div class="container text-center">
+                <h1 class="text-gradient animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
+                    Engineering Systems Built for Real-World Problems.
+                </h1>
+                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto var(--space-8); font-size: 1.125rem;">
+                    Scalable software architectures, intelligent IoT infrastructure, and hardened cybersecurity systems.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Project Filtering System & Grid -->
+        <section class="section section-light" style="padding-top: 0;">
+            <div class="container">
+                <!-- Filters -->
+                <div class="filter-container animate-slide-up delay-300">
+                    <button class="filter-btn active" data-filter="all">All Systems</button>
+                    <button class="filter-btn" data-filter="software">Software</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                    <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+                    <button class="filter-btn" data-filter="automation">Automation</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-8);">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card reveal delay-100" data-category="iot">
+                        <div class="project-image-placeholder">
+                            <div class="status-badge" data-status="production">Production Ready</div>
+                            <i data-lucide="sprout" style="width: 48px; height: 48px; color: var(--text-secondary); opacity: 0.5;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 style="font-size: var(--text-h3); margin-bottom: var(--space-2);">Intelligent Soil Health Monitoring System</h3>
+                            <p class="text-small" style="margin-bottom: var(--space-4); color: var(--primary);">IoT Infrastructure & Analytics</p>
+                            <p style="margin-bottom: var(--space-6);"><strong>The Problem:</strong> Inefficient water usage and lack of real-time soil data led to suboptimal crop yields.<br><br><strong>The Solution:</strong> Engineered a distributed network of embedded sensors reporting to a centralized cloud architecture for real-time analytics and automated irrigation triggers.</p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="badge">C++ (ESP32)</span>
+                                <span class="badge">MQTT</span>
+                                <span class="badge">Python (Backend)</span>
+                            </div>
+                            
+                            <div class="project-actions">
+                                <button class="btn btn-outline modal-trigger" data-project="soil" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;">View Case Study</button>
+                                <a href="https://github.com/rishvinreddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;"><i data-lucide="github" style="width: 14px; height: 14px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal delay-200" data-category="software">
+                        <div class="project-image-placeholder">
+                            <div class="status-badge" data-status="production">Production Ready</div>
+                            <i data-lucide="line-chart" style="width: 48px; height: 48px; color: var(--text-secondary); opacity: 0.5;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 style="font-size: var(--text-h3); margin-bottom: var(--space-2);">Personal Finance Intelligence Platform</h3>
+                            <p class="text-small" style="margin-bottom: var(--space-4); color: var(--primary);">Web Systems & Machine Learning</p>
+                            <p style="margin-bottom: var(--space-6);"><strong>The Problem:</strong> Fragmented financial data prevented users from getting a holistic view of their wealth and spending patterns.<br><br><strong>The Solution:</strong> Built a highly secure, scalable web platform that aggregates banking data via Plaid, utilizing predictive models to forecast cash flow.</p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="badge">React</span>
+                                <span class="badge">Node.js</span>
+                                <span class="badge">PostgreSQL</span>
+                            </div>
+                            
+                            <div class="project-actions">
+                                <button class="btn btn-outline modal-trigger" data-project="finance" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;">View Case Study</button>
+                                <a href="https://github.com/rishvinreddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;"><i data-lucide="github" style="width: 14px; height: 14px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card reveal delay-300" data-category="iot">
+                        <div class="project-image-placeholder">
+                            <div class="status-badge" data-status="prototype">Research Prototype</div>
+                            <i data-lucide="trash-2" style="width: 48px; height: 48px; color: var(--text-secondary); opacity: 0.5;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 style="font-size: var(--text-h3); margin-bottom: var(--space-2);">IoT Waste Monitoring Infrastructure</h3>
+                            <p class="text-small" style="margin-bottom: var(--space-4); color: var(--primary);">Hardware Integration & Logistics</p>
+                            <p style="margin-bottom: var(--space-6);"><strong>The Problem:</strong> Municipalities face significant logistical costs dispatching trucks to empty partially filled waste bins.<br><br><strong>The Solution:</strong> Deployed ultrasonic sensor nodes across urban bins, feeding volume data into a logistics dashboard that dynamically optimizes collection routes.</p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="badge">Embedded C</span>
+                                <span class="badge">AWS IoT Core</span>
+                                <span class="badge">React Admin</span>
+                            </div>
+                            
+                            <div class="project-actions">
+                                <button class="btn btn-outline modal-trigger" data-project="waste" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;">View Case Study</button>
+                                <a href="https://github.com/rishvinreddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;"><i data-lucide="github" style="width: 14px; height: 14px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card reveal delay-100" data-category="cybersecurity">
+                        <div class="project-image-placeholder">
+                            <div class="status-badge" data-status="mvp">MVP</div>
+                            <i data-lucide="lock" style="width: 48px; height: 48px; color: var(--text-secondary); opacity: 0.5;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 style="font-size: var(--text-h3); margin-bottom: var(--space-2);">Zero-Trust Enterprise Data Vault</h3>
+                            <p class="text-small" style="margin-bottom: var(--space-4); color: var(--primary);">Cybersecurity & Encryption</p>
+                            <p style="margin-bottom: var(--space-6);"><strong>The Problem:</strong> Sensitive client records were stored in monolithic databases vulnerable to lateral movement during a breach.<br><br><strong>The Solution:</strong> Architected a distributed, end-to-end encrypted storage system using strict Zero-Trust authentication and ephemeral access tokens.</p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="badge">Python</span>
+                                <span class="badge">Cryptography</span>
+                                <span class="badge">Docker</span>
+                            </div>
+                            
+                            <div class="project-actions">
+                                <button class="btn btn-outline modal-trigger" data-project="vault" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;">View Case Study</button>
+                                <a href="https://github.com/rishvinreddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;"><i data-lucide="github" style="width: 14px; height: 14px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card reveal delay-200" data-category="automation">
+                        <div class="project-image-placeholder">
+                            <div class="status-badge" data-status="production">Production Ready</div>
+                            <i data-lucide="git-merge" style="width: 48px; height: 48px; color: var(--text-secondary); opacity: 0.5;"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 style="font-size: var(--text-h3); margin-bottom: var(--space-2);">Automated Recruitment Workflow Engine</h3>
+                            <p class="text-small" style="margin-bottom: var(--space-4); color: var(--primary);">Business Automation</p>
+                            <p style="margin-bottom: var(--space-6);"><strong>The Problem:</strong> HR teams spent 20+ hours a week manually triaging resumes and scheduling initial screening calls.<br><br><strong>The Solution:</strong> Built a custom middleware engine that parses resumes via NLP, scores candidates against job requirements, and fully automates the calendar scheduling process.</p>
+                            
+                            <div class="project-tech-stack">
+                                <span class="badge">Node.js</span>
+                                <span class="badge">OpenAI API</span>
+                                <span class="badge">Webhooks</span>
+                            </div>
+                            
+                            <div class="project-actions">
+                                <button class="btn btn-outline modal-trigger" data-project="recruitment" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;">View Case Study</button>
+                                <a href="https://github.com/rishvinreddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-2) var(--space-4); font-size: 0.875rem;"><i data-lucide="github" style="width: 14px; height: 14px;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Engineering Metrics Section -->
+        <section class="section reveal">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-8); text-align: center;">
+                    <div>
+                        <h2 class="text-gradient" style="font-size: 3.5rem; margin-bottom: var(--space-2);"><span class="counter" data-target="5" data-suffix="+">0</span></h2>
+                        <p class="text-small">Systems Built</p>
+                    </div>
+                    <div>
+                        <h2 class="text-gradient" style="font-size: 3.5rem; margin-bottom: var(--space-2);"><span class="counter" data-target="15" data-suffix="+">0</span></h2>
+                        <p class="text-small">Technologies Mastered</p>
+                    </div>
+                    <div>
+                        <h2 class="text-gradient" style="font-size: 3.5rem; margin-bottom: var(--space-2);"><span class="counter" data-target="5" data-suffix="+">0</span></h2>
+                        <p class="text-small">Domains Explored</p>
+                    </div>
+                    <div>
+                        <h2 class="text-gradient" style="font-size: 3.5rem; margin-bottom: var(--space-2);"><span class="counter" data-target="100" data-suffix="%">0</span></h2>
+                        <p class="text-small">Code Ownership</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Development Philosophy -->
+        <section class="section section-light reveal">
+            <div class="container text-center">
+                <i data-lucide="cpu" style="width: 48px; height: 48px; color: var(--primary); margin-bottom: var(--space-6); display: inline-block;"></i>
+                <h2 style="font-size: 2.5rem; margin-bottom: var(--space-6);">The Engineering Philosophy</h2>
+                <p style="max-width: 800px; margin: 0 auto; font-size: 1.25rem; line-height: 1.8; color: var(--text-secondary);">
+                    "Every system we build is engineered with <strong>scalability</strong>, <strong>performance</strong>, and <strong>security</strong> as foundational requirements—never as afterthoughts. We don't just write code; we solve complex business problems through elegant architecture."
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. Conversion CTA -->
+        <section class="section reveal">
+            <div class="container text-center">
+                <h2 style="font-size: 3rem; margin-bottom: var(--space-6);">Let's Build Something Intelligent.</h2>
+                <p style="max-width: 500px; margin: 0 auto var(--space-8);">Ready to discuss the architecture for your next project?</p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary" style="padding: var(--space-4) var(--space-8); font-size: 1.125rem;">
+                        Start a Project <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="services.html" class="btn btn-outline" style="padding: var(--space-4) var(--space-8); font-size: 1.125rem;">
+                        View Services
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Case Study Modal -->
+    <div class="modal-overlay" id="case-study-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title" style="margin: 0;">Case Study</h3>
+                <button class="modal-close" id="modal-close-btn"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo">
+                        <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy"> Rishvin <span>Labs</span>
+                    </a>
+                    <p>A high-end engineering studio building intelligent digital systems.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html#software">Web Development</a>
+                        <a href="services.html#software">SaaS Development</a>
+                        <a href="services.html#iot">IoT Solutions</a>
+                        <a href="services.html#cyber">Cybersecurity</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="footer-links">
+                        <a href="https://github.com/rishvinreddy" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="github" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
+                            GitHub
+                        </a>
+                        <a href="mailto:hello@rishvinlabs.com">
+                            <i data-lucide="mail" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
+                            hello@rishvinlabs.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                <div style="display: flex; gap: var(--space-4);">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>lucide.createIcons();</script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/scroll-effects.js"></script>
+    <script src="assets/js/counters.js"></script>
+    <script src="assets/js/projects-filter.js"></script>
+    <script src="assets/js/modal.js"></script>
+</body>
+</html>
