@@ -57,9 +57,9 @@
 <body>
     <!-- Premium Loading Screen -->
     <div id="loader">
-        <div class="loader-content">
+        <div class="loader-content" style="text-align: center;">
             <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
-            <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: var(--text-caption);">Engineering Intelligent Systems</p>
+            <p style="color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; font-family: var(--font-mono); font-size: var(--text-small);">Engineering Intelligent Systems</p>
         </div>
     </div>
 
@@ -71,7 +71,7 @@
         <div class="container navbar-container">
             <a href="index.html" class="navbar-logo">
                 <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" decoding="async">
-                Rishvin <span>Labs</span>
+                Rishvin Labs
             </a>
             
             <button class="mobile-menu-btn" aria-label="Toggle Menu">
@@ -79,197 +79,141 @@
             </button>
 
             <div class="navbar-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                <a href="index.html" class="active hover-underline">Home</a>
+                <a href="about.html" class="hover-underline">About</a>
+                <a href="services.html" class="hover-underline">Services</a>
+                <a href="projects.html" class="hover-underline">Projects</a>
+                <a href="contact.html" class="hover-underline">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content Area -->
     <main>
-        <!-- 1. Hero Section -->
-        <section class="section" style="position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden; padding-top: var(--space-32);">
-            
-            <!-- Layer 5: Visual Background -->
-            <div class="hero-visual-wrapper">
-                <div class="hero-grid"></div>
-                <div class="hero-orb"></div>
-                <div class="hero-orb-2"></div>
-            </div>
-
-            <div class="container text-center" style="position: relative; z-index: 10;">
-                <!-- Hero Logo -->
-                <div class="animate-fade-in" style="display: flex; justify-content: center; margin-bottom: var(--space-6);">
-                    <img src="assets/images/logo/logo.png" alt="Rishvin Labs" style="width: 100px; height: 100px; object-fit: contain; animation: floatLogo 8s ease-in-out infinite;">
+        <!-- 1. Editorial Hero Section -->
+        <section class="section" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding-top: var(--space-32);">
+            <div class="container text-center">
+                <!-- Engineering Label -->
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">
+                    [ Engineering Digital Systems ]
                 </div>
 
-                <!-- Layer 1: Trust Signal -->
-                <div class="badge badge-glow animate-fade-in" style="margin-bottom: var(--space-6);">
-                    <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i>
-                    Engineering Intelligent Digital Systems
-                </div>
-
-                <!-- Layer 2: Main Headline -->
-                <h1 class="text-gradient animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6);">
-                    Engineering High-Performance Digital Products
+                <!-- Massive Editorial Headline -->
+                <h1 class="animate-slide-up delay-100" style="max-width: 1000px; margin: 0 auto var(--space-8); font-size: var(--text-hero);">
+                    Building intelligent systems<br>with engineering precision.
                 </h1>
 
-                <!-- Layer 3: Supporting Text -->
-                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto var(--space-8); font-size: 1.125rem;">
-                    We design, architect, and build scalable software, advanced cybersecurity systems, and IoT infrastructure with uncompromising precision.
+                <!-- Elegant Supporting Text -->
+                <p class="animate-slide-up delay-200" style="max-width: 600px; margin: 0 auto var(--space-12);">
+                    We are an elite engineering studio designing scalable software, advanced cybersecurity systems, and resilient IoT infrastructure.
                 </p>
 
-                <!-- Layer 4: CTA Buttons -->
-                <div class="hero-ctas animate-slide-up delay-300">
+                <!-- Outlined Luxury Buttons -->
+                <div class="animate-slide-up delay-300" style="display: flex; justify-content: center; gap: var(--space-4);">
                     <a href="contact.html" class="btn btn-primary">
-                        Start a Project <i data-lucide="arrow-right"></i>
+                        Start a Project
                     </a>
                     <a href="projects.html" class="btn btn-outline">
-                        View Work
+                        View Systems
                     </a>
                 </div>
-
-                <!-- Layer 6: Social Proof / Counters -->
-                <div class="animate-fade-in delay-400" style="display: flex; justify-content: center; gap: var(--space-12); flex-wrap: wrap; margin-top: var(--space-12); padding-top: var(--space-8); border-top: 1px solid var(--border);">
-                    <div>
-                        <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: var(--weight-bold); color: var(--text-primary);">
-                            <span class="counter-value text-gradient" data-target="50">0</span>+
-                        </div>
-                        <div class="text-caption" style="color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px;">Projects Built</div>
-                    </div>
-                    <div>
-                        <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: var(--weight-bold); color: var(--text-primary);">
-                            <span class="counter-value text-gradient" data-target="25">0</span>+
-                        </div>
-                        <div class="text-caption" style="color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px;">Technologies Mastered</div>
-                    </div>
-                    <div>
-                        <div style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: var(--weight-bold); color: var(--text-primary);">
-                            <span class="counter-value text-gradient" data-target="10">0</span>+
-                        </div>
-                        <div class="text-caption" style="color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px;">Domains Covered</div>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <!-- 2. Trusted Tech Stack (Marquee) -->
+        <!-- 2. Selected Engineering Systems (Capabilities) -->
         <section class="section section-light reveal">
-            <div class="container text-center">
-                <p class="text-caption" style="color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0;">Powered by Industry Standards</p>
-                <div class="marquee-container">
-                    <div class="marquee-content">
-                        <!-- Duplicate content for seamless scrolling -->
-                        <div class="marquee-item"><i data-lucide="braces"></i> Next.js</div>
-                        <div class="marquee-item"><i data-lucide="server"></i> Node.js</div>
-                        <div class="marquee-item"><i data-lucide="database"></i> PostgreSQL</div>
-                        <div class="marquee-item"><i data-lucide="cloud"></i> AWS</div>
-                        <div class="marquee-item"><i data-lucide="shield"></i> CyberSec</div>
-                        <div class="marquee-item"><i data-lucide="cpu"></i> IoT Edge</div>
-                        <div class="marquee-item"><i data-lucide="code"></i> TypeScript</div>
-                        <div class="marquee-item"><i data-lucide="terminal"></i> Python</div>
-                        <!-- Duplicates -->
-                        <div class="marquee-item"><i data-lucide="braces"></i> Next.js</div>
-                        <div class="marquee-item"><i data-lucide="server"></i> Node.js</div>
-                        <div class="marquee-item"><i data-lucide="database"></i> PostgreSQL</div>
-                        <div class="marquee-item"><i data-lucide="cloud"></i> AWS</div>
-                        <div class="marquee-item"><i data-lucide="shield"></i> CyberSec</div>
-                        <div class="marquee-item"><i data-lucide="cpu"></i> IoT Edge</div>
-                        <div class="marquee-item"><i data-lucide="code"></i> TypeScript</div>
-                        <div class="marquee-item"><i data-lucide="terminal"></i> Python</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. What We Build -->
-        <section class="section reveal">
             <div class="container">
-                <div class="text-center" style="margin-bottom: var(--space-16);">
-                    <h2 class="text-gradient">Core Domains</h2>
-                    <p style="max-width: 600px; margin: 0 auto;">Specialized engineering across three critical digital pillars.</p>
+                <div class="tech-label" style="text-align: center; margin-bottom: var(--space-12);">
+                    [ Core Capabilities ]
                 </div>
                 
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8);">
                     <div class="card reveal delay-100">
                         <div class="card-icon"><i data-lucide="code-2"></i></div>
-                        <h3>Software Systems</h3>
-                        <p>High-performance web applications, scalable SaaS architectures, and internal enterprise tools.</p>
+                        <h3 style="margin-bottom: var(--space-4);">Software Architecture</h3>
+                        <p>High-performance web applications, scalable SaaS architectures, and internal enterprise tools built for the future.</p>
                     </div>
                     <div class="card reveal delay-200">
-                        <div class="card-icon"><i data-lucide="shield-alert"></i></div>
-                        <h3>Cybersecurity</h3>
-                        <p>Penetration testing, secure architecture design, and vulnerability assessments to protect your assets.</p>
+                        <div class="card-icon"><i data-lucide="shield-check"></i></div>
+                        <h3 style="margin-bottom: var(--space-4);">Cybersecurity</h3>
+                        <p>Zero-trust architecture, penetration testing, and robust vulnerability assessments to protect your digital assets.</p>
                     </div>
                     <div class="card reveal delay-300">
                         <div class="card-icon"><i data-lucide="cpu"></i></div>
-                        <h3>IoT & Automation</h3>
-                        <p>Connected device infrastructure, hardware integration, and automated workflow pipelines.</p>
+                        <h3 style="margin-bottom: var(--space-4);">IoT Infrastructure</h3>
+                        <p>Connected device networks, resilient firmware, and automated data pipelines bridging the physical and digital.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4. Services Preview -->
-        <section class="section section-light reveal">
-            <div class="container text-center">
-                <h2 style="margin-bottom: var(--space-6);">Comprehensive Solutions</h2>
-                <p style="max-width: 600px; margin: 0 auto var(--space-8);">From concept to deployment, we handle the entire engineering lifecycle.</p>
-                <a href="services.html" class="btn btn-outline">Explore All Services <i data-lucide="arrow-right"></i></a>
-            </div>
-        </section>
-
-        <!-- 5. Why Rishvin Labs & 6. Timeline -->
+        <!-- 3. Engineering Principles -->
         <section class="section reveal">
-            <div class="container">
-                <div class="text-center" style="margin-bottom: var(--space-16);">
-                    <h2 class="text-gradient">The Engineering Process</h2>
-                    <p style="max-width: 600px; margin: 0 auto;">How we transform complex problems into elegant systems.</p>
-                </div>
+            <div class="container text-center">
+                <div class="tech-label" style="margin-bottom: var(--space-8);">[ Principles ]</div>
+                <h2 style="font-size: var(--text-h2); max-width: 800px; margin: 0 auto var(--space-12);">
+                    Process maturity is what separates commodity coding from elite engineering.
+                </h2>
                 
-                <div class="timeline">
-                    <div class="timeline-item timeline-left">
-                        <div class="timeline-content">
-                            <h4>1. Discovery & Architecture</h4>
-                            <p class="text-small" style="margin-bottom: 0;">We analyze the constraints, select the optimal tech stack, and design a scalable blueprint.</p>
-                        </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-8); text-align: left;">
+                    <div class="reveal delay-100">
+                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase;">01. Understand</h4>
+                        <p style="font-size: var(--text-small);">Deep analysis of constraints before a single line of code is written.</p>
                     </div>
-                    <div class="timeline-item timeline-right">
-                        <div class="timeline-content">
-                            <h4>2. Rapid Prototyping</h4>
-                            <p class="text-small" style="margin-bottom: 0;">Building the MVP to validate core assumptions before scaling up the infrastructure.</p>
-                        </div>
+                    <div class="reveal delay-200">
+                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase;">02. Architect</h4>
+                        <p style="font-size: var(--text-small);">Blueprint the optimal tech stack for long-term maintainability.</p>
                     </div>
-                    <div class="timeline-item timeline-left">
-                        <div class="timeline-content">
-                            <h4>3. Engineering & Integration</h4>
-                            <p class="text-small" style="margin-bottom: 0;">Writing clean, maintainable code with strict security protocols and performance testing.</p>
-                        </div>
+                    <div class="reveal delay-300">
+                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase;">03. Build</h4>
+                        <p style="font-size: var(--text-small);">Rigorous code reviews and automated CI/CD pipelines.</p>
                     </div>
-                    <div class="timeline-item timeline-right">
-                        <div class="timeline-content">
-                            <h4>4. Deployment & Scaling</h4>
-                            <p class="text-small" style="margin-bottom: 0;">Deploying via CI/CD pipelines, monitoring systems, and optimizing for high traffic.</p>
-                        </div>
+                    <div class="reveal delay-400">
+                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase;">04. Refine</h4>
+                        <p style="font-size: var(--text-small);">Relentless testing and performance optimization.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 7. Final CTA -->
+        <!-- 4. Featured Metrics -->
         <section class="section section-light reveal">
             <div class="container text-center">
-                <h2 style="font-size: 3rem; margin-bottom: var(--space-6);">Ready to build the future?</h2>
-                <p style="max-width: 500px; margin: 0 auto var(--space-8);">Let's discuss how Rishvin Labs can engineer the solution for your next big challenge.</p>
-                <a href="contact.html" class="btn btn-primary" style="padding: var(--space-4) var(--space-8); font-size: 1.125rem;">
-                    Let's Talk <i data-lucide="mail"></i>
+                <div style="display: flex; justify-content: center; gap: var(--space-16); flex-wrap: wrap;">
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: var(--space-2);">
+                            <span class="counter-value" data-target="50">0</span>+
+                        </div>
+                        <div class="tech-label">Systems Built</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: var(--space-2);">
+                            <span class="counter-value" data-target="25">0</span>+
+                        </div>
+                        <div class="tech-label">Core Technologies</div>
+                    </div>
+                    <div>
+                        <div style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: var(--space-2);">
+                            <span class="counter-value" data-target="10">0</span>+
+                        </div>
+                        <div class="tech-label">Industries Served</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Final CTA -->
+        <section class="section reveal" style="border-bottom: 1px solid var(--border);">
+            <div class="container text-center">
+                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-8);">Let's engineer something meaningful.</h2>
+                <a href="contact.html" class="btn btn-primary" style="padding: var(--space-4) var(--space-8);">
+                    Request a Consultation
                 </a>
             </div>
+        </section>
+
         <!-- Live Activity Section -->
-        <section style="padding: var(--space-8) 0; border-top: 1px solid var(--border);">
+        <section style="padding: var(--space-8) 0; border-bottom: 1px solid var(--border);">
             <div class="container text-center" id="github-activity-container">
                 <!-- Injected via JS -->
             </div>
@@ -331,13 +275,16 @@
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rishvin Labs. All rights reserved.</p>
-                <div style="display: flex; gap: var(--space-4);">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                        <div class="footer-bottom">
+                <div>
+                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                    <p class="text-small" style="color: var(--text-secondary);">Last Updated &mdash; May 2026</p>
+                </div>
+                <div style="display: flex; gap: var(--space-4); align-items: center;">
+                    <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
 

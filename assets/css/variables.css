@@ -1,80 +1,75 @@
-/* 
-  Rishvin Labs - Design System Variables 
-  Theme: Dark Luxury Tech
-*/
+/* ==============================
+   Rishvin Labs v2 Variables
+   Theme: Editorial Engineering Luxury
+   ============================== */
 
 :root {
-  /* Colors */
-  --bg-primary: #050816;
-  --bg-secondary: #0B1120;
-  --surface: #111827;
-  --surface-light: #1F2937;
+  /* Editorial Luxury Color System */
+  --bg-primary: #F8F6F1;
+  --bg-secondary: #F1EEE8;
+  --surface: #FFFFFF;
+  --surface-muted: #ECE8DF;
   
-  --primary: #6366F1;
-  --primary-hover: #7C83FF;
-  --accent: #06B6D4;
-  --accent-2: #8B5CF6;
+  --text-primary: #111111;
+  --text-secondary: #4A4A4A;
+  --text-muted: #888888;
   
-  --text-primary: #F9FAFB;
-  --text-secondary: #9CA3AF;
+  --border: rgba(17, 17, 17, 0.08);
+  --border-strong: rgba(17, 17, 17, 0.2);
   
-  --border: rgba(255, 255, 255, 0.08);
-  --border-hover: rgba(255, 255, 255, 0.15);
+  --accent-primary: #111111;
+  --accent-secondary: #5B5B5B;
   
-  --success: #10B981;
-  --warning: #F59E0B;
+  --success: #3D5A40;
+  --warning: #8B6F47;
+  --error: #8B4747;
 
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--primary), var(--accent));
-  --gradient-secondary: linear-gradient(135deg, var(--accent-2), var(--primary));
+  /* Typography System */
+  --font-heading: "Times New Roman", Times, serif;
+  --font-body: "Times New Roman", Times, serif;
+  --font-mono: "Courier New", Courier, monospace;
 
-  /* Typography */
-  --font-heading: 'Sora', sans-serif;
-  --font-body: 'Inter', sans-serif;
-
-  --text-hero: 4.5rem;      /* 72px */
-  --text-h1: 3rem;          /* 48px */
-  --text-h2: 1.75rem;       /* 28px */
-  --text-body: 1.125rem;    /* 18px */
-  --text-small: 1rem;       /* 16px */
-  --text-caption: 0.875rem; /* 14px */
+  /* Typographic Scale */
+  --text-hero: 4.5rem;
+  --text-h1: 3.5rem;
+  --text-h2: 2.5rem;
+  --text-h3: 1.75rem;
+  --text-h4: 1.25rem;
+  --text-body: 1.125rem;
+  --text-small: 0.85rem;
   
   --weight-regular: 400;
-  --weight-medium: 500;
-  --weight-semibold: 600;
   --weight-bold: 700;
 
-  /* Spacing */
-  --space-1: 0.25rem; /* 4px */
-  --space-2: 0.5rem;  /* 8px */
-  --space-3: 0.75rem; /* 12px */
-  --space-4: 1rem;    /* 16px */
-  --space-6: 1.5rem;  /* 24px */
-  --space-8: 2rem;    /* 32px */
-  --space-12: 3rem;   /* 48px */
-  --space-16: 4rem;   /* 64px */
-  --space-24: 6rem;   /* 96px */
-  --space-32: 8rem;   /* 128px */
+  /* Line Heights */
+  --line-height-tight: 0.95;
+  --line-height-base: 1.4;
+  --line-height-relaxed: 1.6;
 
-  /* Shadows (Soft Glow & Premium Cards) */
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
-  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.2);
-  --shadow-glow-accent: 0 0 20px rgba(6, 182, 212, 0.2);
+  /* Spacing Scale (Extreme Whitespace) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+  --space-40: 10rem;
+  --space-section: 180px;
 
-  /* Border Radius */
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 24px;
+  /* Minimalist Radius & Borders */
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
   --radius-full: 9999px;
 
-  /* Transitions */
-  --transition-fast: 0.15s ease-in-out;
-  --transition-normal: 0.3s ease-in-out;
-  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  /* Layout */
-  --container-max-width: 1200px;
-  --container-padding: 2rem;
+  /* Z-Index Hierarchy */
+  --z-negative: -1;
+  --z-normal: 1;
+  --z-nav: 100;
+  --z-modal: 1000;
+  --z-loader: 2000;
 }

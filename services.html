@@ -62,11 +62,11 @@
                 <i data-lucide="menu"></i>
             </button>
             <div class="navbar-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html" class="active">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                <a href="index.html" class="hover-underline">Home</a>
+                <a href="about.html" class="hover-underline">About</a>
+                <a href="services.html" class="active hover-underline">Services</a>
+                <a href="projects.html" class="hover-underline">Projects</a>
+                <a href="contact.html" class="hover-underline">Contact</a>
             </div>
         </div>
     </nav>
@@ -74,16 +74,13 @@
     <!-- Main Content Area -->
     <main>
         <!-- 1. Hero -->
-        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16); position: relative;">
-            <div class="hero-visual-wrapper">
-                <div class="hero-grid"></div>
-            </div>
-            
+        <section class="section" style="padding-top: var(--space-32); min-height: 70vh; display: flex; align-items: center; border-bottom: 1px solid var(--border);">
             <div class="container text-center">
-                <h1 class="text-gradient animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
-                    Engineering Digital Outcomes, Not Just Code.
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ Engineering Services ]</div>
+                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
+                    Engineering Digital Outcomes,<br>Not Just Code.
                 </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto var(--space-8); font-size: 1.125rem;">
+                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto; font-size: 1.125rem;">
                     We build the intelligent systems, scalable infrastructure, and secure networks that drive modern businesses forward.
                 </p>
             </div>
@@ -92,73 +89,57 @@
         <!-- 2. Services Grid (Business Outcomes) -->
         <section class="section section-light reveal">
             <div class="container">
-                <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+                <div style="display: flex; flex-direction: column; gap: var(--space-12);">
                     
                     <!-- Service 1 -->
-                    <div class="card reveal delay-100" style="display: flex; gap: var(--space-8); align-items: flex-start; padding: var(--space-8);" id="software">
-                        <div class="card-icon" style="flex-shrink: 0;"><i data-lucide="code-2"></i></div>
-                        <div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">Intelligent Software Systems</h3>
-                            <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Scalable web platforms and bespoke internal tools.</p>
-                            <p class="text-small" style="max-width: 800px;">We architect cloud-native SaaS products and enterprise-grade tools that eliminate bottlenecks. Built on robust frameworks to ensure high availability, seamless user experiences, and zero technical debt.</p>
-                        </div>
+                    <div class="card reveal delay-100" style="display: flex; flex-direction: column; gap: var(--space-6); padding: var(--space-12);" id="software">
+                        <div class="tech-label">[ 01. Software ]</div>
+                        <h3 style="font-size: var(--text-h2);">Intelligent Software Systems</h3>
+                        <p style="font-size: 1.125rem;">Scalable web platforms and bespoke internal tools.</p>
+                        <p class="text-small" style="max-width: 800px;">We architect cloud-native SaaS products and enterprise-grade tools that eliminate bottlenecks. Built on robust frameworks to ensure high availability, seamless user experiences, and zero technical debt.</p>
                     </div>
 
                     <!-- Service 2 -->
-                    <div class="card reveal delay-200" style="display: flex; gap: var(--space-8); align-items: flex-start; padding: var(--space-8);" id="automation">
-                        <div class="card-icon" style="flex-shrink: 0;"><i data-lucide="workflow"></i></div>
-                        <div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">Automation & Workflow Systems</h3>
-                            <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Reduce manual work and improve operations.</p>
-                            <p class="text-small" style="max-width: 800px;">We integrate disparate APIs, modernize legacy databases, and build custom automation pipelines that turn hours of manual data entry into seconds of intelligent execution.</p>
-                        </div>
+                    <div class="card reveal delay-200" style="display: flex; flex-direction: column; gap: var(--space-6); padding: var(--space-12);" id="automation">
+                        <div class="tech-label">[ 02. Automation ]</div>
+                        <h3 style="font-size: var(--text-h2);">Automation & Workflow Systems</h3>
+                        <p style="font-size: 1.125rem;">Reduce manual work and improve operations.</p>
+                        <p class="text-small" style="max-width: 800px;">We integrate disparate APIs, modernize legacy databases, and build custom automation pipelines that turn hours of manual data entry into seconds of intelligent execution.</p>
                     </div>
 
                     <!-- Service 3 -->
-                    <div class="card reveal delay-100" style="display: flex; gap: var(--space-8); align-items: flex-start; padding: var(--space-8);" id="iot">
-                        <div class="card-icon" style="flex-shrink: 0;"><i data-lucide="cpu"></i></div>
-                        <div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">IoT & Smart Systems</h3>
-                            <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Connected hardware + real-world intelligence.</p>
-                            <p class="text-small" style="max-width: 800px;">Bridging the physical and digital worlds. We develop the firmware, middleware, and analytics dashboards required to manage fleets of connected devices securely and reliably in real-time.</p>
-                        </div>
+                    <div class="card reveal delay-100" style="display: flex; flex-direction: column; gap: var(--space-6); padding: var(--space-12);" id="iot">
+                        <div class="tech-label">[ 03. IoT ]</div>
+                        <h3 style="font-size: var(--text-h2);">IoT & Smart Systems</h3>
+                        <p style="font-size: 1.125rem;">Connected hardware + real-world intelligence.</p>
+                        <p class="text-small" style="max-width: 800px;">Bridging the physical and digital worlds. We develop the firmware, middleware, and analytics dashboards required to manage fleets of connected devices securely and reliably in real-time.</p>
                     </div>
 
                     <!-- Service 4 -->
-                    <div class="card reveal delay-200" style="display: flex; gap: var(--space-8); align-items: flex-start; padding: var(--space-8);" id="cyber">
-                        <div class="card-icon" style="flex-shrink: 0;"><i data-lucide="shield-check"></i></div>
-                        <div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">Security & System Hardening</h3>
-                            <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Build resilient, secure digital infrastructure.</p>
-                            <p class="text-small" style="max-width: 800px;">Protect your assets with proactive threat modeling, penetration testing, and architecture audits. We design systems that assume breach, implementing Zero Trust principles from day one.</p>
-                        </div>
+                    <div class="card reveal delay-200" style="display: flex; flex-direction: column; gap: var(--space-6); padding: var(--space-12);" id="cyber">
+                        <div class="tech-label">[ 04. Cybersecurity ]</div>
+                        <h3 style="font-size: var(--text-h2);">Security & System Hardening</h3>
+                        <p style="font-size: 1.125rem;">Build resilient, secure digital infrastructure.</p>
+                        <p class="text-small" style="max-width: 800px;">Protect your assets with proactive threat modeling, penetration testing, and architecture audits. We design systems that assume breach, implementing Zero Trust principles from day one.</p>
                     </div>
 
-                    <!-- Service 5 -->
-                    <div class="card reveal delay-100" style="display: flex; gap: var(--space-8); align-items: flex-start; padding: var(--space-8);" id="mvp">
-                        <div class="card-icon" style="flex-shrink: 0;"><i data-lucide="rocket"></i></div>
-                        <div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">MVP & Startup Engineering</h3>
-                            <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Launch ideas quickly with engineering quality.</p>
-                            <p class="text-small" style="max-width: 800px;">Speed to market shouldn't mean sacrificing code quality. We partner with founders to rapidly prototype and engineer production-ready Minimum Viable Products that can actually scale when traction hits.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
         <!-- 3. Capability / Tech Stack -->
-        <section class="section reveal">
+        <section class="section reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
             <div class="container text-center">
-                <h2 style="margin-bottom: var(--space-8);">The Capabilities</h2>
+                <div class="tech-label" style="margin-bottom: var(--space-8);">[ Technologies ]</div>
+                <h2 style="margin-bottom: var(--space-12);">The Capabilities</h2>
                 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-4); max-width: 800px; margin: 0 auto;">
-                    <div class="badge"><i data-lucide="server" style="width: 14px;"></i> Cloud Architecture (AWS)</div>
-                    <div class="badge"><i data-lucide="database" style="width: 14px;"></i> Relational Databases (PostgreSQL)</div>
-                    <div class="badge"><i data-lucide="terminal" style="width: 14px;"></i> Python Backend Systems</div>
-                    <div class="badge"><i data-lucide="braces" style="width: 14px;"></i> Modern Frontend (React / Next.js)</div>
-                    <div class="badge"><i data-lucide="shield" style="width: 14px;"></i> Network Security</div>
-                    <div class="badge"><i data-lucide="cpu" style="width: 14px;"></i> Embedded C / Firmware</div>
-                    <div class="badge"><i data-lucide="workflow" style="width: 14px;"></i> CI/CD Pipelines</div>
+                    <div class="badge">Cloud Architecture (AWS)</div>
+                    <div class="badge">Relational Databases (PostgreSQL)</div>
+                    <div class="badge">Python Backend Systems</div>
+                    <div class="badge">Modern Frontend (React / Next.js)</div>
+                    <div class="badge">Network Security</div>
+                    <div class="badge">Embedded C / Firmware</div>
+                    <div class="badge">CI/CD Pipelines</div>
                 </div>
             </div>
         </section>
@@ -167,56 +148,50 @@
         <section class="section section-light reveal">
             <div class="container">
                 <div class="text-center" style="margin-bottom: var(--space-16);">
-                    <h2 class="text-gradient">The Engagement Process</h2>
+                    <div class="tech-label" style="margin-bottom: var(--space-8);">[ Process ]</div>
+                    <h2>The Engagement Process</h2>
                     <p style="max-width: 600px; margin: 0 auto;">How we partner with you to deliver results.</p>
                 </div>
                 
-                <div class="timeline">
-                    <div class="timeline-item timeline-left">
-                        <div class="timeline-content">
-                            <h4>1. Technical Audit</h4>
-                            <p class="text-small" style="margin-bottom: 0;">We review your current systems, constraints, and business goals to determine feasibility.</p>
-                        </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-12);">
+                    <div class="reveal delay-100" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
+                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-4); text-transform: uppercase;">1. Technical Audit</h4>
+                        <p class="text-small">We review your current systems, constraints, and business goals to determine feasibility.</p>
                     </div>
-                    <div class="timeline-item timeline-right">
-                        <div class="timeline-content">
-                            <h4>2. Architecture Proposal</h4>
-                            <p class="text-small" style="margin-bottom: 0;">You receive a detailed technical blueprint, tech stack recommendation, and timeline.</p>
-                        </div>
+                    <div class="reveal delay-200" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
+                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-4); text-transform: uppercase;">2. Architecture Proposal</h4>
+                        <p class="text-small">You receive a detailed technical blueprint, tech stack recommendation, and timeline.</p>
                     </div>
-                    <div class="timeline-item timeline-left">
-                        <div class="timeline-content">
-                            <h4>3. Execution Sprints</h4>
-                            <p class="text-small" style="margin-bottom: 0;">Transparent, iterative development cycles with regular staging deployments for review.</p>
-                        </div>
+                    <div class="reveal delay-300" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
+                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-4); text-transform: uppercase;">3. Execution Sprints</h4>
+                        <p class="text-small">Transparent, iterative development cycles with regular staging deployments for review.</p>
                     </div>
-                    <div class="timeline-item timeline-right">
-                        <div class="timeline-content">
-                            <h4>4. Handover & Scaling</h4>
-                            <p class="text-small" style="margin-bottom: 0;">Final security audits, deployment, comprehensive documentation, and ongoing support.</p>
-                        </div>
+                    <div class="reveal delay-400" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
+                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-4); text-transform: uppercase;">4. Handover & Scaling</h4>
+                        <p class="text-small">Final security audits, deployment, comprehensive documentation, and ongoing support.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- 5. FAQ -->
-        <section class="section reveal">
+        <section class="section reveal" style="border-top: 1px solid var(--border);">
             <div class="container">
                 <div class="text-center" style="margin-bottom: var(--space-12);">
+                    <div class="tech-label" style="margin-bottom: var(--space-8);">[ FAQ ]</div>
                     <h2>Common Questions</h2>
                 </div>
                 <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4);">
-                    <div class="card" style="padding: var(--space-4) var(--space-6);">
-                        <h4 style="margin-bottom: var(--space-2);">Do you take over existing codebases?</h4>
+                    <div class="card" style="padding: var(--space-8);">
+                        <h4 style="margin-bottom: var(--space-4);">Do you take over existing codebases?</h4>
                         <p class="text-small" style="margin-bottom: 0;">Yes. However, we always start with a comprehensive code and security audit before committing to new feature development to ensure the foundation is stable.</p>
                     </div>
-                    <div class="card" style="padding: var(--space-4) var(--space-6);">
-                        <h4 style="margin-bottom: var(--space-2);">What size companies do you work with?</h4>
+                    <div class="card" style="padding: var(--space-8);">
+                        <h4 style="margin-bottom: var(--space-4);">What size companies do you work with?</h4>
                         <p class="text-small" style="margin-bottom: 0;">We partner with ambitious startups needing scalable MVPs, as well as established enterprises requiring custom internal tools or security hardening.</p>
                     </div>
-                    <div class="card" style="padding: var(--space-4) var(--space-6);">
-                        <h4 style="margin-bottom: var(--space-2);">How do you handle security?</h4>
+                    <div class="card" style="padding: var(--space-8);">
+                        <h4 style="margin-bottom: var(--space-4);">How do you handle security?</h4>
                         <p class="text-small" style="margin-bottom: 0;">Security is embedded from Day 1. We use secure coding practices, environment variable encryption, regular dependency audits, and proactive threat modeling.</p>
                     </div>
                 </div>
@@ -224,12 +199,12 @@
         </section>
 
         <!-- 6. Conversion CTA -->
-        <section class="section section-light reveal">
+        <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
             <div class="container text-center">
-                <h2 style="font-size: 3rem; margin-bottom: var(--space-6);">Ready to scale your systems?</h2>
+                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Ready to scale your systems?</h2>
                 <p style="max-width: 500px; margin: 0 auto var(--space-8);">Stop wrestling with technical debt. Let's engineer a solution that drives your business forward.</p>
-                <a href="contact.html" class="btn btn-primary" style="padding: var(--space-4) var(--space-8); font-size: 1.125rem;">
-                    Start a Project <i data-lucide="arrow-right"></i>
+                <a href="contact.html" class="btn btn-primary">
+                    Start a Project
                 </a>
             </div>
         </section>
@@ -285,13 +260,16 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rishvin Labs. All rights reserved.</p>
-                <div style="display: flex; gap: var(--space-4);">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                        <div class="footer-bottom">
+                <div>
+                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                    <p class="text-small" style="color: var(--text-secondary);">Last Updated &mdash; May 2026</p>
+                </div>
+                <div style="display: flex; gap: var(--space-4); align-items: center;">
+                    <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
 

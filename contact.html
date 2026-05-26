@@ -62,11 +62,11 @@
                 <i data-lucide="menu"></i>
             </button>
             <div class="navbar-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html" class="active btn btn-outline">Contact Us</a>
+                <a href="index.html" class="hover-underline">Home</a>
+                <a href="about.html" class="hover-underline">About</a>
+                <a href="services.html" class="hover-underline">Services</a>
+                <a href="projects.html" class="hover-underline">Projects</a>
+                <a href="contact.html" class="active hover-underline">Contact</a>
             </div>
         </div>
     </nav>
@@ -74,56 +74,54 @@
     <!-- Main Content Area -->
     <main>
         <!-- 1. Hero -->
-        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
+        <section class="section" style="padding-top: var(--space-32); border-bottom: 1px solid var(--border);">
             <div class="container text-center">
-                <h1 class="text-gradient animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ Engineering Consultation ]</div>
+                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
                     Let's Build Something Intelligent.
                 </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto var(--space-8); font-size: 1.125rem;">
+                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto; font-size: 1.125rem;">
                     Scalable software systems, intelligent automation, and secure digital infrastructure.
                 </p>
             </div>
         </section>
 
-        <!-- 2. Contact Options Grid -->
-        <section class="section section-light" style="padding-top: 0;">
+        <!-- 2. Contact Grid -->
+        <section class="section section-light">
             <div class="container">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-6); margin-bottom: var(--space-16);">
-                    <div class="card reveal delay-100" style="text-align: center; padding: var(--space-8);">
-                        <i data-lucide="rocket" style="width: 32px; height: 32px; color: var(--primary); margin-bottom: var(--space-4); display: inline-block;"></i>
+                    <div class="card reveal delay-100" style="text-align: center; padding: var(--space-8); border-top: 2px solid var(--text-primary);">
                         <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Start a Project</h3>
                         <p class="text-small" style="margin-bottom: 0;">Best for clients needing full-cycle engineering and scalable solutions.</p>
                     </div>
-                    <div class="card reveal delay-200" style="text-align: center; padding: var(--space-8);">
-                        <i data-lucide="handshake" style="width: 32px; height: 32px; color: var(--primary); margin-bottom: var(--space-4); display: inline-block;"></i>
+                    <div class="card reveal delay-200" style="text-align: center; padding: var(--space-8); border-top: 2px solid var(--text-primary);">
                         <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Partnerships</h3>
                         <p class="text-small" style="margin-bottom: 0;">For agencies or startups looking for an ongoing technical partnership.</p>
                     </div>
-                    <div class="card reveal delay-300" style="text-align: center; padding: var(--space-8);">
-                        <i data-lucide="message-square" style="width: 32px; height: 32px; color: var(--primary); margin-bottom: var(--space-4); display: inline-block;"></i>
+                    <div class="card reveal delay-300" style="text-align: center; padding: var(--space-8); border-top: 2px solid var(--text-primary);">
                         <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Technical Consultation</h3>
                         <p class="text-small" style="margin-bottom: 0;">Deep-dive engineering discussions, architecture reviews, and audits.</p>
                     </div>
                 </div>
 
-                <!-- 3. Premium Contact Form -->
-                <div class="reveal" style="max-width: 700px; margin: 0 auto; background: rgba(15, 23, 42, 0.4); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-8);">
-                    <h3 style="margin-bottom: var(--space-6); font-size: var(--text-h3);">Project Inquiry</h3>
-                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: var(--space-4);">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+                <!-- 3. Editorial Contact Form -->
+                <div class="reveal" style="max-width: 800px; margin: 0 auto; border: 1px solid var(--border); padding: var(--space-12); background: var(--surface);">
+                    <h2 style="margin-bottom: var(--space-8); font-size: var(--text-h2); border-bottom: 1px solid var(--border); padding-bottom: var(--space-4);">Project Inquiry</h2>
+                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: var(--space-8);">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
                             <div>
-                                <label for="name" style="display: block; margin-bottom: 8px; font-size: 0.875rem; color: var(--text-secondary);">Full Name</label>
-                                <input type="text" id="name" required style="width: 100%; padding: 12px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 4px; color: var(--text-primary); font-family: inherit; transition: border-color var(--transition-fast);">
+                                <label for="name" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Full Name ]</label>
+                                <input type="text" id="name" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; transition: border-color var(--transition-fast);">
                             </div>
                             <div>
-                                <label for="email" style="display: block; margin-bottom: 8px; font-size: 0.875rem; color: var(--text-secondary);">Work Email</label>
-                                <input type="email" id="email" required style="width: 100%; padding: 12px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 4px; color: var(--text-primary); font-family: inherit; transition: border-color var(--transition-fast);">
+                                <label for="email" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Work Email ]</label>
+                                <input type="email" id="email" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; transition: border-color var(--transition-fast);">
                             </div>
                         </div>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4);">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
                             <div>
-                                <label for="project-type" style="display: block; margin-bottom: 8px; font-size: 0.875rem; color: var(--text-secondary);">Project Type</label>
-                                <select id="project-type" style="width: 100%; padding: 12px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 4px; color: var(--text-primary); font-family: inherit; appearance: none; cursor: pointer;">
+                                <label for="project-type" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Project Type ]</label>
+                                <select id="project-type" style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; appearance: none; cursor: pointer;">
                                     <option value="software">Software System / SaaS</option>
                                     <option value="iot">IoT & Hardware Integration</option>
                                     <option value="cyber">Cybersecurity Audit</option>
@@ -132,8 +130,8 @@
                                 </select>
                             </div>
                             <div>
-                                <label for="budget" style="display: block; margin-bottom: 8px; font-size: 0.875rem; color: var(--text-secondary);">Estimated Budget</label>
-                                <select id="budget" style="width: 100%; padding: 12px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 4px; color: var(--text-primary); font-family: inherit; appearance: none; cursor: pointer;">
+                                <label for="budget" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Estimated Budget ]</label>
+                                <select id="budget" style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; appearance: none; cursor: pointer;">
                                     <option value="startup">To be discussed</option>
                                     <option value="small">Research & Prototyping Phase</option>
                                     <option value="medium">MVP Development</option>
@@ -142,54 +140,55 @@
                             </div>
                         </div>
                         <div>
-                            <label for="description" style="display: block; margin-bottom: 8px; font-size: 0.875rem; color: var(--text-secondary);">Project Overview</label>
-                            <textarea id="description" rows="5" required style="width: 100%; padding: 12px 16px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 4px; color: var(--text-primary); font-family: inherit; resize: vertical;"></textarea>
+                            <label for="description" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Project Overview ]</label>
+                            <textarea id="description" rows="3" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; resize: vertical;"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="margin-top: var(--space-4); align-self: flex-start; padding: 12px 32px;">Send Inquiry</button>
+                        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Inquiry</button>
                     </form>
                 </div>
             </div>
         </section>
 
         <!-- 4. Process Expectations -->
-        <section class="section reveal">
+        <section class="section reveal" style="border-top: 1px solid var(--border);">
             <div class="container">
                 <div class="text-center" style="margin-bottom: var(--space-12);">
+                    <div class="tech-label" style="margin-bottom: var(--space-8);">[ Onboarding ]</div>
                     <h2>What Happens Next?</h2>
                     <p style="max-width: 600px; margin: 0 auto;">We respect your time. Here is our structured onboarding process.</p>
                 </div>
                 
                 <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4);">
-                    <div class="card" style="display: flex; gap: var(--space-4); padding: var(--space-4) var(--space-6); background: transparent; border-color: rgba(255,255,255,0.05);">
-                        <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--primary); font-weight: bold;">01</div>
+                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
+                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">01</div>
                         <div>
                             <h4 style="margin-bottom: 4px;">Discovery Call</h4>
                             <p class="text-small" style="margin-bottom: 0;">A 30-minute technical discussion to understand your business objectives and system constraints.</p>
                         </div>
                     </div>
-                    <div class="card" style="display: flex; gap: var(--space-4); padding: var(--space-4) var(--space-6); background: transparent; border-color: rgba(255,255,255,0.05);">
-                        <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--primary); font-weight: bold;">02</div>
+                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
+                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">02</div>
                         <div>
                             <h4 style="margin-bottom: 4px;">System Planning</h4>
                             <p class="text-small" style="margin-bottom: 0;">We analyze the requirements and draft a preliminary architecture proposal.</p>
                         </div>
                     </div>
-                    <div class="card" style="display: flex; gap: var(--space-4); padding: var(--space-4) var(--space-6); background: transparent; border-color: rgba(255,255,255,0.05);">
-                        <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--primary); font-weight: bold;">03</div>
+                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
+                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">03</div>
                         <div>
                             <h4 style="margin-bottom: 4px;">Architecture & Proposal</h4>
                             <p class="text-small" style="margin-bottom: 0;">You receive a comprehensive technical blueprint, technology stack recommendation, and timeline.</p>
                         </div>
                     </div>
-                    <div class="card" style="display: flex; gap: var(--space-4); padding: var(--space-4) var(--space-6); background: transparent; border-color: rgba(255,255,255,0.05);">
-                        <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--primary); font-weight: bold;">04</div>
+                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
+                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">04</div>
                         <div>
                             <h4 style="margin-bottom: 4px;">Development Execution</h4>
                             <p class="text-small" style="margin-bottom: 0;">Iterative, transparent engineering sprints with regular staging reviews.</p>
                         </div>
                     </div>
-                    <div class="card" style="display: flex; gap: var(--space-4); padding: var(--space-4) var(--space-6); background: transparent; border-color: rgba(255,255,255,0.05);">
-                        <div style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--primary); font-weight: bold;">05</div>
+                    <div class="card" style="display: flex; gap: var(--space-6); padding: var(--space-6) var(--space-8); border: 1px solid var(--border);">
+                        <div style="font-family: var(--font-mono); font-size: 1.25rem; color: var(--text-primary);">05</div>
                         <div>
                             <h4 style="margin-bottom: 4px;">Delivery & Scaling</h4>
                             <p class="text-small" style="margin-bottom: 0;">Final security audits, seamless deployment, and handover documentation.</p>
@@ -200,35 +199,26 @@
         </section>
 
         <!-- 5. FAQ -->
-        <section class="section section-light reveal">
+        <section class="section section-light reveal" style="border-top: 1px solid var(--border);">
             <div class="container">
                 <div class="text-center" style="margin-bottom: var(--space-12);">
+                    <div class="tech-label" style="margin-bottom: var(--space-8);">[ Clarifications ]</div>
                     <h2>Common Questions</h2>
                 </div>
                 <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-4);">
-                    <div class="card" style="padding: var(--space-4) var(--space-6);">
+                    <div class="card" style="padding: var(--space-6) var(--space-8);">
                         <h4 style="margin-bottom: var(--space-2);">Do you build MVPs for startups?</h4>
                         <p class="text-small" style="margin-bottom: 0;">Yes. We specialize in engineering high-quality MVPs that allow founders to reach the market quickly without accumulating technical debt that hinders future scaling.</p>
                     </div>
-                    <div class="card" style="padding: var(--space-4) var(--space-6);">
+                    <div class="card" style="padding: var(--space-6) var(--space-8);">
                         <h4 style="margin-bottom: var(--space-2);">Can you integrate with our existing IoT hardware?</h4>
                         <p class="text-small" style="margin-bottom: 0;">Absolutely. We have extensive experience writing firmware and building the cloud middleware required to ingest, process, and secure telemetry data from existing hardware deployments.</p>
                     </div>
-                    <div class="card" style="padding: var(--space-4) var(--space-6);">
+                    <div class="card" style="padding: var(--space-6) var(--space-8);">
                         <h4 style="margin-bottom: var(--space-2);">Do you offer standalone cybersecurity audits?</h4>
                         <p class="text-small" style="margin-bottom: 0;">Yes. If you have an existing system, we can perform comprehensive penetration testing and architecture reviews to harden your infrastructure against modern threats.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- 6. Final CTA -->
-        <section class="section reveal">
-            <div class="container text-center">
-                <h2 style="font-size: 3rem; margin-bottom: var(--space-6);">Ready to engineer something meaningful?</h2>
-                <a href="#" class="btn btn-primary" style="padding: var(--space-4) var(--space-8); font-size: 1.125rem;" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
-                    Start a Conversation
-                </a>
             </div>
         </section>
     </main>
@@ -283,13 +273,16 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Rishvin Labs. All rights reserved.</p>
-                <div style="display: flex; gap: var(--space-4);">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                        <div class="footer-bottom">
+                <div>
+                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                    <p class="text-small" style="color: var(--text-secondary);">Last Updated &mdash; May 2026</p>
+                </div>
+                <div style="display: flex; gap: var(--space-4); align-items: center;">
+                    <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
 
