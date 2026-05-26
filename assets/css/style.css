@@ -71,17 +71,17 @@ a:hover {
 
 /* Layout Utilities */
 .container {
-  width: min(1600px, 92%);
+  width: min(1440px, 92%);
   margin-inline: auto;
 }
 
 .container-wide {
-  width: min(1700px, 94%);
+  width: min(1500px, 94%);
   margin-inline: auto;
 }
 
 .container-medium {
-  width: min(1400px, 90%);
+  width: min(1200px, 90%);
   margin-inline: auto;
 }
 
@@ -156,10 +156,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Logo Image Sizing constraints */
 .logo-img {
-    width: 44px;
-    height: 44px;
+    width: 34px;
+    height: 34px;
     object-fit: cover;
-    border-radius: 50%; /* Make it round since it's a portrait */
+    border-radius: 50%;
     vertical-align: middle;
     margin-right: var(--space-2);
 }
@@ -169,11 +169,11 @@ h1, h2, h3, h4, h5, h6 {
     height: 56px;
 }
 
-/* Hero Dense Layout */
-.hero-dense {
-    min-height: 72vh;
-    padding-top: 120px;
-    padding-bottom: 80px;
+/* Hero Layout */
+.hero-dense, .hero {
+    min-height: 78vh;
+    padding-top: 80px;
+    padding-bottom: 60px;
     display: flex;
     align-items: center;
 }
