@@ -66,6 +66,7 @@
                 <a href="about.html" class="hover-underline">About</a>
                 <a href="services.html" class="active hover-underline">Services</a>
                 <a href="projects.html" class="hover-underline">Projects</a>
+                    <a href="labs.html" class="hover-underline">Labs</a>
                 <a href="contact.html" class="hover-underline">Contact</a>
             </div>
         </div>
@@ -231,11 +232,205 @@
         </section>
 
         <!-- 6. Conversion CTA -->
+        <!-- Interactive Tech Stack Map -->
+        <section class="section reveal" id="tech-stack-section" style="border-top: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-10); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">[ INTERACTIVE ]</div>
+                        <h2 style="font-size: var(--text-h2);">Technology Ecosystem</h2>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 220px;">Select a domain to explore the connected stack</p>
+                </div>
+
+                <!-- Domain Selectors -->
+                <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-10);" id="stack-domain-tabs">
+                    <button class="stack-tab active" data-domain="software" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--text-primary); background: var(--text-primary); color: var(--surface); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Software</button>
+                    <button class="stack-tab" data-domain="iot" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">IoT</button>
+                    <button class="stack-tab" data-domain="security" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Cybersecurity</button>
+                    <button class="stack-tab" data-domain="automation" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Automation</button>
+                </div>
+
+                <!-- Stack Panel -->
+                <div id="stack-panel" style="opacity: 1; transition: opacity 0.25s ease;">
+                    <!-- Software (default) -->
+                    <div class="stack-domain" id="stack-software">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">LANGUAGES</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">Python</span>
+                                    <span style="font-size: 1rem;">TypeScript</span>
+                                    <span style="font-size: 1rem;">JavaScript</span>
+                                    <span style="font-size: 1rem;">SQL</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">BACKEND</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">FastAPI</span>
+                                    <span style="font-size: 1rem;">Node.js / Express</span>
+                                    <span style="font-size: 1rem;">REST / WebSockets</span>
+                                    <span style="font-size: 1rem;">GraphQL</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DATA</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">PostgreSQL</span>
+                                    <span style="font-size: 1rem;">MongoDB</span>
+                                    <span style="font-size: 1rem;">Firebase / Firestore</span>
+                                    <span style="font-size: 1rem;">Redis</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DEPLOYMENT</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">Docker</span>
+                                    <span style="font-size: 1rem;">GitHub Actions</span>
+                                    <span style="font-size: 1rem;">Nginx</span>
+                                    <span style="font-size: 1rem;">Linux Servers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IoT -->
+                    <div class="stack-domain" id="stack-iot" style="display: none;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">HARDWARE</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">Arduino Uno / Mega</span>
+                                    <span style="font-size: 1rem;">ESP32 / ESP8266</span>
+                                    <span style="font-size: 1rem;">Raspberry Pi</span>
+                                    <span style="font-size: 1rem;">STM32</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">FIRMWARE</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">C / C++</span>
+                                    <span style="font-size: 1rem;">FreeRTOS</span>
+                                    <span style="font-size: 1rem;">ESP-IDF</span>
+                                    <span style="font-size: 1rem;">MicroPython</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">PROTOCOLS</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">MQTT</span>
+                                    <span style="font-size: 1rem;">ESP-NOW</span>
+                                    <span style="font-size: 1rem;">I2C / SPI / UART</span>
+                                    <span style="font-size: 1rem;">LoRa / WiFi</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DASHBOARDS</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">Grafana</span>
+                                    <span style="font-size: 1rem;">InfluxDB</span>
+                                    <span style="font-size: 1rem;">Node-RED</span>
+                                    <span style="font-size: 1rem;">Custom Portals</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security -->
+                    <div class="stack-domain" id="stack-security" style="display: none;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">ARCHITECTURE</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">Zero-Trust Design</span>
+                                    <span style="font-size: 1rem;">Defense in Depth</span>
+                                    <span style="font-size: 1rem;">Least Privilege</span>
+                                    <span style="font-size: 1rem;">Threat Modeling</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">CRYPTOGRAPHY</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">AES-256</span>
+                                    <span style="font-size: 1rem;">RSA / ECC</span>
+                                    <span style="font-size: 1rem;">JWT / OAuth 2.0</span>
+                                    <span style="font-size: 1rem;">TLS 1.3</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">STANDARDS</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">OWASP Top 10</span>
+                                    <span style="font-size: 1rem;">NIST Framework</span>
+                                    <span style="font-size: 1rem;">Secure SDLC</span>
+                                    <span style="font-size: 1rem;">Penetration Testing</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">TOOLING</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">Burp Suite</span>
+                                    <span style="font-size: 1rem;">Wireshark</span>
+                                    <span style="font-size: 1rem;">Hashcat</span>
+                                    <span style="font-size: 1rem;">Metasploit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Automation -->
+                    <div class="stack-domain" id="stack-automation" style="display: none;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">SCRIPTING</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">Python</span>
+                                    <span style="font-size: 1rem;">Bash / Shell</span>
+                                    <span style="font-size: 1rem;">PowerShell</span>
+                                    <span style="font-size: 1rem;">Selenium</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">PIPELINES</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">GitHub Actions</span>
+                                    <span style="font-size: 1rem;">Cron Jobs</span>
+                                    <span style="font-size: 1rem;">Task Queues</span>
+                                    <span style="font-size: 1rem;">Webhooks</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">AI / ML</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">LangChain</span>
+                                    <span style="font-size: 1rem;">OpenAI API</span>
+                                    <span style="font-size: 1rem;">Hugging Face</span>
+                                    <span style="font-size: 1rem;">scikit-learn</span>
+                                </div>
+                            </div>
+                            <div style="background: var(--surface); padding: var(--space-8);">
+                                <div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">INTEGRATION</div>
+                                <div style="display: flex; flex-direction: column; gap: var(--space-2);">
+                                    <span style="font-size: 1rem;">REST APIs</span>
+                                    <span style="font-size: 1rem;">Plaid / Stripe</span>
+                                    <span style="font-size: 1rem;">Google Workspace</span>
+                                    <span style="font-size: 1rem;">Slack / Notion</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
             <div class="container text-center">
                 <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Ready to scale your systems?</h2>
                 <p style="max-width: 500px; margin: 0 auto var(--space-8);">Stop wrestling with technical debt. Let's engineer a solution that drives your business forward.</p>
-                <a href="contact.html" class="btn btn-primary">
+                <a href="manifesto.html" class="hover-underline">Manifesto</a>
+                    <a href="founder.html" class="hover-underline">Founder</a>
+                    <a href="contact.html" class="btn btn-primary">
                     Start a Project
                 </a>
             </div>
@@ -310,5 +505,8 @@
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
+    <script src="assets/js/command-palette.js" defer></script>
+    <script src="assets/js/page-transitions.js" defer></script>
+    <script src="assets/js/tech-stack.js" defer></script>
 </body>
 </html>

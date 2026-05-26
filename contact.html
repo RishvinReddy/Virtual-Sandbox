@@ -66,6 +66,7 @@
                 <a href="about.html" class="hover-underline">About</a>
                 <a href="services.html" class="hover-underline">Services</a>
                 <a href="projects.html" class="hover-underline">Projects</a>
+                    <a href="labs.html" class="hover-underline">Labs</a>
                 <a href="contact.html" class="active hover-underline">Contact</a>
             </div>
         </div>
@@ -73,95 +74,142 @@
 
     <!-- Main Content Area -->
     <main>
-        <!-- 1. Blueprint Contact Header -->
-        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
-            <div class="container">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ INITIATE ]</div>
-                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin-bottom: var(--space-6); font-size: var(--text-hero);">
-                    Start a conversation.
-                </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 600px; font-size: 1.15rem;">
-                    We partner with ambitious teams to build high-performance systems. Tell us about your technical challenges.
-                </p>
-            </div>
-        </section>
-
-        <!-- 2. Blueprint Contact Dense Layout -->
-        <section class="section section-light reveal" style="padding-top: var(--space-16); padding-bottom: var(--space-24);">
+        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-32);">
             <div class="container container-medium">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-16); align-items: start;">
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8); text-align: center;">[ SYSTEM ARCHITECTURE INITIATION ]</div>
+                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-12); font-size: var(--text-hero); text-align: center;">
+                    Consultation Wizard.
+                </h1>
+
+                <!-- Wizard Container -->
+                <div id="consultation-wizard" style="max-width: 700px; margin: 0 auto; background: var(--surface); border: 1px solid var(--border); padding: var(--space-12); position: relative;" class="animate-slide-up delay-200">
                     
-                    <!-- Left Side: How We Work & Trust Markers -->
-                    <div style="display: flex; flex-direction: column; gap: var(--space-12);">
+                    <!-- Progress Bar -->
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--bg-secondary);">
+                        <div id="wizard-progress-fill" style="height: 100%; width: 0%; background: var(--text-primary); transition: width 0.3s ease;"></div>
+                    </div>
+                    
+                    <!-- Step Indicators -->
+                    <div style="display: flex; justify-content: space-between; margin-bottom: var(--space-12); font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary);">
+                        <span class="step-indicator active">01. DOMAIN</span>
+                        <span class="step-indicator">02. STAGE</span>
+                        <span class="step-indicator">03. SCOPE</span>
+                        <span class="step-indicator">04. DETAILS</span>
+                    </div>
+
+                    <form id="consultation-form">
                         
-                        <!-- Introduction -->
-                        <div>
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">[ HOW WE WORK ]</div>
-                            <p style="font-size: 1.15rem; max-width: 480px;">We operate as a high-end engineering task force. We do not write 'cheap code'. We build systems that are secure, scalable, and technically sound.</p>
+                        <!-- Step 1 -->
+                        <div class="wizard-step" id="step-1">
+                            <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">What are you building?</h2>
+                            <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-4);">
+                                <button type="button" class="wizard-option btn" data-field="domain" data-value="software" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div class="tech-label" style="margin-bottom: var(--space-2);">[ SOFTWARE ]</div>
+                                    <div style="font-size: 1.15rem;">Web Platform or SaaS</div>
+                                </button>
+                                <button type="button" class="wizard-option btn" data-field="domain" data-value="iot" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div class="tech-label" style="margin-bottom: var(--space-2);">[ IOT ]</div>
+                                    <div style="font-size: 1.15rem;">Hardware Integration & Telemetry</div>
+                                </button>
+                                <button type="button" class="wizard-option btn" data-field="domain" data-value="security" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div class="tech-label" style="margin-bottom: var(--space-2);">[ CYBERSECURITY ]</div>
+                                    <div style="font-size: 1.15rem;">Zero-Trust Architecture & Audits</div>
+                                </button>
+                            </div>
                         </div>
 
-                        <!-- Trust Markers -->
-                        <div style="display: flex; flex-direction: column; gap: var(--space-6);">
-                            
-                            <div style="display: grid; grid-template-columns: 24px 1fr; gap: var(--space-4); align-items: start;">
-                                <i data-lucide="check" style="width: 20px; height: 20px; color: var(--text-primary); margin-top: 2px;"></i>
-                                <div>
-                                    <h4 style="margin-bottom: var(--space-1);">Architecture Audit</h4>
-                                    <p class="text-small" style="margin-bottom: 0;">We start by understanding your system constraints.</p>
-                                </div>
+                        <!-- Step 2 -->
+                        <div class="wizard-step" id="step-2" style="display: none; opacity: 0; transition: opacity 0.3s ease;">
+                            <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">What stage is the project?</h2>
+                            <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-4);">
+                                <button type="button" class="wizard-option btn" data-field="stage" data-value="idea" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div class="tech-label" style="margin-bottom: var(--space-2);">[ CONCEPT ]</div>
+                                    <div style="font-size: 1.15rem;">Idea / Early Requirements</div>
+                                </button>
+                                <button type="button" class="wizard-option btn" data-field="stage" data-value="mvp" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div class="tech-label" style="margin-bottom: var(--space-2);">[ MVP ]</div>
+                                    <div style="font-size: 1.15rem;">Prototype Ready for Refinement</div>
+                                </button>
+                                <button type="button" class="wizard-option btn" data-field="stage" data-value="scaling" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div class="tech-label" style="margin-bottom: var(--space-2);">[ PRODUCTION ]</div>
+                                    <div style="font-size: 1.15rem;">Scaling & Optimization</div>
+                                </button>
                             </div>
-
-                            <div style="display: grid; grid-template-columns: 24px 1fr; gap: var(--space-4); align-items: start;">
-                                <i data-lucide="check" style="width: 20px; height: 20px; color: var(--text-primary); margin-top: 2px;"></i>
-                                <div>
-                                    <h4 style="margin-bottom: var(--space-1);">Technical Blueprint</h4>
-                                    <p class="text-small" style="margin-bottom: 0;">You receive a comprehensive, executable plan.</p>
-                                </div>
+                            <div style="margin-top: var(--space-8);">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">← BACK</button>
                             </div>
-
-                            <div style="display: grid; grid-template-columns: 24px 1fr; gap: var(--space-4); align-items: start;">
-                                <i data-lucide="check" style="width: 20px; height: 20px; color: var(--text-primary); margin-top: 2px;"></i>
-                                <div>
-                                    <h4 style="margin-bottom: var(--space-1);">Engineering Execution</h4>
-                                    <p class="text-small" style="margin-bottom: 0;">Iterative, transparent sprints to production.</p>
-                                </div>
-                            </div>
-
                         </div>
-                    </div>
 
-                    <!-- Right Side: The Form -->
-                    <div style="background: var(--surface); border: 1px solid var(--border); padding: var(--space-12);">
-                        <form action="#" method="POST" style="display: flex; flex-direction: column; gap: var(--space-8);">
-                            
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
-                                <div>
-                                    <label for="name" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Name ]</label>
-                                    <input type="text" id="name" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; transition: border-color var(--transition-fast);">
+                        <!-- Step 3 -->
+                        <div class="wizard-step" id="step-3" style="display: none; opacity: 0; transition: opacity 0.3s ease;">
+                            <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">Budget Constraints</h2>
+                            <div style="display: grid; grid-template-columns: 1fr; gap: var(--space-4);">
+                                <button type="button" class="wizard-option btn" data-field="budget" data-value="10k-50k" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div style="font-family: var(--font-mono); font-size: 1.25rem;">$10k &ndash; $50k</div>
+                                </button>
+                                <button type="button" class="wizard-option btn" data-field="budget" data-value="50k-150k" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div style="font-family: var(--font-mono); font-size: 1.25rem;">$50k &ndash; $150k</div>
+                                </button>
+                                <button type="button" class="wizard-option btn" data-field="budget" data-value="150k+" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border); padding: var(--space-6); text-align: left; transition: all 0.2s;">
+                                    <div style="font-family: var(--font-mono); font-size: 1.25rem;">$150k+</div>
+                                </button>
+                            </div>
+                            <div style="margin-top: var(--space-8);">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">← BACK</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="wizard-step" id="step-4" style="display: none; opacity: 0; transition: opacity 0.3s ease;">
+                            <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">Transmission Details</h2>
+                            <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+                                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);">
+                                    <div>
+                                        <label for="wizard-name" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Name ]</label>
+                                        <input type="text" id="wizard-name" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem;">
+                                    </div>
+                                    <div>
+                                        <label for="wizard-email" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Email ]</label>
+                                        <input type="email" id="wizard-email" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem;">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label for="email" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Email ]</label>
-                                    <input type="email" id="email" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; transition: border-color var(--transition-fast);">
+                                    <label for="wizard-details" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ System Requirements ]</label>
+                                    <textarea id="wizard-details" rows="4" style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; resize: vertical;"></textarea>
                                 </div>
                             </div>
-                            
-                            <div>
-                                <label for="organization" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Organization ]</label>
-                                <input type="text" id="organization" style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; transition: border-color var(--transition-fast);">
+                            <div style="margin-top: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
+                                <button type="button" class="btn btn-secondary" onclick="prevStep()">← BACK</button>
+                                <button type="submit" class="btn btn-primary" style="padding: 16px 32px;">INITIALIZE ARCHITECTURE →</button>
                             </div>
-                            
-                            <div>
-                                <label for="details" style="display: block; margin-bottom: 8px; font-size: 0.875rem; font-family: var(--font-mono); text-transform: uppercase;">[ Project Details ]</label>
-                                <textarea id="details" rows="5" required style="width: 100%; padding: 12px 0; background: transparent; border: none; border-bottom: 1px solid var(--border); border-radius: 0; color: var(--text-primary); font-family: var(--font-body); font-size: 1.125rem; resize: vertical;"></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary" style="align-self: flex-start; padding: 16px 32px; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.05em; display: inline-flex; align-items: center; gap: 8px;">
-                                Submit Inquiry &rarr;
-                            </button>
-                        </form>
-                    </div>
+                        </div>
 
+                    </form>
                 </div>
+                
+                <!-- Additional styling for wizard -->
+                <style>
+                    .wizard-option:hover {
+                        border-color: var(--text-primary) !important;
+                        background: var(--bg-secondary) !important;
+                    }
+                    .wizard-option.selected {
+                        border-color: var(--text-primary) !important;
+                        background: var(--text-primary) !important;
+                        color: var(--surface) !important;
+                    }
+                    .step-indicator {
+                        opacity: 0.3;
+                    }
+                    .step-indicator.active {
+                        opacity: 1;
+                        font-weight: 600;
+                    }
+                    .step-indicator.completed {
+                        opacity: 0.6;
+                        text-decoration: line-through;
+                    }
+                </style>
             </div>
         </section>
     </main>
@@ -234,6 +282,8 @@
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
+    <script src="assets/js/command-palette.js" defer></script>
+    <script src="assets/js/page-transitions.js" defer></script>
     
     <!-- Add simple focus styling logic for form inputs -->
     <style>
@@ -243,5 +293,6 @@
             box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
         }
     </style>
+    <script src="assets/js/consultation-wizard.js" defer></script>
 </body>
 </html>

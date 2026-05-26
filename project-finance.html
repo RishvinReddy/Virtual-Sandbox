@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Finance Hub | Rishvin Labs</title>
+    
+    <meta name="description" content="Case study: High-performance Global Finance Hub engineered by Rishvin Labs.">
+    
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="page-loaded">
+    
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img">
+                Rishvin <span>Labs</span>
+            </a>
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="labs.html">Labs</a>
+                <a href="manifesto.html">Manifesto</a>
+                <a href="founder.html">Founder</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;" id="contact-nav-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Reading Progress Bar -->
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 3px; background: var(--border); z-index: 1001;">
+            <div id="reading-progress" style="height: 100%; width: 0%; background: var(--text-primary); transition: width 0.1s ease-out;"></div>
+        </div>
+
+        <!-- 1. Case Study Header -->
+        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
+            <div class="container container-medium">
+                <div style="display: flex; gap: var(--space-4); align-items: center; margin-bottom: var(--space-8);">
+                    <a href="projects.html" style="color: var(--text-secondary); text-decoration: none; font-family: var(--font-mono); font-size: 0.875rem; display: inline-flex; align-items: center; gap: 4px;">
+                        <i data-lucide="arrow-left" style="width: 16px; height: 16px;"></i> BACK TO PROJECTS
+                    </a>
+                </div>
+                
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ CASE STUDY 03 / SOFTWARE ]</div>
+                <h1 class="animate-slide-up delay-100" style="font-size: var(--text-hero); max-width: 900px; margin-bottom: var(--space-6);">
+                    Global Finance Hub Portal
+                </h1>
+                <p class="animate-slide-up delay-200" style="font-size: 1.25rem; max-width: 650px;">
+                    A scalable and highly secure portal for real-time market data visualization and portfolio management.
+                </p>
+                
+                <div class="animate-slide-up delay-300" style="margin-top: var(--space-8); display: flex; gap: var(--space-4);">
+                    <a href="https://github.com/RishvinReddy/Global-Finance-Hub" target="_blank" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+                        <i data-lucide="github" style="width: 18px; height: 18px;"></i> View Repository
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. System Meta -->
+        <section class="section section-light reveal" style="padding: var(--space-12) 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-8);">
+                    <div>
+                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">STATUS</div>
+                        <div style="font-family: var(--font-body); font-size: 1.15rem;">Production Ready</div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">DOMAIN</div>
+                        <div style="font-family: var(--font-body); font-size: 1.15rem;">Precision Agriculture</div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">TIMELINE</div>
+                        <div style="font-family: var(--font-body); font-size: 1.15rem;">8 Weeks</div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">CORE TECH</div>
+                        <div style="font-family: var(--font-body); font-size: 1.15rem;">ESP32, C++, React, Node.js</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. The Deep Dive -->
+        <section class="section reveal" style="padding-top: var(--space-24); padding-bottom: var(--space-32);">
+            <div class="container container-medium">
+                
+                <!-- The Problem -->
+                <div style="margin-bottom: var(--space-24);">
+                    <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">The Problem</h2>
+                    <p style="font-size: 1.125rem; line-height: 1.8; max-width: 800px; margin-bottom: var(--space-4);">
+                        Traditional agriculture relies heavily on manual soil sampling and generalized watering schedules, leading to significant water waste and suboptimal crop yields. Farms lack real-time visibility into micro-climate conditions at the root level.
+                    </p>
+                    <p style="font-size: 1.125rem; line-height: 1.8; max-width: 800px;">
+                        The objective was to engineer a distributed sensor network capable of surviving harsh outdoor conditions while transmitting telemetry data over low-bandwidth networks to a centralized analytical dashboard.
+                    </p>
+                </div>
+
+                <!-- Architecture -->
+                <div style="margin-bottom: var(--space-24);">
+                    <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">System Architecture</h2>
+                    
+                    <!-- Diagram Placeholder -->
+                    <div style="width: 100%; background: var(--surface-muted); border: 1px solid var(--border); padding: var(--space-12); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-8); min-height: 300px;">
+                        <p class="tech-label" style="color: var(--text-secondary);">[ ARCHITECTURE DIAGRAM ]</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-12);">
+                        <div>
+                            <h4 style="margin-bottom: var(--space-4);">Hardware Layer</h4>
+                            <p class="text-small">Custom ESP32-based sensor nodes equipped with capacitive soil moisture, temperature, and humidity sensors. Nodes operate on solar-backed battery systems, utilizing deep-sleep cycles to maximize lifespan.</p>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: var(--space-4);">Middleware Layer</h4>
+                            <p class="text-small">An MQTT broker facilitates lightweight telemetry ingestion. A Node.js microservice parses the payload, validates the data integrity, and writes the time-series data to a scalable database.</p>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: var(--space-4);">Application Layer</h4>
+                            <p class="text-small">A React-based web interface provides farmers with real-time visualization, historical trend analysis, and automated alert configuration when moisture levels drop below critical thresholds.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div>
+                    <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">The Outcome</h2>
+                    <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-4); max-width: 800px;">
+                        <li style="display: flex; gap: var(--space-4); align-items: flex-start;">
+                            <i data-lucide="check" style="width: 20px; height: 20px; color: var(--text-primary); margin-top: 4px;"></i>
+                            <span style="font-size: 1.125rem;">Reduced water consumption by approximately 30% through precision targeting.</span>
+                        </li>
+                        <li style="display: flex; gap: var(--space-4); align-items: flex-start;">
+                            <i data-lucide="check" style="width: 20px; height: 20px; color: var(--text-primary); margin-top: 4px;"></i>
+                            <span style="font-size: 1.125rem;">Achieved 99.9% uptime on hardware nodes using optimized power management profiles.</span>
+                        </li>
+                        <li style="display: flex; gap: var(--space-4); align-items: flex-start;">
+                            <i data-lucide="check" style="width: 20px; height: 20px; color: var(--text-primary); margin-top: 4px;"></i>
+                            <span style="font-size: 1.125rem;">Delivered actionable insights within < 500ms latency from field to screen.</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section-light" style="text-align: center; border-top: 1px solid var(--border);">
+            <div class="container">
+                <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">Need a similar system?</h2>
+                <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="navbar-logo">
+                        <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" loading="lazy" decoding="async"> Rishvin <span>Labs</span>
+                    </a>
+                    <p>A high-end engineering studio building intelligent digital systems.</p>
+                </div>
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="services.html">Services</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html#web">Web Development</a>
+                        <a href="services.html#saas">SaaS Development</a>
+                        <a href="services.html#iot">IoT Solutions</a>
+                        <a href="services.html#cyber">Cybersecurity</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Connect</h4>
+                    <div class="footer-links">
+                        <a href="https://github.com/RishvinReddy" target="_blank">GitHub</a>
+                        <a href="https://rishvinreddy.github.io" target="_blank">Portfolio</a>
+                        <a href="mailto:rishvinreddy@gmail.com">rishvinreddy@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        lucide.createIcons();
+        
+        // Reading Progress Logic
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const bar = document.getElementById('reading-progress');
+            if (bar) bar.style.width = scrolled + '%';
+        });
+    </script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/scroll-effects.js" defer></script>
+    <script src="assets/js/command-palette.js" defer></script>
+    <script src="assets/js/page-transitions.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Manifesto | Rishvin Labs</title>
+    
+    <meta name="description" content="We don't build software. We engineer systems. The engineering philosophy and principles behind Rishvin Labs.">
+    <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/manifesto.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/manifesto.html">
+    <meta property="og:title" content="Engineering Manifesto | Rishvin Labs">
+    <meta property="og:description" content="We don't build software. We engineer systems.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Engineering Manifesto | Rishvin Labs">
+    <meta name="twitter:description" content="We don't build software. We engineer systems.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="manifest" href="manifest.json">
+    
+    <style>
+        .manifesto-statement {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-family: var(--font-heading);
+            line-height: 1.1;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: var(--space-16);
+            padding-bottom: var(--space-16);
+            border-bottom: 1px solid var(--border);
+        }
+        .manifesto-statement span.dim {
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+        .manifesto-principle {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: var(--space-8);
+            padding: var(--space-12) 0;
+            border-bottom: 1px solid var(--border);
+            align-items: start;
+        }
+        .manifesto-principle:first-child {
+            padding-top: 0;
+        }
+        .principle-number {
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.1em;
+            padding-top: 6px;
+        }
+        .principle-body h3 {
+            font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+            margin-bottom: var(--space-4);
+            font-weight: 600;
+        }
+        .principle-body p {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            max-width: 640px;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+        @media (max-width: 640px) {
+            .manifesto-principle {
+                grid-template-columns: 1fr;
+                gap: var(--space-3);
+            }
+            .manifesto-statement {
+                font-size: 2.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
+            <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: var(--text-caption);">Engineering Intelligent Systems</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand" aria-label="Rishvin Labs Home">
+                <span>Rishvin Labs</span>
+                <span class="brand-dot">.</span>
+            </a>
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="labs.html">Labs</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Statement -->
+        <section style="padding-top: 140px; padding-bottom: var(--space-24); border-bottom: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ ENGINEERING MANIFESTO ]</div>
+                <h1 class="manifesto-statement animate-slide-up delay-100">
+                    We don't build<br>software.<br>
+                    <span class="dim">We engineer systems.</span>
+                </h1>
+                <p class="animate-slide-up delay-200" style="font-size: 1.25rem; max-width: 640px; color: var(--text-secondary); line-height: 1.7;">
+                    These are the principles that govern every architectural decision, every line of production code, and every system we deploy under the Rishvin Labs name.
+                </p>
+            </div>
+        </section>
+
+        <!-- Principles -->
+        <section class="section">
+            <div class="container container-medium">
+
+                <div class="manifesto-principle reveal">
+                    <div class="principle-number">01.</div>
+                    <div class="principle-body">
+                        <h3>Systems over features.</h3>
+                        <p>Features are temporary. Systems persist. Before writing a single line of code, we define the boundaries, the failure modes, and the operational envelope of the system. If we cannot explain the architecture in a whiteboard session, it is not ready to be built.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-principle reveal">
+                    <div class="principle-number">02.</div>
+                    <div class="principle-body">
+                        <h3>Reliability is designed, not tested in.</h3>
+                        <p>Testing discovers bugs. Architecture prevents them. We build fault-tolerant systems from the ground up — not as an afterthought. Redundancy, graceful degradation, and clear recovery paths are first-class engineering constraints, not optional additions.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-principle reveal">
+                    <div class="principle-number">03.</div>
+                    <div class="principle-body">
+                        <h3>Security is not a layer. It is a property.</h3>
+                        <p>Security added on top of an insecure design is theater. We apply zero-trust principles, minimal privilege, and cryptographic rigor from the data model outward. Every system we build should be resistant to a breach even if an attacker gains partial access.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-principle reveal">
+                    <div class="principle-number">04.</div>
+                    <div class="principle-body">
+                        <h3>Simplicity at scale is the hardest problem.</h3>
+                        <p>Complex problems deserve elegant solutions, not complicated ones. We resist the pull of unnecessary abstraction. Every component must justify its existence. An engineer joining the project on day one should understand the entire system by day three.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-principle reveal">
+                    <div class="principle-number">05.</div>
+                    <div class="principle-body">
+                        <h3>Data integrity above all else.</h3>
+                        <p>Software can be redeployed. Data cannot be undeleted. We treat data as the most precious asset in every system — designing with atomic transactions, audit trails, immutable records, and explicit consistency guarantees at every persistence boundary.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-principle reveal">
+                    <div class="principle-number">06.</div>
+                    <div class="principle-body">
+                        <h3>Observability is not optional.</h3>
+                        <p>A system you cannot observe is a system you cannot trust. Every production deployment ships with structured logging, distributed tracing, and alert thresholds set before the first user touches it. If an anomaly exists, we must know before the user does.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-principle reveal">
+                    <div class="principle-number">07.</div>
+                    <div class="principle-body">
+                        <h3>We write code for the engineer who comes next.</h3>
+                        <p>Code is read far more often than it is written. Clarity is a professional obligation. We document architectural intent, not implementation detail. The test of good code is whether a senior engineer can understand its purpose in three minutes without context.</p>
+                    </div>
+                </div>
+
+                <div class="manifesto-principle reveal">
+                    <div class="principle-number">08.</div>
+                    <div class="principle-body">
+                        <h3>Ship working systems. Improve them continuously.</h3>
+                        <p>Perfect systems are never deployed. We practice incremental delivery of production-quality increments — each slice functional, tested, and observable. We do not ship prototypes as products. We ship systems that are ready for the load they will receive.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Closing statement -->
+        <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: center;">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-6);">[ THE STANDARD ]</div>
+                        <p style="font-size: 1.5rem; font-family: var(--font-heading); line-height: 1.4; font-weight: 600; margin-bottom: 0;">
+                            "The architecture should survive the departure of any single engineer."
+                        </p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: var(--space-6);">
+                        <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 0;">
+                            These are not aspirational values printed on a wall. They are enforced constraints on every system we build — measurable, auditable, and non-negotiable.
+                        </p>
+                        <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                            <a href="projects.html" class="btn btn-primary">See Our Systems</a>
+                            <a href="founder.html" class="btn btn-secondary">Founder Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="padding: var(--space-12) 0; border-top: 1px solid var(--border);">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
+                <span style="font-family: var(--font-heading); font-weight: 700;">Rishvin Labs<span style="color: var(--primary);">.</span></span>
+                <div style="display: flex; gap: var(--space-6);">
+                    <a href="projects.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Projects</a>
+                    <a href="manifesto.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Manifesto</a>
+                    <a href="founder.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Founder</a>
+                    <a href="labs.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Labs</a>
+                    <a href="contact.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Contact</a>
+                </div>
+                <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/scroll-effects.js" defer></script>
+    <script src="assets/js/command-palette.js" defer></script>
+    <script src="assets/js/page-transitions.js" defer></script>
+</body>
+</html>

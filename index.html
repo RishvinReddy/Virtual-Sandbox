@@ -83,76 +83,91 @@
                 <a href="about.html" class="hover-underline">About</a>
                 <a href="services.html" class="hover-underline">Services</a>
                 <a href="projects.html" class="hover-underline">Projects</a>
-                <a href="contact.html" class="hover-underline">Contact</a>
+                <a href="labs.html" class="hover-underline">Labs</a>
+                <a href="manifesto.html" class="hover-underline">Manifesto</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.875rem;">Start A Project &rarr;</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content Area -->
     <main>
-        <!-- 1. Editorial Hero Section -->
-        <section class="hero-dense">
-            <div class="container hero-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: center;">
+        <!-- 1. Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
                 
-                <!-- Left Side: Text -->
-                <div class="hero-content">
-                    <!-- Engineering Label -->
-                    <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-6);">
-                        [ Engineering Digital Systems ]
-                    </div>
-
-                    <!-- Massive Editorial Headline -->
-                    <h1 class="animate-slide-up delay-100" style="font-size: clamp(4.5rem, 7vw, 7rem); line-height: 0.95; max-width: 850px; margin-bottom: var(--space-6); letter-spacing: -0.04em;">
+                <!-- LEFT -->
+                <div class="hero-left">
+                    <span class="tech-label animate-fade-in">[ ENGINEERING DIGITAL SYSTEMS ]</span>
+                    <h1 class="hero-title animate-slide-up delay-100">
                         Building intelligent systems with engineering precision.
                     </h1>
-
-                    <!-- Elegant Supporting Text -->
-                    <p class="animate-slide-up delay-200" style="max-width: 700px; font-size: 1.15rem; line-height: 1.7; margin-bottom: var(--space-8);">
-                        We are an elite engineering studio designing scalable software, advanced cybersecurity systems, and resilient IoT infrastructure.
+                    <p class="hero-description animate-slide-up delay-200">
+                        We are an elite engineering studio designing scalable software, advanced cybersecurity systems, resilient IoT infrastructure, automation pipelines, and intelligent digital products.
                     </p>
-
-                    <!-- Outlined Luxury Buttons -->
-                    <div class="animate-slide-up delay-300" style="display: flex; gap: var(--space-4);">
-                        <a href="contact.html" class="btn btn-primary">
-                            Start a Project
-                        </a>
-                        <a href="projects.html" class="btn btn-outline">
-                            View Systems
-                        </a>
+                    <div class="hero-links animate-slide-up delay-300">
+                        <a href="manifesto.html" class="hover-underline">Manifesto</a>
+                        <a href="founder.html" class="hover-underline">Founder &rarr;</a>
+                    </div>
+                    <div class="hero-actions animate-slide-up delay-400">
+                        <a href="contact.html" class="btn btn-primary">Start A Project</a>
+                        <a href="projects.html" class="btn btn-secondary">View Systems</a>
                     </div>
                 </div>
-                
-                <!-- Right Side: Visual System -->
-                <div class="hero-visual animate-fade-in delay-400" style="border: 1px solid var(--border); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-4); background-color: var(--surface);">
-                    <div style="font-family: var(--font-mono); font-size: var(--text-small); border-bottom: 1px solid var(--border); padding-bottom: var(--space-2); margin-bottom: var(--space-4); color: var(--text-secondary);">
-                        [ SYSTEM ARCHITECTURE ]
+
+                <!-- CENTER VISUAL -->
+                <div class="hero-visual animate-fade-in delay-300">
+                    <div class="blueprint-grid">
+                        <div class="blueprint-circle"></div>
+                        <svg class="grid-lines" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <!-- horizontal lines -->
+                            <line x1="0" y1="75" x2="300" y2="75" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                            <line x1="0" y1="150" x2="300" y2="150" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                            <line x1="0" y1="225" x2="300" y2="225" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                            <!-- vertical lines -->
+                            <line x1="75" y1="0" x2="75" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                            <line x1="150" y1="0" x2="150" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                            <line x1="225" y1="0" x2="225" y2="300" stroke="currentColor" stroke-width="0.5" opacity="0.3"/>
+                            <!-- crosshairs center -->
+                            <line x1="130" y1="150" x2="170" y2="150" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+                            <line x1="150" y1="130" x2="150" y2="170" stroke="currentColor" stroke-width="1" opacity="0.6"/>
+                            <!-- outer circle -->
+                            <circle cx="150" cy="150" r="80" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.25"/>
+                            <!-- inner circle -->
+                            <circle cx="150" cy="150" r="40" fill="none" stroke="currentColor" stroke-width="0.6" opacity="0.35"/>
+                            <!-- dot center -->
+                            <circle cx="150" cy="150" r="3" fill="currentColor" opacity="0.5"/>
+                        </svg>
                     </div>
-                    
-                    <!-- Grid of technologies -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
-                        <!-- Top Left -->
-                        <div style="border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: var(--space-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                            <i data-lucide="cpu" style="width: 28px; height: 28px; margin-bottom: var(--space-4);"></i>
-                            <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">IoT Systems</h3>
-                            <p class="text-small" style="margin-bottom: 0;">Real-world connected solutions.</p>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="hero-right animate-fade-in delay-300">
+                    <span class="tech-label" style="margin-bottom: var(--space-6); display: block;">[ CORE ENGINEERING DOMAINS ]</span>
+                    <div class="domain-cards-grid">
+                        <div class="domain-card">
+                            <i data-lucide="cpu" style="width: 20px; height: 20px; margin-bottom: var(--space-3);"></i>
+                            <h3>IoT Systems</h3>
+                            <p>Real-world connected solutions with sensors, automation and intelligent monitoring.</p>
+                            <a href="services.html" class="domain-link">Explore &rarr;</a>
                         </div>
-                        <!-- Top Right -->
-                        <div style="border-bottom: 1px solid var(--border); padding: var(--space-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                            <i data-lucide="shield-check" style="width: 28px; height: 28px; margin-bottom: var(--space-4);"></i>
-                            <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Cybersecurity</h3>
-                            <p class="text-small" style="margin-bottom: 0;">Secure systems by design.</p>
+                        <div class="domain-card">
+                            <i data-lucide="shield-check" style="width: 20px; height: 20px; margin-bottom: var(--space-3);"></i>
+                            <h3>Cybersecurity</h3>
+                            <p>Secure systems by design. From threat modeling to penetration testing.</p>
+                            <a href="services.html" class="domain-link">Explore &rarr;</a>
                         </div>
-                        <!-- Bottom Left -->
-                        <div style="border-right: 1px solid var(--border); padding: var(--space-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                            <i data-lucide="code-2" style="width: 28px; height: 28px; margin-bottom: var(--space-4);"></i>
-                            <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Software Engineering</h3>
-                            <p class="text-small" style="margin-bottom: 0;">Scalable, reliable, maintainable.</p>
+                        <div class="domain-card">
+                            <i data-lucide="code-2" style="width: 20px; height: 20px; margin-bottom: var(--space-3);"></i>
+                            <h3>Software Engineering</h3>
+                            <p>Scalable, reliable, and maintainable software built with modern architectures.</p>
+                            <a href="services.html" class="domain-link">Explore &rarr;</a>
                         </div>
-                        <!-- Bottom Right -->
-                        <div style="padding: var(--space-6); display: flex; flex-direction: column; align-items: center; text-align: center;">
-                            <i data-lucide="network" style="width: 28px; height: 28px; margin-bottom: var(--space-4);"></i>
-                            <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Automation</h3>
-                            <p class="text-small" style="margin-bottom: 0;">Intelligent workflows that scale.</p>
+                        <div class="domain-card">
+                            <i data-lucide="network" style="width: 20px; height: 20px; margin-bottom: var(--space-3);"></i>
+                            <h3>Automation</h3>
+                            <p>Intelligent workflows, process automation, and productivity systems that scale.</p>
+                            <a href="services.html" class="domain-link">Explore &rarr;</a>
                         </div>
                     </div>
                 </div>
@@ -160,89 +175,109 @@
             </div>
         </section>
 
-        <!-- 2. Selected Engineering Systems (Capabilities) -->
-        <section class="section section-light reveal">
+        <!-- 2. Metrics Bar -->
+        <section class="metrics">
+            <div class="container metrics-grid">
+                <div class="metric">
+                    <h2>5+</h2>
+                    <p>Systems Built</p>
+                </div>
+                <div class="metric">
+                    <h2>3+</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="metric">
+                    <h2>100%</h2>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="metric">
+                    <h2>24/7</h2>
+                    <p>Support &amp; Maintenance</p>
+                </div>
+                <div class="metric">
+                    <h2>India &bull; Global</h2>
+                    <p>Serving Worldwide</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Services Preview -->
+        <section class="services-preview reveal">
             <div class="container">
-                <div class="tech-label" style="text-align: center; margin-bottom: var(--space-12);">
-                    [ Core Capabilities ]
-                </div>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-8);">
-                    <div class="card reveal delay-100">
-                        <div class="card-icon"><i data-lucide="code-2"></i></div>
-                        <h3 style="margin-bottom: var(--space-4);">Software Architecture</h3>
-                        <p>High-performance web applications, scalable SaaS architectures, and internal enterprise tools built for the future.</p>
-                    </div>
-                    <div class="card reveal delay-200">
-                        <div class="card-icon"><i data-lucide="shield-check"></i></div>
-                        <h3 style="margin-bottom: var(--space-4);">Cybersecurity</h3>
-                        <p>Zero-trust architecture, penetration testing, and robust vulnerability assessments to protect your digital assets.</p>
-                    </div>
-                    <div class="card reveal delay-300">
-                        <div class="card-icon"><i data-lucide="cpu"></i></div>
-                        <h3 style="margin-bottom: var(--space-4);">IoT Infrastructure</h3>
-                        <p>Connected device networks, resilient firmware, and automated data pipelines bridging the physical and digital.</p>
+                <div class="services-header">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">[ WHAT WE DO ]</div>
+                        <h2>Engineering solutions<br>that power your vision.</h2>
+                        <p>From concept to production, we deliver systems that are secure, scalable, and built for the real world.</p>
+                        <a href="services.html" class="view-all-link">View All Services &rarr;</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- 3. Engineering Principles -->
-        <section class="section reveal">
-            <div class="container text-center">
-                <div class="tech-label" style="margin-bottom: var(--space-8);">[ Principles ]</div>
-                <h2 style="font-size: var(--text-h2); max-width: 800px; margin: 0 auto var(--space-12);">
-                    Process maturity is what separates commodity coding from elite engineering.
-                </h2>
-                
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-8); text-align: left;">
-                    <div class="reveal delay-100">
-                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase;">01. Understand</h4>
-                        <p style="font-size: var(--text-small);">Deep analysis of constraints before a single line of code is written.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>IoT Systems</h3>
+                        <ul>
+                            <li>Device Firmware</li>
+                            <li>Sensor Integration</li>
+                            <li>Real-time Monitoring</li>
+                            <li>Data Analytics</li>
+                            <li>Edge Computing</li>
+                        </ul>
+                        <a href="services.html" class="service-details-link">Details &rarr;</a>
                     </div>
-                    <div class="reveal delay-200">
-                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase;">02. Architect</h4>
-                        <p style="font-size: var(--text-small);">Blueprint the optimal tech stack for long-term maintainability.</p>
+                    <div class="service-card">
+                        <h3>Cybersecurity</h3>
+                        <ul>
+                            <li>Security Audits</li>
+                            <li>Penetration Testing</li>
+                            <li>Vulnerability Assessment</li>
+                            <li>Threat Modeling</li>
+                            <li>Secure Architecture</li>
+                        </ul>
+                        <a href="services.html" class="service-details-link">Details &rarr;</a>
                     </div>
-                    <div class="reveal delay-300">
-                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase;">03. Build</h4>
-                        <p style="font-size: var(--text-small);">Rigorous code reviews and automated CI/CD pipelines.</p>
+                    <div class="service-card">
+                        <h3>Software Engineering</h3>
+                        <ul>
+                            <li>Web Applications</li>
+                            <li>API Development</li>
+                            <li>System Architecture</li>
+                            <li>Performance Optimization</li>
+                            <li>Code Quality</li>
+                        </ul>
+                        <a href="services.html" class="service-details-link">Details &rarr;</a>
                     </div>
-                    <div class="reveal delay-400">
-                        <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase;">04. Refine</h4>
-                        <p style="font-size: var(--text-small);">Relentless testing and performance optimization.</p>
+                    <div class="service-card">
+                        <h3>Automation</h3>
+                        <ul>
+                            <li>Workflow Automation</li>
+                            <li>Process Optimization</li>
+                            <li>RPA Solutions</li>
+                            <li>Custom Integrations</li>
+                            <li>Monitoring Systems</li>
+                        </ul>
+                        <a href="services.html" class="service-details-link">Details &rarr;</a>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. Featured Metrics (Blueprint Layout) -->
-        <section class="reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: var(--space-12) 0;">
-            <div class="container text-center">
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-8);">
-                    <div>
-                        <div style="font-family: var(--font-mono); font-size: 1.15rem; margin-bottom: var(--space-4); letter-spacing: 0.05em; color: var(--text-primary);">
-                            [ 5+ ]
-                        </div>
-                        <div class="tech-label" style="font-size: 0.75rem;">SYSTEMS BUILT</div>
+                    <div class="service-card">
+                        <h3>Cloud &amp; DevOps</h3>
+                        <ul>
+                            <li>Cloud Architecture</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Infrastructure as Code</li>
+                            <li>Monitoring &amp; Logging</li>
+                            <li>Deployment Automation</li>
+                        </ul>
+                        <a href="services.html" class="service-details-link">Details &rarr;</a>
                     </div>
-                    <div>
-                        <div style="font-family: var(--font-mono); font-size: 1.15rem; margin-bottom: var(--space-4); letter-spacing: 0.05em; color: var(--text-primary);">
-                            [ 3+ ]
-                        </div>
-                        <div class="tech-label" style="font-size: 0.75rem;">YEARS EXPERIENCE</div>
-                    </div>
-                    <div>
-                        <div style="font-family: var(--font-mono); font-size: 1.15rem; margin-bottom: var(--space-4); letter-spacing: 0.05em; color: var(--text-primary);">
-                            [ 100% ]
-                        </div>
-                        <div class="tech-label" style="font-size: 0.75rem;">CLIENT SATISFACTION</div>
-                    </div>
-                    <div>
-                        <div style="font-family: var(--font-mono); font-size: 1.15rem; margin-bottom: var(--space-4); letter-spacing: 0.05em; color: var(--text-primary);">
-                            [ 24/7 ]
-                        </div>
-                        <div class="tech-label" style="font-size: 0.75rem;">SUPPORT</div>
+                    <div class="service-card">
+                        <h3>Data &amp; AI</h3>
+                        <ul>
+                            <li>Data Engineering</li>
+                            <li>Machine Learning</li>
+                            <li>Predictive Analytics</li>
+                            <li>Data Visualization</li>
+                            <li>AI Integrations</li>
+                        </ul>
+                        <a href="services.html" class="service-details-link">Details &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -264,6 +299,38 @@
                 <!-- Injected via JS -->
             </div>
         </section>
+        <!-- 7. Live Engineering Activity -->
+        <section class="section" style="padding-top: var(--space-12); padding-bottom: var(--space-24);">
+            <div class="container container-medium">
+                <div style="border: 1px solid var(--border); background-color: var(--surface); padding: var(--space-8);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: var(--space-4); margin-bottom: var(--space-4);">
+                        <div class="tech-label">[ LIVE ENGINEERING ]</div>
+                        <div style="display: flex; align-items: center; gap: var(--space-2);">
+                            <div style="width: 8px; height: 8px; border-radius: 50%; background-color: #2ea043; box-shadow: 0 0 8px #2ea043; animation: pulse 2s infinite;"></div>
+                            <span class="text-small" style="font-family: var(--font-mono); color: var(--text-secondary);">GITHUB API: SYNCED</span>
+                        </div>
+                    </div>
+                    
+                    <div id="github-activity-feed" style="display: flex; flex-direction: column;">
+                        <!-- Content injected via JS -->
+                        <p class="text-small" style="color: var(--text-secondary);">Fetching latest activity...</p>
+                    </div>
+                    
+                    <div style="margin-top: var(--space-6); text-align: right;">
+                        <a href="https://github.com/RishvinReddy" target="_blank" class="tech-label" style="text-decoration: underline; color: var(--text-primary);">[ VIEW ALL ON GITHUB &rarr; ]</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+            @keyframes pulse {
+                0% { opacity: 1; }
+                50% { opacity: 0.4; }
+                100% { opacity: 1; }
+            }
+        </style>
+
     </main>
 
     <!-- Footer -->
@@ -328,6 +395,10 @@
                 </div>
                 <div style="display: flex; gap: var(--space-4); align-items: center;">
                     <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
+                    <span id="availability-badge" style="display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-mono); font-size: 0.7rem; border: 1px solid var(--border); padding: 4px 10px; color: var(--text-secondary);">
+                        <span style="width: 7px; height: 7px; border-radius: 50%; background: #22c55e; display: inline-block; animation: avail-pulse 2.2s ease-in-out infinite;"></span>
+                        ACCEPTING 2 PROJECTS
+                    </span>
                 </div>
             </div>
         </div>
@@ -344,5 +415,7 @@
     <script src="assets/js/scroll-effects.js" defer></script>
     <script src="assets/js/counters.js" defer></script>
     <script src="assets/js/github-activity.js" defer></script>
+    <script src="assets/js/command-palette.js" defer></script>
+    <script src="assets/js/page-transitions.js" defer></script>
 </body>
 </html>

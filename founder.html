@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Founder | Rishvin Reddy | Rishvin Labs</title>
+    
+    <meta name="description" content="Technical profile of Rishvin Reddy — founder and lead engineer at Rishvin Labs. Engineering domains, philosophy, and current research focus.">
+    <link rel="canonical" href="https://rishvinreddy.github.io/rishvin-labs/founder.html">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rishvinreddy.github.io/rishvin-labs/founder.html">
+    <meta property="og:title" content="Founder Profile | Rishvin Reddy | Rishvin Labs">
+    <meta property="og:description" content="Technical profile of Rishvin Reddy — lead engineer and systems architect at Rishvin Labs.">
+    <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Founder Profile | Rishvin Reddy | Rishvin Labs">
+    <meta name="twitter:description" content="Technical profile of Rishvin Reddy — lead engineer and systems architect at Rishvin Labs.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="icon" type="image/png" href="favicon/favicon.png">
+    <link rel="apple-touch-icon" href="favicon/favicon.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        .domain-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+        }
+        .domain-cell {
+            background: var(--surface);
+            padding: var(--space-8);
+            transition: background 0.2s;
+        }
+        .domain-cell:hover {
+            background: var(--bg-secondary);
+        }
+        .domain-cell h4 {
+            font-size: 0.875rem;
+            font-family: var(--font-mono);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-secondary);
+            margin-bottom: var(--space-3);
+        }
+        .domain-cell p {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0;
+            line-height: 1.4;
+        }
+        .tech-tag {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            padding: 3px 10px;
+            border: 1px solid var(--border);
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            margin: 3px;
+            transition: all 0.2s;
+        }
+        .tech-tag:hover {
+            background: var(--text-primary);
+            color: var(--surface);
+            border-color: var(--text-primary);
+        }
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
+            margin-bottom: var(--space-16);
+        }
+        .stat-cell {
+            background: var(--surface);
+            padding: var(--space-8);
+        }
+        .stat-cell .number {
+            font-size: 2.5rem;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: var(--space-2);
+        }
+        .stat-cell .label {
+            font-size: 0.8rem;
+            font-family: var(--font-mono);
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            letter-spacing: 0.06em;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader">
+        <div class="loader-content">
+            <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
+            <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: var(--text-caption);">Engineering Intelligent Systems</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-brand" aria-label="Rishvin Labs Home">
+                <span>Rishvin Labs</span>
+                <span class="brand-dot">.</span>
+            </a>
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+                <i data-lucide="menu"></i>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="labs.html">Labs</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Identity -->
+        <section style="padding-top: 140px; padding-bottom: var(--space-24); border-bottom: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div style="display: grid; grid-template-columns: 1fr auto; gap: var(--space-16); align-items: start; flex-wrap: wrap;">
+                    <div>
+                        <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ TECHNICAL PROFILE ]</div>
+                        <h1 class="animate-slide-up delay-100" style="font-size: clamp(3rem, 7vw, 6rem); line-height: 1; letter-spacing: -0.02em; margin-bottom: var(--space-6);">
+                            Rishvin<br>Reddy.
+                        </h1>
+                        <p class="animate-slide-up delay-200" style="font-size: 1.2rem; color: var(--text-secondary); max-width: 500px; line-height: 1.6; margin-bottom: var(--space-8);">
+                            Founder & Lead Systems Engineer at Rishvin Labs. I design and build high-performance systems at the intersection of software, hardware, and security.
+                        </p>
+                        <div class="animate-slide-up delay-300" style="display: flex; gap: var(--space-4); flex-wrap: wrap;">
+                            <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener" class="btn btn-secondary" style="display: inline-flex; align-items: center; gap: 8px;">
+                                <i data-lucide="github" style="width: 16px; height: 16px;"></i>
+                                GitHub
+                            </a>
+                            <a href="manifesto.html" class="btn btn-secondary">
+                                Engineering Manifesto
+                            </a>
+                            <a href="contact.html" class="btn btn-primary">
+                                Initialize Consultation
+                            </a>
+                        </div>
+                    </div>
+                    <div style="padding-top: var(--space-4);">
+                        <div style="border: 1px solid var(--border); padding: var(--space-6); background: var(--surface); min-width: 200px;">
+                            <div class="tech-label" style="margin-bottom: var(--space-4); font-size: 0.7rem;">[ CURRENT STATUS ]</div>
+                            <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: var(--space-4);">
+                                <div style="width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e; animation: pulse 2s infinite;"></div>
+                                <span style="font-family: var(--font-mono); font-size: 0.8rem;">ACCEPTING PROJECTS</span>
+                            </div>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-secondary); line-height: 1.8;">
+                                Focus: Software Systems<br>
+                                + IoT Engineering<br>
+                                Capacity: 2 Slots Open
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section style="padding-top: var(--space-16);">
+            <div class="container container-medium">
+                <div class="stat-row reveal">
+                    <div class="stat-cell">
+                        <div class="number">5+</div>
+                        <div class="label">Production Systems</div>
+                    </div>
+                    <div class="stat-cell">
+                        <div class="number">3</div>
+                        <div class="label">Engineering Domains</div>
+                    </div>
+                    <div class="stat-cell">
+                        <div class="number">2+</div>
+                        <div class="label">Years Shipping</div>
+                    </div>
+                    <div class="stat-cell">
+                        <div class="number">∞</div>
+                        <div class="label">Systems to Build</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domain Expertise -->
+        <section class="section reveal">
+            <div class="container container-medium">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-10); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <h2 style="font-size: var(--text-h2);">Engineering Domains</h2>
+                    <div class="tech-label">[ 03 ACTIVE ]</div>
+                </div>
+                <div class="domain-grid">
+                    <div class="domain-cell">
+                        <h4>Primary Domain</h4>
+                        <p>Software Systems &amp; Platform Engineering</p>
+                    </div>
+                    <div class="domain-cell">
+                        <h4>Secondary Domain</h4>
+                        <p>IoT Architecture &amp; Embedded Systems</p>
+                    </div>
+                    <div class="domain-cell">
+                        <h4>Tertiary Domain</h4>
+                        <p>Cybersecurity &amp; Zero-Trust Systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack -->
+        <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-10); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <h2 style="font-size: var(--text-h2);">Technology Stack</h2>
+                    <div class="tech-label">[ PRODUCTION-PROVEN ]</div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-10);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">Languages</div>
+                        <div>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Bash</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">Backend &amp; APIs</div>
+                        <div>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">REST</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">MQTT</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">Databases</div>
+                        <div>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">IoT &amp; Embedded</div>
+                        <div>
+                            <span class="tech-tag">Arduino</span>
+                            <span class="tech-tag">ESP32</span>
+                            <span class="tech-tag">Raspberry Pi</span>
+                            <span class="tech-tag">FreeRTOS</span>
+                            <span class="tech-tag">ESP-NOW</span>
+                            <span class="tech-tag">I2C / SPI</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">Infrastructure</div>
+                        <div>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">GitHub Actions</span>
+                            <span class="tech-tag">Nginx</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Firebase Hosting</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">Security</div>
+                        <div>
+                            <span class="tech-tag">AES-256</span>
+                            <span class="tech-tag">JWT / OAuth</span>
+                            <span class="tech-tag">TLS/SSL</span>
+                            <span class="tech-tag">Zero-Trust</span>
+                            <span class="tech-tag">OWASP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Engineering Philosophy -->
+        <section class="section reveal">
+            <div class="container container-medium">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-10); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <h2 style="font-size: var(--text-h2);">Engineering Philosophy</h2>
+                    <a href="manifesto.html" class="tech-label" style="text-decoration: none; color: var(--text-secondary);">[ FULL MANIFESTO → ]</a>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8);">
+                    <div style="padding: var(--space-8); border: 1px solid var(--border); background: var(--surface);">
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">[ PRINCIPLE ]</div>
+                        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0; line-height: 1.5;">"Systems over features. Architecture survives; implementations change."</p>
+                    </div>
+                    <div style="padding: var(--space-8); border: 1px solid var(--border); background: var(--surface);">
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">[ PRINCIPLE ]</div>
+                        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0; line-height: 1.5;">"Security is a property of the design, not a feature added on top."</p>
+                    </div>
+                    <div style="padding: var(--space-8); border: 1px solid var(--border); background: var(--surface);">
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">[ PRINCIPLE ]</div>
+                        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0; line-height: 1.5;">"An engineer joining on day one should understand the system by day three."</p>
+                    </div>
+                    <div style="padding: var(--space-8); border: 1px solid var(--border); background: var(--surface);">
+                        <div class="tech-label" style="margin-bottom: var(--space-4);">[ PRINCIPLE ]</div>
+                        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0; line-height: 1.5;">"A system you cannot observe is a system you cannot trust."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Focus -->
+        <section class="section section-light reveal" style="border-top: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-10); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <h2 style="font-size: var(--text-h2);">Current Research Focus</h2>
+                    <a href="labs.html" class="tech-label" style="text-decoration: none; color: var(--text-secondary);">[ VIEW LABS → ]</a>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-8);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4); color: var(--primary);">[ ACTIVE EXPERIMENT ]</div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: var(--space-3);">AI-Powered Financial Intelligence</h3>
+                        <p class="text-small" style="color: var(--text-secondary); margin-bottom: 0;">Fusing LLM reasoning with real-time Plaid banking feeds to create dynamic, context-aware cash flow models that require zero manual configuration.</p>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-4); color: var(--primary);">[ ACTIVE EXPERIMENT ]</div>
+                        <h3 style="font-size: 1.2rem; margin-bottom: var(--space-3);">Decentralized IoT Mesh Networks</h3>
+                        <p class="text-small" style="color: var(--text-secondary); margin-bottom: 0;">Replacing fragile MQTT broker topologies with ESP-NOW mesh to eliminate single-point-of-failure across large-scale agricultural IoT deployments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section reveal">
+            <div class="container text-center">
+                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Ready to build?</h2>
+                <p style="max-width: 500px; margin: 0 auto var(--space-8); color: var(--text-secondary);">
+                    I take on a limited number of high-impact projects each quarter. Reach out early.
+                </p>
+                <a href="contact.html" class="btn btn-primary" style="padding: 18px 40px; font-size: 1rem;">Initialize Consultation &rarr;</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="padding: var(--space-12) 0; border-top: 1px solid var(--border);">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
+                <span style="font-family: var(--font-heading); font-weight: 700;">Rishvin Labs<span style="color: var(--primary);">.</span></span>
+                <div style="display: flex; gap: var(--space-6);">
+                    <a href="projects.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Projects</a>
+                    <a href="manifesto.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Manifesto</a>
+                    <a href="contact.html" style="color: var(--text-secondary); font-size: 0.875rem; text-decoration: none;">Contact</a>
+                </div>
+                <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/scroll-effects.js" defer></script>
+    <script src="assets/js/command-palette.js" defer></script>
+    <script src="assets/js/page-transitions.js" defer></script>
+
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+    </style>
+</body>
+</html>

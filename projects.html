@@ -16,313 +16,182 @@
     <meta property="og:description" content="Discover engineering case studies from Rishvin Labs, including software systems, IoT platforms, automation, and intelligent solutions.">
     <meta property="og:image" content="https://rishvinreddy.github.io/rishvin-labs/assets/images/og-image.png">
     
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Engineering Case Studies | Projects | Rishvin Labs">
-    <meta name="twitter:description" content="Discover engineering case studies from Rishvin Labs, including software systems, IoT platforms, automation, and intelligent solutions.">
-    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <link rel="icon" type="image/png" href="favicon/favicon.png">
-    <link rel="apple-touch-icon" href="favicon/favicon.png">
 
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/variables.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <!-- Premium Loading Screen -->
-    <div id="loader">
-        <div class="loader-content">
-            <h2 style="margin-bottom: var(--space-2); color: var(--text-primary); font-family: var(--font-heading);">Rishvin Labs</h2>
-            <p style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: var(--text-caption);">Engineering Intelligent Systems</p>
-        </div>
-    </div>
-
-    <!-- Custom Cursor -->
-    <div id="custom-cursor"></div>
-
+<body class="page-loaded">
+    
     <!-- Navbar -->
-    <nav class="navbar">
+    <header class="navbar" id="navbar">
         <div class="container navbar-container">
             <a href="index.html" class="navbar-logo">
-                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img" decoding="async">
+                <img src="assets/images/logo/logo.png" alt="Rishvin Labs" class="logo-img">
                 Rishvin <span>Labs</span>
             </a>
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+            
+            <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu">
                 <i data-lucide="menu"></i>
             </button>
-            <div class="navbar-links">
-                <a href="index.html" class="hover-underline">Home</a>
-                <a href="about.html" class="hover-underline">About</a>
-                <a href="services.html" class="hover-underline">Services</a>
-                <a href="projects.html" class="active hover-underline">Projects</a>
-                <a href="contact.html" class="hover-underline">Contact</a>
-            </div>
+            
+            <nav class="nav-links" id="nav-links">
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="labs.html">Labs</a>
+                <a href="manifesto.html">Manifesto</a>
+                <a href="founder.html">Founder</a>
+                <a href="contact.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.875rem;" id="contact-nav-btn">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Main Content Area -->
     <main>
-        <!-- 1. Blueprint Projects Header -->
-        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
-            <div class="container">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ CASE STUDIES ]</div>
-                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin-bottom: var(--space-6); font-size: var(--text-hero);">
-                    Real-world systems.<br>Real impact.
+        <!-- 1. Hero -->
+        <section class="section" style="padding-top: var(--space-32); border-bottom: 1px solid var(--border);">
+            <div class="container text-center">
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ PORTFOLIO OF SYSTEMS ]</div>
+                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
+                    Engineering Case Studies.
                 </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 600px; font-size: 1.15rem;">
-                    A selection of engineering projects that solve meaningful problems.
+                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto; font-size: 1.125rem;">
+                    A selection of high-performance systems architected for scale, security, and precision.
                 </p>
             </div>
         </section>
 
-        <!-- 2. Blueprint Single Project Slider -->
-        <section class="section reveal" style="padding-top: 0;">
-            <div class="container container-wide">
-                
-                <!-- Project 1 (Active) -->
-                <div class="project-slide active" id="project-slide-1" style="border: 1px solid var(--border); background-color: var(--surface);">
-                    <div style="display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--border);">
-                        
-                        <!-- Left Number -->
-                        <div style="border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
-                            <span style="font-family: var(--font-mono); font-size: 2rem; font-weight: var(--weight-bold);">01</span>
-                        </div>
-                        
-                        <!-- Right Title & Tag -->
-                        <div style="padding: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ DOCUMENT: 01 - IOT ]</div>
-                                <h2 style="font-size: var(--text-h2); margin: 0;">Smart Irrigation System</h2>
-                            </div>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); padding: var(--space-2) var(--space-4); text-transform: uppercase;">
-                                PRODUCTION READY
-                            </div>
-                        </div>
+        <!-- 2. Filtering / Command Bar -->
+        <section class="section section-light" style="padding: var(--space-8) 0; border-bottom: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4);">
+                    <div style="display: flex; gap: var(--space-4); overflow-x: auto; padding-bottom: 4px;" id="project-filters">
+                        <button class="tech-label filter-btn active" data-filter="all" style="background: var(--text-primary); color: var(--surface); border: none; padding: 4px 12px; cursor: pointer;">[ ALL ]</button>
+                        <button class="tech-label filter-btn" data-filter="iot" style="background: transparent; color: var(--text-secondary); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; transition: all 0.2s;">[ IOT ]</button>
+                        <button class="tech-label filter-btn" data-filter="cybersecurity" style="background: transparent; color: var(--text-secondary); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; transition: all 0.2s;">[ CYBERSECURITY ]</button>
+                        <button class="tech-label filter-btn" data-filter="software" style="background: transparent; color: var(--text-secondary); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; transition: all 0.2s;">[ SOFTWARE ]</button>
+                        <button class="tech-label filter-btn" data-filter="automation" style="background: transparent; color: var(--text-secondary); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; transition: all 0.2s;">[ AUTOMATION ]</button>
                     </div>
-                    
-                    <!-- Middle Grid: Problem & Architecture -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);">
-                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE PROBLEM</div>
-                            <p class="text-small" style="max-width: 450px;">Farmers waste 30-40% of water due to manual irrigation and lack of real-time data.</p>
-                        </div>
-                        <div style="padding: var(--space-8);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE ARCHITECTURE</div>
-                            <p class="text-small" style="max-width: 450px;">IoT sensors collect soil &amp; weather data &rarr; Edge processing &rarr; Cloud analytics &rarr; Automated irrigation control.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Bottom Grid: Technologies & Outcome -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
-                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">TECHNOLOGIES</div>
-                            <p class="text-small" style="font-family: var(--font-mono);">ESP32, LoRaWAN, AWS IoT, InfluxDB, React</p>
-                        </div>
-                        <div style="padding: var(--space-8);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">OUTCOME</div>
-                            <p class="text-small">40% water saved, 25% increase in yield.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 (Hidden) -->
-                <div class="project-slide" id="project-slide-2" style="border: 1px solid var(--border); background-color: var(--surface); display: none;">
-                    <div style="display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--border);">
-                        <div style="border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
-                            <span style="font-family: var(--font-mono); font-size: 2rem; font-weight: var(--weight-bold);">02</span>
-                        </div>
-                        <div style="padding: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ DOCUMENT: 02 - SFT ]</div>
-                                <h2 style="font-size: var(--text-h2); margin: 0;">Finance Intelligence Platform</h2>
-                            </div>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); padding: var(--space-2) var(--space-4); text-transform: uppercase;">
-                                PRODUCTION READY
-                            </div>
-                        </div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);">
-                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE PROBLEM</div>
-                            <p class="text-small" style="max-width: 450px;">Fragmented financial data prevented users from getting a holistic view of their wealth and spending patterns.</p>
-                        </div>
-                        <div style="padding: var(--space-8);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE ARCHITECTURE</div>
-                            <p class="text-small" style="max-width: 450px;">Highly secure web platform aggregating banking data via Plaid, utilizing predictive models for cash flow forecasting.</p>
-                        </div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
-                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">TECHNOLOGIES</div>
-                            <p class="text-small" style="font-family: var(--font-mono);">React, Node.js, PostgreSQL, Plaid API</p>
-                        </div>
-                        <div style="padding: var(--space-8);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">OUTCOME</div>
-                            <p class="text-small">Real-time wealth tracking, 99.9% uptime, seamless data aggregation.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 (Hidden) -->
-                <div class="project-slide" id="project-slide-3" style="border: 1px solid var(--border); background-color: var(--surface); display: none;">
-                    <div style="display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--border);">
-                        <div style="border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
-                            <span style="font-family: var(--font-mono); font-size: 2rem; font-weight: var(--weight-bold);">03</span>
-                        </div>
-                        <div style="padding: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ DOCUMENT: 03 - CYB ]</div>
-                                <h2 style="font-size: var(--text-h2); margin: 0;">Zero-Trust Data Vault</h2>
-                            </div>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); padding: var(--space-2) var(--space-4); text-transform: uppercase;">
-                                MVP
-                            </div>
-                        </div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);">
-                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE PROBLEM</div>
-                            <p class="text-small" style="max-width: 450px;">Sensitive client records stored in monolithic databases were vulnerable to lateral movement during a breach.</p>
-                        </div>
-                        <div style="padding: var(--space-8);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE ARCHITECTURE</div>
-                            <p class="text-small" style="max-width: 450px;">Distributed, end-to-end encrypted storage system using strict Zero-Trust authentication and ephemeral tokens.</p>
-                        </div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
-                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">TECHNOLOGIES</div>
-                            <p class="text-small" style="font-family: var(--font-mono);">Python, Cryptography, Docker, Zero-Trust</p>
-                        </div>
-                        <div style="padding: var(--space-8);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">OUTCOME</div>
-                            <p class="text-small">Eliminated lateral movement risks, secured sensitive enterprise assets.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 4 (Hidden) -->
-                <div class="project-slide" id="project-slide-4" style="border: 1px solid var(--border); background-color: var(--surface); display: none;">
-                    <div style="display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--border);">
-                        <div style="border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
-                            <span style="font-family: var(--font-mono); font-size: 2rem; font-weight: var(--weight-bold);">04</span>
-                        </div>
-                        <div style="padding: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
-                            <div>
-                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ DOCUMENT: 04 - AUT ]</div>
-                                <h2 style="font-size: var(--text-h2); margin: 0;">Recruitment Workflow Engine</h2>
-                            </div>
-                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); padding: var(--space-2) var(--space-4); text-transform: uppercase;">
-                                PRODUCTION READY
-                            </div>
-                        </div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);">
-                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE PROBLEM</div>
-                            <p class="text-small" style="max-width: 450px;">HR teams spent 20+ hours a week manually triaging resumes and scheduling initial screening calls.</p>
-                        </div>
-                        <div style="padding: var(--space-8);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE ARCHITECTURE</div>
-                            <p class="text-small" style="max-width: 450px;">Middleware engine that parses resumes via NLP, scores candidates, and fully automates the calendar scheduling process.</p>
-                        </div>
-                    </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
-                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">TECHNOLOGIES</div>
-                            <p class="text-small" style="font-family: var(--font-mono);">Node.js, OpenAI API, Webhooks</p>
-                        </div>
-                        <div style="padding: var(--space-8);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">OUTCOME</div>
-                            <p class="text-small">Saved 25 hours per week, 3x faster candidate screening.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pagination -->
-                <div style="display: flex; justify-content: center; gap: var(--space-4); padding-top: var(--space-12);">
-                    <button class="slide-nav-btn active" data-slide="1" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; text-decoration: underline; color: var(--text-primary);">01</button>
-                    <button class="slide-nav-btn" data-slide="2" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; color: var(--text-secondary);">02</button>
-                    <button class="slide-nav-btn" data-slide="3" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; color: var(--text-secondary);">03</button>
-                    <button class="slide-nav-btn" data-slide="4" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; color: var(--text-secondary);">04</button>
-                    <button class="slide-nav-next" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; color: var(--text-primary);">&rarr;</button>
-                </div>
-                
-                <script>
-                    document.addEventListener('DOMContentLoaded', () => {
-                        const btns = document.querySelectorAll('.slide-nav-btn');
-                        const nextBtn = document.querySelector('.slide-nav-next');
-                        const slides = document.querySelectorAll('.project-slide');
-                        let currentSlide = 1;
-                        
-                        function showSlide(index) {
-                            slides.forEach(s => s.style.display = 'none');
-                            btns.forEach(b => {
-                                b.style.color = 'var(--text-secondary)';
-                                b.style.textDecoration = 'none';
-                                b.classList.remove('active');
-                            });
-                            
-                            document.getElementById(`project-slide-${index}`).style.display = 'block';
-                            const activeBtn = document.querySelector(`.slide-nav-btn[data-slide="${index}"]`);
-                            activeBtn.style.color = 'var(--text-primary)';
-                            activeBtn.style.textDecoration = 'underline';
-                            activeBtn.classList.add('active');
-                            currentSlide = index;
-                        }
-                        
-                        btns.forEach(btn => {
-                            btn.addEventListener('click', () => {
-                                showSlide(parseInt(btn.getAttribute('data-slide')));
-                            });
-                        });
-                        
-                        nextBtn.addEventListener('click', () => {
-                            let next = currentSlide + 1;
-                            if (next > 4) next = 1;
-                            showSlide(next);
-                        });
-                    });
-                </script>
-            </div>
-        </section>
-
-        <!-- 3. Engineering Metrics Section -->
-        <section class="section reveal" style="border-top: 1px solid var(--border);">
-            <div class="container">
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-8); text-align: center;">
-                    <div>
-                        <h2 style="font-family: var(--font-heading); font-size: 3.5rem; margin-bottom: var(--space-2);"><span class="counter" data-target="5" data-suffix="+">0</span></h2>
-                        <div class="tech-label">Systems Built</div>
-                    </div>
-                    <div>
-                        <h2 style="font-family: var(--font-heading); font-size: 3.5rem; margin-bottom: var(--space-2);"><span class="counter" data-target="15" data-suffix="+">0</span></h2>
-                        <div class="tech-label">Technologies Mastered</div>
-                    </div>
-                    <div>
-                        <h2 style="font-family: var(--font-heading); font-size: 3.5rem; margin-bottom: var(--space-2);"><span class="counter" data-target="5" data-suffix="+">0</span></h2>
-                        <div class="tech-label">Domains Explored</div>
-                    </div>
-                    <div>
-                        <h2 style="font-family: var(--font-heading); font-size: 3.5rem; margin-bottom: var(--space-2);"><span class="counter" data-target="100" data-suffix="%">0</span></h2>
-                        <div class="tech-label">Code Ownership</div>
+                    <div style="display: flex; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 4px;">
+                        <i data-lucide="search" style="width: 16px; height: 16px; color: var(--text-secondary); margin-right: 8px;"></i>
+                        <input type="text" id="project-search" placeholder="Search systems..." style="background: transparent; border: none; outline: none; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-primary); width: 200px;">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 4. Conversion CTA -->
+        <!-- 3. Projects Grid -->
+        <section class="section reveal" style="padding-top: var(--space-16); padding-bottom: var(--space-32);">
+            <div class="container container-medium">
+                <div id="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-12);">
+                    
+                    <!-- Card 1 -->
+                    <a href="project-iot-soil.html" class="project-card" data-category="iot" data-title="Automated Soil Monitoring Network" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
+                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">01</span>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                                <div class="tech-label">[ IOT ]</div>
+                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">PRODUCTION</div>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">Automated Soil Monitoring Network</h3>
+                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Scalable telemetry system capturing real-time environmental data.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
+                                VIEW ARCHITECTURE &rarr;
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="project-iot-waste.html" class="project-card" data-category="iot" data-title="Smart Dustbin & Automation" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
+                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">02</span>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                                <div class="tech-label">[ IOT ]</div>
+                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">PRODUCTION</div>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">Smart Dustbin & Automation</h3>
+                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Embedded microcontroller logic for automated waste management capacity.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
+                                VIEW ARCHITECTURE &rarr;
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="project-finance.html" class="project-card" data-category="software" data-title="Global Finance Hub Portal" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
+                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">03</span>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                                <div class="tech-label">[ SOFTWARE ]</div>
+                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">PRODUCTION</div>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">Global Finance Hub Portal</h3>
+                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">High-performance portal for real-time market data visualization.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
+                                VIEW ARCHITECTURE &rarr;
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="project-vault.html" class="project-card" data-category="cybersecurity" data-title="CyberVault Access Manager" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
+                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">04</span>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                                <div class="tech-label">[ CYBERSECURITY ]</div>
+                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">MVP</div>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">CyberVault Access Manager</h3>
+                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">Zero-knowledge enterprise password manager built with AES-256 encryption.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
+                                VIEW ARCHITECTURE &rarr;
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Card 5 -->
+                    <a href="project-recruitment.html" class="project-card" data-category="automation" data-title="NextGen Recruitment Engine" style="text-decoration: none; color: inherit; display: block; border: 1px solid var(--border); background: var(--surface); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                        <div style="padding: var(--space-8); border-bottom: 1px solid var(--border); background: var(--bg-secondary); min-height: 200px; display: flex; align-items: flex-end;">
+                            <span style="font-family: var(--font-mono); font-size: 4rem; color: var(--border); line-height: 1; font-weight: 700;">05</span>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                                <div class="tech-label">[ AUTOMATION ]</div>
+                                <div class="tech-label" style="font-size: 0.7rem; padding: 2px 6px; border: 1px solid var(--border);">PRODUCTION</div>
+                            </div>
+                            <h3 style="font-size: 1.5rem; margin-bottom: var(--space-2);">NextGen Recruitment Engine</h3>
+                            <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-6);">A scalable HR automation tool matching talent with opportunities instantly.</p>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-primary); border-top: 1px solid var(--border); padding-top: var(--space-4);">
+                                VIEW ARCHITECTURE &rarr;
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
         <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
             <div class="container text-center">
                 <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Let's Build Something Intelligent.</h2>
@@ -335,19 +204,6 @@
             </div>
         </section>
     </main>
-
-    <!-- Case Study Modal -->
-    <div class="modal-overlay" id="case-study-modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="modal-title" style="margin: 0;">Case Study</h3>
-                <button class="modal-close" id="modal-close-btn"><i data-lucide="x"></i></button>
-            </div>
-            <div class="modal-body" id="modal-body-content">
-                <!-- Content injected via JS -->
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -392,33 +248,68 @@
                             <i data-lucide="mail" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
                             rishvinreddy@gmail.com
                         </a>
-                        <a href="tel:+919848723235">
-                            <i data-lucide="phone" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i>
-                            +91 9848723235
-                        </a>
                     </div>
                 </div>
             </div>
-                        <div class="footer-bottom">
+            <div class="footer-bottom">
                 <div>
                     <p style="margin-bottom: var(--space-1);">&copy; 2026 Rishvin Labs. All rights reserved.</p>
-                    <p class="text-small" style="color: var(--text-secondary);">Last Updated &mdash; May 2026</p>
-                </div>
-                <div style="display: flex; gap: var(--space-4); align-items: center;">
-                    <span class="text-small" style="color: var(--text-secondary); font-family: var(--font-mono); text-transform: uppercase;">Designed &amp; Engineered by Rishvin Labs</span>
                 </div>
             </div>
-        </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+        
+        // Custom Project Filtering Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const searchInput = document.getElementById('project-search');
+            const projects = document.querySelectorAll('.project-card');
+
+            function filterProjects() {
+                const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
+                const searchQuery = searchInput.value.toLowerCase();
+
+                projects.forEach(project => {
+                    const category = project.getAttribute('data-category');
+                    const title = project.getAttribute('data-title').toLowerCase();
+                    
+                    const matchesFilter = activeFilter === 'all' || category === activeFilter;
+                    const matchesSearch = title.includes(searchQuery);
+
+                    if (matchesFilter && matchesSearch) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            }
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active');
+                        b.style.background = 'transparent';
+                        b.style.color = 'var(--text-secondary)';
+                    });
+                    const target = e.currentTarget;
+                    target.classList.add('active');
+                    target.style.background = 'var(--text-primary)';
+                    target.style.color = 'var(--surface)';
+                    filterProjects();
+                });
+            });
+
+            searchInput.addEventListener('input', filterProjects);
+        });
+    </script>
     <script src="assets/js/main.js" defer></script>
     <script src="assets/js/navbar.js" defer></script>
     <script src="assets/js/scroll-effects.js" defer></script>
-    <script src="assets/js/counters.js" defer></script>
-    <script src="assets/js/projects-filter.js" defer></script>
-    <script src="assets/js/modal.js" defer></script>
+    <script src="assets/js/command-palette.js" defer></script>
+    <script src="assets/js/page-transitions.js" defer></script>
 </body>
 </html>

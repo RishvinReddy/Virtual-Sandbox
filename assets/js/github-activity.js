@@ -1,67 +1,76 @@
+/**
+ * Live GitHub Activity
+ * Fetches recent public activity from GitHub API.
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
-    const activityContainer = document.getElementById('github-activity-container');
-    if (!activityContainer) return;
-  
-    // GitHub username
-    const username = 'rishvinreddy';
-  
-    const fetchActivity = async () => {
-      try {
-        const response = await fetch(`https://api.github.com/users/${username}/events/public`);
-        if (!response.ok) throw new Error('Network response was not ok');
-        
-        const data = await response.json();
-        
-        // Filter out for PushEvents or CreateEvents
-        const recentCodeEvent = data.find(event => event.type === 'PushEvent' || event.type === 'CreateEvent' || event.type === 'PullRequestEvent');
-        
-        if (recentCodeEvent) {
-          const repoName = recentCodeEvent.repo.name.replace(`${username}/`, '');
-          let actionText = 'Contributed to';
-          
-          if (recentCodeEvent.type === 'PushEvent') {
-            actionText = 'Pushed commits to';
-          } else if (recentCodeEvent.type === 'PullRequestEvent') {
-            actionText = 'Opened PR on';
-          }
-  
-          // Calculate time ago
-          const eventDate = new Date(recentCodeEvent.created_at);
-          const now = new Date();
-          const diffMs = now - eventDate;
-          const diffHrs = Math.floor(diffMs / (1000 * 60 * 60));
-          const diffDays = Math.floor(diffHrs / 24);
-          
-          let timeAgo = 'Just now';
-          if (diffHrs > 0 && diffHrs < 24) timeAgo = `${diffHrs}h ago`;
-          else if (diffDays > 0) timeAgo = `${diffDays}d ago`;
-  
-          activityContainer.innerHTML = `
-            <div class="live-activity-badge">
-              <div class="pulsing-dot"></div>
-              <span><strong>Live:</strong> ${actionText} <a href="https://github.com/${recentCodeEvent.repo.name}" target="_blank" rel="noopener noreferrer" style="color: var(--primary); text-decoration: none;">${repoName}</a> (${timeAgo})</span>
-            </div>
-          `;
-        } else {
-            // Fallback if no recent events found or rate limited gracefully
-            activityContainer.innerHTML = `
-                <div class="live-activity-badge">
-                    <div class="pulsing-dot" style="background: var(--text-secondary);"></div>
-                    <span><strong>Status:</strong> Systems operational. Available for engineering contracts.</span>
-                </div>
-            `;
+    const container = document.getElementById('github-activity-feed');
+    if (!container) return;
+
+    const username = 'RishvinReddy';
+    const apiUrl = `https://api.github.com/users/${username}/events/public`;
+
+    async function fetchGitHubActivity() {
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) throw new Error('Network response was not ok');
+            
+            const events = await response.json();
+            
+            // Filter out events we don't care about, keep PushEvent, CreateEvent, PullRequestEvent
+            const validEvents = events.filter(e => 
+                ['PushEvent', 'CreateEvent', 'PullRequestEvent'].includes(e.type)
+            ).slice(0, 4); // Take top 4
+
+            if (validEvents.length === 0) {
+                container.innerHTML = '<p class="text-small" style="color: var(--text-secondary);">No recent public engineering activity found.</p>';
+                return;
+            }
+
+            let html = '';
+            
+            validEvents.forEach(event => {
+                const date = new Date(event.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                const repoName = event.repo.name.replace(`${username}/`, '');
+                let actionText = '';
+                let icon = '';
+
+                switch (event.type) {
+                    case 'PushEvent':
+                        actionText = `Pushed ${event.payload.commits ? event.payload.commits.length : 'code'} commit(s) to`;
+                        icon = 'git-commit';
+                        break;
+                    case 'CreateEvent':
+                        actionText = `Created repository`;
+                        icon = 'folder-plus';
+                        break;
+                    case 'PullRequestEvent':
+                        actionText = `${event.payload.action} pull request in`;
+                        icon = 'git-pull-request';
+                        break;
+                }
+
+                html += `
+                    <div style="display: flex; gap: var(--space-4); align-items: flex-start; padding: var(--space-4) 0; border-bottom: 1px solid var(--border);">
+                        <i data-lucide="${icon}" style="width: 16px; height: 16px; color: var(--text-secondary); margin-top: 4px;"></i>
+                        <div>
+                            <p class="text-small" style="margin-bottom: 0;">
+                                <span style="color: var(--text-secondary); font-family: var(--font-mono); margin-right: var(--space-2);">${date}</span>
+                                ${actionText} <a href="https://github.com/${event.repo.name}" target="_blank" style="font-weight: 500; text-decoration: underline;">${repoName}</a>
+                            </p>
+                        </div>
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html;
+            lucide.createIcons();
+            
+        } catch (error) {
+            console.error('Error fetching GitHub activity:', error);
+            container.innerHTML = '<p class="text-small" style="color: var(--text-secondary);">Unable to load live engineering activity at this time.</p>';
         }
-      } catch (error) {
-        console.error('Error fetching GitHub activity:', error);
-        // Silent failure UI fallback
-        activityContainer.innerHTML = `
-            <div class="live-activity-badge">
-              <div class="pulsing-dot" style="background: var(--text-secondary);"></div>
-              <span><strong>Status:</strong> Systems operational. Available for engineering contracts.</span>
-            </div>
-        `;
-      }
-    };
-  
-    fetchActivity();
-  });
+    }
+
+    fetchGitHubActivity();
+});
