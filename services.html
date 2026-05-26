@@ -73,110 +73,86 @@
 
     <!-- Main Content Area -->
     <main>
-        <!-- 1. Hero -->
-        <section class="section" style="padding-top: var(--space-32); min-height: 70vh; display: flex; align-items: center; border-bottom: 1px solid var(--border);">
+        <!-- 1. Blueprint Services Header -->
+        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
             <div class="container text-center">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ Engineering Services ]</div>
-                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
-                    Engineering Digital Outcomes,<br>Not Just Code.
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ WHAT WE DO ]</div>
+                <h1 class="animate-slide-up delay-100" style="max-width: 700px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
+                    Engineering solutions that power your vision.
                 </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto; font-size: 1.125rem;">
-                    We build the intelligent systems, scalable infrastructure, and secure networks that drive modern businesses forward.
+                <p class="animate-slide-up delay-200" style="max-width: 600px; margin: 0 auto; font-size: 1.15rem;">
+                    From concept to production, we deliver systems that are secure, scalable, and built for the real world.
                 </p>
             </div>
         </section>
 
-        <!-- 2. Services Grid (Business Outcomes) -->
-        <section class="section section-light reveal">
-            <div class="container container-medium">
-                <div style="display: flex; flex-direction: column; gap: var(--space-12);">
+        <!-- 2. Blueprint 4-Column Grid -->
+        <section class="section reveal" style="padding-top: 0; padding-bottom: var(--space-24);">
+            <div class="container container-wide">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-4);">
                     
-                    <!-- Service 1 -->
-                    <div class="card reveal delay-100" id="software">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: start;">
-                            <!-- Left: Explanation -->
-                            <div>
-                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ 01. Software ]</div>
-                                <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-4);">Intelligent Software Systems</h3>
-                                <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Scalable web platforms and bespoke internal tools.</p>
-                                <p class="text-small">We architect cloud-native SaaS products and enterprise-grade tools that eliminate bottlenecks. Built on robust frameworks to ensure high availability, seamless user experiences, and zero technical debt.</p>
-                            </div>
-                            <!-- Right: Architecture Outcome -->
-                            <div style="padding: var(--space-6); background-color: var(--bg-secondary); border: 1px solid var(--border); height: 100%;">
-                                <div style="font-family: var(--font-mono); font-size: var(--text-small); text-transform: uppercase; color: var(--text-secondary); margin-bottom: var(--space-4); border-bottom: 1px solid var(--border); padding-bottom: var(--space-2);">[ Architecture Outcome ]</div>
-                                <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Modular Cloud-Native Infrastructure</li>
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> High-Performance APIs</li>
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Fault-Tolerant Databases</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <!-- Card 1: IoT -->
+                    <div class="card reveal delay-100" style="display: flex; flex-direction: column; padding: var(--space-8);">
+                        <i data-lucide="cpu" style="width: 32px; height: 32px; margin-bottom: var(--space-6); color: var(--text-primary);"></i>
+                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">IoT Systems</h3>
+                        <p class="text-small" style="margin-bottom: var(--space-8); min-height: 48px;">End-to-end IoT solutions from device to cloud.</p>
+                        
+                        <ul style="list-style: none; margin-bottom: var(--space-8); padding: 0; display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.9rem; flex-grow: 1;">
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Device Firmware</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Edge Computing</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Cloud Integration</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Real-time Analytics</li>
+                        </ul>
+                        
+                        <div class="tech-label" style="font-size: 0.85rem; margin-top: auto;">[ EXPLORE &rarr; ]</div>
                     </div>
 
-                    <!-- Service 2 -->
-                    <div class="card reveal delay-200" id="automation">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: start;">
-                            <!-- Left: Explanation -->
-                            <div>
-                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ 02. Automation ]</div>
-                                <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-4);">Automation & Workflow Systems</h3>
-                                <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Reduce manual work and improve operations.</p>
-                                <p class="text-small">We integrate disparate APIs, modernize legacy databases, and build custom automation pipelines that turn hours of manual data entry into seconds of intelligent execution.</p>
-                            </div>
-                            <!-- Right: Architecture Outcome -->
-                            <div style="padding: var(--space-6); background-color: var(--bg-secondary); border: 1px solid var(--border); height: 100%;">
-                                <div style="font-family: var(--font-mono); font-size: var(--text-small); text-transform: uppercase; color: var(--text-secondary); margin-bottom: var(--space-4); border-bottom: 1px solid var(--border); padding-bottom: var(--space-2);">[ Architecture Outcome ]</div>
-                                <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Autonomous CI/CD Pipelines</li>
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Custom ETL Data Processing</li>
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Legacy API Modernization</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <!-- Card 2: Cybersecurity -->
+                    <div class="card reveal delay-200" style="display: flex; flex-direction: column; padding: var(--space-8);">
+                        <i data-lucide="shield-check" style="width: 32px; height: 32px; margin-bottom: var(--space-6); color: var(--text-primary);"></i>
+                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Cybersecurity</h3>
+                        <p class="text-small" style="margin-bottom: var(--space-8); min-height: 48px;">Protecting systems, data, and users.</p>
+                        
+                        <ul style="list-style: none; margin-bottom: var(--space-8); padding: 0; display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.9rem; flex-grow: 1;">
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Security Audits</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Penetration Testing</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Secure Architecture</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Threat Modeling</li>
+                        </ul>
+                        
+                        <div class="tech-label" style="font-size: 0.85rem; margin-top: auto;">[ EXPLORE &rarr; ]</div>
                     </div>
 
-                    <!-- Service 3 -->
-                    <div class="card reveal delay-100" id="iot">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: start;">
-                            <!-- Left: Explanation -->
-                            <div>
-                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ 03. IoT ]</div>
-                                <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-4);">IoT & Smart Systems</h3>
-                                <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Connected hardware + real-world intelligence.</p>
-                                <p class="text-small">Bridging the physical and digital worlds. We develop the firmware, middleware, and analytics dashboards required to manage fleets of connected devices securely and reliably in real-time.</p>
-                            </div>
-                            <!-- Right: Architecture Outcome -->
-                            <div style="padding: var(--space-6); background-color: var(--bg-secondary); border: 1px solid var(--border); height: 100%;">
-                                <div style="font-family: var(--font-mono); font-size: var(--text-small); text-transform: uppercase; color: var(--text-secondary); margin-bottom: var(--space-4); border-bottom: 1px solid var(--border); padding-bottom: var(--space-2);">[ Architecture Outcome ]</div>
-                                <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Embedded Firmware & Microcontrollers</li>
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Bi-directional Telemetry Streaming</li>
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Live Device Analytics Dashboards</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <!-- Card 3: Software Engineering -->
+                    <div class="card reveal delay-300" style="display: flex; flex-direction: column; padding: var(--space-8);">
+                        <i data-lucide="code-2" style="width: 32px; height: 32px; margin-bottom: var(--space-6); color: var(--text-primary);"></i>
+                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Software Engineering</h3>
+                        <p class="text-small" style="margin-bottom: var(--space-8); min-height: 48px;">Scalable software built with engineering excellence.</p>
+                        
+                        <ul style="list-style: none; margin-bottom: var(--space-8); padding: 0; display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.9rem; flex-grow: 1;">
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Web Applications</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> API Development</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> System Architecture</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Performance Optimization</li>
+                        </ul>
+                        
+                        <div class="tech-label" style="font-size: 0.85rem; margin-top: auto;">[ EXPLORE &rarr; ]</div>
                     </div>
 
-                    <!-- Service 4 -->
-                    <div class="card reveal delay-200" id="cyber">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12); align-items: start;">
-                            <!-- Left: Explanation -->
-                            <div>
-                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ 04. Cybersecurity ]</div>
-                                <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-4);">Security & System Hardening</h3>
-                                <p style="font-size: 1.125rem; margin-bottom: var(--space-4);">Build resilient, secure digital infrastructure.</p>
-                                <p class="text-small">Protect your assets with proactive threat modeling, penetration testing, and architecture audits. We design systems that assume breach, implementing Zero Trust principles from day one.</p>
-                            </div>
-                            <!-- Right: Architecture Outcome -->
-                            <div style="padding: var(--space-6); background-color: var(--bg-secondary); border: 1px solid var(--border); height: 100%;">
-                                <div style="font-family: var(--font-mono); font-size: var(--text-small); text-transform: uppercase; color: var(--text-secondary); margin-bottom: var(--space-4); border-bottom: 1px solid var(--border); padding-bottom: var(--space-2);">[ Architecture Outcome ]</div>
-                                <ul style="list-style: none; display: flex; flex-direction: column; gap: var(--space-2);">
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Zero-Trust Network Architecture</li>
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> Automated Vulnerability Scanning</li>
-                                    <li style="display: flex; align-items: center; gap: var(--space-2);"><i data-lucide="check-circle" style="width: 16px;"></i> End-to-End Payload Encryption</li>
-                                </ul>
-                            </div>
-                        </div>
+                    <!-- Card 4: Automation -->
+                    <div class="card reveal delay-400" style="display: flex; flex-direction: column; padding: var(--space-8);">
+                        <i data-lucide="network" style="width: 32px; height: 32px; margin-bottom: var(--space-6); color: var(--text-primary);"></i>
+                        <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Automation</h3>
+                        <p class="text-small" style="margin-bottom: var(--space-8); min-height: 48px;">Intelligent automation that saves time and scales.</p>
+                        
+                        <ul style="list-style: none; margin-bottom: var(--space-8); padding: 0; display: flex; flex-direction: column; gap: var(--space-3); font-size: 0.9rem; flex-grow: 1;">
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Workflow Automation</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Process Optimization</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> RPA Solutions</li>
+                            <li style="display: flex; align-items: flex-start; gap: var(--space-2);"><span style="color: var(--text-primary);">&bull;</span> Custom Integrations</li>
+                        </ul>
+                        
+                        <div class="tech-label" style="font-size: 0.85rem; margin-top: auto;">[ EXPLORE &rarr; ]</div>
                     </div>
 
                 </div>

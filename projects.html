@@ -73,190 +73,228 @@
 
     <!-- Main Content Area -->
     <main>
-        <!-- 1. Hero -->
-        <section class="section" style="padding-top: var(--space-32); min-height: 50vh; display: flex; align-items: center; border-bottom: 1px solid var(--border);">
-            <div class="container text-center">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ Case Studies ]</div>
-                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
-                    Engineering Systems Built for Real-World Problems.
+        <!-- 1. Blueprint Projects Header -->
+        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
+            <div class="container">
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ CASE STUDIES ]</div>
+                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin-bottom: var(--space-6); font-size: var(--text-hero);">
+                    Real-world systems.<br>Real impact.
                 </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 650px; margin: 0 auto; font-size: 1.125rem;">
-                    Scalable software architectures, intelligent IoT infrastructure, and hardened cybersecurity systems.
+                <p class="animate-slide-up delay-200" style="max-width: 600px; font-size: 1.15rem;">
+                    A selection of engineering projects that solve meaningful problems.
                 </p>
             </div>
         </section>
 
-        <!-- 2. Project Filtering System & Grid -->
-        <section class="section section-light" style="padding-top: var(--space-12);">
-            <div class="container">
-                <!-- Filters -->
-                <div class="filter-container animate-slide-up delay-300" style="margin-bottom: var(--space-12);">
-                    <button class="filter-btn active" data-filter="all">All Systems</button>
-                    <button class="filter-btn" data-filter="software">Software</button>
-                    <button class="filter-btn" data-filter="iot">IoT</button>
-                    <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
-                    <button class="filter-btn" data-filter="automation">Automation</button>
-                </div>
-
-                <!-- Projects Grid -->
-                <div style="display: flex; flex-direction: column; gap: var(--space-8);">
+        <!-- 2. Blueprint Single Project Slider -->
+        <section class="section reveal" style="padding-top: 0;">
+            <div class="container container-wide">
+                
+                <!-- Project 1 (Active) -->
+                <div class="project-slide active" id="project-slide-1" style="border: 1px solid var(--border); background-color: var(--surface);">
+                    <div style="display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--border);">
+                        
+                        <!-- Left Number -->
+                        <div style="border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
+                            <span style="font-family: var(--font-mono); font-size: 2rem; font-weight: var(--weight-bold);">01</span>
+                        </div>
+                        
+                        <!-- Right Title & Tag -->
+                        <div style="padding: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ DOCUMENT: 01 - IOT ]</div>
+                                <h2 style="font-size: var(--text-h2); margin: 0;">Smart Irrigation System</h2>
+                            </div>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); padding: var(--space-2) var(--space-4); text-transform: uppercase;">
+                                PRODUCTION READY
+                            </div>
+                        </div>
+                    </div>
                     
-                    <!-- Project 1 -->
-                    <div class="project-card reveal delay-100" data-category="iot" style="padding: var(--space-12); border: 1px solid var(--border); background: var(--surface);">
-                        <div class="project-content">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">[ Document: 01-IOT ]</div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">Intelligent Soil Health Monitoring System</h3>
-                            <p class="text-small" style="margin-bottom: var(--space-6); font-family: var(--font-mono); text-transform: uppercase;">IoT Infrastructure & Analytics • Production Ready</p>
-                            
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8);">
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Problem</h4>
-                                    <p class="text-small">Inefficient water usage and lack of real-time soil data led to suboptimal crop yields.</p>
-                                </div>
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Architecture</h4>
-                                    <p class="text-small">Engineered a distributed network of embedded sensors reporting to a centralized cloud architecture for real-time analytics and automated irrigation triggers.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="project-tech-stack" style="margin-bottom: var(--space-8);">
-                                <span class="badge">C++ (ESP32)</span>
-                                <span class="badge">MQTT</span>
-                                <span class="badge">Python (Backend)</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <button class="btn btn-primary modal-trigger" data-project="soil">Read Technical Case Study</button>
-                                <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-3);"><i data-lucide="github" style="width: 16px; height: 16px;"></i></a>
-                            </div>
+                    <!-- Middle Grid: Problem & Architecture -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);">
+                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE PROBLEM</div>
+                            <p class="text-small" style="max-width: 450px;">Farmers waste 30-40% of water due to manual irrigation and lack of real-time data.</p>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE ARCHITECTURE</div>
+                            <p class="text-small" style="max-width: 450px;">IoT sensors collect soil &amp; weather data &rarr; Edge processing &rarr; Cloud analytics &rarr; Automated irrigation control.</p>
                         </div>
                     </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card reveal delay-200" data-category="software" style="padding: var(--space-12); border: 1px solid var(--border); background: var(--surface);">
-                        <div class="project-content">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">[ Document: 02-SFT ]</div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">Personal Finance Intelligence Platform</h3>
-                            <p class="text-small" style="margin-bottom: var(--space-6); font-family: var(--font-mono); text-transform: uppercase;">Web Systems & ML • Production Ready</p>
-                            
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8);">
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Problem</h4>
-                                    <p class="text-small">Fragmented financial data prevented users from getting a holistic view of their wealth and spending patterns.</p>
-                                </div>
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Architecture</h4>
-                                    <p class="text-small">Built a highly secure, scalable web platform that aggregates banking data via Plaid, utilizing predictive models to forecast cash flow.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="project-tech-stack" style="margin-bottom: var(--space-8);">
-                                <span class="badge">React</span>
-                                <span class="badge">Node.js</span>
-                                <span class="badge">PostgreSQL</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <button class="btn btn-primary modal-trigger" data-project="finance">Read Technical Case Study</button>
-                                <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-3);"><i data-lucide="github" style="width: 16px; height: 16px;"></i></a>
-                            </div>
+                    
+                    <!-- Bottom Grid: Technologies & Outcome -->
+                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">TECHNOLOGIES</div>
+                            <p class="text-small" style="font-family: var(--font-mono);">ESP32, LoRaWAN, AWS IoT, InfluxDB, React</p>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">OUTCOME</div>
+                            <p class="text-small">40% water saved, 25% increase in yield.</p>
                         </div>
                     </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card reveal delay-300" data-category="iot" style="padding: var(--space-12); border: 1px solid var(--border); background: var(--surface);">
-                        <div class="project-content">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">[ Document: 03-IOT ]</div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">IoT Waste Monitoring Infrastructure</h3>
-                            <p class="text-small" style="margin-bottom: var(--space-6); font-family: var(--font-mono); text-transform: uppercase;">Hardware & Logistics • Research Prototype</p>
-                            
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8);">
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Problem</h4>
-                                    <p class="text-small">Municipalities face significant logistical costs dispatching trucks to empty partially filled waste bins.</p>
-                                </div>
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Architecture</h4>
-                                    <p class="text-small">Deployed ultrasonic sensor nodes across urban bins, feeding volume data into a logistics dashboard that dynamically optimizes collection routes.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="project-tech-stack" style="margin-bottom: var(--space-8);">
-                                <span class="badge">Embedded C</span>
-                                <span class="badge">AWS IoT Core</span>
-                                <span class="badge">React Admin</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <button class="btn btn-primary modal-trigger" data-project="waste">Read Technical Case Study</button>
-                                <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-3);"><i data-lucide="github" style="width: 16px; height: 16px;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="project-card reveal delay-100" data-category="cybersecurity" style="padding: var(--space-12); border: 1px solid var(--border); background: var(--surface);">
-                        <div class="project-content">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">[ Document: 04-CYB ]</div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">Zero-Trust Enterprise Data Vault</h3>
-                            <p class="text-small" style="margin-bottom: var(--space-6); font-family: var(--font-mono); text-transform: uppercase;">Cybersecurity & Encryption • MVP</p>
-                            
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8);">
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Problem</h4>
-                                    <p class="text-small">Sensitive client records were stored in monolithic databases vulnerable to lateral movement during a breach.</p>
-                                </div>
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Architecture</h4>
-                                    <p class="text-small">Architected a distributed, end-to-end encrypted storage system using strict Zero-Trust authentication and ephemeral access tokens.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="project-tech-stack" style="margin-bottom: var(--space-8);">
-                                <span class="badge">Python</span>
-                                <span class="badge">Cryptography</span>
-                                <span class="badge">Docker</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <button class="btn btn-primary modal-trigger" data-project="vault">Read Technical Case Study</button>
-                                <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-3);"><i data-lucide="github" style="width: 16px; height: 16px;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 5 -->
-                    <div class="project-card reveal delay-200" data-category="automation" style="padding: var(--space-12); border: 1px solid var(--border); background: var(--surface);">
-                        <div class="project-content">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">[ Document: 05-AUT ]</div>
-                            <h3 style="font-size: var(--text-h2); margin-bottom: var(--space-2);">Automated Recruitment Workflow Engine</h3>
-                            <p class="text-small" style="margin-bottom: var(--space-6); font-family: var(--font-mono); text-transform: uppercase;">Business Automation • Production Ready</p>
-                            
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-8); margin-bottom: var(--space-8);">
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Problem</h4>
-                                    <p class="text-small">HR teams spent 20+ hours a week manually triaging resumes and scheduling initial screening calls.</p>
-                                </div>
-                                <div>
-                                    <h4 style="font-family: var(--font-mono); margin-bottom: var(--space-2); text-transform: uppercase; font-size: 0.875rem;">The Architecture</h4>
-                                    <p class="text-small">Built a custom middleware engine that parses resumes via NLP, scores candidates against job requirements, and fully automates the calendar scheduling process.</p>
-                                </div>
-                            </div>
-                            
-                            <div class="project-tech-stack" style="margin-bottom: var(--space-8);">
-                                <span class="badge">Node.js</span>
-                                <span class="badge">OpenAI API</span>
-                                <span class="badge">Webhooks</span>
-                            </div>
-                            
-                            <div class="project-actions">
-                                <button class="btn btn-primary modal-trigger" data-project="recruitment">Read Technical Case Study</button>
-                                <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: var(--space-3);"><i data-lucide="github" style="width: 16px; height: 16px;"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- Project 2 (Hidden) -->
+                <div class="project-slide" id="project-slide-2" style="border: 1px solid var(--border); background-color: var(--surface); display: none;">
+                    <div style="display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--border);">
+                        <div style="border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
+                            <span style="font-family: var(--font-mono); font-size: 2rem; font-weight: var(--weight-bold);">02</span>
+                        </div>
+                        <div style="padding: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ DOCUMENT: 02 - SFT ]</div>
+                                <h2 style="font-size: var(--text-h2); margin: 0;">Finance Intelligence Platform</h2>
+                            </div>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); padding: var(--space-2) var(--space-4); text-transform: uppercase;">
+                                PRODUCTION READY
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);">
+                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE PROBLEM</div>
+                            <p class="text-small" style="max-width: 450px;">Fragmented financial data prevented users from getting a holistic view of their wealth and spending patterns.</p>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE ARCHITECTURE</div>
+                            <p class="text-small" style="max-width: 450px;">Highly secure web platform aggregating banking data via Plaid, utilizing predictive models for cash flow forecasting.</p>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">TECHNOLOGIES</div>
+                            <p class="text-small" style="font-family: var(--font-mono);">React, Node.js, PostgreSQL, Plaid API</p>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">OUTCOME</div>
+                            <p class="text-small">Real-time wealth tracking, 99.9% uptime, seamless data aggregation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 (Hidden) -->
+                <div class="project-slide" id="project-slide-3" style="border: 1px solid var(--border); background-color: var(--surface); display: none;">
+                    <div style="display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--border);">
+                        <div style="border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
+                            <span style="font-family: var(--font-mono); font-size: 2rem; font-weight: var(--weight-bold);">03</span>
+                        </div>
+                        <div style="padding: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ DOCUMENT: 03 - CYB ]</div>
+                                <h2 style="font-size: var(--text-h2); margin: 0;">Zero-Trust Data Vault</h2>
+                            </div>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); padding: var(--space-2) var(--space-4); text-transform: uppercase;">
+                                MVP
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);">
+                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE PROBLEM</div>
+                            <p class="text-small" style="max-width: 450px;">Sensitive client records stored in monolithic databases were vulnerable to lateral movement during a breach.</p>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE ARCHITECTURE</div>
+                            <p class="text-small" style="max-width: 450px;">Distributed, end-to-end encrypted storage system using strict Zero-Trust authentication and ephemeral tokens.</p>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">TECHNOLOGIES</div>
+                            <p class="text-small" style="font-family: var(--font-mono);">Python, Cryptography, Docker, Zero-Trust</p>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">OUTCOME</div>
+                            <p class="text-small">Eliminated lateral movement risks, secured sensitive enterprise assets.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 (Hidden) -->
+                <div class="project-slide" id="project-slide-4" style="border: 1px solid var(--border); background-color: var(--surface); display: none;">
+                    <div style="display: grid; grid-template-columns: 80px 1fr; border-bottom: 1px solid var(--border);">
+                        <div style="border-right: 1px solid var(--border); display: flex; align-items: center; justify-content: center; padding: var(--space-8);">
+                            <span style="font-family: var(--font-mono); font-size: 2rem; font-weight: var(--weight-bold);">04</span>
+                        </div>
+                        <div style="padding: var(--space-8); display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div class="tech-label" style="margin-bottom: var(--space-4);">[ DOCUMENT: 04 - AUT ]</div>
+                                <h2 style="font-size: var(--text-h2); margin: 0;">Recruitment Workflow Engine</h2>
+                            </div>
+                            <div style="font-family: var(--font-mono); font-size: 0.75rem; border: 1px solid var(--border); padding: var(--space-2) var(--space-4); text-transform: uppercase;">
+                                PRODUCTION READY
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--border);">
+                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE PROBLEM</div>
+                            <p class="text-small" style="max-width: 450px;">HR teams spent 20+ hours a week manually triaging resumes and scheduling initial screening calls.</p>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">THE ARCHITECTURE</div>
+                            <p class="text-small" style="max-width: 450px;">Middleware engine that parses resumes via NLP, scores candidates, and fully automates the calendar scheduling process.</p>
+                        </div>
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+                        <div style="padding: var(--space-8); border-right: 1px solid var(--border);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">TECHNOLOGIES</div>
+                            <p class="text-small" style="font-family: var(--font-mono);">Node.js, OpenAI API, Webhooks</p>
+                        </div>
+                        <div style="padding: var(--space-8);">
+                            <div class="tech-label" style="margin-bottom: var(--space-4);">OUTCOME</div>
+                            <p class="text-small">Saved 25 hours per week, 3x faster candidate screening.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div style="display: flex; justify-content: center; gap: var(--space-4); padding-top: var(--space-12);">
+                    <button class="slide-nav-btn active" data-slide="1" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; text-decoration: underline; color: var(--text-primary);">01</button>
+                    <button class="slide-nav-btn" data-slide="2" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; color: var(--text-secondary);">02</button>
+                    <button class="slide-nav-btn" data-slide="3" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; color: var(--text-secondary);">03</button>
+                    <button class="slide-nav-btn" data-slide="4" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; color: var(--text-secondary);">04</button>
+                    <button class="slide-nav-next" style="background: none; border: none; font-family: var(--font-mono); cursor: pointer; color: var(--text-primary);">&rarr;</button>
+                </div>
+                
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const btns = document.querySelectorAll('.slide-nav-btn');
+                        const nextBtn = document.querySelector('.slide-nav-next');
+                        const slides = document.querySelectorAll('.project-slide');
+                        let currentSlide = 1;
+                        
+                        function showSlide(index) {
+                            slides.forEach(s => s.style.display = 'none');
+                            btns.forEach(b => {
+                                b.style.color = 'var(--text-secondary)';
+                                b.style.textDecoration = 'none';
+                                b.classList.remove('active');
+                            });
+                            
+                            document.getElementById(`project-slide-${index}`).style.display = 'block';
+                            const activeBtn = document.querySelector(`.slide-nav-btn[data-slide="${index}"]`);
+                            activeBtn.style.color = 'var(--text-primary)';
+                            activeBtn.style.textDecoration = 'underline';
+                            activeBtn.classList.add('active');
+                            currentSlide = index;
+                        }
+                        
+                        btns.forEach(btn => {
+                            btn.addEventListener('click', () => {
+                                showSlide(parseInt(btn.getAttribute('data-slide')));
+                            });
+                        });
+                        
+                        nextBtn.addEventListener('click', () => {
+                            let next = currentSlide + 1;
+                            if (next > 4) next = 1;
+                            showSlide(next);
+                        });
+                    });
+                </script>
             </div>
         </section>
 

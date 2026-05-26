@@ -71,114 +71,89 @@
 
     <!-- Main Content Area -->
     <main>
-        <!-- 1. Hero -->
-        <section class="section" style="padding-top: var(--space-32); min-height: 70vh; display: flex; align-items: center; border-bottom: 1px solid var(--border);">
-            <div class="container text-center">
-                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ About Rishvin Labs ]</div>
-                <h1 class="animate-slide-up delay-100" style="max-width: 900px; margin: 0 auto var(--space-6); font-size: var(--text-hero);">
-                    Built for scale.<br>Engineered for the future.
-                </h1>
-                <p class="animate-slide-up delay-200" style="max-width: 600px; margin: 0 auto; font-size: 1.125rem;">
-                    We are an elite engineering studio dedicated to bridging the gap between high-performance software, robust cybersecurity, and intelligent IoT systems.
-                </p>
-            </div>
-        </section>
-
-        <!-- 2. Core Values -->
-        <section class="section section-light reveal">
-            <div class="container container-medium">
-                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: var(--space-16); align-items: start;">
+        <!-- 1. Blueprint About Section -->
+        <section class="section">
+            <div class="container container-wide">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: start; padding-top: var(--space-12);">
+                    
                     <!-- Left: Explanation -->
-                    <div>
-                        <div class="tech-label" style="margin-bottom: var(--space-8);">[ The Standards ]</div>
-                        <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">Engineering Principles</h2>
-                        <p>Our non-negotiable standards for every digital product we build. We believe process maturity is what separates commodity coding from elite engineering.</p>
+                    <div style="padding-right: var(--space-8);">
+                        <div class="tech-label" style="margin-bottom: var(--space-8);">[ ABOUT THE STUDIO ]</div>
+                        <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6); max-width: 600px;">
+                            Engineering with purpose.<br>Building for impact.
+                        </h2>
+                        <p style="margin-bottom: var(--space-6); font-size: 1.15rem; max-width: 500px;">
+                            Rishvin Labs is a focused engineering studio dedicated to solving complex problems through thoughtful architecture, clean code, and secure systems.
+                        </p>
+                        <p style="margin-bottom: var(--space-12); font-size: 1.15rem; max-width: 500px;">
+                            We partner with startups, enterprises, and innovators to build digital systems that are reliable, scalable, and future-ready.
+                        </p>
+                        <div class="tech-label" style="font-size: 0.85rem;">[ OUR PRINCIPLES &rarr; ]</div>
                     </div>
                     
-                    <!-- Right: Principles Grid -->
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-8);">
-                        <div class="card reveal delay-100">
-                            <div class="card-icon"><i data-lucide="crosshair"></i></div>
-                            <h3 style="margin-bottom: var(--space-4);">Precision</h3>
-                            <p>No rushed code. Every line, architecture decision, and system integration is meticulously crafted and tested.</p>
+                    <!-- Right: Principles List -->
+                    <div style="display: flex; flex-direction: column; gap: var(--space-12); border-left: 1px solid var(--border); padding-left: var(--space-12);">
+                        
+                        <!-- Point 1 -->
+                        <div class="reveal delay-100" style="display: flex; gap: var(--space-6); align-items: flex-start;">
+                            <i data-lucide="crosshair" style="width: 28px; height: 28px; flex-shrink: 0; color: var(--text-primary); margin-top: 4px;"></i>
+                            <div>
+                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Precision Engineering</h3>
+                                <p class="text-small" style="margin-bottom: 0;">We sweat the details so our systems don't.</p>
+                            </div>
                         </div>
-                        <div class="card reveal delay-200">
-                            <div class="card-icon"><i data-lucide="shield-check"></i></div>
-                            <h3 style="margin-bottom: var(--space-4);">Security-First</h3>
-                            <p>Security is not bolted on at the end. It is engineered into the very foundation of our system architecture.</p>
+                        
+                        <!-- Point 2 -->
+                        <div class="reveal delay-200" style="display: flex; gap: var(--space-6); align-items: flex-start;">
+                            <i data-lucide="lock" style="width: 28px; height: 28px; flex-shrink: 0; color: var(--text-primary); margin-top: 4px;"></i>
+                            <div>
+                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Security by Design</h3>
+                                <p class="text-small" style="margin-bottom: 0;">Security is not a feature. It's a foundation.</p>
+                            </div>
                         </div>
-                        <div class="card reveal delay-300">
-                            <div class="card-icon"><i data-lucide="trending-up"></i></div>
-                            <h3 style="margin-bottom: var(--space-4);">Scalability</h3>
-                            <p>We build systems designed to handle your next million users, avoiding technical debt from day one.</p>
+                        
+                        <!-- Point 3 -->
+                        <div class="reveal delay-300" style="display: flex; gap: var(--space-6); align-items: flex-start;">
+                            <i data-lucide="arrow-up-right" style="width: 28px; height: 28px; flex-shrink: 0; color: var(--text-primary); margin-top: 4px;"></i>
+                            <div>
+                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Scalable Thinking</h3>
+                                <p class="text-small" style="margin-bottom: 0;">We build systems that grow with you.</p>
+                            </div>
                         </div>
+                        
+                        <!-- Point 4 -->
+                        <div class="reveal delay-400" style="display: flex; gap: var(--space-6); align-items: flex-start;">
+                            <i data-lucide="users" style="width: 28px; height: 28px; flex-shrink: 0; color: var(--text-primary); margin-top: 4px;"></i>
+                            <div>
+                                <h3 style="font-size: var(--text-h4); margin-bottom: var(--space-2);">Long-term Partnership</h3>
+                                <p class="text-small" style="margin-bottom: 0;">We build relationships, not just products.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 3. The Story / Founder -->
-        <section class="section reveal" style="border-bottom: 1px solid var(--border);">
-            <div class="container container-medium">
-                <div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: var(--space-16); align-items: center;">
-                    <div class="reveal delay-100">
-                        <div class="tech-label" style="margin-bottom: var(--space-6);">[ The Founder ]</div>
-                        <h2 style="margin-bottom: var(--space-6); font-size: var(--text-h2);">Erolla Rishvin Reddy</h2>
-                        <p style="margin-bottom: var(--space-6);">
-                            Rishvin Labs was founded by Erolla Rishvin Reddy (known professionally as Rishvin Reddy) with a clear vision: to bring enterprise-grade engineering precision to modern businesses and startups.
-                        </p>
-                        <p style="margin-bottom: var(--space-8);">
-                            With a B.Tech in CSE (Blockchain, IoT & Cybersecurity) from Woxsen University, Rishvin realized that true digital innovation requires mastering the entire stack. From hardware firmware to secure cloud architectures, this multi-disciplinary expertise is the backbone of Rishvin Labs.
-                        </p>
-                        <div style="display: flex; gap: var(--space-4);">
-                            <a href="https://github.com/RishvinReddy" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                                GitHub
-                            </a>
-                            <a href="mailto:rishvinreddy@gmail.com" class="btn btn-primary">
-                                Email
-                            </a>
-                        </div>
-                    </div>
-                    <div class="reveal delay-300" style="text-align: right; padding: var(--space-12); border: 1px solid var(--border); background-color: var(--bg-secondary);">
-                        <h3 style="font-family: var(--font-mono); font-size: 8rem; color: var(--border-strong); line-height: 1;">R.L.</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3.5. How We Think -->
-        <section class="section section-light reveal">
-            <div class="container container-medium">
-                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: var(--space-16); align-items: start;">
-                    <!-- Left: Header -->
+        <!-- 2. Meta Strip (Blueprint Layout) -->
+        <section class="reveal section-light" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: var(--space-12) 0;">
+            <div class="container container-wide">
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-8);">
                     <div>
-                        <div class="tech-label" style="margin-bottom: var(--space-8);">[ Methodology ]</div>
-                        <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-6);">How We Think</h2>
-                        <p>Process maturity is what separates commodity coding from elite engineering.</p>
+                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">FOUNDER</div>
+                        <div style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary);">Rishvin Reddy</div>
                     </div>
-                    
-                    <!-- Right: Process Grid -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-12);">
-                        <div class="reveal delay-100" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">01</div>
-                            <h4 style="margin-bottom: var(--space-4);">Understand</h4>
-                            <p class="text-small">We deeply analyze the business problem and system constraints before writing a single line of code.</p>
-                        </div>
-                        <div class="reveal delay-200" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">02</div>
-                            <h4 style="margin-bottom: var(--space-4);">Architect</h4>
-                            <p class="text-small">Designing the blueprint. We select the optimal tech stack for long-term maintainability and massive scale.</p>
-                        </div>
-                        <div class="reveal delay-300" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">03</div>
-                            <h4 style="margin-bottom: var(--space-4);">Build</h4>
-                            <p class="text-small">Engineering-first execution with rigorous code reviews, automated CI/CD pipelines, and secure defaults.</p>
-                        </div>
-                        <div class="reveal delay-400" style="border-top: 1px solid var(--border-strong); padding-top: var(--space-6);">
-                            <div class="tech-label" style="margin-bottom: var(--space-4);">04</div>
-                            <h4 style="margin-bottom: var(--space-4);">Refine</h4>
-                            <p class="text-small">Relentless testing, performance profiling, and iterative optimization to ensure peak system performance.</p>
-                        </div>
+                    <div>
+                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">FOCUS AREAS</div>
+                        <div style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary);">IoT, Cybersecurity, Software<br>Automation</div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">APPROACH</div>
+                        <div style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary);">Research. Architect. Build.<br>Validate. Scale.</div>
+                    </div>
+                    <div>
+                        <div class="tech-label" style="font-size: 0.75rem; margin-bottom: var(--space-4);">LOCATION</div>
+                        <div style="font-family: var(--font-body); font-size: 1.15rem; color: var(--text-primary);">India &middot; Global</div>
                     </div>
                 </div>
             </div>
