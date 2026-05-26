@@ -7,12 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!wizardContainer) return;
 
     let currentStep = 1;
-    const totalSteps = 4;
+    const totalSteps = 5; // Updated to 5 steps
     const formData = {
         domain: '',
         stage: '',
         budget: '',
-        timeline: '',
         name: '',
         email: '',
         details: ''
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         steps.forEach((step, index) => {
             if (index + 1 === currentStep) {
                 step.classList.add('active');
-                step.style.display = 'block';
+                step.style.display = 'flex';
                 // Trigger animation
                 setTimeout(() => step.style.opacity = '1', 50);
             } else {
@@ -48,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         stepIndicators.forEach((ind, index) => {
             if (index + 1 === currentStep) {
                 ind.classList.add('active');
+                ind.classList.remove('completed');
             } else if (index + 1 < currentStep) {
                 ind.classList.add('completed');
                 ind.classList.remove('active');
@@ -55,10 +55,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 ind.classList.remove('active', 'completed');
             }
         });
+
+        // Special logic for Step 4 (Proposal Output)
+        if (currentStep === 4) {
+            generateProposal();
+        }
+    }
+
+    function generateProposal() {
+        const output = document.getElementById('proposal-output');
+        if (!output) return;
+
+        // Base text fragments
+        const domainText = {
+            'software': 'Web platform / SaaS architecture with scalable cloud infrastructure.',
+            'iot': 'IoT system with hardware telemetry and real-time data processing.',
+            'security': 'Cybersecurity audit and zero-trust system hardening.'
+        }[formData.domain] || 'Custom engineering system.';
+
+        const stageText = {
+            'idea': 'Focus: Requirements engineering, architecture design, and initial proof-of-concept.',
+            'mvp': 'Focus: Codebase refinement, performance optimization, and production readiness.',
+            'scaling': 'Focus: High-availability scaling, load balancing, and automated CI/CD pipelines.'
+        }[formData.stage] || 'Focus: Custom development.';
+
+        const budgetText = {
+            '10k-50k': 'Estimated Timeline: 4-8 weeks. Standard SLA.',
+            '50k-150k': 'Estimated Timeline: 2-4 months. Priority SLA.',
+            '150k+': 'Estimated Timeline: 4+ months. Dedicated engineering team. Enterprise SLA.'
+        }[formData.budget] || 'Estimated Timeline: TBD.';
+
+        output.innerHTML = `
+            <div style="margin-bottom: 8px;"><span style="color: var(--primary);">[ ARCHITECTURE ]</span> ${domainText}</div>
+            <div style="margin-bottom: 8px;"><span style="color: var(--primary);">[ OBJECTIVE ]</span> ${stageText}</div>
+            <div><span style="color: var(--primary);">[ PARAMETERS ]</span> ${budgetText}</div>
+        `;
     }
 
     // Next Step Logic
-    function nextStep() {
+    window.nextStep = function() {
         if (currentStep < totalSteps) {
             currentStep++;
             updateUI();
@@ -95,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Form Submission
+    // Form Submission (Real Mailto Integration)
     const wizardForm = document.getElementById('consultation-form');
     if (wizardForm) {
         wizardForm.addEventListener('submit', (e) => {
@@ -112,25 +147,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Simulate form submission
+            // Construct email payload
+            const subject = encodeURIComponent(`Project Inquiry: ${formData.name} - ${formData.domain.toUpperCase()} System`);
+            const body = encodeURIComponent(`
+SYSTEM ARCHITECTURE INITIATION
+------------------------------
+Name: ${formData.name}
+Email: ${formData.email}
+
+PARAMETERS
+------------------------------
+Domain: ${formData.domain}
+Stage: ${formData.stage}
+Budget: ${formData.budget}
+
+SYSTEM REQUIREMENTS
+------------------------------
+${formData.details}
+            `.trim());
+
+            const mailtoLink = `mailto:rishvinreddy@gmail.com?subject=${subject}&body=${body}`;
+
+            // Provide visual feedback
             const submitBtn = wizardForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.innerHTML;
             submitBtn.innerHTML = '[ TRANSMITTING... ]';
             submitBtn.disabled = true;
 
             setTimeout(() => {
+                // Open mail client
+                window.location.href = mailtoLink;
+
                 wizardContainer.innerHTML = `
-                    <div style="text-align: center; padding: var(--space-16) 0;" class="animate-fade-in">
-                        <i data-lucide="check-circle" style="width: 48px; height: 48px; color: var(--text-primary); margin-bottom: var(--space-6);"></i>
-                        <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-4);">Transmission Received.</h2>
+                    <div style="text-align: center; padding: var(--space-16) 0; flex: 1; display: flex; flex-direction: column; justify-content: center;" class="animate-fade-in">
+                        <i data-lucide="check-circle" style="width: 48px; height: 48px; color: var(--text-primary); margin: 0 auto var(--space-6);"></i>
+                        <h2 style="font-size: var(--text-h2); margin-bottom: var(--space-4);">Transmission Ready.</h2>
                         <p style="color: var(--text-secondary); max-width: 400px; margin: 0 auto var(--space-8);">
-                            System architecture planning initiated. Our lead engineer will contact you within 24 hours.
+                            Your email client has been opened with the architecture parameters pre-filled. Please send the email to initiate the project.
                         </p>
-                        <a href="index.html" class="btn btn-secondary">Return Home</a>
+                        <a href="index.html" class="btn btn-secondary" style="align-self: center;">Return Home</a>
                     </div>
                 `;
-                lucide.createIcons();
-            }, 1500);
+                if(window.lucide) lucide.createIcons();
+            }, 1000);
         });
     }
 

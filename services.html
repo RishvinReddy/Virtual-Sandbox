@@ -74,7 +74,629 @@
 
     <!-- Main Content Area -->
     <main>
-        <!-- 1. Blueprint Services Header -->
+
+        <!-- ==============================
+             1. HERO
+        ============================== -->
+        <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
+            <div class="container">
+                <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ WHAT WE BUILD ]</div>
+                <h1 class="animate-slide-up delay-100" style="max-width: 820px; font-size: var(--text-hero); margin-bottom: var(--space-6);">
+                    Premium Tech Studio.<br>Digital Product Lab.
+                </h1>
+                <p class="animate-slide-up delay-200" style="max-width: 640px; font-size: 1.15rem; margin-bottom: var(--space-8);">
+                    Not a generic agency. We are an elite engineering studio focused on 5 high-value domains — delivering fast-cash services, scalable digital products, and recurring revenue systems.
+                </p>
+                <div style="display: flex; gap: var(--space-4); flex-wrap: wrap;" class="animate-slide-up delay-300">
+                    <a href="#packages" class="btn btn-primary">View Packages &rarr;</a>
+                    <a href="contact.html" class="btn btn-secondary">Start a Project</a>
+                </div>
+                <!-- Revenue model strip -->
+                <div style="margin-top: var(--space-16); display: flex; gap: 0; border: 1px solid var(--border); overflow: hidden;">
+                    <div style="padding: var(--space-4) var(--space-6); border-right: 1px solid var(--border); flex: 1; text-align: center;">
+                        <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 4px;">01</div>
+                        <div style="font-size: 0.8rem; font-weight: 600;">Services</div>
+                        <div style="font-size: 0.7rem; color: var(--text-secondary);">Fast Cash</div>
+                    </div>
+                    <div style="padding: var(--space-4) var(--space-6); border-right: 1px solid var(--border); flex: 1; text-align: center;">
+                        <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 4px;">02</div>
+                        <div style="font-size: 0.8rem; font-weight: 600;">Packages</div>
+                        <div style="font-size: 0.7rem; color: var(--text-secondary);">Semi-Scalable</div>
+                    </div>
+                    <div style="padding: var(--space-4) var(--space-6); border-right: 1px solid var(--border); flex: 1; text-align: center;">
+                        <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 4px;">03</div>
+                        <div style="font-size: 0.8rem; font-weight: 600;">Digital Products</div>
+                        <div style="font-size: 0.7rem; color: var(--text-secondary);">Scalable</div>
+                    </div>
+                    <div style="padding: var(--space-4) var(--space-6); border-right: 1px solid var(--border); flex: 1; text-align: center;">
+                        <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 4px;">04</div>
+                        <div style="font-size: 0.8rem; font-weight: 600;">SaaS</div>
+                        <div style="font-size: 0.7rem; color: var(--text-secondary);">High Scale</div>
+                    </div>
+                    <div style="padding: var(--space-4) var(--space-6); flex: 1; text-align: center;">
+                        <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 4px;">05</div>
+                        <div style="font-size: 0.8rem; font-weight: 600;">Retainers</div>
+                        <div style="font-size: 0.7rem; color: var(--text-secondary);">Recurring MRR</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             2. 5 PILLARS
+        ============================== -->
+        <section class="section reveal" id="pillars" style="border-top: 1px solid var(--border); padding-bottom: var(--space-24);">
+            <div class="container container-wide">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-12); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">[ ARCHITECTURE ]</div>
+                        <h2 style="font-size: var(--text-h2);">The 5 Core Pillars</h2>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 220px;">Our expertise, not a list of random services</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                    <!-- Pillar 1 -->
+                    <div class="pillar-cell reveal delay-100" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
+                        <i data-lucide="code-2" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
+                        <div>
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 01 ]</div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">Full-Stack Development</h3>
+                            <p class="text-small" style="color: var(--text-secondary);">Web platforms, SaaS, dashboards, APIs, and mobile-ready applications.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">React &bull; Node.js &bull; Python &bull; Firebase</span>
+                        </div>
+                    </div>
+                    <!-- Pillar 2 -->
+                    <div class="pillar-cell reveal delay-200" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
+                        <i data-lucide="cpu" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
+                        <div>
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 02 ]</div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">IoT &amp; Smart Systems</h3>
+                            <p class="text-small" style="color: var(--text-secondary);">Hardware-to-cloud pipelines, smart agriculture, home automation, industrial monitoring.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Arduino &bull; ESP32 &bull; MQTT &bull; Grafana</span>
+                        </div>
+                    </div>
+                    <!-- Pillar 3 -->
+                    <div class="pillar-cell reveal delay-300" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
+                        <i data-lucide="shield-check" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
+                        <div>
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 03 ]</div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">Cybersecurity Engineering</h3>
+                            <p class="text-small" style="color: var(--text-secondary);">Security audits, zero-trust architecture, vulnerability assessment, secure coding.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">OWASP &bull; NIST &bull; Burp Suite &bull; TLS 1.3</span>
+                        </div>
+                    </div>
+                    <!-- Pillar 4 -->
+                    <div class="pillar-cell reveal delay-400" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
+                        <i data-lucide="workflow" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
+                        <div>
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 04 ]</div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">Automation Systems</h3>
+                            <p class="text-small" style="color: var(--text-secondary);">Business workflow automation, CRM pipelines, API integrations, AI-assisted tooling.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Python &bull; Webhooks &bull; Zapier-style &bull; AI APIs</span>
+                        </div>
+                    </div>
+                    <!-- Pillar 5 -->
+                    <div class="pillar-cell reveal delay-500" style="background: var(--surface); padding: var(--space-8); display: flex; flex-direction: column; gap: var(--space-6);">
+                        <i data-lucide="package" style="width: 28px; height: 28px; color: var(--text-primary);"></i>
+                        <div>
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-3);">[ 05 ]</div>
+                            <h3 style="font-size: 1.1rem; margin-bottom: var(--space-3);">Digital Products &amp; SaaS</h3>
+                            <p class="text-small" style="color: var(--text-secondary);">Templates, developer kits, productivity systems, and micro-SaaS tools built to scale.</p>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-2); margin-top: auto;">
+                            <span style="font-size: 0.75rem; color: var(--text-secondary);">Gumroad &bull; Stripe &bull; Notion &bull; React SaaS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             3. FULL SERVICE CATEGORIES
+        ============================== -->
+        <section class="section reveal" id="services-list" style="border-top: 1px solid var(--border); padding-bottom: var(--space-24);">
+            <div class="container container-wide">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-12); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">[ SERVICES ]</div>
+                        <h2 style="font-size: var(--text-h2);">What We Offer</h2>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 260px;">7 service categories. B2B + B2C ready.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border);">
+
+                    <!-- A: Web Development -->
+                    <div id="software" style="background: var(--surface); padding: var(--space-10);" class="reveal delay-100">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <i data-lucide="globe" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                            <div>
+                                <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ A ]</div>
+                                <h3 style="font-size: 1.2rem;">Web Development</h3>
+                            </div>
+                        </div>
+                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">For startups, creators, local businesses, and companies.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Portfolio Websites</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Business Websites</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Startup Landing Pages</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">SaaS Landing Pages</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Custom Web Applications</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Admin Dashboards</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">E-commerce Websites</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">AI-powered Integrations</span>
+                        </div>
+                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">HTML &bull; CSS &bull; React &bull; Firebase &bull; APIs</div>
+                    </div>
+
+                    <!-- B: Software Development -->
+                    <div style="background: var(--surface); padding: var(--space-10);" class="reveal delay-200">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <i data-lucide="terminal" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                            <div>
+                                <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ B ]</div>
+                                <h3 style="font-size: 1.2rem;">Software Development</h3>
+                            </div>
+                        </div>
+                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">Custom internal software for businesses and organizations.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Finance Management Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Invoice & GST Tools</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">ERP-like Dashboards</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Inventory Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">CRM Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Internal Business Tools</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Automation Software</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Productivity Software</span>
+                        </div>
+                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">Python &bull; Node.js &bull; PostgreSQL &bull; Docker</div>
+                    </div>
+
+                    <!-- C: UI/UX Design -->
+                    <div style="background: var(--surface); padding: var(--space-10);" class="reveal delay-100">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <i data-lucide="pen-tool" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                            <div>
+                                <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ C ]</div>
+                                <h3 style="font-size: 1.2rem;">UI/UX Design</h3>
+                            </div>
+                        </div>
+                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">Premium modern interfaces that convert and impress.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Website UI Design</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Dashboard Design</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">SaaS UI Design</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Mobile App UI</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">High-Fidelity Mockups</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Design Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Wireframes</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Brand Visual Interfaces</span>
+                        </div>
+                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">Figma &bull; Vanilla CSS &bull; Tailwind &bull; Animations</div>
+                    </div>
+
+                    <!-- D: IoT -->
+                    <div id="iot" style="background: var(--surface); padding: var(--space-10);" class="reveal delay-200">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <i data-lucide="cpu" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                            <div>
+                                <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ D ]</div>
+                                <h3 style="font-size: 1.2rem;">IoT &amp; Smart Systems</h3>
+                            </div>
+                        </div>
+                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">Your unique differentiator — hardware meets software.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Smart Agriculture</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Smart Irrigation</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Home Automation</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Sensor Monitoring</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Arduino Prototypes</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">IoT Dashboards</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Industrial Monitoring</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Smart Safety Systems</span>
+                        </div>
+                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">ESP32 &bull; MQTT &bull; Grafana &bull; InfluxDB</div>
+                    </div>
+
+                    <!-- E: Cybersecurity -->
+                    <div id="cyber" style="background: var(--surface); padding: var(--space-10);" class="reveal delay-100">
+                        <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                            <i data-lucide="shield-check" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                            <div>
+                                <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ E ]</div>
+                                <h3 style="font-size: 1.2rem;">Cybersecurity Services</h3>
+                            </div>
+                        </div>
+                        <p class="text-small" style="margin-bottom: var(--space-6); color: var(--text-secondary);">Very high-value niche — growing demand in India.</p>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Website Security Audit</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Vulnerability Assessment</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Security Hardening</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Secure Web Dev</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Authentication Systems</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Privacy Protection</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Cyber Awareness Consult</span>
+                            <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Best Practices Setup</span>
+                        </div>
+                        <div class="tech-label" style="margin-top: var(--space-6); font-size: 0.7rem;">OWASP &bull; NIST &bull; Burp Suite &bull; Zero-Trust</div>
+                    </div>
+
+                    <!-- F: Automation + G: Branding -->
+                    <div style="background: var(--surface); padding: var(--space-10); display: grid; grid-template-rows: auto auto; gap: var(--space-8);" class="reveal delay-200">
+                        <!-- F: Automation -->
+                        <div>
+                            <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                                <i data-lucide="workflow" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                                <div>
+                                    <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ F ]</div>
+                                    <h3 style="font-size: 1.2rem;">Automation Services</h3>
+                                </div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Workflow Automation</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Business Automation</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Email Automation</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">API Integrations</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">CRM Automation</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">AI-assisted Automation</span>
+                            </div>
+                        </div>
+                        <!-- G: Branding -->
+                        <div style="border-top: 1px solid var(--border); padding-top: var(--space-6);">
+                            <div style="display: flex; align-items: center; gap: var(--space-4); margin-bottom: var(--space-6);">
+                                <i data-lucide="sparkles" style="width: 24px; height: 24px; flex-shrink: 0;"></i>
+                                <div>
+                                    <div class="tech-label" style="font-size: 0.65rem; margin-bottom: 2px;">[ G ]</div>
+                                    <h3 style="font-size: 1.2rem;">Branding &amp; Digital Presence</h3>
+                                </div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2);">
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Portfolio Setup</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Business Brand Site</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Online Presence Setup</span>
+                                <span style="font-size: 0.8rem; padding: 4px 0; border-bottom: 1px solid var(--border); color: var(--text-secondary);">Professional Email</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             4. PRODUCTIZED PACKAGES
+        ============================== -->
+        <section class="section reveal" id="packages" style="border-top: 1px solid var(--border); padding-bottom: var(--space-24);">
+            <div class="container container-wide">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-12); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">[ PRODUCTIZED ]</div>
+                        <h2 style="font-size: var(--text-h2);">Fixed-Price Packages</h2>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 260px;">No "contact for quote." Clear scope. Clear price. Faster to ship.</p>
+                </div>
+
+                <!-- Website Packages -->
+                <div style="margin-bottom: var(--space-16);">
+                    <div class="tech-label" style="margin-bottom: var(--space-6);">[ WEBSITE PACKAGES ]</div>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4);">
+                        <div class="card reveal delay-100" style="padding: var(--space-8); display: flex; flex-direction: column;">
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">STARTER</div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹4,999</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">– ₹9,999 &nbsp;&bull;&nbsp; Students, Freelancers, Startups</div>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1; margin-bottom: var(--space-8);">
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> 1&ndash;5 Pages, Responsive Design</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Basic SEO &amp; Contact Form</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Fast Loading, Hosting Setup</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Mobile Friendly</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
+                        </div>
+                        <div class="card reveal delay-200" style="padding: var(--space-8); display: flex; flex-direction: column; border-color: var(--text-primary);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                                <div class="tech-label" style="font-size: 0.65rem;">PROFESSIONAL</div>
+                                <span style="font-size: 0.65rem; background: var(--text-primary); color: var(--surface); padding: 2px 8px; font-family: var(--font-mono);">POPULAR</span>
+                            </div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹14,999</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">– ₹39,999 &nbsp;&bull;&nbsp; Businesses &amp; Startups</div>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1; margin-bottom: var(--space-8);">
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> 5&ndash;15 Pages, Premium UI</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> SEO Optimization &amp; Analytics</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Animations &amp; CMS Integration</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Performance Optimization</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> API Integration</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary" style="text-align: center;">Get Started &rarr;</a>
+                        </div>
+                        <div class="card reveal delay-300" style="padding: var(--space-8); display: flex; flex-direction: column;">
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">PREMIUM CUSTOM</div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹49,999</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">+ onwards &nbsp;&bull;&nbsp; Companies</div>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1; margin-bottom: var(--space-8);">
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Custom Design + Dashboard</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Authentication &amp; Database</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Scalability Architecture</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Security Optimization</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2); align-items: center;"><span>&mdash;</span> Full Integrations</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Packages -->
+                <div style="margin-bottom: var(--space-16);">
+                    <div class="tech-label" style="margin-bottom: var(--space-6);">[ PORTFOLIO PACKAGES ]</div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4);">
+                        <div class="card reveal delay-100" style="padding: var(--space-8); display: flex; flex-direction: column;">
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">STUDENT PORTFOLIO</div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹2,999</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">– ₹5,999 &nbsp;&bull;&nbsp; Students, Freshers</div>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1; margin-bottom: var(--space-8);">
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Resume Website</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Skills, Projects &amp; Contact</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Mobile Optimized</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
+                        </div>
+                        <div class="card reveal delay-200" style="padding: var(--space-8); display: flex; flex-direction: column;">
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">PREMIUM PERSONAL BRAND</div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹9,999</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">+ onwards &nbsp;&bull;&nbsp; Creators, Entrepreneurs</div>
+                            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); flex-grow: 1; margin-bottom: var(--space-8);">
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Premium Design &amp; Animations</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Blog &amp; Case Studies</li>
+                                <li style="font-size: 0.85rem; display: flex; gap: var(--space-2);"><span>&mdash;</span> Full SEO Optimization</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-secondary" style="text-align: center;">Get Started &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Startup + Specialized Packages in a 2x2 grid -->
+                <div style="margin-bottom: var(--space-16);">
+                    <div class="tech-label" style="margin-bottom: var(--space-6);">[ STARTUP &amp; SPECIALIZED PACKAGES ]</div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4);">
+                        <!-- Startup Launch -->
+                        <div class="card reveal delay-100" style="padding: var(--space-8);">
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-2);">STARTUP LAUNCH</div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹19,999</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">– ₹49,999</div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-6);">
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Brand Website</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Landing Page</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Business Email</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Analytics</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Forms</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Basic Automation</span>
+                            </div>
+                            <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
+                        </div>
+                        <!-- Startup Tech -->
+                        <div class="card reveal delay-200" style="padding: var(--space-8);">
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-2);">STARTUP TECH / MVP</div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹49,999</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">+ onwards</div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-6);">
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; MVP Development</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Admin Dashboard</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Database</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Authentication</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Deployment</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Documentation</span>
+                            </div>
+                            <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
+                        </div>
+                        <!-- IoT -->
+                        <div class="card reveal delay-100" style="padding: var(--space-8);">
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-2);">IOT STARTER KIT</div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹15,000</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">Smart Agriculture / Automation</div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-6);">
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Sensor Setup</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Dashboard</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Monitoring</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Prototype</span>
+                            </div>
+                            <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
+                        </div>
+                        <!-- Security -->
+                        <div class="card reveal delay-200" style="padding: var(--space-8);">
+                            <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-2);">SECURITY AUDIT</div>
+                            <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹7,999</div>
+                            <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-6);">Basic &bull; Hardening ₹14,999+</div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2); margin-bottom: var(--space-6);">
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Website Scan</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Vulnerability Check</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Security Report</span>
+                                <span style="font-size: 0.8rem; color: var(--text-secondary);">&mdash; Auth Hardening</span>
+                            </div>
+                            <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Inquire &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             5. MONTHLY RETAINERS
+        ============================== -->
+        <section class="section section-light reveal" id="retainers" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container container-wide">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-12); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">[ RECURRING ]</div>
+                        <h2 style="font-size: var(--text-h2);">Monthly Retainer Plans</h2>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 260px;">Ongoing partnership. Predictable cost. Continuous improvements.</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4);">
+                    <!-- Basic -->
+                    <div class="card reveal delay-100" style="padding: var(--space-8);">
+                        <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">BASIC CARE PLAN</div>
+                        <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹2,999</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-8);">/ month</div>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-8);">
+                            <li style="font-size: 0.85rem;">&mdash; Bug Fixes</li>
+                            <li style="font-size: 0.85rem;">&mdash; Minor Updates</li>
+                            <li style="font-size: 0.85rem;">&mdash; Uptime Monitoring</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Subscribe &rarr;</a>
+                    </div>
+                    <!-- Growth -->
+                    <div class="card reveal delay-200" style="padding: var(--space-8); border-color: var(--text-primary);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-4);">
+                            <div class="tech-label" style="font-size: 0.65rem;">GROWTH PLAN</div>
+                            <span style="font-size: 0.65rem; background: var(--text-primary); color: var(--surface); padding: 2px 8px; font-family: var(--font-mono);">RECOMMENDED</span>
+                        </div>
+                        <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹7,999</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-8);">/ month</div>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-8);">
+                            <li style="font-size: 0.85rem;">&mdash; Monthly Updates</li>
+                            <li style="font-size: 0.85rem;">&mdash; SEO Improvements</li>
+                            <li style="font-size: 0.85rem;">&mdash; Performance Tuning</li>
+                            <li style="font-size: 0.85rem;">&mdash; Priority Support</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-primary" style="display: inline-block;">Subscribe &rarr;</a>
+                    </div>
+                    <!-- Premium -->
+                    <div class="card reveal delay-300" style="padding: var(--space-8);">
+                        <div class="tech-label" style="font-size: 0.65rem; margin-bottom: var(--space-4);">PREMIUM TECH PARTNER</div>
+                        <div style="font-size: 2rem; font-weight: 700; font-family: var(--font-mono); margin-bottom: var(--space-2);">₹19,999</div>
+                        <div style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: var(--space-8);">/ month +</div>
+                        <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: var(--space-3); margin-bottom: var(--space-8);">
+                            <li style="font-size: 0.85rem;">&mdash; Priority Support</li>
+                            <li style="font-size: 0.85rem;">&mdash; Automation Work</li>
+                            <li style="font-size: 0.85rem;">&mdash; Security Monitoring</li>
+                            <li style="font-size: 0.85rem;">&mdash; Continuous Improvements</li>
+                            <li style="font-size: 0.85rem;">&mdash; Dedicated Engineer</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-secondary" style="display: inline-block;">Subscribe &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             6. DIGITAL PRODUCTS
+        ============================== -->
+        <section class="section reveal" id="digital-products" style="border-top: 1px solid var(--border);">
+            <div class="container container-wide">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-12); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">[ SCALABLE ]</div>
+                        <h2 style="font-size: var(--text-h2);">Digital Products</h2>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 260px;">Built once. Sold infinitely. Launching soon.</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: var(--space-4);">
+                    <div class="card reveal delay-100" style="padding: var(--space-6); opacity: 0.75;">
+                        <i data-lucide="layout-template" style="width: 22px; height: 22px; margin-bottom: var(--space-4);"></i>
+                        <h4 style="font-size: 0.95rem; margin-bottom: var(--space-2);">Website Templates</h4>
+                        <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-4);">Portfolio, Startup, SaaS, and Business ready-to-launch templates.</p>
+                        <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-secondary);">COMING SOON</span>
+                    </div>
+                    <div class="card reveal delay-200" style="padding: var(--space-6); opacity: 0.75;">
+                        <i data-lucide="notebook" style="width: 22px; height: 22px; margin-bottom: var(--space-4);"></i>
+                        <h4 style="font-size: 0.95rem; margin-bottom: var(--space-2);">Notion Templates</h4>
+                        <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-4);">Productivity systems, SOPs, project management, and developer kits.</p>
+                        <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-secondary);">COMING SOON</span>
+                    </div>
+                    <div class="card reveal delay-300" style="padding: var(--space-6); opacity: 0.75;">
+                        <i data-lucide="shield" style="width: 22px; height: 22px; margin-bottom: var(--space-4);"></i>
+                        <h4 style="font-size: 0.95rem; margin-bottom: var(--space-2);">Cybersecurity Checklists</h4>
+                        <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-4);">OWASP-aligned security checklists and hardening guides.</p>
+                        <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-secondary);">COMING SOON</span>
+                    </div>
+                    <div class="card reveal delay-400" style="padding: var(--space-6); opacity: 0.75;">
+                        <i data-lucide="cpu" style="width: 22px; height: 22px; margin-bottom: var(--space-4);"></i>
+                        <h4 style="font-size: 0.95rem; margin-bottom: var(--space-2);">IoT Starter Kits</h4>
+                        <p class="text-small" style="color: var(--text-secondary); margin-bottom: var(--space-4);">Arduino &amp; ESP32 project blueprints, firmware templates, wiring guides.</p>
+                        <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-secondary);">COMING SOON</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             7. INTERACTIVE TECH STACK
+        ============================== -->
+        <section class="section reveal" id="tech-stack-section" style="border-top: 1px solid var(--border);">
+            <div class="container container-medium">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--space-10); border-bottom: 1px solid var(--border); padding-bottom: var(--space-6);">
+                    <div>
+                        <div class="tech-label" style="margin-bottom: var(--space-3);">[ INTERACTIVE ]</div>
+                        <h2 style="font-size: var(--text-h2);">Technology Ecosystem</h2>
+                    </div>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem; text-align: right; max-width: 220px;">Select a domain to explore the connected stack</p>
+                </div>
+                <div style="display: flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-10);" id="stack-domain-tabs">
+                    <button class="stack-tab active" data-domain="software" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--text-primary); background: var(--text-primary); color: var(--surface); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Software</button>
+                    <button class="stack-tab" data-domain="iot" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">IoT</button>
+                    <button class="stack-tab" data-domain="security" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Cybersecurity</button>
+                    <button class="stack-tab" data-domain="automation" style="font-family: var(--font-mono); font-size: 0.8rem; padding: 8px 20px; border: 1px solid var(--border); background: transparent; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.06em;">Automation</button>
+                </div>
+                <div id="stack-panel" style="opacity: 1; transition: opacity 0.25s ease;">
+                    <div class="stack-domain" id="stack-software">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">LANGUAGES</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>Python</span><span>TypeScript</span><span>JavaScript</span><span>SQL</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">BACKEND</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>FastAPI</span><span>Node.js / Express</span><span>REST / WebSockets</span><span>GraphQL</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DATA</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>PostgreSQL</span><span>MongoDB</span><span>Firebase / Firestore</span><span>Redis</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DEPLOYMENT</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>Docker</span><span>GitHub Actions</span><span>Nginx</span><span>Linux Servers</span></div></div>
+                        </div>
+                    </div>
+                    <div class="stack-domain" id="stack-iot" style="display: none;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">HARDWARE</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>Arduino Uno / Mega</span><span>ESP32 / ESP8266</span><span>Raspberry Pi</span><span>STM32</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">FIRMWARE</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>C / C++</span><span>FreeRTOS</span><span>ESP-IDF</span><span>MicroPython</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">PROTOCOLS</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>MQTT</span><span>ESP-NOW</span><span>I2C / SPI / UART</span><span>LoRa / WiFi</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">DASHBOARDS</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>Grafana</span><span>InfluxDB</span><span>Node-RED</span><span>Custom Portals</span></div></div>
+                        </div>
+                    </div>
+                    <div class="stack-domain" id="stack-security" style="display: none;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">ARCHITECTURE</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>Zero-Trust Design</span><span>Defense in Depth</span><span>Least Privilege</span><span>Threat Modeling</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">CRYPTOGRAPHY</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>AES-256</span><span>RSA / ECC</span><span>JWT / OAuth 2.0</span><span>TLS 1.3</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">STANDARDS</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>OWASP Top 10</span><span>NIST Framework</span><span>Secure SDLC</span><span>Penetration Testing</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">TOOLING</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>Burp Suite</span><span>Wireshark</span><span>Hashcat</span><span>Metasploit</span></div></div>
+                        </div>
+                    </div>
+                    <div class="stack-domain" id="stack-automation" style="display: none;">
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border);">
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">SCRIPTING</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>Python</span><span>Bash / Shell</span><span>PowerShell</span><span>Selenium</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">PIPELINES</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>GitHub Actions</span><span>Cron Jobs</span><span>Task Queues</span><span>Webhooks</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">AI / ML</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>LangChain</span><span>OpenAI API</span><span>Hugging Face</span><span>scikit-learn</span></div></div>
+                            <div style="background: var(--surface); padding: var(--space-8);"><div class="tech-label" style="font-size: 0.7rem; margin-bottom: var(--space-4);">INTEGRATION</div><div style="display: flex; flex-direction: column; gap: var(--space-2);"><span>REST APIs</span><span>Plaid / Stripe</span><span>Google Workspace</span><span>Slack / Notion</span></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             8. CTA
+        ============================== -->
+        <section class="section section-light reveal" style="border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <div class="container text-center">
+                <h2 style="font-size: var(--text-h1); margin-bottom: var(--space-6);">Ready to start?</h2>
+                <p style="max-width: 500px; margin: 0 auto var(--space-8);">Pick a package above or use our Consultation Wizard to get a custom architecture estimate in under 2 minutes.</p>
+                <div style="display: flex; gap: var(--space-4); flex-wrap: wrap; justify-content: center;">
+                    <a href="#packages" class="btn btn-secondary">View Packages</a>
+                    <a href="contact.html" class="btn btn-primary">Start a Project &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
         <section class="section" style="padding-top: var(--space-32); padding-bottom: var(--space-16);">
             <div class="container text-center">
                 <div class="tech-label animate-fade-in" style="margin-bottom: var(--space-8);">[ WHAT WE DO ]</div>
