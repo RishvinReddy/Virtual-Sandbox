@@ -61,6 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
   
+    let previousActiveElement;
+
     const openModal = (projectId) => {
       const data = caseStudies[projectId];
       if (!data) return;
@@ -100,13 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `;
   
+      previousActiveElement = document.activeElement;
       modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
       document.body.style.overflow = 'hidden'; // prevent bg scroll
+      
+      // Focus the close button initially for accessibility
+      setTimeout(() => closeBtn.focus(), 50);
     };
   
     const closeModal = () => {
       modal.classList.remove('active');
-      document.body.style.overflow = 'auto';
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (previousActiveElement) previousActiveElement.focus();
     };
   
     triggers.forEach(trigger => {

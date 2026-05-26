@@ -82,16 +82,21 @@
         <div class="error-orb"></div>
         <div class="error-content animate-slide-up">
             <div class="error-code">404</div>
-            <h1 style="font-size: 2.5rem; margin-bottom: var(--space-4);">Lost in the system?</h1>
-            <p style="color: var(--text-secondary); margin-bottom: var(--space-8); font-size: 1.125rem;">The node you are looking for has been disconnected.</p>
-            <a href="index.html" class="btn btn-primary" style="padding: var(--space-3) var(--space-6);">
-                <i data-lucide="arrow-left" style="width: 18px; height: 18px; margin-right: 8px;"></i> Return Home
-            </a>
+            <h1 style="font-size: 2.5rem; margin-bottom: var(--space-4);">System Error: Route Not Found</h1>
+            <p style="color: var(--text-secondary); margin-bottom: var(--space-8); font-size: 1.125rem;">Looks like you've entered an unknown path.</p>
+            <div style="display: flex; gap: var(--space-4); justify-content: center; align-items: center;">
+                <a href="index.html" class="btn btn-primary" style="padding: var(--space-3) var(--space-6);">
+                    <i data-lucide="arrow-left" style="width: 18px; height: 18px; margin-right: 8px;"></i> Return Home
+                </a>
+                <a href="contact.html" class="btn btn-outline" style="padding: var(--space-3) var(--space-6);">
+                    <i data-lucide="mail" style="width: 18px; height: 18px; margin-right: 8px;"></i> Contact Us
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Scripts -->
     <script>lucide.createIcons();</script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>
