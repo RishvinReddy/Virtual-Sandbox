@@ -80,7 +80,7 @@
           </div>
         </a>
         <div class="dd-divider"></div>
-        <a class="dd-item" href="services.html#contact" role="menuitem">
+        <a class="dd-item" href="contact.html" role="menuitem">
           <div class="dd-icon" style="background:rgba(37,99,235,0.12);"><i data-lucide="send"></i></div>
           <div class="dd-text-wrap">
             <div class="dd-title">Start a Project</div>
@@ -125,7 +125,7 @@
             <div class="dd-desc">Starter Build, Academic Pro, Elite</div>
           </div>
         </a>
-        <a class="dd-item" href="students.html#student-inquiry" role="menuitem">
+        <a class="dd-item" href="contact.html?domain=Student+Consultation" role="menuitem">
           <div class="dd-icon" style="background:rgba(124,58,237,0.12);"><i data-lucide="send"></i></div>
           <div class="dd-text-wrap">
             <div class="dd-title">Book Consultation</div>
@@ -194,7 +194,7 @@
 
   <!-- CTA -->
   <div class="navbar-cta">
-    <a href="services.html#contact" class="btn btn-primary">
+    <a href="contact.html" class="btn btn-primary">
       Start a Project <span class="btn-arrow">&rarr;</span>
     </a>
   </div>

@@ -555,7 +555,7 @@
 .footer-links {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-4);
 }
 .footer-links a {
   font-size: var(--text-small);
@@ -1139,3 +1139,241 @@ body.cursor-expand #cursor-dot { opacity: 0; }
   .qa-content p { font-size: 0.75rem; }
   .qa-arrow { bottom: 18px; right: 14px; width: 16px; height: 16px; }
 }
+
+
+/* ─────────────────────────────────────────
+   CATEGORY SCROLLABLE TABS (PREMIUM UX)
+───────────────────────────────────────── */
+.category-tabs-wrapper {
+  position: relative;
+  margin-bottom: var(--space-8);
+  display: flex;
+  align-items: center;
+}
+
+.category-tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+  padding-bottom: var(--space-4);
+}
+
+.category-tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.category-tab {
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  white-space: nowrap;
+  scroll-snap-align: start;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-tab i {
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--text-muted);
+}
+
+.category-tab:hover {
+  border-color: var(--border-accent);
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 14, 40, 0.04);
+}
+
+.category-tab:hover i {
+  color: var(--accent-blue);
+  transform: scale(1.1);
+}
+
+.category-tab.active {
+  background: var(--gradient-primary);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: var(--glow-btn);
+}
+
+.category-tab.active i {
+  color: #FFFFFF;
+}
+
+.category-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  height: 3px;
+  background: rgba(255,255,255,0.4);
+  border-radius: 3px 3px 0 0;
+}
+
+
+/* =========================================
+   WIZARD UI COMPONENTS
+========================================= */
+
+/* Wizard Progress */
+.wizard-progress-container {
+    width: 100%;
+    height: 4px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-8);
+    overflow: hidden;
+    position: relative;
+}
+.wizard-progress-bar {
+    height: 100%;
+    width: 33.33%;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 0 10px rgba(37,99,235,0.5);
+}
+
+/* Wizard Steps */
+.wizard-step {
+    display: none;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.wizard-step.active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Wizard Navigation */
+.wizard-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--border);
+}
+
+/* Custom Range Slider */
+.range-slider-container {
+    position: relative;
+    width: 100%;
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-8);
+}
+.range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-full);
+    outline: none;
+}
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid var(--accent-blue);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(37,99,235,0.4);
+    transition: transform 0.2s;
+}
+.range-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+.budget-display {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    font-weight: 800;
+    color: var(--accent-blue);
+    margin-bottom: var(--space-2);
+    display: block;
+}
+
+/* Drag & Drop Upload Zone */
+.upload-zone {
+    border: 2px dashed var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    background: rgba(37,99,235,0.03);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+}
+.upload-zone:hover, .upload-zone.dragover {
+    border-color: var(--accent-blue);
+    background: rgba(37,99,235,0.08);
+    transform: translateY(-2px);
+}
+.upload-zone i {
+    width: 36px;
+    height: 36px;
+    color: var(--accent-blue);
+    margin-bottom: var(--space-2);
+}
+
+/* Mode Toggle (Pill Switch) */
+.mode-toggle-wrapper {
+    display: inline-flex;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-full);
+    padding: 4px;
+    border: 1px solid var(--border);
+    margin-bottom: var(--space-6);
+}
+.mode-toggle-btn {
+    padding: 10px 24px;
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    background: transparent;
+}
+.mode-toggle-btn.active {
+    background: var(--surface);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Ambient Orbs */
+.ambient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    pointer-events: none;
+    animation: float 10s infinite ease-in-out alternate;
+}
+.orb-1 { width: 300px; height: 300px; background: var(--accent-blue); top: -50px; right: -50px; }
+.orb-2 { width: 250px; height: 250px; background: var(--accent-violet); bottom: -50px; left: -50px; animation-delay: -5s; }
+
